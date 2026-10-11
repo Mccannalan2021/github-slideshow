@@ -158,3 +158,13 @@ test('tracks applications', async () => {
   assert.equal((await call('PATCH', `/applications/${created.body.id}`, { status: 'hired!' })).status, 400);
   assert.equal((await call('GET', '/applications?status=interviewing')).body.length, 1);
 });
+
+test('near= lists the home city first, then its region', async () => {
+  const r = await call('GET', '/jobs?near=Red%20Deer&limit=50&match=false');
+  assert.equal(r.body.filters.near, 'Red Deer');
+  assert.equal(r.body.jobs[0].city, 'Red Deer');
+  assert.equal(r.body.jobs[0].proximity, 'city');
+  assert.equal(r.body.jobs[1].proximity, 'alberta');
+  assert.ok(!('proximityRank' in r.body.jobs[0]));
+  assert.equal((await call('GET', '/jobs?near=Gotham')).status, 400);
+});

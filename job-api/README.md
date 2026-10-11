@@ -10,6 +10,8 @@ one consistent format. On top of that it:
   Red Deer, Lethbridge–Medicine Hat, Banff–Jasper–Rocky Mountain House, Camrose–Drumheller,
   Wood Buffalo–Cold Lake, Athabasca–Grande Prairie–Peace River)
 - **Shows market insights**: jobs by city, region, type, category and employer, plus median pay
+- **Puts your home city first**: with `HOME_CITY=Red Deer` (the default), Red Deer jobs come first,
+  then Sylvan Lake, Lacombe, Blackfalds, Innisfail and the rest of the Red Deer region
 - **Saves searches** and flags jobs that are new since you last checked
 - **Writes quick replies** to apply, answer an employer, or follow up
 - **Tracks your applications**
@@ -91,6 +93,7 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | `q` | `welder` | Keywords |
 | `city` | `Red Deer` | Any city from `/alberta/cities` |
 | `region` | `Edmonton` | One of the 8 economic regions |
+| `near` | `Red Deer` | List jobs in this city first, then its region, then the rest of Alberta. Defaults to `HOME_CITY` in `.env` (Red Deer). Each job gets `proximity`: `city`, `region` or `alberta` |
 | `type` | `full-time` | `full-time`, `part-time`, `contract`, `temporary`, `seasonal`, `casual` |
 | `remote` | `true` | `true` for remote only, `false` to hide remote jobs |
 | `minSalary` | `60000` | Minimum annual pay in CAD (jobs with no posted pay are left out) |

@@ -65,11 +65,12 @@ const jobs = createAggregator({
   store,
   cacheTtlMs: (Number(env.CACHE_TTL_SECONDS) || 600) * 1000,
   perSourceLimit: Number(env.PER_SOURCE_LIMIT) || 50,
+  homeCity: env.HOME_CITY || '',
 });
 const port = Number(env.PORT) || 3000;
 
 if (!env.API_KEY) console.warn('API_KEY is not set: the API is open to anyone who can reach it.');
 
 createApp({ store, jobs, apiKey: env.API_KEY }).listen(port, () => {
-  console.log(`Alberta Jobs API on http://localhost:${port} (sources: ${jobs.sources.join(', ')})`);
+  console.log(`Alberta Jobs API on http://localhost:${port} (sources: ${jobs.sources.join(', ')}${jobs.homeCity ? `; home city: ${jobs.homeCity}` : ''})`);
 });

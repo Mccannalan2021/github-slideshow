@@ -60,7 +60,7 @@ function createApp({ store, jobs, apiKey }) {
 
   // [method, pattern, handler]. Patterns use :params.
   const routes = [
-    ['GET', '/health', async () => ({ ok: true, sources: jobs.sources })],
+    ['GET', '/health', async () => ({ ok: true, sources: jobs.sources, homeCity: jobs.homeCity || null })],
     ['GET', '/sources', async () => (jobs.sourceDetails ? jobs.sourceDetails() : jobs.sources)],
     ['GET', '/alberta/cities', async () => ({
       regions: Object.entries(REGIONS).map(([name, cities]) => ({ name, cities })),

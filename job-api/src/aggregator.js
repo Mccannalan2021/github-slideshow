@@ -90,6 +90,7 @@ function parseFilters(q) {
   const f = {
     q: (get('q') || '').trim(),
     city: get('city') || '',
+    near: get('near') || '',
     region: get('region') || '',
     type: get('type') || '',
     remote: get('remote') || '',
@@ -105,6 +106,11 @@ function parseFilters(q) {
     const city = lookupCity(f.city);
     if (!city) throw new BadRequest(`Unknown Alberta city "${f.city}". See GET /alberta/cities`);
     f.city = city.name;
+  }
+  if (f.near) {
+    const near = lookupCity(f.near);
+    if (!near) throw new BadRequest(`Unknown Alberta city "${f.near}" for near. See GET /alberta/cities`);
+    f.near = near.name;
   }
   if (f.region) {
     const region = lookupRegion(f.region);
@@ -129,11 +135,22 @@ function applyFilters(jobs, f, now = Date.now()) {
     (f.postedWithin === null || (j.postedAt && now - Date.parse(j.postedAt) <= f.postedWithin * 86_400_000)));
 }
 
+// 0 = in the home city, 1 = same economic region, 2 = elsewhere in Alberta.
+const PROXIMITY = ['city', 'region', 'alberta'];
+function proximityOf(job, near) {
+  if (!near) return null;
+  if (job.city === near.name) return 0;
+  return job.region === near.region ? 1 : 2;
+}
+
 function sortJobs(jobs, sort, hasResume) {
   const byDate = (a, b) => (b.postedAt || '').localeCompare(a.postedAt || '');
   const bySalary = (a, b) => (b.salaryMax ?? -1) - (a.salaryMax ?? -1) || byDate(a, b);
   const byMatch = (a, b) => (b.match?.score ?? 0) - (a.match?.score ?? 0) || byDate(a, b);
-  const cmp = { date: byDate, salary: bySalary, match: byMatch, relevance: hasResume ? byMatch : byDate }[sort];
+  const base = hasResume ? byMatch : byDate;
+  // Relevance puts jobs closest to the home city first.
+  const byRelevance = (a, b) => (a.proximityRank ?? 0) - (b.proximityRank ?? 0) || base(a, b);
+  const cmp = { date: byDate, salary: bySalary, match: byMatch, relevance: byRelevance }[sort];
   return [...jobs].sort(cmp);
 }
 
@@ -171,7 +188,9 @@ function facets(jobs) {
   };
 }
 
-function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourceLimit = 50, maxIndex = 5000 }) {
+function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourceLimit = 50, maxIndex = 5000, homeCity = '' }) {
+  const home = homeCity ? lookupCity(homeCity) : null;
+  if (homeCity && !home) throw new Error(`HOME_CITY "${homeCity}" is not a known Alberta city`);
   if (!providers.length) throw new Error('At least one job source must be configured');
   const cache = new Map();
   const index = new Map((store?.getJobIndex?.() || []).map((j) => [j.id, j]));
@@ -220,6 +239,13 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
     remember(unique);
 
     let jobs = applyFilters(unique, f);
+    const near = f.near ? lookupCity(f.near) : home;
+    if (near) {
+      jobs = jobs.map((j) => {
+        const rank = proximityOf(j, near);
+        return { ...j, proximity: PROXIMITY[rank], proximityRank: rank };
+      });
+    }
     if (resume) jobs = jobs.map((j) => ({ ...j, match: scoreMatch(resume, j) }));
     jobs = sortJobs(jobs, f.sort, Boolean(resume));
 
@@ -229,11 +255,11 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
       page: f.page,
       limit: f.limit,
       pages: Math.ceil(jobs.length / f.limit),
-      filters: { ...f, page: undefined, limit: undefined },
+      filters: { ...f, near: near?.name || '', page: undefined, limit: undefined },
       removed: { outsideAlberta: all.length - alberta.length, duplicates: alberta.length - unique.length },
       sources,
       facets: facets(jobs),
-      jobs: jobs.slice(start, start + f.limit),
+      jobs: jobs.slice(start, start + f.limit).map(({ proximityRank, ...j }) => j),
     };
   }
 
@@ -256,7 +282,7 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
     ...(p.fetchedAt ? { fetchedAt: p.fetchedAt } : {}),
   }));
 
-  return { name: 'alberta', sources: providers.map((p) => p.name), sourceDetails, search, getJob, parseFilters };
+  return { name: 'alberta', homeCity: home?.name || '', sources: providers.map((p) => p.name), sourceDetails, search, getJob, parseFilters };
 }
 
 module.exports = { createAggregator, parseFilters, normalizeJob, dedupe, JOB_TYPES, SORTS, BadRequest };
