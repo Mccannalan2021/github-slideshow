@@ -3,6 +3,8 @@ const crypto = require('node:crypto');
 const { normalizeResume } = require('./resume');
 const { scoreMatch } = require('./match');
 const { buildReply } = require('./quickReply');
+const { REGIONS } = require('./alberta');
+const { JOB_TYPES, SORTS } = require('./aggregator');
 
 const APP_STATUSES = ['saved', 'applied', 'interviewing', 'offer', 'rejected', 'withdrawn'];
 
@@ -18,7 +20,7 @@ function send(res, status, body) {
     'content-type': 'application/json',
     'access-control-allow-origin': '*',
     'access-control-allow-headers': 'content-type, x-api-key',
-    'access-control-allow-methods': 'GET, POST, PUT, PATCH, OPTIONS',
+    'access-control-allow-methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
   });
   res.end(body === undefined ? '' : JSON.stringify(body));
 }
@@ -43,7 +45,7 @@ function safeEqual(a, b) {
   return ab.length === bb.length && crypto.timingSafeEqual(ab, bb);
 }
 
-function createApp({ store, provider, apiKey }) {
+function createApp({ store, jobs, apiKey }) {
   function requireResume() {
     const resume = store.getResume();
     if (!resume) throw new HttpError(409, 'Upload your resume first with PUT /resume');
@@ -51,14 +53,20 @@ function createApp({ store, provider, apiKey }) {
   }
 
   async function requireJob(id) {
-    const job = await provider.getJob(id);
+    const job = await jobs.getJob(id);
     if (!job) throw new HttpError(404, `Job ${id} not found`);
     return job;
   }
 
   // [method, pattern, handler]. Patterns use :params.
   const routes = [
-    ['GET', '/health', async () => ({ ok: true, provider: provider.name })],
+    ['GET', '/health', async () => ({ ok: true, sources: jobs.sources })],
+    ['GET', '/sources', async () => jobs.sources],
+    ['GET', '/alberta/cities', async () => ({
+      regions: Object.entries(REGIONS).map(([name, cities]) => ({ name, cities })),
+      jobTypes: JOB_TYPES,
+      sorts: SORTS,
+    })],
 
     ['GET', '/resume', async () => requireResume()],
     ['PUT', '/resume', async ({ body }) => {
@@ -70,22 +78,12 @@ function createApp({ store, provider, apiKey }) {
     }],
 
     ['GET', '/jobs', async ({ query }) => {
-      const limit = Math.min(Number(query.get('limit')) || 20, 50);
-      const page = Math.max(Number(query.get('page')) || 1, 1);
-      const result = await provider.searchJobs({
-        query: query.get('q') || '',
-        location: query.get('location') || '',
-        limit,
-        page,
-        cursor: query.get('cursor') || undefined,
-      });
-      const resume = store.getResume();
-      if (resume && query.get('match') !== 'false') {
-        result.jobs = result.jobs
-          .map((j) => ({ ...j, match: scoreMatch(resume, j) }))
-          .sort((a, b) => b.match.score - a.match.score);
-      }
-      return result;
+      const resume = query.get('match') === 'false' ? null : store.getResume();
+      return jobs.search(query, resume);
+    }],
+    ['GET', '/insights', async ({ query }) => {
+      const { total, facets, sources, filters } = await jobs.search(query);
+      return { total, filters, sources, ...facets };
     }],
     ['GET', '/jobs/:id', async ({ params }) => requireJob(params.id)],
     ['GET', '/jobs/:id/match', async ({ params }) => scoreMatch(requireResume(), await requireJob(params.id))],
@@ -100,6 +98,30 @@ function createApp({ store, provider, apiKey }) {
       } catch (e) {
         throw new HttpError(400, e.message);
       }
+    }],
+
+    ['GET', '/searches', async () => store.listSearches().map(({ seenIds, ...rest }) => rest)],
+    ['POST', '/searches', async ({ body }) => {
+      if (!body.name) throw new HttpError(400, 'name is required');
+      const filters = jobs.parseFilters(body.filters || {});
+      const { seenIds, ...created } = store.addSearch({ name: body.name, filters: { ...filters, page: undefined, limit: undefined } });
+      return [201, created];
+    }],
+    ['GET', '/searches/:id/run', async ({ params, query }) => {
+      const saved = store.getSearch(params.id);
+      if (!saved) throw new HttpError(404, `Saved search ${params.id} not found`);
+      const result = await jobs.search({ ...saved.filters, page: query.get('page'), limit: query.get('limit') || 50 }, store.getResume());
+      const seen = new Set(saved.seenIds);
+      result.jobs = result.jobs.map((j) => ({ ...j, isNew: !seen.has(j.id) }));
+      result.newCount = result.jobs.filter((j) => j.isNew).length;
+      const seenIds = [...new Set([...saved.seenIds, ...result.jobs.map((j) => j.id)])].slice(-5000);
+      store.updateSearch(saved.id, { seenIds, lastRunAt: new Date().toISOString() });
+      if (query.get('onlyNew') === 'true') result.jobs = result.jobs.filter((j) => j.isNew);
+      return { search: { id: saved.id, name: saved.name, lastRunAt: saved.lastRunAt }, ...result };
+    }],
+    ['DELETE', '/searches/:id', async ({ params }) => {
+      if (!store.deleteSearch(params.id)) throw new HttpError(404, `Saved search ${params.id} not found`);
+      return { deleted: true };
     }],
 
     ['GET', '/applications', async ({ query }) => {

@@ -43,6 +43,33 @@ function createStore(dataDir) {
       write('applications', apps);
       return apps[i];
     },
+
+    // Jobs seen in searches, so GET /jobs/:id and quick replies work for sources without a lookup API.
+    getJobIndex: () => read('jobs-index', []),
+    saveJobIndex: (jobs) => write('jobs-index', jobs),
+
+    // Saved searches ("job alerts").
+    listSearches: () => read('searches', []),
+    getSearch: (id) => read('searches', []).find((s) => s.id === id) || null,
+    addSearch(search) {
+      const created = { id: crypto.randomUUID(), createdAt: new Date().toISOString(), lastRunAt: null, seenIds: [], ...search };
+      write('searches', [...read('searches', []), created]);
+      return created;
+    },
+    updateSearch(id, changes) {
+      const all = read('searches', []);
+      const i = all.findIndex((s) => s.id === id);
+      if (i === -1) return null;
+      all[i] = { ...all[i], ...changes, id };
+      write('searches', all);
+      return all[i];
+    },
+    deleteSearch(id) {
+      const all = read('searches', []);
+      const rest = all.filter((s) => s.id !== id);
+      write('searches', rest);
+      return rest.length !== all.length;
+    },
   };
 }
 

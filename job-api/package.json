@@ -1,13 +1,13 @@
 {
-  "name": "job-api",
+  "name": "alberta-jobs-api",
   "version": "1.0.0",
-  "description": "API for a job app: store your resume, search Indeed jobs, score matches, and generate quick replies.",
+  "description": "Alberta jobs API: searches Adzuna, Jooble, Job Bank and Indeed at once, matches jobs to your resume and writes quick replies.",
   "main": "src/server.js",
   "type": "commonjs",
   "engines": { "node": ">=18" },
   "scripts": {
     "start": "node src/server.js",
-    "dev": "JOB_PROVIDER=mock node --watch src/server.js",
+    "dev": "node --watch src/server.js",
     "test": "node --test test/*.test.js"
   },
   "license": "MIT"
