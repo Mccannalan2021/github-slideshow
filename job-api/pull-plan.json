@@ -2,10 +2,10 @@
   "about": "Searches the get-jobs skill runs. Edit freely: add towns, keywords or slices. Results are saved to raw/<source>/ and imported with npm run import.",
 
   "window": {
-    "daily": { "max_posted_minutes_ago": 1440, "import": "npm run import" },
+    "daily": { "max_posted_minutes_ago": 4320, "import": "npm run import -- --since-days=3" },
     "week": { "max_posted_minutes_ago": 10080, "import": "npm run import -- --full" },
     "default": "daily",
-    "notes": "Every normal run is 'daily': only the last 24 hours, added to the jobs already saved. Use 'week' only when the user asks for the past week or sources/ is empty."
+    "notes": "Every normal run is 'daily': the last 3 days, added to the jobs already saved (duplicates are skipped). ZipRecruiter's 1440-minute (24 hour) filter returns no results, so the daily pull looks back 3 days. Use 'week' only when the user asks for the past week or sources/ is empty."
   },
 
   "ziprecruiter": {

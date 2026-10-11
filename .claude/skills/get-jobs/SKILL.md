@@ -14,7 +14,7 @@ Jobs already saved stay; jobs older than 30 days drop off. Everything it needs i
 
 ## Steps
 
-1. **Pick the window** from `pull-plan.json` → `window`. Use `daily` (last 24 hours) unless the user
+1. **Pick the window** from `pull-plan.json` → `window`. Use `daily` (last 3 days; ZipRecruiter's 24-hour filter returns nothing) unless the user
    asks for the past week or `job-api/sources/` has no job files; then use `week`.
    Clear the raw folders from any previous run (the saved job files in `sources/` stay):
    `rm -rf job-api/raw/indeed job-api/raw/ziprecruiter && mkdir -p job-api/raw/indeed job-api/raw/ziprecruiter`
@@ -47,7 +47,7 @@ Jobs already saved stay; jobs older than 30 days drop off. Everything it needs i
    coming back after a few minutes of waiting, stop and report how far you got. Do the Red Deer groups first.
 
 5. **Import** with the window's command, from `job-api/`:
-   - daily: `npm run import` (adds jobs posted today or yesterday to the existing files)
+   - daily: `npm run import -- --since-days=3` (adds jobs from the last 3 days to the existing files; duplicates are skipped)
    - week: `npm run import -- --full` (rebuilds the files from everything just pulled)
 
    It prints how many jobs were new and totals for Alberta and the Red Deer region.
@@ -63,6 +63,6 @@ Jobs already saved stay; jobs older than 30 days drop off. Everything it needs i
 ## Notes
 
 - The API can show only recent jobs with `?postedWithin=1` (or `7`).
-- ZipRecruiter's smallest window is 1440 minutes (24 hours).
+- ZipRecruiter's smallest window is 1440 minutes (24 hours), but it returned no results in October 2026, so `daily` uses 4320 (3 days).
 - Duplicates across sites and searches are removed by the API (same title, company and city).
 - If a connector is missing in the session, say which one and continue with the others.
