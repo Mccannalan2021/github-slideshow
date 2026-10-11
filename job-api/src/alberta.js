@@ -2,7 +2,7 @@
 const REGIONS = {
   'Calgary': ['Calgary', 'Airdrie', 'Cochrane', 'Chestermere', 'Okotoks', 'High River', 'Strathmore', 'Crossfield', 'Black Diamond', 'Turner Valley', 'Didsbury', 'Carstairs'],
   'Edmonton': ['Edmonton', 'St. Albert', 'Sherwood Park', 'Spruce Grove', 'Stony Plain', 'Leduc', 'Nisku', 'Fort Saskatchewan', 'Beaumont', 'Morinville', 'Devon', 'Gibbons', 'Bon Accord', 'Redwater', 'Acheson', 'Strathcona County', 'Parkland County'],
-  'Red Deer': ['Red Deer', 'Sylvan Lake', 'Lacombe', 'Blackfalds', 'Innisfail', 'Penhold', 'Olds', 'Ponoka', 'Bowden', 'Sundre'],
+  'Red Deer': ['Red Deer', 'Red Deer County', 'Springbrook', 'Sylvan Lake', 'Lacombe', 'Blackfalds', 'Innisfail', 'Penhold', 'Olds', 'Ponoka', 'Bowden', 'Sundre'],
   'Lethbridge–Medicine Hat': ['Lethbridge', 'Medicine Hat', 'Brooks', 'Taber', 'Coaldale', 'Cardston', 'Pincher Creek', 'Fort Macleod', 'Claresholm', 'Redcliff', 'Raymond', 'Picture Butte', 'Vulcan', 'Crowsnest Pass'],
   'Banff–Jasper–Rocky Mountain House': ['Banff', 'Canmore', 'Jasper', 'Hinton', 'Edson', 'Rocky Mountain House', 'Lake Louise', 'Drayton Valley', 'Whitecourt'],
   'Camrose–Drumheller': ['Camrose', 'Drumheller', 'Wetaskiwin', 'Stettler', 'Vegreville', 'Vermilion', 'Wainwright', 'Hanna', 'Tofield', 'Killam', 'Three Hills', 'Provost'],

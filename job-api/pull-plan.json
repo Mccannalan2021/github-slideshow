@@ -1,0 +1,59 @@
+{
+  "about": "Searches the get-jobs skill runs. Edit freely: add towns, keywords or slices. Results are saved to raw/<source>/ and imported with npm run import.",
+
+  "window": {
+    "daily": { "max_posted_minutes_ago": 1440, "import": "npm run import" },
+    "week": { "max_posted_minutes_ago": 10080, "import": "npm run import -- --full" },
+    "default": "daily",
+    "notes": "Every normal run is 'daily': only the last 24 hours, added to the jobs already saved. Use 'week' only when the user asks for the past week or sources/ is empty."
+  },
+
+  "ziprecruiter": {
+    "notes": "Add max_posted_minutes_ago from the chosen window to every call. Max 5 jobs per call. Offset 0 and 5 return different jobs; every offset of 5 or more repeats the same 5, so each query yields at most 10. Split the search into narrow slices so together they cover everything. Do not pass conversation_id.",
+    "base": { "location": "Red Deer, Alberta", "country_admin_code": "CA", "radius_miles": 25 },
+    "offsets": [0, 5],
+    "slices": {
+      "employment_types": [["FULL_TIME"], ["PART_TIME"], ["CONTRACT"], ["TEMPORARY"], ["CONTRACT_TO_HIRE"], ["AS_NEEDED"], ["OTHER"], ["INTERNSHIP"]],
+      "seniority_classes": [["NO_EXPERIENCE"], ["JUNIOR"], ["MID"], ["SENIOR"]],
+      "type_x_seniority": { "employment_types": [["FULL_TIME"], ["PART_TIME"]], "seniority_classes": [["NO_EXPERIENCE"], ["JUNIOR"], ["MID"], ["SENIOR"]] },
+      "salary_bands": [[0, 30000], [30000, 40000], [40000, 50000], [50000, 60000], [60000, 75000], [75000, 100000], [100000, 300000]],
+      "location_types": [["REMOTE"], ["HYBRID"]],
+      "job_roles": [
+        "driver", "delivery driver", "warehouse", "labourer", "cook", "server", "bartender", "cashier", "retail sales associate",
+        "customer service", "administrative assistant", "receptionist", "accountant", "bookkeeper", "nurse", "health care aide",
+        "caregiver", "cleaner", "janitor", "mechanic", "heavy duty mechanic", "electrician", "welder", "millwright", "plumber",
+        "carpenter", "heavy equipment operator", "truck driver", "forklift operator", "technician", "engineer", "manager",
+        "supervisor", "sales representative", "teacher", "early childhood educator", "security guard", "pharmacy", "dental",
+        "software developer", "IT support", "marketing", "human resources", "operator", "maintenance"
+      ],
+      "nearby_towns": { "radius_miles": 5, "locations": ["Sylvan Lake, Alberta", "Lacombe, Alberta", "Blackfalds, Alberta", "Innisfail, Alberta", "Penhold, Alberta", "Springbrook, Alberta"] }
+    }
+  },
+
+  "indeed": {
+    "notes": "10 jobs per call, no paging and no date filter; the importer keeps only the window's postings by their 'Posted on' date. The account quota is small: run calls a few at a time, and stop when 'Rate limit exceeded' keeps coming back.",
+    "country_code": "CA",
+    "searches": [
+      {
+        "locations": ["Red Deer, AB"],
+        "keywords": [
+          "jobs", "driver", "warehouse", "nurse", "retail", "customer service", "construction", "labourer", "oil and gas",
+          "administrative assistant", "cook", "cleaner", "mechanic", "electrician", "welder", "sales", "health care aide",
+          "heavy equipment operator", "manager", "agriculture", "accounting clerk", "general labour", "forklift operator",
+          "delivery driver", "class 1 driver", "carpenter", "plumber", "millwright", "power engineer", "heavy duty mechanic",
+          "apprentice", "server", "bartender", "barista", "cashier", "registered nurse", "licensed practical nurse",
+          "early childhood educator", "educational assistant", "security", "maintenance", "part time", "entry level", "remote"
+        ]
+      },
+      { "locations": ["Red Deer, AB"], "keywords": ["jobs"], "job_types": ["fulltime", "parttime", "contract", "temporary", "internship"] },
+      {
+        "locations": ["Sylvan Lake, AB", "Lacombe, AB", "Blackfalds, AB", "Innisfail, AB", "Penhold, AB", "Ponoka, AB", "Olds, AB", "Sundre, AB", "Bowden, AB", "Springbrook, AB"],
+        "keywords": ["jobs", "driver", "labourer", "retail", "cook", "nurse", "construction", "customer service"]
+      },
+      {
+        "locations": ["Calgary, AB", "Edmonton, AB", "Lethbridge, AB", "Medicine Hat, AB", "Grande Prairie, AB", "Fort McMurray, AB"],
+        "keywords": ["jobs", "driver", "warehouse", "nurse", "retail", "customer service", "construction", "labourer", "cook", "manager"]
+      }
+    ]
+  }
+}

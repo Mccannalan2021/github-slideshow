@@ -39,6 +39,17 @@ You can also do it by hand: `cp .env.example .env`, edit it, then `npm test` and
 
 With no sources configured, it serves sample Alberta jobs so you can build your app right away.
 
+## Getting fresh jobs
+
+In a Claude Code session on this repo, just say **"get jobs"**. The `get-jobs` skill
+(`.claude/skills/get-jobs/`) runs every search in `pull-plan.json` through the job sites Claude
+can reach (ZipRecruiter and Indeed), saves the results, imports them with `npm run import`, and
+commits the updated `sources/*.json`. Edit `pull-plan.json` to change which towns, keywords and job
+types it searches.
+
+You can also import results you saved yourself: put them in `raw/indeed/` or `raw/ziprecruiter/`
+and run `npm run import`.
+
 ## Changing it
 
 Settings like your home city, swipe piles, card fields and reply wording are in `config.json`.

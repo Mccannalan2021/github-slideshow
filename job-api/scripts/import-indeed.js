@@ -2,13 +2,18 @@
 // Builds sources/indeed-alberta.json from saved Indeed search results (the markdown the Indeed
 // connector returns: "**Job Title:** ...", "**Company:** ...", one block per job).
 //
-// Usage: node scripts/import-indeed.js <folder of .md results> [output file]
+// Usage: node scripts/import-indeed.js <folder of results> [output file] [--merge] [--since-days=N] [--keep-days=N]
+//   --merge         add to the jobs already in the output file instead of replacing them
+//   --since-days=N  only import jobs posted in the last N days (Indeed searches have no date filter)
+//   --keep-days=N   drop jobs older than N days from the file
 // Each file name should be "<location>__<keyword>.md"; the keyword is kept as a search hint.
 const fs = require('node:fs');
 const path = require('node:path');
 const { isAlberta } = require('../src/alberta');
+const { writeSnapshot, postedWithin, parseArgs } = require('./snapshot');
 
-const [inputDir, outFile = path.join(__dirname, '..', 'sources', 'indeed-alberta.json')] = process.argv.slice(2);
+const { flags, rest } = parseArgs(process.argv.slice(2));
+const [inputDir, outFile = path.join(__dirname, '..', 'sources', 'indeed-alberta.json')] = rest;
 if (!inputDir) {
   console.error('Usage: node scripts/import-indeed.js <folder> [output.json]');
   process.exit(1);
@@ -42,13 +47,13 @@ function idFromUrl(url) {
   return m ? m[1] : Buffer.from(url).toString('base64url').slice(0, 16);
 }
 
-const files = fs.readdirSync(inputDir).filter((f) => f.endsWith('.md'));
+const files = fs.readdirSync(inputDir).filter((f) => /\.(md|json)$/.test(f));
 const jobs = new Map();
 let parsed = 0;
 let outside = 0;
 
 for (const file of files) {
-  const keyword = (file.replace(/\.md$/, '').split('__')[1] || '').replace(/_/g, ' ').trim();
+  const keyword = (file.replace(/\.(md|json)$/, '').split('__')[1] || '').replace(/_/g, ' ').trim();
   for (const raw of parseResults(fs.readFileSync(path.join(inputDir, file), 'utf8'))) {
     parsed++;
     if (!isAlberta(raw.location)) {
@@ -80,7 +85,8 @@ for (const file of files) {
   }
 }
 
-const list = [...jobs.values()].sort((a, b) => (b.postedAt || '').localeCompare(a.postedAt || ''));
-fs.mkdirSync(path.dirname(outFile), { recursive: true });
-fs.writeFileSync(outFile, JSON.stringify({ source: 'indeed', fetchedAt: new Date().toISOString(), count: list.length, jobs: list }, null, 1));
-console.log(`${files.length} searches, ${parsed} results, ${outside} outside Alberta, ${list.length} unique Alberta jobs -> ${outFile}`);
+const fresh = postedWithin([...jobs.values()], Number(flags['since-days']) || 0);
+const result = writeSnapshot(outFile, 'indeed', fresh, { merge: flags.merge === 'true', keepDays: Number(flags['keep-days']) || 0 });
+console.log(`${files.length} searches, ${parsed} results, ${outside} outside Alberta, ${jobs.size} unique Alberta jobs` +
+  `${flags['since-days'] ? `, ${fresh.length} from the last ${flags['since-days']} day(s)` : ''}; ` +
+  `${result.added} new, ${result.expired} expired, ${result.total} in file -> ${outFile}`);

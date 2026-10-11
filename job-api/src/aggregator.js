@@ -53,7 +53,7 @@ function normalizeJob(raw, source) {
     location: raw.location || '',
     city: city?.name || '',
     region: city?.region || '',
-    remote: /remote|work from home|wfh|telecommut/i.test(`${raw.title} ${raw.location} ${raw.type}`),
+    remote: raw.remote === true || /remote|work from home|wfh|telecommut/i.test(`${raw.title} ${raw.location} ${raw.type}`),
     type: normalizeType(raw.type),
     category: raw.category || '',
     salary: raw.salary || formatSalary(raw.salaryMin, raw.salaryMax),
