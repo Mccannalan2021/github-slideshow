@@ -3,6 +3,7 @@
 const { findCity, isAlberta, lookupCity, lookupRegion } = require('./alberta');
 const { normalizeSalary } = require('./salary');
 const { scoreMatch } = require('./match');
+const { applyInfo } = require('./contacts');
 
 const JOB_TYPES = ['full-time', 'part-time', 'contract', 'temporary', 'seasonal', 'casual'];
 const SORTS = ['relevance', 'date', 'salary', 'match'];
@@ -61,6 +62,7 @@ function normalizeJob(raw, source) {
     postedAt: toIsoDate(raw.postedAt),
     description: raw.description || '',
     url: raw.url || '',
+    ...applyInfo(raw),
     contactName: raw.contactName || '',
     skills: raw.skills || [],
     alsoListedOn: [],
@@ -94,12 +96,13 @@ function parseFilters(q) {
     region: get('region') || '',
     type: get('type') || '',
     remote: get('remote') || '',
+    hasEmail: get('hasEmail') || '',
     minSalary: get('minSalary') ? Number(get('minSalary')) : null,
     postedWithin: get('postedWithin') ? Number(get('postedWithin')) : null,
     sources: get('sources') ? String(get('sources')).split(',').map((s) => s.trim()).filter(Boolean) : [],
     sort: get('sort') || 'relevance',
     page: Math.max(Number(get('page')) || 1, 1),
-    limit: Math.min(Math.max(Number(get('limit')) || 20, 1), 100),
+    limit: get('limit') === 'all' ? Infinity : Math.min(Math.max(Number(get('limit')) || 20, 1), 100),
   };
 
   if (f.city) {
@@ -119,6 +122,7 @@ function parseFilters(q) {
   }
   if (f.type && !JOB_TYPES.includes(f.type)) throw new BadRequest(`type must be one of: ${JOB_TYPES.join(', ')}`);
   if (f.remote && !['true', 'false'].includes(String(f.remote))) throw new BadRequest('remote must be true or false');
+  if (f.hasEmail && !['true', 'false'].includes(String(f.hasEmail))) throw new BadRequest('hasEmail must be true or false');
   if (!SORTS.includes(f.sort)) throw new BadRequest(`sort must be one of: ${SORTS.join(', ')}`);
   if (Number.isNaN(f.minSalary)) throw new BadRequest('minSalary must be a number (annual CAD)');
   if (Number.isNaN(f.postedWithin)) throw new BadRequest('postedWithin must be a number of days');
@@ -131,6 +135,7 @@ function applyFilters(jobs, f, now = Date.now()) {
     (!f.region || j.region === f.region) &&
     (!f.type || j.type === f.type) &&
     (f.remote === '' || String(j.remote) === String(f.remote)) &&
+    (f.hasEmail === '' || String(Boolean(j.applyEmail)) === String(f.hasEmail)) &&
     (f.minSalary === null || (j.salaryMax !== null && j.salaryMax >= f.minSalary)) &&
     (f.postedWithin === null || (j.postedAt && now - Date.parse(j.postedAt) <= f.postedWithin * 86_400_000)));
 }
@@ -180,6 +185,8 @@ function facets(jobs) {
     companies: countBy(jobs, 'company', 15),
     sources: countBy(jobs, 'source'),
     remote: jobs.filter((j) => j.remote).length,
+    withApplyEmail: jobs.filter((j) => j.applyEmail).length,
+    applyMethods: countBy(jobs, 'applyMethod'),
     salary: {
       jobsWithSalary: paid.length,
       medianMin: median(paid.map((j) => j.salaryMin)),
@@ -250,16 +257,17 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
     jobs = sortJobs(jobs, f.sort, Boolean(resume));
 
     const start = (f.page - 1) * f.limit;
+    const pageJobs = f.limit === Infinity ? jobs : jobs.slice(start, start + f.limit);
     return {
       total: jobs.length,
       page: f.page,
       limit: f.limit,
-      pages: Math.ceil(jobs.length / f.limit),
+      pages: f.limit === Infinity ? 1 : Math.ceil(jobs.length / f.limit),
       filters: { ...f, near: near?.name || '', page: undefined, limit: undefined },
       removed: { outsideAlberta: all.length - alberta.length, duplicates: alberta.length - unique.length },
       sources,
       facets: facets(jobs),
-      jobs: jobs.slice(start, start + f.limit).map(({ proximityRank, ...j }) => j),
+      jobs: pageJobs.map(({ proximityRank, ...j }) => j),
     };
   }
 

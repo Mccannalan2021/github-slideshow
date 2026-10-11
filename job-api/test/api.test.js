@@ -168,3 +168,59 @@ test('near= lists the home city first, then its region', async () => {
   assert.ok(!('proximityRank' in r.body.jobs[0]));
   assert.equal((await call('GET', '/jobs?near=Gotham')).status, 400);
 });
+
+test('swipe deck: cards, right/left/super, undo and stats', async () => {
+  const deck = await call('GET', '/deck?limit=3&near=Red%20Deer');
+  assert.equal(deck.status, 200);
+  assert.equal(deck.body.cards.length, 3);
+  const [first, second, third] = deck.body.cards;
+  assert.ok(first.reply.message.includes('Jordan Smith'), 'cards include a ready message');
+  const remaining = deck.body.remaining;
+
+  const right = await call('POST', '/swipes', { jobId: first.id, direction: 'right' });
+  assert.equal(right.status, 201);
+  assert.equal(right.body.application.status, 'applied');
+  assert.equal(first.id, 'mock:4', 'Red Deer job comes first');
+  assert.equal(right.body.next.action, 'email');
+  assert.equal(right.body.next.to, 'hiring@mainstreetoutfitters.ca');
+  assert.match(right.body.next.mailto, /^mailto:hiring@mainstreetoutfitters\.ca\?subject=Application%3A%20Retail%20Sales%20Associate/);
+  assert.equal((await call('POST', '/swipes', { jobId: first.id, direction: 'left' })).status, 409);
+
+  assert.equal((await call('POST', '/swipes', { jobId: second.id, direction: 'left' })).status, 201);
+  const sup = await call('POST', '/swipes', { jobId: third.id, direction: 'super' });
+  assert.equal(sup.body.application.starred, true);
+  assert.equal((await call('POST', '/swipes', { jobId: third.id, direction: 'up' })).status, 400);
+
+  const after = await call('GET', '/deck?limit=50&near=Red%20Deer');
+  assert.equal(after.body.remaining, remaining - 3);
+  assert.ok(!after.body.cards.some((c) => [first.id, second.id, third.id].includes(c.id)));
+
+  const stats = await call('GET', '/swipes/stats');
+  assert.deepEqual([stats.body.total, stats.body.right, stats.body.left, stats.body.super], [3, 1, 1, 1]);
+
+  const undo = await call('POST', '/swipes/undo');
+  assert.equal(undo.body.undone.jobId, third.id);
+  assert.ok(!(await call('GET', '/applications')).body.some((a) => a.jobId === third.id), 'undo removes the application');
+  assert.equal((await call('GET', '/deck?limit=50')).body.remaining, remaining - 2);
+});
+
+test('apply emails come through to cards, filters, quick replies and CSV', async () => {
+  const csv = await fetch(`${base}/jobs.csv?city=Calgary`, { headers: { 'x-api-key': KEY } });
+  assert.equal(csv.headers.get('content-type'), 'text/csv; charset=utf-8');
+  const text = await csv.text();
+  assert.match(text.split('\n')[0], /^title,company,city,.*applyEmail/);
+  assert.equal(text.trim().split('\n').length, 3);
+
+  const page = await fetch(`${base}/`);
+  assert.match(await page.text(), /<title>Alberta Jobs<\/title>/);
+});
+
+test('filters by apply email and puts it in quick replies', async () => {
+  const withEmail = await call('GET', '/jobs?hasEmail=true');
+  assert.deepEqual(withEmail.body.jobs.map((j) => j.applyEmail), ['hiring@mainstreetoutfitters.ca']);
+  assert.equal(withEmail.body.facets.withApplyEmail, 1);
+  const reply = await call('POST', '/jobs/mock:4/quick-reply', { type: 'apply' });
+  assert.equal(reply.body.applyEmail, 'hiring@mainstreetoutfitters.ca');
+  assert.match(reply.body.mailto, /^mailto:hiring@/);
+  assert.equal((await call('POST', '/jobs/mock:5/quick-reply', { type: 'apply' })).body.mailto, null);
+});

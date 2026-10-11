@@ -78,6 +78,12 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | GET | `/jobs/:id` | One job |
 | GET | `/jobs/:id/match` | How well the job fits your resume |
 | POST | `/jobs/:id/quick-reply` | Write a message for this job |
+| GET | `/deck?limit=10` | Swipe deck: next jobs you haven't swiped, each with a ready message (takes the `/jobs` filters) |
+| POST | `/swipes` | Swipe on a job: `{"jobId": "...", "direction": "right" \| "left" \| "super"}` |
+| POST | `/swipes/undo` | Undo the last swipe (and remove the application it created) |
+| GET | `/swipes/stats` | Swipe counts, including today's |
+| GET | `/jobs.csv` | Every job matching the filters as a spreadsheet, with apply emails and phones |
+| GET | `/` | Web page to search, filter by "has apply email", write replies and download CSV |
 | GET | `/insights` | Job market numbers for a search (same filters as `/jobs`) |
 | PUT / GET | `/resume` | Save or read your resume |
 | GET / POST | `/searches` | List or create saved searches |
@@ -96,11 +102,12 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | `near` | `Red Deer` | List jobs in this city first, then its region, then the rest of Alberta. Defaults to `HOME_CITY` in `.env` (Red Deer). Each job gets `proximity`: `city`, `region` or `alberta` |
 | `type` | `full-time` | `full-time`, `part-time`, `contract`, `temporary`, `seasonal`, `casual` |
 | `remote` | `true` | `true` for remote only, `false` to hide remote jobs |
+| `hasEmail` | `true` | Only jobs you can apply to by email |
 | `minSalary` | `60000` | Minimum annual pay in CAD (jobs with no posted pay are left out) |
 | `postedWithin` | `7` | Posted in the last N days |
 | `sources` | `adzuna,jobbank` | Only search these sources |
 | `sort` | `salary` | `relevance` (default: best resume match, else newest), `date`, `salary`, `match` |
-| `page`, `limit` | `2`, `20` | Paging (limit up to 100) |
+| `page`, `limit` | `2`, `20` | Paging (limit up to 100, or `all`) |
 | `match` | `false` | Skip resume matching |
 
 Example:
@@ -136,6 +143,40 @@ Each job looks like this:
 The response also includes `total`, `pages`, `sources` (status of each source), `removed`
 (how many non-Alberta jobs and duplicates were dropped) and `facets` (counts by city, region,
 type, category, company and source, plus median salary).
+
+### Swipe-to-apply apps
+
+`/deck` and `/swipes` are built for a Tinder-style app:
+
+```bash
+# 1. Get cards (any /jobs filter works: near, city, type, minSalary, hasEmail...)
+curl "localhost:3000/deck?limit=10&near=Red%20Deer" -H "x-api-key: $API_KEY"
+```
+
+Each card has the job basics, `match`, `applyEmail`, `applyPhone`, `applyMethod`, and a `reply`
+with `subject`, `message` and `mailto` (a ready email link when the posting gives an email).
+`remaining` says how many unswiped jobs are left.
+
+```bash
+# 2. Swipe right (apply), left (pass) or super (apply + star)
+curl -X POST localhost:3000/swipes -H "x-api-key: $API_KEY" -H 'content-type: application/json' \
+  -d '{"jobId": "indeed:aakydyk4rdyb", "direction": "right"}'
+```
+
+A right or super swipe records an application and returns `next`, telling your app how to finish:
+
+- `{"action": "email", "to": "...", "mailto": "mailto:...?subject=...&body=..."}`: open the
+  mailto link and the email is written and addressed, ready to send with your resume attached.
+- `{"action": "open", "url": "..."}`: the posting has no email; open it to apply there.
+
+Swiped jobs never show up in the deck again. `POST /swipes/undo` takes back the last swipe.
+
+### Apply emails
+
+Every job has `applyEmail`, `applyEmails`, `applyPhone` and `applyMethod` (`email`, `in-person`,
+`phone` or `website`), taken from the source's own fields or found in the posting text.
+Filter with `hasEmail=true`. Most Indeed and aggregator listings use an online apply form instead
+of an email; Job Bank postings and small local employers list emails far more often.
 
 ### Saved searches
 
@@ -194,6 +235,8 @@ src/
   alberta.js         Alberta cities and economic regions
   salary.js          salary text → annual CAD
   match.js           resume ↔ job scoring
+  contacts.js        apply email / phone / method from posting text
+  page.html          the web page served at /
   quickReply.js      message writer
   resume.js          resume parsing
   store.js           JSON file storage

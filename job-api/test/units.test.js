@@ -103,3 +103,13 @@ test('Indeed provider authenticates once and maps jobs', async () => {
   assert.equal(r.jobs[0].company, 'Diner');
   assert.equal(calls.filter((u) => u.endsWith('/tokens')).length, 1);
 });
+
+test('finds application emails and methods in posting text', () => {
+  const { applyInfo, extractEmails } = require('../src/contacts');
+  assert.deepEqual(extractEmails('Send resumes to Jobs@ReddeerCo.ca. Questions: noreply@indeed.com'), ['jobs@reddeerco.ca']);
+  assert.deepEqual(applyInfo({ description: 'Please email your resume to hr@acme.ca or call (403) 555-0199.', howToApply: 'By phone: 403-555-0199' }), {
+    applyEmail: 'hr@acme.ca', applyEmails: ['hr@acme.ca'], applyPhone: '403-555-0199', applyMethod: 'email',
+  });
+  assert.equal(applyInfo({ description: 'Apply in person with resume.' }).applyMethod, 'in-person');
+  assert.equal(applyInfo({ description: 'Great team', url: 'https://x' }).applyMethod, 'website');
+});

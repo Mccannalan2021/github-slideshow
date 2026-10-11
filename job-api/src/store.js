@@ -44,6 +44,21 @@ function createStore(dataDir) {
       return apps[i];
     },
 
+    deleteApplication(id) {
+      const apps = read('applications', []);
+      write('applications', apps.filter((a) => a.id !== id));
+    },
+
+    // Swipe history for the card deck: { jobId, direction, at, applicationId }.
+    listSwipes: () => read('swipes', []),
+    addSwipe: (swipe) => write('swipes', [...read('swipes', []), { ...swipe, at: new Date().toISOString() }]).at(-1),
+    popSwipe() {
+      const all = read('swipes', []);
+      const last = all.pop();
+      write('swipes', all);
+      return last || null;
+    },
+
     // Jobs seen in searches, so GET /jobs/:id and quick replies work for sources without a lookup API.
     getJobIndex: () => read('jobs-index', []),
     saveJobIndex: (jobs) => write('jobs-index', jobs),
