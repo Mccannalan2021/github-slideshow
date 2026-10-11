@@ -169,39 +169,58 @@ test('near= lists the home city first, then its region', async () => {
   assert.equal((await call('GET', '/jobs?near=Gotham')).status, 400);
 });
 
-test('swipe deck: cards, right/left/super, undo and stats', async () => {
-  const deck = await call('GET', '/deck?limit=3&near=Red%20Deer');
+test('swipe deck sorts jobs into their own piles', async () => {
+  const deck = await call('GET', '/deck?limit=4&near=Red%20Deer');
   assert.equal(deck.status, 200);
-  assert.equal(deck.body.cards.length, 3);
-  const [first, second, third] = deck.body.cards;
+  assert.equal(deck.body.cards.length, 4);
+  const [first, second, third, fourth] = deck.body.cards;
+  assert.equal(first.id, 'mock:4', 'Red Deer job comes first');
+  assert.equal(first.applyUrl, 'https://example.com/jobs/4');
   assert.ok(first.reply.message.includes('Jordan Smith'), 'cards include a ready message');
   const remaining = deck.body.remaining;
+  const appsBefore = (await call('GET', '/applications')).body.length;
 
   const right = await call('POST', '/swipes', { jobId: first.id, direction: 'right' });
   assert.equal(right.status, 201);
-  assert.equal(right.body.application.status, 'applied');
-  assert.equal(first.id, 'mock:4', 'Red Deer job comes first');
-  assert.equal(right.body.applyUrl, 'https://example.com/jobs/4');
-  assert.equal(first.applyUrl, 'https://example.com/jobs/4');
-  assert.match(right.body.message, /Retail Sales Associate position at Main Street Outfitters/);
+  assert.equal(right.body.pile, 'liked');
+  assert.equal((await call('GET', '/applications')).body.length, appsBefore, 'swiping does not apply');
   assert.equal((await call('POST', '/swipes', { jobId: first.id, direction: 'left' })).status, 409);
+  assert.equal((await call('POST', '/swipes', { jobId: second.id, direction: 'left' })).body.pile, 'passed');
+  assert.equal((await call('POST', '/swipes', { jobId: third.id, direction: 'super' })).body.pile, 'superliked');
+  assert.equal((await call('POST', '/swipes', { jobId: fourth.id, direction: 'right' })).status, 201);
+  assert.equal((await call('POST', '/swipes', { jobId: fourth.id, direction: 'up' })).status, 400);
 
-  assert.equal((await call('POST', '/swipes', { jobId: second.id, direction: 'left' })).status, 201);
-  const sup = await call('POST', '/swipes', { jobId: third.id, direction: 'super' });
-  assert.equal(sup.body.application.starred, true);
-  assert.equal((await call('POST', '/swipes', { jobId: third.id, direction: 'up' })).status, 400);
+  assert.deepEqual((await call('GET', '/piles')).body, { liked: 2, superliked: 1, passed: 1 });
+  const liked = await call('GET', '/piles/liked');
+  assert.deepEqual(liked.body.map((j) => j.jobId), [fourth.id, first.id], 'newest first');
+  assert.equal(liked.body[1].title, 'Retail Sales Associate');
+  assert.equal(liked.body[1].applyUrl, 'https://example.com/jobs/4');
+  assert.equal((await call('GET', '/piles/maybe')).status, 404);
 
+  // Swiped jobs leave the deck.
   const after = await call('GET', '/deck?limit=50&near=Red%20Deer');
-  assert.equal(after.body.remaining, remaining - 3);
-  assert.ok(!after.body.cards.some((c) => [first.id, second.id, third.id].includes(c.id)));
+  assert.equal(after.body.remaining, remaining - 4);
+
+  // Move between piles, remove back into the deck.
+  assert.equal((await call('PATCH', `/swipes/${second.id}`, { direction: 'right' })).body.pile, 'liked');
+  assert.equal((await call('DELETE', `/swipes/${fourth.id}`)).status, 200);
+  assert.deepEqual((await call('GET', '/piles')).body, { liked: 2, superliked: 1, passed: 0 });
+  assert.equal((await call('GET', '/deck?limit=50&near=Red%20Deer')).body.remaining, remaining - 3);
+
+  // Apply from a pile when ready.
+  const applied = await call('POST', `/swipes/${first.id}/apply`, {});
+  assert.equal(applied.status, 201);
+  assert.equal(applied.body.applyUrl, 'https://example.com/jobs/4');
+  assert.match(applied.body.message, /Retail Sales Associate position at Main Street Outfitters/);
+  assert.equal((await call('POST', `/swipes/${first.id}/apply`, {})).status, 409);
+  assert.equal((await call('GET', '/piles/liked?applied=false')).body.length, 1);
 
   const stats = await call('GET', '/swipes/stats');
-  assert.deepEqual([stats.body.total, stats.body.right, stats.body.left, stats.body.super], [3, 1, 1, 1]);
+  assert.deepEqual([stats.body.total, stats.body.liked, stats.body.superliked, stats.body.passed, stats.body.applied], [3, 2, 1, 0, 1]);
 
   const undo = await call('POST', '/swipes/undo');
   assert.equal(undo.body.undone.jobId, third.id);
-  assert.ok(!(await call('GET', '/applications')).body.some((a) => a.jobId === third.id), 'undo removes the application');
-  assert.equal((await call('GET', '/deck?limit=50')).body.remaining, remaining - 2);
+  assert.deepEqual((await call('GET', '/piles')).body, { liked: 2, superliked: 0, passed: 0 });
 });
 
 test('apply emails come through to cards, filters, quick replies and CSV', async () => {

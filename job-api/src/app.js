@@ -9,6 +9,8 @@ const { JOB_TYPES, SORTS } = require('./aggregator');
 const PAGE = require('node:fs').readFileSync(require('node:path').join(__dirname, 'page.html'), 'utf8');
 
 const SWIPES = ['right', 'left', 'super'];
+const PILE_OF = { right: 'liked', super: 'superliked', left: 'passed' };
+const DIR_OF = { liked: 'right', superliked: 'super', passed: 'left' };
 
 // Compact card for swipe-style apps, with a ready-to-send message when a resume is saved.
 function toCard(job, resume) {
@@ -169,51 +171,77 @@ function createApp({ store, jobs, apiKey }) {
         cards: unseen.slice(0, size).map((j) => toCard(j, resume)),
       };
     }],
+    // Swiping sorts jobs into piles: right -> liked, super -> superliked, left -> passed.
+    // Nothing is applied to until you choose to from a pile.
     ['POST', '/swipes', async ({ body }) => {
       if (!SWIPES.includes(body.direction)) throw new HttpError(400, `direction must be one of: ${SWIPES.join(', ')}`);
       if (!body.jobId) throw new HttpError(400, 'jobId is required');
-      if (store.listSwipes().some((s) => s.jobId === body.jobId)) throw new HttpError(409, 'Already swiped on this job');
+      if (store.listSwipes().some((x) => x.jobId === body.jobId)) throw new HttpError(409, 'Already swiped on this job');
       const job = await requireJob(body.jobId);
-
-      if (body.direction === 'left') {
-        store.addSwipe({ jobId: job.id, direction: 'left' });
-        return [201, { direction: 'left', jobId: job.id }];
-      }
-
-      const resume = store.getResume();
-      const card = toCard(job, resume);
-      const message = body.message || card.reply?.message || '';
+      // Keep a copy of the card so piles still show the job after it leaves the source.
+      const swipe = store.addSwipe({ jobId: job.id, direction: body.direction, card: toCard(job, store.getResume()) });
+      return [201, { ...swipe, pile: PILE_OF[swipe.direction] }];
+    }],
+    ['GET', '/piles', async () => {
+      const all = store.listSwipes();
+      return Object.fromEntries(Object.entries(PILE_OF).map(([dir, pile]) => [pile, all.filter((x) => x.direction === dir).length]));
+    }],
+    ['GET', '/piles/:pile', async ({ params, query }) => {
+      const dir = DIR_OF[params.pile];
+      if (!dir) throw new HttpError(404, `Pile must be one of: ${Object.keys(DIR_OF).join(', ')}`);
+      let list = store.listSwipes().filter((x) => x.direction === dir);
+      if (query.get('applied') === 'true') list = list.filter((x) => x.appliedAt);
+      if (query.get('applied') === 'false') list = list.filter((x) => !x.appliedAt);
+      return list.reverse().map(({ card, ...rest }) => ({ ...rest, ...card, jobId: rest.jobId }));
+    }],
+    // Move a job to another pile: { "direction": "right" | "super" | "left" }.
+    ['PATCH', '/swipes/:jobId', async ({ params, body }) => {
+      if (!SWIPES.includes(body.direction)) throw new HttpError(400, `direction must be one of: ${SWIPES.join(', ')}`);
+      const updated = store.updateSwipe(params.jobId, { direction: body.direction });
+      if (!updated) throw new HttpError(404, 'You have not swiped on this job');
+      return { ...updated, pile: PILE_OF[updated.direction] };
+    }],
+    // Take a job out of its pile; it goes back into the deck.
+    ['DELETE', '/swipes/:jobId', async ({ params }) => {
+      if (!store.removeSwipe(params.jobId)) throw new HttpError(404, 'You have not swiped on this job');
+      return { removed: params.jobId };
+    }],
+    // Mark a job in your piles as applied: records it in /applications and returns the apply link.
+    ['POST', '/swipes/:jobId/apply', async ({ params, body }) => {
+      const swipe = store.listSwipes().find((x) => x.jobId === params.jobId);
+      if (!swipe) throw new HttpError(404, 'You have not swiped on this job');
+      if (swipe.appliedAt) throw new HttpError(409, 'Already applied to this job');
+      const card = swipe.card;
       const application = store.addApplication({
-        jobId: job.id,
-        title: job.title,
-        company: job.company,
-        url: job.url,
+        jobId: swipe.jobId,
+        title: card.title,
+        company: card.company,
+        url: card.applyUrl,
         status: 'applied',
-        starred: body.direction === 'super',
-        message,
-        notes: '',
+        starred: swipe.direction === 'super',
+        message: body.message || card.reply?.message || '',
+        notes: body.notes || '',
       });
-      store.addSwipe({ jobId: job.id, direction: body.direction, applicationId: application.id });
-      // The app opens the apply link; the message is ready to paste into the application.
-      return [201, { direction: body.direction, jobId: job.id, applyUrl: job.url, message, application }];
+      store.updateSwipe(swipe.jobId, { appliedAt: application.createdAt, applicationId: application.id });
+      return [201, { applyUrl: card.applyUrl, message: application.message, application }];
     }],
     ['POST', '/swipes/undo', async () => {
       const last = store.popSwipe();
       if (!last) throw new HttpError(404, 'Nothing to undo');
       if (last.applicationId) store.deleteApplication(last.applicationId);
-      return { undone: last };
+      return { undone: { jobId: last.jobId, direction: last.direction, pile: PILE_OF[last.direction] } };
     }],
     ['GET', '/swipes/stats', async () => {
       const all = store.listSwipes();
       const today = new Date().toISOString().slice(0, 10);
-      const count = (d) => all.filter((s) => s.direction === d).length;
+      const count = (d) => all.filter((x) => x.direction === d).length;
       return {
         total: all.length,
-        right: count('right'),
-        super: count('super'),
-        left: count('left'),
-        today: all.filter((s) => s.at.startsWith(today)).length,
-        appliedToday: all.filter((s) => s.at.startsWith(today) && s.direction !== 'left').length,
+        liked: count('right'),
+        superliked: count('super'),
+        passed: count('left'),
+        applied: all.filter((x) => x.appliedAt).length,
+        swipedToday: all.filter((x) => x.at.startsWith(today)).length,
       };
     }],
 

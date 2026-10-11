@@ -49,9 +49,23 @@ function createStore(dataDir) {
       write('applications', apps.filter((a) => a.id !== id));
     },
 
-    // Swipe history for the card deck: { jobId, direction, at, applicationId }.
+    // Swiped jobs, sorted into piles by direction: { jobId, direction, at, card, appliedAt? }.
     listSwipes: () => read('swipes', []),
     addSwipe: (swipe) => write('swipes', [...read('swipes', []), { ...swipe, at: new Date().toISOString() }]).at(-1),
+    updateSwipe(jobId, changes) {
+      const all = read('swipes', []);
+      const i = all.findIndex((x) => x.jobId === jobId);
+      if (i === -1) return null;
+      all[i] = { ...all[i], ...changes, jobId };
+      write('swipes', all);
+      return all[i];
+    },
+    removeSwipe(jobId) {
+      const all = read('swipes', []);
+      const rest = all.filter((x) => x.jobId !== jobId);
+      write('swipes', rest);
+      return rest.length !== all.length;
+    },
     popSwipe() {
       const all = read('swipes', []);
       const last = all.pop();

@@ -79,9 +79,8 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | GET | `/jobs/:id/match` | How well the job fits your resume |
 | POST | `/jobs/:id/quick-reply` | Write a message for this job |
 | GET | `/deck?limit=10` | Swipe deck: next jobs you haven't swiped, each with its apply link and a ready message (takes the `/jobs` filters) |
-| POST | `/swipes` | Swipe on a job: `{"jobId": "...", "direction": "right" \| "left" \| "super"}` |
-| POST | `/swipes/undo` | Undo the last swipe (and remove the application it created) |
-| GET | `/swipes/stats` | Swipe counts, including today's |
+| POST | `/swipes` | Swipe a job into a pile: `{"jobId": "...", "direction": "right" \| "left" \| "super"}` |
+| GET | `/piles`, `/piles/:pile` | Your liked, superliked and passed jobs (see Swipe apps below) |
 | GET | `/jobs.csv` | Every job matching the filters as a spreadsheet, with apply emails and phones |
 | GET | `/` | Web page to search, filter by "has apply email", write replies and download CSV |
 | GET | `/insights` | Job market numbers for a search (same filters as `/jobs`) |
@@ -144,28 +143,45 @@ The response also includes `total`, `pages`, `sources` (status of each source), 
 (how many non-Alberta jobs and duplicates were dropped) and `facets` (counts by city, region,
 type, category, company and source, plus median salary).
 
-### Swipe-to-apply apps
+### Swipe apps
 
-`/deck` and `/swipes` are built for a Tinder-style app:
+`/deck`, `/swipes` and `/piles` are built for a Tinder-style app. Swiping only sorts jobs into
+piles; you deal with each pile afterwards.
+
+| Swipe | Pile |
+| --- | --- |
+| `right` | `liked` |
+| `super` | `superliked` |
+| `left` | `passed` |
 
 ```bash
-# 1. Get cards (any /jobs filter works: near, city, type, minSalary, hasEmail...)
+# 1. Get cards (any /jobs filter works: near, city, type, minSalary...)
 curl "localhost:3000/deck?limit=10&near=Red%20Deer" -H "x-api-key: $API_KEY"
+
+# 2. Swipe
+curl -X POST localhost:3000/swipes -H "x-api-key: $API_KEY" -H 'content-type: application/json' \
+  -d '{"jobId": "indeed:aakydyk4rdyb", "direction": "right"}'
+
+# 3. Later: go through a pile
+curl "localhost:3000/piles/liked?applied=false" -H "x-api-key: $API_KEY"
+
+# 4. Apply to one: returns the apply link and your ready message, and logs it in /applications
+curl -X POST "localhost:3000/swipes/indeed:aakydyk4rdyb/apply" -H "x-api-key: $API_KEY"
 ```
 
 Each card has the job basics, `match`, `applyUrl` (the job's apply link) and a `reply` with a
-ready-written `subject` and `message`. `remaining` says how many unswiped jobs are left.
+ready-written `subject` and `message`. `remaining` says how many unswiped jobs are left. Swiped
+jobs never show up in the deck again.
 
-```bash
-# 2. Swipe right (apply), left (pass) or super (apply + star)
-curl -X POST localhost:3000/swipes -H "x-api-key: $API_KEY" -H 'content-type: application/json' \
-  -d '{"jobId": "indeed:aakydyk4rdyb", "direction": "right"}'
-```
-
-A right or super swipe records an application and returns `applyUrl` and `message`: open the
-link to apply, and paste the message into the application if it asks for one.
-
-Swiped jobs never show up in the deck again. `POST /swipes/undo` takes back the last swipe.
+| Method | Path | What it does |
+| --- | --- | --- |
+| GET | `/piles` | How many jobs are in each pile |
+| GET | `/piles/:pile?applied=true\|false` | Jobs in `liked`, `superliked` or `passed`, newest first |
+| PATCH | `/swipes/:jobId` | Move a job to another pile: `{"direction": "super"}` |
+| DELETE | `/swipes/:jobId` | Take a job out of its pile and put it back in the deck |
+| POST | `/swipes/:jobId/apply` | Mark it applied; returns `applyUrl` and `message` |
+| POST | `/swipes/undo` | Undo the last swipe |
+| GET | `/swipes/stats` | Counts per pile, applied, and swiped today |
 
 ### Apply emails
 
