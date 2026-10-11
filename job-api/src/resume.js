@@ -34,6 +34,10 @@ function normalizeResume(input) {
     skills: [...new Set(skills.map((s) => s.trim()).filter(Boolean))],
     experience: Array.isArray(input.experience) ? input.experience : [],
     education: Array.isArray(input.education) ? input.education : [],
+    certifications: Array.isArray(input.certifications) ? input.certifications.map(String) : [],
+    availability: input.availability || '',
+    references: input.references || '',
+    links: Array.isArray(input.links) ? input.links.map(String) : [],
     text,
   };
 

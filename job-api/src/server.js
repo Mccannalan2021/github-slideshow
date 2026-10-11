@@ -6,6 +6,7 @@ const { createAggregator } = require('./aggregator');
 const { loadConfig } = require('./config');
 const { createMockProvider } = require('./providers/mock');
 const { createFileProvider } = require('./providers/file');
+const gmailModule = require('./gmail');
 
 // Load .env without extra dependencies (real env vars win).
 const envFile = path.join(__dirname, '..', '.env');
@@ -62,6 +63,9 @@ const port = Number(env.PORT) || 3000;
 
 if (!env.API_KEY) console.warn('API_KEY is not set: the API is open to anyone who can reach it.');
 
-createApp({ store, jobs, config, apiKey: env.API_KEY }).listen(port, () => {
+const gmail = gmailModule.fromEnv(env);
+console.log(gmail ? `Gmail: sending as ${gmail.from}` : 'Gmail: not connected (run npm run gmail to send applications by email)');
+
+createApp({ store, jobs, config, gmail, apiKey: env.API_KEY }).listen(port, () => {
   console.log(`Alberta Jobs API on http://localhost:${port} (sources: ${jobs.sources.join(', ')}${jobs.homeCity ? `; home city: ${jobs.homeCity}` : ''})`);
 });

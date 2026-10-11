@@ -37,11 +37,11 @@ function sendResult(res, result) {
   return send(res, 200, result);
 }
 
-async function readJson(req) {
+async function readJson(req, maxBytes = 1_000_000) {
   let raw = '';
   for await (const chunk of req) {
     raw += chunk;
-    if (raw.length > 1_000_000) throw new HttpError(413, 'Request body too large');
+    if (raw.length > maxBytes) throw new HttpError(413, 'Request body too large');
   }
   if (!raw) return {};
   try {

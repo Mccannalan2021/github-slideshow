@@ -16,6 +16,8 @@ function fail(message) {
 }
 
 function validate(c) {
+  c.email = { dailyLimit: 40, attachResume: true, ...(c.email || {}) };
+  if (!(Number(c.email.dailyLimit) > 0)) fail('"email.dailyLimit" must be a number above 0');
   if (!c.piles || typeof c.piles !== 'object' || !Object.keys(c.piles).length) fail('"piles" needs at least one entry, e.g. {"right": "liked"}');
   const names = Object.values(c.piles);
   if (new Set(names).size !== names.length) fail('every pile needs its own name');

@@ -27,11 +27,12 @@ function loadRoutes(ctx, dirs) {
   return routes.sort((a, b) => params(a) - params(b));
 }
 
-function createApp({ store, jobs, apiKey, config = loadConfig(), routeDirs = [ROUTES_DIR] }) {
+function createApp({ store, jobs, apiKey, gmail = null, config = loadConfig(), routeDirs = [ROUTES_DIR] }) {
   const ctx = {
     store,
     jobs,
     config,
+    gmail,
     toCard: createCardBuilder(config),
     HttpError,
     created,
@@ -71,7 +72,7 @@ function createApp({ store, jobs, apiKey, config = loadConfig(), routeDirs = [RO
         throw new HttpError(401, 'Missing or invalid x-api-key header');
       }
 
-      const body = ['POST', 'PUT', 'PATCH'].includes(req.method) ? await readJson(req) : {};
+      const body = ['POST', 'PUT', 'PATCH'].includes(req.method) ? await readJson(req, route.maxBody) : {};
       sendResult(res, await route.handler({ params, query: url.searchParams, body, req }));
     } catch (err) {
       const status = err.status || 500;

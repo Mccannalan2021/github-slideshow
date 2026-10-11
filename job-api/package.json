@@ -9,6 +9,8 @@
     "start": "node src/server.js",
     "setup": "node scripts/setup.js",
     "import": "node scripts/import-all.js",
+    "resume": "node scripts/resume.js",
+    "gmail": "node scripts/gmail-auth.js",
     "dev": "node --watch src/server.js",
     "test": "node --test --test-timeout=30000 test/*.test.js"
   },

@@ -15,7 +15,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const readline = require('node:readline');
+const { createPrompter } = require('./prompt');
 const { spawnSync } = require('node:child_process');
 
 const root = path.join(__dirname, '..');
@@ -38,28 +38,6 @@ const SOURCES = [
 
 const ok = (msg) => console.log(`  ✔ ${msg}`);
 const info = (msg) => console.log(`  - ${msg}`);
-// Line-queued prompt: input that arrives before a question is asked (e.g. pasted lines) is kept.
-function createPrompter() {
-  const rl = readline.createInterface({ input: process.stdin, terminal: false });
-  const queue = [];
-  const waiting = [];
-  let closed = false;
-  rl.on('line', (line) => (waiting.length ? waiting.shift()(line) : queue.push(line)));
-  rl.on('close', () => {
-    closed = true;
-    while (waiting.length) waiting.shift()('');
-  });
-  return {
-    question(text) {
-      process.stdout.write(text);
-      if (queue.length) return Promise.resolve(queue.shift());
-      if (closed) return Promise.resolve('');
-      return new Promise((resolve) => waiting.push(resolve));
-    },
-    close: () => rl.close(),
-  };
-}
-
 const fail = (msg) => {
   console.error(`  ✖ ${msg}`);
   process.exit(1);
@@ -126,7 +104,7 @@ async function main() {
     console.log(`\n  ${source.name}  (${source.url})`);
     const values = {};
     for (const key of source.keys) {
-      values[key] = (await rl.question(`    ${key}: `)).trim();
+      values[key] = (await rl.question(`    ${key}`)).trim();
       if (!values[key]) break;
       const problem = source.validate?.(values[key]);
       if (problem) {
@@ -177,7 +155,7 @@ Setup complete.
 `);
 
   let start = args.has('--start');
-  if (!start && rl) start = /^y/i.test((await rl.question('Start the server now? (y/N) ')).trim());
+  if (!start && rl) start = await rl.yesNo('Start the server now?');
   rl?.close();
   if (start) require('../src/server');
 }

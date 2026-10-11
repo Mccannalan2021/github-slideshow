@@ -101,6 +101,9 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | GET | `/piles`, `/piles/:pile` | Your liked, superliked and passed jobs (see Swipe apps below) |
 | GET | `/jobs.csv` | Every job matching the filters as a spreadsheet, with apply emails and phones |
 | GET | `/` | Web page to search, filter by "has apply email", write replies and download CSV |
+| PUT / GET | `/resume/file` | Upload (base64) or check the resume file attached to emails |
+| POST | `/jobs/:id/email` | Email an application from your Gmail, resume attached (`preview: true` to just see it) |
+| GET | `/email/status`, `/email/sent` | Gmail connection, today's count, and sent emails |
 | GET | `/insights` | Job market numbers for a search (same filters as `/jobs`) |
 | PUT / GET | `/resume` | Save or read your resume |
 | GET / POST | `/searches` | List or create saved searches |
@@ -220,6 +223,19 @@ curl "localhost:3000/searches/<id>/run?onlyNew=true" -H "x-api-key: $API_KEY"
 
 ### Resume
 
+The easiest way is to answer questions:
+
+```bash
+npm run resume
+```
+
+It asks about you, your skills, each job you've had, education, certifications and licences,
+availability and references, then saves it and shows a preview. Run it again any time: your saved
+answers show in [brackets] and Enter keeps them. It also asks for your PDF or Word resume file,
+which gets attached when you apply by email.
+
+Or send it from your app:
+
 ```bash
 curl -X PUT localhost:3000/resume -H "x-api-key: $API_KEY" -H 'content-type: application/json' -d '{
   "name": "Jordan Smith",
@@ -232,6 +248,49 @@ curl -X PUT localhost:3000/resume -H "x-api-key: $API_KEY" -H 'content-type: app
 ```
 
 You can also send `{"text": "..."}` with a pasted resume. Name, email, phone and skills are pulled out of it.
+
+Upload the resume file from your app as base64:
+
+```bash
+curl -X PUT localhost:3000/resume/file -H "x-api-key: $API_KEY" -H 'content-type: application/json' \
+  -d '{"filename": "Jordan Smith Resume.pdf", "contentBase64": "JVBERi0xLjQ..."}'
+```
+
+### Sending applications from Gmail
+
+Connect your Gmail once:
+
+```bash
+npm run gmail
+```
+
+It walks you through creating a free Google OAuth client and signing in, then saves the access
+to `.env` and can send you a test email. The API only gets permission to **send** mail as you;
+it can't read your inbox. Restart the server afterwards.
+
+Then from your app:
+
+```bash
+# See the email first (nothing is sent)
+curl -X POST "localhost:3000/jobs/<jobId>/email" -H "x-api-key: $API_KEY" -H 'content-type: application/json' \
+  -d '{"preview": true}'
+
+# Send it
+curl -X POST "localhost:3000/jobs/<jobId>/email" -H "x-api-key: $API_KEY" -H 'content-type: application/json' \
+  -d '{"to": "hiring@company.ca"}'
+```
+
+- The message is written from your resume (or send your own `subject` and `message`, and `tone`).
+- Your resume file is attached (`attachResume: false` to skip).
+- `to` is needed unless the posting lists an email.
+- Sending records the application, and marks the job applied in your piles if you swiped it.
+- To protect your Gmail from spam flags, sending stops after `email.dailyLimit` (40) a day; change
+  it in `config.json`.
+- `GET /email/status` shows whether Gmail is connected and how many were sent today;
+  `GET /email/sent` lists what was sent.
+
+While your Google app is in "Testing" mode, Google expires the access after 7 days; run
+`npm run gmail` again, or publish the app on Google's OAuth consent screen so it lasts.
 
 ### Quick replies
 

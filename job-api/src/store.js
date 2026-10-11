@@ -73,6 +73,27 @@ function createStore(dataDir) {
       return last || null;
     },
 
+    // Your resume document (PDF/Word) that gets attached to application emails.
+    saveResumeFile({ filename, contentType, content }) {
+      const ext = path.extname(filename).toLowerCase() || '.pdf';
+      for (const f of fs.readdirSync(dataDir)) if (f.startsWith('resume-file.') && f !== 'resume-file.json') fs.unlinkSync(path.join(dataDir, f));
+      fs.writeFileSync(path.join(dataDir, `resume-file${ext}`), content);
+      return write('resume-file', { filename, contentType, size: content.length, path: `resume-file${ext}`, updatedAt: new Date().toISOString() });
+    },
+    getResumeFile() {
+      const meta = read('resume-file', null);
+      if (!meta) return null;
+      try {
+        return { ...meta, content: fs.readFileSync(path.join(dataDir, meta.path)) };
+      } catch {
+        return null;
+      }
+    },
+
+    // Emails sent through Gmail: { jobId, to, subject, gmailId, at }.
+    listEmails: () => read('emails', []),
+    addEmail: (email) => write('emails', [...read('emails', []), { ...email, at: new Date().toISOString() }]).at(-1),
+
     // Jobs seen in searches, so GET /jobs/:id and quick replies work for sources without a lookup API.
     getJobIndex: () => read('jobs-index', []),
     saveJobIndex: (jobs) => write('jobs-index', jobs),
