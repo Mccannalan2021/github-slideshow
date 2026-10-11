@@ -34,7 +34,7 @@ function buildOpenApi(config) {
     q('sources', str, 'Comma-separated source names'),
     q('sort', { type: 'string', enum: SORTS }),
     q('page', { type: 'integer', minimum: 1 }),
-    q('limit', { oneOf: [{ type: 'integer', minimum: 1, maximum: 100 }, { const: 'all' }] }),
+    q('limit', { oneOf: [{ type: 'integer', minimum: 1, maximum: config.search.maxLimit }, { const: 'all' }] }),
     q('match', bool, 'false to skip resume matching'),
   ];
 

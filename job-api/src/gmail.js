@@ -12,7 +12,11 @@ const header = (s) => (/^[\x20-\x7e]*$/.test(s) ? s : `=?UTF-8?B?${b64(s)}?=`);
 
 function clean(value, label) {
   const s = String(value || '');
-  if (/[\r\n]/.test(s)) throw new Error(`${label} cannot contain line breaks`);
+  if (/[\r\n]/.test(s)) {
+    const err = new Error(`${label} cannot contain line breaks`);
+    err.status = 400;
+    throw err;
+  }
   return s.trim();
 }
 

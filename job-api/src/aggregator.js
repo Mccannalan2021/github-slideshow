@@ -56,7 +56,8 @@ function normalizeJob(raw, source) {
     remote: raw.remote === true || /remote|work from home|wfh|telecommut/i.test(`${raw.title} ${raw.location} ${raw.type}`),
     type: normalizeType(raw.type),
     category: raw.category || '',
-    salary: raw.salary || formatSalary(raw.salaryMin, raw.salaryMax),
+    // Format from the annual figures: raw min/max may be hourly, or only one of them may be set.
+    salary: raw.salary || formatSalary(salaryMin, salaryMax),
     salaryMin,
     salaryMax,
     postedAt: toIsoDate(raw.postedAt),
@@ -87,7 +88,7 @@ function dedupe(jobs) {
   return [...byKey.values()];
 }
 
-function parseFilters(q) {
+function parseFilters(q, { defaultLimit = 20, maxLimit = 100 } = {}) {
   const get = (k) => (typeof q.get === 'function' ? q.get(k) : q[k]) ?? undefined;
   const f = {
     q: (get('q') || '').trim(),
@@ -102,7 +103,7 @@ function parseFilters(q) {
     sources: get('sources') ? String(get('sources')).split(',').map((s) => s.trim()).filter(Boolean) : [],
     sort: get('sort') || 'relevance',
     page: Math.max(Number(get('page')) || 1, 1),
-    limit: get('limit') === 'all' ? Infinity : Math.min(Math.max(Number(get('limit')) || 20, 1), 100),
+    limit: get('limit') === 'all' ? Infinity : Math.min(Math.max(Number(get('limit')) || defaultLimit, 1), maxLimit),
   };
 
   if (f.city) {
@@ -195,21 +196,26 @@ function facets(jobs) {
   };
 }
 
-function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourceLimit = 50, maxIndex = 5000, homeCity = '' }) {
+function createAggregator({
+  providers, store, cacheTtlMs = 10 * 60_000, perSourceLimit = 50, maxIndex = 5000, homeCity = '', defaultLimit = 20, maxLimit = 100,
+}) {
   const home = homeCity ? lookupCity(homeCity) : null;
   if (homeCity && !home) throw new Error(`HOME_CITY "${homeCity}" is not a known Alberta city`);
   if (!providers.length) throw new Error('At least one job source must be configured');
   const cache = new Map();
   const index = new Map((store?.getJobIndex?.() || []).map((j) => [j.id, j]));
 
+  // Only writes the index file when a job id is added, so repeat searches don't rewrite it.
   function remember(jobs) {
+    let added = false;
     for (const j of jobs) {
-      index.delete(j.id);
+      if (!index.delete(j.id)) added = true;
       index.set(j.id, j);
     }
     while (index.size > maxIndex) index.delete(index.keys().next().value);
-    store?.saveJobIndex?.([...index.values()]);
+    if (added) store?.saveJobIndex?.([...index.values()]);
   }
+  const parse = (q) => parseFilters(q, { defaultLimit, maxLimit });
 
   async function fetchSource(provider, q, location) {
     const key = `${provider.name}|${q}|${location}`;
@@ -225,7 +231,7 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
   }
 
   async function search(filters, resume = null) {
-    const f = parseFilters(filters);
+    const f = parse(filters);
     const selected = f.sources.length ? providers.filter((p) => f.sources.includes(p.name)) : providers;
     if (!selected.length) throw new BadRequest(`sources must be any of: ${providers.map((p) => p.name).join(', ')}`);
     const location = f.city ? `${f.city}, Alberta` : 'Alberta';
@@ -290,7 +296,7 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
     ...(p.fetchedAt ? { fetchedAt: p.fetchedAt } : {}),
   }));
 
-  return { name: 'alberta', homeCity: home?.name || '', sources: providers.map((p) => p.name), sourceDetails, search, getJob, parseFilters };
+  return { name: 'alberta', homeCity: home?.name || '', sources: providers.map((p) => p.name), sourceDetails, search, getJob, parseFilters: parse };
 }
 
 module.exports = { createAggregator, parseFilters, normalizeJob, dedupe, JOB_TYPES, SORTS, BadRequest };

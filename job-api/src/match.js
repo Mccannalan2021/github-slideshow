@@ -2,7 +2,9 @@
 function scoreMatch(resume, job) {
   const haystack = `${job.title} ${job.description || ''}`.toLowerCase();
   const skills = resume.skills || [];
-  const matched = skills.filter((s) => haystack.includes(s.toLowerCase()));
+  // Whole words only, so "excel" doesn't match "excellent" or "pos" match "position".
+  const hasWord = (s) => new RegExp(`(^|[^a-z0-9])${s.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-z0-9])`).test(haystack);
+  const matched = skills.filter(hasWord);
   const missing = (job.skills || []).filter(
     (s) => !skills.some((r) => r.toLowerCase() === s.toLowerCase()),
   );

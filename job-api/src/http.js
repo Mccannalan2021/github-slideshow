@@ -48,11 +48,15 @@ function sendResult(res, result) {
 }
 
 async function readJson(req, maxBytes = 1_000_000) {
-  let raw = '';
+  // Collect bytes and decode once, so multi-byte characters split across chunks stay intact.
+  const chunks = [];
+  let size = 0;
   for await (const chunk of req) {
-    raw += chunk;
-    if (raw.length > maxBytes) throw new HttpError(413, 'Request body too large');
+    size += chunk.length;
+    if (size > maxBytes) throw new HttpError(413, 'Request body too large');
+    chunks.push(chunk);
   }
+  const raw = Buffer.concat(chunks).toString('utf8');
   if (!raw) return {};
   try {
     return JSON.parse(raw);
@@ -74,7 +78,13 @@ function matchPath(pattern, pathname) {
   if (pp.length !== ap.length) return null;
   const params = {};
   for (let i = 0; i < pp.length; i++) {
-    if (pp[i].startsWith(':')) params[pp[i].slice(1)] = decodeURIComponent(ap[i]);
+    if (pp[i].startsWith(':')) {
+      try {
+        params[pp[i].slice(1)] = decodeURIComponent(ap[i]);
+      } catch {
+        throw new HttpError(400, `Malformed URL encoding in "${ap[i]}"`);
+      }
+    }
     else if (pp[i] !== ap[i]) return null;
   }
   return params;

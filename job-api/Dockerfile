@@ -8,6 +8,7 @@ COPY sources ./sources
 COPY client ./client
 ENV NODE_ENV=production PORT=3000 DATA_DIR=/data
 # Your resume, piles, applications and sent emails live here: mount a volume so they survive restarts.
+RUN mkdir -p /data && chown node:node /data
 VOLUME /data
 EXPOSE 3000
 USER node

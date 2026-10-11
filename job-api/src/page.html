@@ -87,6 +87,8 @@ const store = {
 let page = 1;
 let lastParams = null;
 
+// Only http(s) links: a javascript: URL from a job source would run on click.
+const safeUrl = (u) => (/^https?:\/\//i.test(String(u || '')) ? u : '#');
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 async function api(path, options = {}) {
@@ -119,11 +121,11 @@ function jobCard(j) {
     posted ? `<span class="chip">Posted ${esc(posted)}</span>` : '',
   ].join('');
   return `<article class="job" data-id="${esc(j.id)}">
-    <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
+    <h2><a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
     <div class="meta">${esc(j.company)}${j.company ? ' · ' : ''}${esc(j.location)} · ${esc(j.source)}</div>
     <div class="chips">${chips}</div>
     <div class="actions">
-      <a href="${esc(j.url)}" target="_blank" rel="noopener">Open posting</a>
+      <a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">Open posting</a>
       ${j.applyEmail ? `<a href="mailto:${esc(j.applyEmail)}">${esc(j.applyEmail)}</a>` : ''}
       ${j.applyPhone ? `<a href="tel:${esc(j.applyPhone)}">${esc(j.applyPhone)}</a>` : ''}
       <button type="button" data-reply="${esc(j.id)}">Write quick reply</button>
@@ -159,7 +161,7 @@ $('results').addEventListener('click', async (e) => {
     box.innerHTML = `<textarea class="reply">${esc(r.message)}</textarea>
       <div class="actions">
         <button type="button" data-copy>Copy</button>
-        ${r.mailto ? `<a href="${esc(r.mailto)}">Send by email</a>` : `<a href="${esc(r.applyUrl)}" target="_blank" rel="noopener">Apply on posting</a>`}
+        ${r.mailto ? `<a href="${esc(r.mailto)}">Send by email</a>` : `<a href="${esc(safeUrl(r.applyUrl))}" target="_blank" rel="noopener">Apply on posting</a>`}
       </div>`;
     box.querySelector('[data-copy]').onclick = () => navigator.clipboard?.writeText(box.querySelector('textarea').value);
   } catch (err) {

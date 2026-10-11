@@ -57,10 +57,16 @@ const jobs = createAggregator({
   store,
   cacheTtlMs: config.search.cacheSeconds * 1000,
   perSourceLimit: config.search.perSourceLimit,
+  defaultLimit: config.search.defaultLimit,
+  maxLimit: config.search.maxLimit,
   homeCity: config.homeCity,
 });
 const port = Number(env.PORT) || 3000;
 
+if (env.API_KEY === 'change-me') {
+  console.error('API_KEY is still the placeholder "change-me" from .env.example. Run npm run setup to generate a real key.');
+  process.exit(1);
+}
 if (!env.API_KEY) console.warn('API_KEY is not set: the API is open to anyone who can reach it.');
 
 const gmail = gmailModule.fromEnv(env);

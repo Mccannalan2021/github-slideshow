@@ -16,12 +16,14 @@ const OTHER_PROVINCES = /\b(british columbia|saskatchewan|manitoba|ontario|quebe
 
 const norm = (s) => String(s || '').toLowerCase().replace(/[.]/g, '').replace(/\s+/g, ' ').trim();
 
+// Built once: longest names first so "Sherwood Park" wins over shorter partial matches.
+const CITY_PATTERNS = [...CITIES]
+  .sort((a, b) => b.name.length - a.name.length)
+  .map((c) => ({ city: c, re: new RegExp(`[^a-z]${norm(c.name).replace(/[-]/g, '\\-')}[^a-z]`) }));
+
 function findCity(location) {
   const loc = ` ${norm(location)} `;
-  // Longest names first so "Sherwood Park" wins over shorter partial matches.
-  return [...CITIES]
-    .sort((a, b) => b.name.length - a.name.length)
-    .find((c) => new RegExp(`[^a-z]${norm(c.name).replace(/[-]/g, '\\-')}[^a-z]`).test(loc)) || null;
+  return CITY_PATTERNS.find((p) => p.re.test(loc))?.city || null;
 }
 
 function isAlberta(location) {
