@@ -8,14 +8,24 @@ class HttpError extends Error {
   }
 }
 
-const CORS = {
-  'access-control-allow-origin': '*',
-  'access-control-allow-headers': 'content-type, x-api-key',
-  'access-control-allow-methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
-};
+// Browser access (CORS): only the web app addresses in "allowedOrigins" may call the API.
+// ["*"] allows any site. Set per request so the matching origin is echoed back.
+function applyCors(req, res, allowedOrigins) {
+  const origin = req.headers.origin;
+  const allowAll = allowedOrigins.includes('*');
+  if (allowAll) res.setHeader('access-control-allow-origin', '*');
+  else if (origin && allowedOrigins.includes(origin)) {
+    res.setHeader('access-control-allow-origin', origin);
+    res.setHeader('vary', 'Origin');
+  }
+  res.setHeader('access-control-allow-headers', 'content-type, x-api-key');
+  res.setHeader('access-control-allow-methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  res.setHeader('access-control-expose-headers', 'content-disposition');
+  res.setHeader('access-control-max-age', '600');
+}
 
 function send(res, status, body) {
-  res.writeHead(status, { 'content-type': 'application/json', ...CORS });
+  res.writeHead(status, { 'content-type': 'application/json' });
   res.end(body === undefined ? '' : JSON.stringify(body));
 }
 
@@ -26,7 +36,7 @@ const html = (content) => ({ __html: true, content });
 
 function sendResult(res, result) {
   if (result && result.__file) {
-    res.writeHead(200, { 'content-type': result.type, 'content-disposition': `attachment; filename="${result.filename}"`, ...CORS });
+    res.writeHead(200, { 'content-type': result.type, 'content-disposition': `attachment; filename="${result.filename}"` });
     return res.end(result.content);
   }
   if (result && result.__html) {
@@ -78,4 +88,4 @@ function toCsv(list, columns) {
   return [columns.join(','), ...list.map((j) => columns.map((c) => cell(j[c])).join(','))].join('\n');
 }
 
-module.exports = { HttpError, send, sendResult, created, file, html, readJson, safeEqual, matchPath, toCsv };
+module.exports = { HttpError, applyCors, send, sendResult, created, file, html, readJson, safeEqual, matchPath, toCsv };

@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { loadConfig } = require('./config');
 const { createCardBuilder } = require('./cards');
-const { HttpError, send, sendResult, created, file, html, readJson, safeEqual, matchPath } = require('./http');
+const { HttpError, applyCors, send, sendResult, created, file, html, readJson, safeEqual, matchPath } = require('./http');
 
 const ROUTES_DIR = path.join(__dirname, 'routes');
 
@@ -53,6 +53,7 @@ function createApp({ store, jobs, apiKey, gmail = null, config = loadConfig(), r
 
   const server = http.createServer(async (req, res) => {
     try {
+      applyCors(req, res, config.allowedOrigins);
       if (req.method === 'OPTIONS') return send(res, 204);
       const url = new URL(req.url, 'http://localhost');
       const pathname = url.pathname.replace(/\/+$/, '') || '/';

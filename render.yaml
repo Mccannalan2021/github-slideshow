@@ -1,0 +1,36 @@
+# One-click hosting on Render (render.com): New > Blueprint > pick this repo.
+# Fill in the secret values (API_KEY, ALLOWED_ORIGINS, job source keys, Gmail) in the Render dashboard.
+services:
+  - type: web
+    name: alberta-jobs-api
+    runtime: docker
+    rootDir: job-api
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: API_KEY
+        generateValue: true
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: DATA_DIR
+        value: /data
+      - key: ADZUNA_APP_ID
+        sync: false
+      - key: ADZUNA_APP_KEY
+        sync: false
+      - key: JOOBLE_API_KEY
+        sync: false
+      - key: GMAIL_CLIENT_ID
+        sync: false
+      - key: GMAIL_CLIENT_SECRET
+        sync: false
+      - key: GMAIL_REFRESH_TOKEN
+        sync: false
+      - key: GMAIL_FROM
+        sync: false
+      - key: GMAIL_FROM_NAME
+        sync: false
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1

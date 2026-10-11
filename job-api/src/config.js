@@ -17,6 +17,10 @@ function fail(message) {
 
 function validate(c) {
   c.email = { dailyLimit: 40, attachResume: true, ...(c.email || {}) };
+  c.allowedOrigins = c.allowedOrigins || ['*'];
+  if (!Array.isArray(c.allowedOrigins) || !c.allowedOrigins.every((o) => o === '*' || /^https?:\/\/[^/\s]+$/.test(o))) {
+    fail('"allowedOrigins" must be a list like ["https://myapp.com", "http://localhost:5173"] (no trailing slash), or ["*"]');
+  }
   if (!(Number(c.email.dailyLimit) > 0)) fail('"email.dailyLimit" must be a number above 0');
   if (!c.piles || typeof c.piles !== 'object' || !Object.keys(c.piles).length) fail('"piles" needs at least one entry, e.g. {"right": "liked"}');
   const names = Object.values(c.piles);
@@ -59,6 +63,7 @@ function loadConfig({ file = DEFAULT_FILE, overrides = {}, env = {} } = {}) {
   if (env.HOME_CITY) config.homeCity = env.HOME_CITY;
   if (env.CACHE_TTL_SECONDS) config.search.cacheSeconds = Number(env.CACHE_TTL_SECONDS);
   if (env.PER_SOURCE_LIMIT) config.search.perSourceLimit = Number(env.PER_SOURCE_LIMIT);
+  if (env.ALLOWED_ORIGINS) config.allowedOrigins = env.ALLOWED_ORIGINS.split(',').map((o) => o.trim()).filter(Boolean);
   return validate(config);
 }
 

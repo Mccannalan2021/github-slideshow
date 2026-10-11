@@ -3,12 +3,14 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { REGIONS } = require('../alberta');
 const { JOB_TYPES, SORTS } = require('../aggregator');
+const { buildOpenApi } = require('../openapi');
 
 module.exports = ({ jobs, config, html }) => {
   const page = fs.readFileSync(path.join(__dirname, '..', 'page.html'), 'utf8');
 
   return [
     { method: 'GET', path: '/', public: true, handler: async () => html(page) },
+    { method: 'GET', path: '/openapi.json', public: true, handler: async () => buildOpenApi(config) },
     {
       method: 'GET',
       path: '/health',

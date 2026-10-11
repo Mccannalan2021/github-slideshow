@@ -39,6 +39,85 @@ You can also do it by hand: `cp .env.example .env`, edit it, then `npm test` and
 
 With no sources configured, it serves sample Alberta jobs so you can build your app right away.
 
+## Add it to your web app
+
+### 1. Run the API online
+
+Your web app needs the API at a public address. The repo is ready for
+[Render](https://render.com): **New > Blueprint**, pick this repo, and it uses `render.yaml`
+(Docker, 1 GB disk for your data, a generated `API_KEY`). Then set in the Render dashboard:
+
+- `ALLOWED_ORIGINS`: your web app's address, e.g. `https://myjobsapp.com` (add
+  `http://localhost:5173` while developing). Other sites' browsers are blocked.
+- Any job source keys and the `GMAIL_*` values (copy them from your local `.env` after
+  `npm run gmail`).
+
+Any host that runs Docker works too (Railway, Fly.io, a VPS):
+`docker build -t alberta-jobs-api . && docker run -p 3000:3000 -v jobs-data:/data -e API_KEY=... alberta-jobs-api`.
+Mount `/data` so your resume, piles and applications survive restarts.
+
+### 2. Use the client in your app
+
+Copy `client/jobs-api.js` (and `client/jobs-api.d.ts` for TypeScript) into your app:
+
+```js
+import { createJobsApi } from './jobs-api.js';
+
+const api = createJobsApi({
+  baseUrl: import.meta.env.VITE_JOBS_API_URL,   // e.g. https://alberta-jobs-api.onrender.com
+  apiKey: import.meta.env.VITE_JOBS_API_KEY,
+});
+
+const { cards, remaining } = await api.deck({ near: 'Red Deer' });
+await api.swipe(cards[0].id, 'right');            // -> "liked" pile
+const liked = await api.pile('liked', { applied: false });
+const { applyUrl } = await api.applyFromPile(liked[0].jobId);
+window.open(applyUrl, '_blank');
+```
+
+A swipe card in React:
+
+```jsx
+function SwipeDeck() {
+  const [cards, setCards] = useState([]);
+  useEffect(() => { api.deck({ near: 'Red Deer' }).then((d) => setCards(d.cards)); }, []);
+  const card = cards[0];
+  if (!card) return <p>No more jobs. Check back after the next "get jobs".</p>;
+
+  const swipe = async (direction) => {
+    await api.swipe(card.id, direction);
+    setCards((rest) => rest.slice(1));
+    if (cards.length < 3) api.deck({ near: 'Red Deer' }).then((d) => setCards(d.cards));
+  };
+
+  return (
+    <div className="card">
+      <h2>{card.title}</h2>
+      <p>{card.company} · {card.location} {card.salary && `· ${card.salary}`}</p>
+      <p>{card.summary}</p>
+      <button onClick={() => swipe('left')}>Pass</button>
+      <button onClick={() => swipe('super')}>Super</button>
+      <button onClick={() => swipe('right')}>Like</button>
+    </div>
+  );
+}
+```
+
+Every endpoint has a method: `searchJobs`, `deck`, `swipe`, `undoSwipe`, `piles`, `pile`,
+`moveToPile`, `removeFromPile`, `applyFromPile`, `getResume`, `saveResume`, `uploadResumeFile`
+(takes a `File` from an `<input type="file">`), `emailJob`, `previewEmail`, `applications`,
+`quickReply`, `downloadCsv` and more. Errors throw `JobsApiError` with `.status` and `.message`.
+Draw your swipe buttons from `api.settings()` so new piles in `config.json` appear automatically.
+
+Not using JavaScript? `GET /openapi.json` describes every endpoint (OpenAPI 3.1). Import it into
+Postman or Swagger, or generate a client for your language.
+
+### About the API key in a web app
+
+A key in browser code can be seen by anyone who opens your site's source. That's fine for a
+personal app only you use, together with `ALLOWED_ORIGINS`. If other people will use your app, call
+this API from your web app's own server (keep `API_KEY` there) instead of from the browser.
+
 ## Getting fresh jobs
 
 In a Claude Code session on this repo, just say **"get jobs"**. The `get-jobs` skill
@@ -90,6 +169,7 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | Method | Path | What it does |
 | --- | --- | --- |
 | GET | `/health` | Status and active sources |
+| GET | `/openapi.json` | OpenAPI 3.1 description of every endpoint (no key needed) |
 | GET | `/settings` | Current piles, card fields, tones and statuses, so your app can draw its UI from them |
 | GET | `/alberta/cities` | Regions, cities, job types and sort options for your app's filters |
 | GET | `/jobs` | Search Alberta jobs (filters below) |
