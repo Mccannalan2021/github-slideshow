@@ -32,7 +32,7 @@ async function call(method, url, body, key = KEY) {
 }
 
 before(async () => {
-  dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'job-api-'));
+  dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'mccannfam-'));
   const store = createStore(dataDir);
   const jobs = createAggregator({ providers: [createMockProvider(), failing], store });
   server = createApp({ store, jobs, apiKey: KEY });
@@ -231,7 +231,7 @@ test('apply emails come through to cards, filters, quick replies and CSV', async
   assert.equal(text.trim().split('\n').length, 3);
 
   const page = await fetch(`${base}/`);
-  assert.match(await page.text(), /<title>Alberta Jobs<\/title>/);
+  assert.match(await page.text(), /<title>mccannfam<\/title>/);
 });
 
 test('filters by apply email and puts it in quick replies', async () => {

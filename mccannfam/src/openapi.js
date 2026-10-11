@@ -43,7 +43,7 @@ function buildOpenApi(config) {
   return {
     openapi: '3.1.0',
     info: {
-      title: 'Alberta Jobs API',
+      title: 'mccannfam',
       version: '1.0.0',
       description: 'Alberta job search across sources, a swipe deck with piles, resume matching, quick replies and Gmail applications. Send your key in the x-api-key header.',
     },

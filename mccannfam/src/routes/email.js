@@ -27,7 +27,7 @@ module.exports = ({ store, jobs, config, gmail, HttpError, created }) => {
           sentToday: sentToday(),
           dailyLimit: config.email.dailyLimit,
           resumeFile: file ? file.filename : null,
-          ...(gmail ? {} : { howToConnect: 'Run npm run gmail in job-api/, then restart the server' }),
+          ...(gmail ? {} : { howToConnect: 'Run npm run gmail in mccannfam/, then restart the server' }),
         };
       },
     },
@@ -63,7 +63,7 @@ module.exports = ({ store, jobs, config, gmail, HttpError, created }) => {
         if (attach && !file) email.warning = 'No resume file saved, so nothing is attached. Add one with npm run resume or PUT /resume/file.';
         if (body.preview) return { preview: true, ...email };
 
-        if (!gmail) throw new HttpError(503, 'Gmail is not connected. Run npm run gmail in job-api/, then restart the server.');
+        if (!gmail) throw new HttpError(503, 'Gmail is not connected. Run npm run gmail in mccannfam/, then restart the server.');
         if (sentToday() >= config.email.dailyLimit) {
           throw new HttpError(429, `Daily email limit reached (${config.email.dailyLimit}). Change "email.dailyLimit" in config.json.`);
         }

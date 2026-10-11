@@ -73,5 +73,5 @@ const gmail = gmailModule.fromEnv(env);
 console.log(gmail ? `Gmail: sending as ${gmail.from}` : 'Gmail: not connected (run npm run gmail to send applications by email)');
 
 createApp({ store, jobs, config, gmail, apiKey: env.API_KEY }).listen(port, () => {
-  console.log(`Alberta Jobs API on http://localhost:${port} (sources: ${jobs.sources.join(', ')}${jobs.homeCity ? `; home city: ${jobs.homeCity}` : ''})`);
+  console.log(`mccannfam on http://localhost:${port} (sources: ${jobs.sources.join(', ')}${jobs.homeCity ? `; home city: ${jobs.homeCity}` : ''})`);
 });

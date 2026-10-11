@@ -1,4 +1,4 @@
-// Drives the web-app client (client/jobs-api.js) against a real server.
+// Drives the web-app client (client/mccannfam.js) against a real server.
 const { test, before, after } = require('node:test');
 const assert = require('node:assert');
 const fs = require('node:fs');
@@ -14,7 +14,7 @@ let server;
 let base;
 let dir;
 let api;
-let JobsApiError;
+let MccannfamApiError;
 
 before(async () => {
   dir = fs.mkdtempSync(path.join(os.tmpdir(), 'client-'));
@@ -25,9 +25,9 @@ before(async () => {
   await new Promise((r) => server.listen(0, r));
   server.unref();
   base = `http://localhost:${server.address().port}`;
-  const client = await import('../client/jobs-api.js');
-  JobsApiError = client.JobsApiError;
-  api = client.createJobsApi({ baseUrl: `${base}/`, apiKey: 'k' });
+  const client = await import('../client/mccannfam.js');
+  MccannfamApiError = client.MccannfamApiError;
+  api = client.createMccannfamApi({ baseUrl: `${base}/`, apiKey: 'k' });
 });
 
 after(() => {
@@ -69,9 +69,9 @@ test('client covers the swipe-app flow end to end', async () => {
 
 test('client errors carry the status and message', async () => {
   await api.swipe('mock:3', 'left');
-  await assert.rejects(api.swipe('mock:3', 'left'), (err) => err instanceof JobsApiError && err.status === 409 && /Already swiped/.test(err.message));
-  const { createJobsApi } = await import('../client/jobs-api.js');
-  await assert.rejects(createJobsApi({ baseUrl: base, apiKey: 'wrong' }).piles(), (err) => err.status === 401);
+  await assert.rejects(api.swipe('mock:3', 'left'), (err) => err instanceof MccannfamApiError && err.status === 409 && /Already swiped/.test(err.message));
+  const { createMccannfamApi } = await import('../client/mccannfam.js');
+  await assert.rejects(createMccannfamApi({ baseUrl: base, apiKey: 'wrong' }).piles(), (err) => err.status === 401);
 });
 
 test('only allowed web app origins get browser access', async () => {

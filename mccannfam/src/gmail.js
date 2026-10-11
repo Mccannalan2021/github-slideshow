@@ -22,7 +22,7 @@ function clean(value, label) {
 
 // Builds a standard email (RFC 5322 / MIME) with an optional attachment.
 function buildMime({ from, fromName, to, subject, text, attachments = [] }) {
-  const boundary = `job-api-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+  const boundary = `mccannfam-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
   const fromHeader = fromName ? `${header(clean(fromName, 'Name'))} <${from}>` : from;
   const lines = [
     `From: ${fromHeader}`,

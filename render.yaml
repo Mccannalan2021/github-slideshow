@@ -2,9 +2,9 @@
 # Fill in the secret values (API_KEY, ALLOWED_ORIGINS, job source keys, Gmail) in the Render dashboard.
 services:
   - type: web
-    name: alberta-jobs-api
+    name: mccannfam
     runtime: docker
-    rootDir: job-api
+    rootDir: mccannfam
     plan: starter
     healthCheckPath: /health
     envVars:

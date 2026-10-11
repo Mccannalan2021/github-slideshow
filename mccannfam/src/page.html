@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alberta Jobs</title>
+<title>mccannfam</title>
 <style>
   :root {
     --bg: #f6f7f9; --card: #fff; --text: #1b1f24; --muted: #5b6573; --line: #dde1e6;
@@ -43,7 +43,7 @@
 </head>
 <body>
 <header>
-  <h1>Alberta Jobs</h1>
+  <h1>mccannfam</h1>
   <div class="sub" id="sourcesLine">Every source in one search</div>
 </header>
 <main>
@@ -172,7 +172,7 @@ $('results').addEventListener('click', async (e) => {
 $('csv').onclick = async () => {
   try {
     const blob = await (await api(`/jobs.csv?${params()}`)).blob();
-    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: 'alberta-jobs.csv' });
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: 'mccannfam-jobs.csv' });
     a.click();
     URL.revokeObjectURL(a.href);
   } catch (err) { showError(err); }

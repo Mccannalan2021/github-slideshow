@@ -11,7 +11,7 @@ const { createMockProvider } = require('../src/providers/mock');
 const { loadConfig } = require('../src/config');
 
 async function start(config, routeDirs) {
-  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'job-api-custom-'));
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'mccannfam-custom-'));
   const store = createStore(dir);
   const jobs = createAggregator({ providers: [createMockProvider()], store, homeCity: config.homeCity });
   const server = createApp({ store, jobs, config, ...(routeDirs ? { routeDirs } : {}) });

@@ -1,7 +1,7 @@
 {
-  "name": "alberta-jobs-api",
+  "name": "mccannfam",
   "version": "1.0.0",
-  "description": "Alberta jobs API: searches Adzuna, Jooble, Job Bank and Indeed at once, matches jobs to your resume and writes quick replies.",
+  "description": "mccannfam: Alberta jobs API that searches Adzuna, Jooble, Job Bank and Indeed at once, matches jobs to your resume and writes quick replies.",
   "main": "src/server.js",
   "type": "commonjs",
   "engines": { "node": ">=18" },

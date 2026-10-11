@@ -1,18 +1,18 @@
-// Alberta Jobs API client for web apps (works in browsers, React/Vue/Svelte/Next, and Node 18+).
-// Copy this file into your app, or import it from job-api/client/.
+// mccannfam client for web apps (works in browsers, React/Vue/Svelte/Next, and Node 18+).
+// Copy this file into your app, or import it from mccannfam/client/.
 //
-//   import { createJobsApi } from './jobs-api.js';
-//   const api = createJobsApi({ baseUrl: 'https://your-jobs-api.onrender.com', apiKey: '...' });
+//   import { createMccannfamApi } from './mccannfam.js';
+//   const api = createMccannfamApi({ baseUrl: 'https://mccannfam.onrender.com', apiKey: '...' });
 //   const { cards } = await api.deck({ near: 'Red Deer' });
 //   await api.swipe(cards[0].id, 'right');
 //
-// Every method returns a Promise with the JSON response. Errors throw a JobsApiError with
+// Every method returns a Promise with the JSON response. Errors throw a MccannfamApiError with
 // .status and .message from the API (e.g. 409 "Already swiped on this job").
 
-export class JobsApiError extends Error {
+export class MccannfamApiError extends Error {
   constructor(status, message, body) {
     super(message);
-    this.name = 'JobsApiError';
+    this.name = 'MccannfamApiError';
     this.status = status;
     this.body = body;
   }
@@ -44,7 +44,7 @@ async function toBase64(file) {
   throw new TypeError('file must be a File, Blob, Buffer or Uint8Array');
 }
 
-export function createJobsApi({ baseUrl, apiKey, fetch: fetchImpl = globalThis.fetch.bind(globalThis) } = {}) {
+export function createMccannfamApi({ baseUrl, apiKey, fetch: fetchImpl = globalThis.fetch.bind(globalThis) } = {}) {
   if (!baseUrl) throw new TypeError('baseUrl is required, e.g. "http://localhost:3000"');
   const root = baseUrl.replace(/\/+$/, '');
 
@@ -56,7 +56,7 @@ export function createJobsApi({ baseUrl, apiKey, fetch: fetchImpl = globalThis.f
     });
     if (!res.ok) {
       const data = await res.json().catch(() => ({}));
-      throw new JobsApiError(res.status, data.error || `Request failed (${res.status})`, data);
+      throw new MccannfamApiError(res.status, data.error || `Request failed (${res.status})`, data);
     }
     return res;
   }
@@ -81,7 +81,7 @@ export function createJobsApi({ baseUrl, apiKey, fetch: fetchImpl = globalThis.f
     /** options: type ('apply' | 'reply' | 'followup'), tone, employerMessage, availability */
     quickReply: (jobId, options = {}) => call('POST', `/jobs/${enc(jobId)}/quick-reply`, options),
     insights: (filters) => call('GET', `/insights${queryString(filters)}`),
-    /** Returns a Blob (browser) or Response body you can save as alberta-jobs.csv. */
+    /** Returns a Blob (browser) or Response body you can save as mccannfam-jobs.csv. */
     downloadCsv: async (filters) => (await raw('GET', `/jobs.csv${queryString(filters)}`)).blob(),
 
     // --- Swipe deck & piles ---

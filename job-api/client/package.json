@@ -1,7 +1,0 @@
-{
-  "name": "alberta-jobs-api-client",
-  "version": "1.0.0",
-  "type": "module",
-  "main": "jobs-api.js",
-  "types": "jobs-api.d.ts"
-}

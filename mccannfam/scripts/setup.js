@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// One-step setup for the Alberta Jobs API:
+// One-step setup for mccannfam:
 //   1. checks your Node.js version
 //   2. creates .env from .env.example
 //   3. generates a strong API_KEY
@@ -59,7 +59,7 @@ function setVar(lines, key, value) {
 }
 
 async function main() {
-  console.log('\nAlberta Jobs API setup\n');
+  console.log('\nmccannfam setup\n');
 
   // 1. Node version
   const major = Number(process.versions.node.split('.')[0]);

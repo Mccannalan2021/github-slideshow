@@ -1,4 +1,4 @@
-# Alberta Jobs API. No dependencies to install: it only needs Node.
+# mccannfam. No dependencies to install: it only needs Node.
 FROM node:22-alpine
 WORKDIR /app
 COPY package.json config.json pull-plan.json ./

@@ -95,7 +95,7 @@ One-time setup in Google Cloud (about 5 minutes, free):
 
   if (await ask.yesNo(`Send a test email to ${from}?`, true)) {
     const gmail = createGmail({ clientId, clientSecret, refreshToken: tokens.refresh_token, from, fromName });
-    await gmail.send({ to: from, subject: 'Alberta Jobs API: Gmail is connected', text: 'Your job app can now send applications from this Gmail account.' });
+    await gmail.send({ to: from, subject: 'mccannfam: Gmail is connected', text: 'Your job app can now send applications from this Gmail account.' });
     console.log('✔ Test email sent. Check your inbox.');
   }
   console.log(`

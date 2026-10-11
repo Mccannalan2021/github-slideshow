@@ -15,7 +15,7 @@ module.exports = ({ store, jobs, config, requireJob, requireResume, HttpError, f
     handler: async ({ query }) => {
       query.set('limit', 'all');
       const { jobs: list } = await jobs.search(query, store.getResume());
-      return file(toCsv(list, config.csvColumns), { filename: 'alberta-jobs.csv', type: 'text/csv; charset=utf-8' });
+      return file(toCsv(list, config.csvColumns), { filename: 'mccannfam-jobs.csv', type: 'text/csv; charset=utf-8' });
     },
   },
   {

@@ -1,4 +1,4 @@
-# Alberta Jobs API
+# mccannfam
 
 One API for jobs across Alberta. It searches every job source you connect at the same time,
 keeps only Alberta postings, merges duplicates that appear on several boards, and returns them in
@@ -21,7 +21,7 @@ It has no dependencies. You only need Node.js 18 or newer.
 ## Run it
 
 ```bash
-cd job-api
+cd mccannfam
 npm run setup             # creates .env, generates your API key, asks for job source keys, runs tests
 npm start                 # http://localhost:3000
 ```
@@ -53,18 +53,18 @@ Your web app needs the API at a public address. The repo is ready for
   `npm run gmail`).
 
 Any host that runs Docker works too (Railway, Fly.io, a VPS):
-`docker build -t alberta-jobs-api . && docker run -p 3000:3000 -v jobs-data:/data -e API_KEY=... alberta-jobs-api`.
+`docker build -t mccannfam . && docker run -p 3000:3000 -v jobs-data:/data -e API_KEY=... mccannfam`.
 Mount `/data` so your resume, piles and applications survive restarts.
 
 ### 2. Use the client in your app
 
-Copy `client/jobs-api.js` (and `client/jobs-api.d.ts` for TypeScript) into your app:
+Copy `client/mccannfam.js` (and `client/mccannfam.d.ts` for TypeScript) into your app:
 
 ```js
-import { createJobsApi } from './jobs-api.js';
+import { createMccannfamApi } from './mccannfam.js';
 
-const api = createJobsApi({
-  baseUrl: import.meta.env.VITE_JOBS_API_URL,   // e.g. https://alberta-jobs-api.onrender.com
+const api = createMccannfamApi({
+  baseUrl: import.meta.env.VITE_JOBS_API_URL,   // e.g. https://mccannfam.onrender.com
   apiKey: import.meta.env.VITE_JOBS_API_KEY,
 });
 
@@ -106,7 +106,7 @@ function SwipeDeck() {
 Every endpoint has a method: `searchJobs`, `deck`, `swipe`, `undoSwipe`, `piles`, `pile`,
 `moveToPile`, `removeFromPile`, `applyFromPile`, `getResume`, `saveResume`, `uploadResumeFile`
 (takes a `File` from an `<input type="file">`), `emailJob`, `previewEmail`, `applications`,
-`quickReply`, `downloadCsv` and more. Errors throw `JobsApiError` with `.status` and `.message`.
+`quickReply`, `downloadCsv` and more. Errors throw `MccannfamApiError` with `.status` and `.message`.
 Draw your swipe buttons from `api.settings()` so new piles in `config.json` appear automatically.
 
 Not using JavaScript? `GET /openapi.json` describes every endpoint (OpenAPI 3.1). Import it into

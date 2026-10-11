@@ -1,4 +1,4 @@
-// Types for client/jobs-api.js. Use with TypeScript web apps.
+// Types for client/mccannfam.js. Use with TypeScript web apps.
 
 export type JobType = 'full-time' | 'part-time' | 'contract' | 'temporary' | 'seasonal' | 'casual' | '';
 export type Proximity = 'city' | 'region' | 'alberta' | null;
@@ -190,12 +190,12 @@ export interface EmailResult {
   application?: Application;
 }
 
-export declare class JobsApiError extends Error {
+export declare class MccannfamApiError extends Error {
   status: number;
   body: unknown;
 }
 
-export interface JobsApi {
+export interface MccannfamApi {
   health(): Promise<{ ok: boolean; sources: string[]; homeCity: string | null }>;
   settings(): Promise<Settings>;
   sources(): Promise<{ name: string; kind: 'file' | 'live'; jobs?: number; fetchedAt?: string }[]>;
@@ -241,4 +241,4 @@ export interface JobsApi {
   request<T = unknown>(method: string, path: string, body?: unknown): Promise<T>;
 }
 
-export declare function createJobsApi(options: { baseUrl: string; apiKey?: string; fetch?: typeof fetch }): JobsApi;
+export declare function createMccannfamApi(options: { baseUrl: string; apiKey?: string; fetch?: typeof fetch }): MccannfamApi;

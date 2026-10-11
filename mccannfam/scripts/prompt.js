@@ -4,7 +4,7 @@ const readline = require('node:readline');
 const fs = require('node:fs');
 const path = require('node:path');
 
-// Reads job-api/.env into process.env (real environment variables win).
+// Reads mccannfam/.env into process.env (real environment variables win).
 function loadEnv(root = path.join(__dirname, '..')) {
   const file = path.join(root, '.env');
   if (!fs.existsSync(file)) return;
