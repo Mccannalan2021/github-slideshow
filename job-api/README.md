@@ -78,7 +78,7 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | GET | `/jobs/:id` | One job |
 | GET | `/jobs/:id/match` | How well the job fits your resume |
 | POST | `/jobs/:id/quick-reply` | Write a message for this job |
-| GET | `/deck?limit=10` | Swipe deck: next jobs you haven't swiped, each with a ready message (takes the `/jobs` filters) |
+| GET | `/deck?limit=10` | Swipe deck: next jobs you haven't swiped, each with its apply link and a ready message (takes the `/jobs` filters) |
 | POST | `/swipes` | Swipe on a job: `{"jobId": "...", "direction": "right" \| "left" \| "super"}` |
 | POST | `/swipes/undo` | Undo the last swipe (and remove the application it created) |
 | GET | `/swipes/stats` | Swipe counts, including today's |
@@ -153,9 +153,8 @@ type, category, company and source, plus median salary).
 curl "localhost:3000/deck?limit=10&near=Red%20Deer" -H "x-api-key: $API_KEY"
 ```
 
-Each card has the job basics, `match`, `applyEmail`, `applyPhone`, `applyMethod`, and a `reply`
-with `subject`, `message` and `mailto` (a ready email link when the posting gives an email).
-`remaining` says how many unswiped jobs are left.
+Each card has the job basics, `match`, `applyUrl` (the job's apply link) and a `reply` with a
+ready-written `subject` and `message`. `remaining` says how many unswiped jobs are left.
 
 ```bash
 # 2. Swipe right (apply), left (pass) or super (apply + star)
@@ -163,11 +162,8 @@ curl -X POST localhost:3000/swipes -H "x-api-key: $API_KEY" -H 'content-type: ap
   -d '{"jobId": "indeed:aakydyk4rdyb", "direction": "right"}'
 ```
 
-A right or super swipe records an application and returns `next`, telling your app how to finish:
-
-- `{"action": "email", "to": "...", "mailto": "mailto:...?subject=...&body=..."}`: open the
-  mailto link and the email is written and addressed, ready to send with your resume attached.
-- `{"action": "open", "url": "..."}`: the posting has no email; open it to apply there.
+A right or super swipe records an application and returns `applyUrl` and `message`: open the
+link to apply, and paste the message into the application if it asks for one.
 
 Swiped jobs never show up in the deck again. `POST /swipes/undo` takes back the last swipe.
 

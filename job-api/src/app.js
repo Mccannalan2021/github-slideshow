@@ -27,22 +27,13 @@ function toCard(job, resume) {
     postedAt: job.postedAt,
     summary: (job.description || '').slice(0, 280),
     source: job.source,
-    url: job.url,
-    applyMethod: job.applyMethod,
-    applyEmail: job.applyEmail || null,
-    applyPhone: job.applyPhone || null,
+    applyUrl: job.url,
     match: job.match || null,
     reply: null,
   };
   if (resume) {
     const reply = buildReply({ resume, job, type: 'apply' });
-    card.reply = {
-      subject: reply.subject,
-      message: reply.message,
-      mailto: job.applyEmail
-        ? `mailto:${job.applyEmail}?subject=${encodeURIComponent(reply.subject)}&body=${encodeURIComponent(reply.message)}`
-        : null,
-    };
+    card.reply = { subject: reply.subject, message: reply.message };
   }
   return card;
 }
@@ -197,18 +188,14 @@ function createApp({ store, jobs, apiKey }) {
         title: job.title,
         company: job.company,
         url: job.url,
-        applyEmail: job.applyEmail || '',
         status: 'applied',
         starred: body.direction === 'super',
         message,
         notes: '',
       });
       store.addSwipe({ jobId: job.id, direction: body.direction, applicationId: application.id });
-      // Tell the app how to finish applying: open the email, or open the posting.
-      const next = card.reply?.mailto
-        ? { action: 'email', mailto: card.reply.mailto, to: job.applyEmail }
-        : { action: 'open', url: job.url };
-      return [201, { direction: body.direction, jobId: job.id, application, next, reply: card.reply }];
+      // The app opens the apply link; the message is ready to paste into the application.
+      return [201, { direction: body.direction, jobId: job.id, applyUrl: job.url, message, application }];
     }],
     ['POST', '/swipes/undo', async () => {
       const last = store.popSwipe();

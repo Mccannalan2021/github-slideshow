@@ -181,9 +181,9 @@ test('swipe deck: cards, right/left/super, undo and stats', async () => {
   assert.equal(right.status, 201);
   assert.equal(right.body.application.status, 'applied');
   assert.equal(first.id, 'mock:4', 'Red Deer job comes first');
-  assert.equal(right.body.next.action, 'email');
-  assert.equal(right.body.next.to, 'hiring@mainstreetoutfitters.ca');
-  assert.match(right.body.next.mailto, /^mailto:hiring@mainstreetoutfitters\.ca\?subject=Application%3A%20Retail%20Sales%20Associate/);
+  assert.equal(right.body.applyUrl, 'https://example.com/jobs/4');
+  assert.equal(first.applyUrl, 'https://example.com/jobs/4');
+  assert.match(right.body.message, /Retail Sales Associate position at Main Street Outfitters/);
   assert.equal((await call('POST', '/swipes', { jobId: first.id, direction: 'left' })).status, 409);
 
   assert.equal((await call('POST', '/swipes', { jobId: second.id, direction: 'left' })).status, 201);
