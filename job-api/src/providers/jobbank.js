@@ -109,6 +109,7 @@ function createJobBankProvider({ csvPath }) {
 
   return {
     name: 'jobbank',
+    local: true,
     size: jobs.size,
     async searchJobs({ query = '', limit = 50, page = 1 }) {
       const words = query.toLowerCase().split(/\s+/).filter(Boolean);
@@ -116,6 +117,7 @@ function createJobBankProvider({ csvPath }) {
         const hay = `${j.title} ${j.company} ${j.category} ${j.location}`.toLowerCase();
         return words.every((w) => hay.includes(w));
       });
+      if (!Number.isFinite(limit)) return { total: hits.length, jobs: hits };
       const start = (page - 1) * limit;
       return { total: hits.length, jobs: hits.slice(start, start + limit) };
     },

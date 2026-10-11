@@ -189,7 +189,7 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
     const key = `${provider.name}|${q}|${location}`;
     const hit = cache.get(key);
     if (hit && hit.expires > Date.now()) return { ...hit.value, cached: true };
-    const result = await provider.searchJobs({ query: q, location, limit: perSourceLimit, page: 1 });
+    const result = await provider.searchJobs({ query: q, location, limit: provider.local ? Infinity : perSourceLimit, page: 1 });
     const value = {
       total: result.total ?? result.jobs.length,
       jobs: result.jobs.map((j) => normalizeJob(j, provider.name)),
@@ -249,7 +249,14 @@ function createAggregator({ providers, store, cacheTtlMs = 10 * 60_000, perSourc
     return job;
   }
 
-  return { name: 'alberta', sources: providers.map((p) => p.name), search, getJob, parseFilters };
+  const sourceDetails = () => providers.map((p) => ({
+    name: p.name,
+    kind: p.local ? 'file' : 'live',
+    ...(p.size !== undefined ? { jobs: p.size } : {}),
+    ...(p.fetchedAt ? { fetchedAt: p.fetchedAt } : {}),
+  }));
+
+  return { name: 'alberta', sources: providers.map((p) => p.name), sourceDetails, search, getJob, parseFilters };
 }
 
 module.exports = { createAggregator, parseFilters, normalizeJob, dedupe, JOB_TYPES, SORTS, BadRequest };

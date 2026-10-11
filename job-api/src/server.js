@@ -8,6 +8,7 @@ const { createIndeedProvider } = require('./providers/indeed');
 const { createAdzunaProvider } = require('./providers/adzuna');
 const { createJoobleProvider } = require('./providers/jooble');
 const { createJobBankProvider } = require('./providers/jobbank');
+const { createFileProvider } = require('./providers/file');
 
 // Load .env without extra dependencies (real env vars win).
 const envFile = path.join(__dirname, '..', '.env');
@@ -38,6 +39,21 @@ function buildProviders() {
     const jobbank = createJobBankProvider({ csvPath: path.resolve(env.JOBBANK_CSV) });
     console.log(`Job Bank: loaded ${jobbank.size} Alberta postings`);
     providers.push(jobbank);
+  }
+  // Job snapshots: every .json file in sources/ plus any listed in JOBS_FILES.
+  const sourcesDir = path.join(__dirname, '..', 'sources');
+  const files = [
+    ...(fs.existsSync(sourcesDir) ? fs.readdirSync(sourcesDir).filter((f) => f.endsWith('.json')).map((f) => path.join(sourcesDir, f)) : []),
+    ...(env.JOBS_FILES ? env.JOBS_FILES.split(',').map((f) => path.resolve(f.trim())) : []),
+  ];
+  for (const file of files) {
+    const snapshot = createFileProvider({ file });
+    if (providers.some((p) => p.name === snapshot.name)) {
+      console.log(`Skipping ${path.basename(file)}: live ${snapshot.name} source is configured`);
+      continue;
+    }
+    console.log(`${snapshot.name}: loaded ${snapshot.size} jobs from ${path.basename(file)} (fetched ${snapshot.fetchedAt || 'unknown'})`);
+    providers.push(snapshot);
   }
   if (!providers.length || env.INCLUDE_SAMPLE_JOBS === 'true') providers.push(createMockProvider({ name: 'sample' }));
   return providers;
