@@ -20,10 +20,20 @@ It has no dependencies. You only need Node.js 18 or newer.
 
 ```bash
 cd job-api
-cp .env.example .env      # set API_KEY and the job sources you have
+npm run setup             # creates .env, generates your API key, asks for job source keys, runs tests
 npm start                 # http://localhost:3000
-npm test
 ```
+
+`npm run setup` works on Mac, Linux and Windows. Press Enter to skip any source you don't have
+yet, and re-run it any time to add more. Options:
+
+| Command | What it does |
+| --- | --- |
+| `npm run setup -- --start` | Start the server when setup finishes |
+| `npm run setup -- --yes` | No questions; reads source keys from environment variables (e.g. `ADZUNA_APP_ID=... npm run setup -- --yes`) |
+| `npm run setup -- --new-key` | Replace your API key with a new one |
+
+You can also do it by hand: `cp .env.example .env`, edit it, then `npm test` and `npm start`.
 
 With no sources configured, it serves sample Alberta jobs so you can build your app right away.
 
@@ -185,4 +195,6 @@ src/
   resume.js          resume parsing
   store.js           JSON file storage
   providers/         adzuna, jooble, jobbank, indeed, mock (sample jobs)
+scripts/
+  setup.js           one-step setup (npm run setup)
 ```
