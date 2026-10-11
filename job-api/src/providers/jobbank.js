@@ -127,4 +127,12 @@ function createJobBankProvider({ csvPath }) {
   };
 }
 
-module.exports = { createJobBankProvider, parseCsv, mapColumns };
+// Turned on when JOBBANK_CSV is set in .env.
+function fromEnv(env) {
+  if (!env.JOBBANK_CSV) return null;
+  const provider = createJobBankProvider({ csvPath: path.resolve(env.JOBBANK_CSV) });
+  console.log(`Job Bank: loaded ${provider.size} Alberta postings`);
+  return provider;
+}
+
+module.exports = { fromEnv, createJobBankProvider, parseCsv, mapColumns };

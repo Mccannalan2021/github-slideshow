@@ -9,7 +9,7 @@
     "start": "node src/server.js",
     "setup": "node scripts/setup.js",
     "dev": "node --watch src/server.js",
-    "test": "node --test test/*.test.js"
+    "test": "node --test --test-timeout=30000 test/*.test.js"
   },
   "license": "MIT"
 }

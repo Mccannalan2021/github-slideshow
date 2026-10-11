@@ -227,7 +227,7 @@ test('apply emails come through to cards, filters, quick replies and CSV', async
   const csv = await fetch(`${base}/jobs.csv?city=Calgary`, { headers: { 'x-api-key': KEY } });
   assert.equal(csv.headers.get('content-type'), 'text/csv; charset=utf-8');
   const text = await csv.text();
-  assert.match(text.split('\n')[0], /^title,company,city,.*applyEmail/);
+  assert.match(text.split("\n")[0], /^title,company,city,.*applyMethod,url/);
   assert.equal(text.trim().split('\n').length, 3);
 
   const page = await fetch(`${base}/`);

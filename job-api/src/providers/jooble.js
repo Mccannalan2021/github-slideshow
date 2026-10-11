@@ -32,4 +32,9 @@ function createJoobleProvider({ apiKey, baseUrl = 'https://jooble.org/api' }, fe
 
 const stripTags = (s) => String(s || '').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim();
 
-module.exports = { createJoobleProvider };
+// Turned on when JOOBLE_API_KEY is set in .env.
+function fromEnv(env) {
+  return env.JOOBLE_API_KEY ? createJoobleProvider({ apiKey: env.JOOBLE_API_KEY }) : null;
+}
+
+module.exports = { fromEnv, createJoobleProvider };

@@ -1,0 +1,42 @@
+{
+  "homeCity": "Red Deer",
+
+  "piles": {
+    "right": "liked",
+    "super": "superliked",
+    "left": "passed"
+  },
+
+  "deck": {
+    "size": 10,
+    "maxSize": 50,
+    "summaryLength": 280,
+    "cardFields": [
+      "id", "title", "company", "location", "city", "proximity", "type", "salary", "salaryMin", "salaryMax",
+      "remote", "postedAt", "summary", "source", "applyUrl", "match", "reply"
+    ]
+  },
+
+  "search": {
+    "defaultLimit": 20,
+    "maxLimit": 100,
+    "cacheSeconds": 600,
+    "perSourceLimit": 50
+  },
+
+  "applicationStatuses": ["saved", "applied", "interviewing", "offer", "rejected", "withdrawn"],
+
+  "csvColumns": [
+    "title", "company", "city", "region", "location", "type", "salary", "salaryMin", "salaryMax",
+    "postedAt", "applyMethod", "url", "source", "id", "proximity"
+  ],
+
+  "replies": {
+    "defaultTone": "professional",
+    "tones": {
+      "professional": { "greeting": "Hello", "closing": "Best regards" },
+      "friendly": { "greeting": "Hi", "closing": "Thanks so much" },
+      "brief": { "greeting": "Hi", "closing": "Thanks" }
+    }
+  }
+}

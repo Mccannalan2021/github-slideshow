@@ -1,357 +1,86 @@
+// The HTTP server. Endpoints live in src/routes/ (one file per feature, loaded automatically) and
+// settings live in config.json, so most changes never touch this file.
 const http = require('node:http');
-const crypto = require('node:crypto');
-const { normalizeResume } = require('./resume');
-const { scoreMatch } = require('./match');
-const { buildReply } = require('./quickReply');
-const { REGIONS } = require('./alberta');
-const { JOB_TYPES, SORTS } = require('./aggregator');
+const fs = require('node:fs');
+const path = require('node:path');
+const { loadConfig } = require('./config');
+const { createCardBuilder } = require('./cards');
+const { HttpError, send, sendResult, created, file, html, readJson, safeEqual, matchPath } = require('./http');
 
-const PAGE = require('node:fs').readFileSync(require('node:path').join(__dirname, 'page.html'), 'utf8');
+const ROUTES_DIR = path.join(__dirname, 'routes');
 
-const SWIPES = ['right', 'left', 'super'];
-const PILE_OF = { right: 'liked', super: 'superliked', left: 'passed' };
-const DIR_OF = { liked: 'right', superliked: 'super', passed: 'left' };
-
-// Compact card for swipe-style apps, with a ready-to-send message when a resume is saved.
-function toCard(job, resume) {
-  const card = {
-    id: job.id,
-    title: job.title,
-    company: job.company,
-    location: job.location,
-    city: job.city,
-    proximity: job.proximity || null,
-    type: job.type,
-    salary: job.salary,
-    salaryMin: job.salaryMin,
-    salaryMax: job.salaryMax,
-    remote: job.remote,
-    postedAt: job.postedAt,
-    summary: (job.description || '').slice(0, 280),
-    source: job.source,
-    applyUrl: job.url,
-    match: job.match || null,
-    reply: null,
-  };
-  if (resume) {
-    const reply = buildReply({ resume, job, type: 'apply' });
-    card.reply = { subject: reply.subject, message: reply.message };
-  }
-  return card;
-}
-
-const APP_STATUSES = ['saved', 'applied', 'interviewing', 'offer', 'rejected', 'withdrawn'];
-
-class HttpError extends Error {
-  constructor(status, message) {
-    super(message);
-    this.status = status;
-  }
-}
-
-const CSV_COLUMNS = ['title', 'company', 'city', 'region', 'location', 'type', 'salary', 'salaryMin', 'salaryMax',
-  'postedAt', 'applyMethod', 'applyEmail', 'applyPhone', 'url', 'source', 'id', 'proximity'];
-
-function toCsv(list) {
-  const cell = (v) => {
-    const s = Array.isArray(v) ? v.join('; ') : v === null || v === undefined ? '' : String(v);
-    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
-  };
-  return [CSV_COLUMNS.join(','), ...list.map((j) => CSV_COLUMNS.map((c) => cell(j[c])).join(','))].join('\n');
-}
-
-function send(res, status, body) {
-  res.writeHead(status, {
-    'content-type': 'application/json',
-    'access-control-allow-origin': '*',
-    'access-control-allow-headers': 'content-type, x-api-key',
-    'access-control-allow-methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
-  });
-  res.end(body === undefined ? '' : JSON.stringify(body));
-}
-
-async function readJson(req) {
-  let raw = '';
-  for await (const chunk of req) {
-    raw += chunk;
-    if (raw.length > 1_000_000) throw new HttpError(413, 'Request body too large');
-  }
-  if (!raw) return {};
-  try {
-    return JSON.parse(raw);
-  } catch {
-    throw new HttpError(400, 'Body must be valid JSON');
-  }
-}
-
-function safeEqual(a, b) {
-  const ab = Buffer.from(String(a));
-  const bb = Buffer.from(String(b));
-  return ab.length === bb.length && crypto.timingSafeEqual(ab, bb);
-}
-
-function createApp({ store, jobs, apiKey }) {
-  function requireResume() {
-    const resume = store.getResume();
-    if (!resume) throw new HttpError(409, 'Upload your resume first with PUT /resume');
-    return resume;
-  }
-
-  async function requireJob(id) {
-    const job = await jobs.getJob(id);
-    if (!job) throw new HttpError(404, `Job ${id} not found`);
-    return job;
-  }
-
-  // [method, pattern, handler]. Patterns use :params.
-  const routes = [
-    ['GET', '/health', async () => ({ ok: true, sources: jobs.sources, homeCity: jobs.homeCity || null })],
-    ['GET', '/sources', async () => (jobs.sourceDetails ? jobs.sourceDetails() : jobs.sources)],
-    ['GET', '/alberta/cities', async () => ({
-      regions: Object.entries(REGIONS).map(([name, cities]) => ({ name, cities })),
-      jobTypes: JOB_TYPES,
-      sorts: SORTS,
-    })],
-
-    ['GET', '/resume', async () => requireResume()],
-    ['PUT', '/resume', async ({ body }) => {
-      try {
-        return store.saveResume(normalizeResume(body));
-      } catch (e) {
-        throw new HttpError(400, e.message);
-      }
-    }],
-
-    ['GET', '/jobs', async ({ query }) => {
-      const resume = query.get('match') === 'false' ? null : store.getResume();
-      return jobs.search(query, resume);
-    }],
-    ['GET', '/jobs.csv', async ({ query }) => {
-      query.set('limit', 'all');
-      const { jobs: list } = await jobs.search(query, store.getResume());
-      return { csv: toCsv(list), filename: 'alberta-jobs.csv' };
-    }],
-    ['GET', '/insights', async ({ query }) => {
-      const { total, facets, sources, filters } = await jobs.search(query);
-      return { total, filters, sources, ...facets };
-    }],
-    ['GET', '/jobs/:id', async ({ params }) => requireJob(params.id)],
-    ['GET', '/jobs/:id/match', async ({ params }) => scoreMatch(requireResume(), await requireJob(params.id))],
-    ['POST', '/jobs/:id/quick-reply', async ({ params, body }) => {
-      const resume = requireResume();
-      const job = await requireJob(params.id);
-      if (body.type === 'reply' && !body.employerMessage) {
-        throw new HttpError(400, 'type "reply" needs the employerMessage you are answering');
-      }
-      try {
-        const reply = buildReply({ resume, job, ...body });
-        const to = job.applyEmail;
-        const mailto = to
-          ? `mailto:${to}?subject=${encodeURIComponent(reply.subject)}&body=${encodeURIComponent(reply.message)}`
-          : null;
-        return { jobId: job.id, applyUrl: job.url, applyEmail: to || null, mailto, ...reply };
-      } catch (e) {
-        throw new HttpError(400, e.message);
-      }
-    }],
-
-    // Swipe deck: next jobs you haven't swiped on, best first.
-    ['GET', '/deck', async ({ query }) => {
-      const size = Math.min(Math.max(Number(query.get('limit')) || 10, 1), 50);
-      query.set('limit', 'all');
-      query.delete('page');
-      const resume = store.getResume();
-      const result = await jobs.search(query, resume);
-      const swiped = new Set(store.listSwipes().map((s) => s.jobId));
-      const unseen = result.jobs.filter((j) => !swiped.has(j.id));
-      return {
-        remaining: unseen.length,
-        hasResume: Boolean(resume),
-        sources: result.sources,
-        cards: unseen.slice(0, size).map((j) => toCard(j, resume)),
-      };
-    }],
-    // Swiping sorts jobs into piles: right -> liked, super -> superliked, left -> passed.
-    // Nothing is applied to until you choose to from a pile.
-    ['POST', '/swipes', async ({ body }) => {
-      if (!SWIPES.includes(body.direction)) throw new HttpError(400, `direction must be one of: ${SWIPES.join(', ')}`);
-      if (!body.jobId) throw new HttpError(400, 'jobId is required');
-      if (store.listSwipes().some((x) => x.jobId === body.jobId)) throw new HttpError(409, 'Already swiped on this job');
-      const job = await requireJob(body.jobId);
-      // Keep a copy of the card so piles still show the job after it leaves the source.
-      const swipe = store.addSwipe({ jobId: job.id, direction: body.direction, card: toCard(job, store.getResume()) });
-      return [201, { ...swipe, pile: PILE_OF[swipe.direction] }];
-    }],
-    ['GET', '/piles', async () => {
-      const all = store.listSwipes();
-      return Object.fromEntries(Object.entries(PILE_OF).map(([dir, pile]) => [pile, all.filter((x) => x.direction === dir).length]));
-    }],
-    ['GET', '/piles/:pile', async ({ params, query }) => {
-      const dir = DIR_OF[params.pile];
-      if (!dir) throw new HttpError(404, `Pile must be one of: ${Object.keys(DIR_OF).join(', ')}`);
-      let list = store.listSwipes().filter((x) => x.direction === dir);
-      if (query.get('applied') === 'true') list = list.filter((x) => x.appliedAt);
-      if (query.get('applied') === 'false') list = list.filter((x) => !x.appliedAt);
-      return list.reverse().map(({ card, ...rest }) => ({ ...rest, ...card, jobId: rest.jobId }));
-    }],
-    // Move a job to another pile: { "direction": "right" | "super" | "left" }.
-    ['PATCH', '/swipes/:jobId', async ({ params, body }) => {
-      if (!SWIPES.includes(body.direction)) throw new HttpError(400, `direction must be one of: ${SWIPES.join(', ')}`);
-      const updated = store.updateSwipe(params.jobId, { direction: body.direction });
-      if (!updated) throw new HttpError(404, 'You have not swiped on this job');
-      return { ...updated, pile: PILE_OF[updated.direction] };
-    }],
-    // Take a job out of its pile; it goes back into the deck.
-    ['DELETE', '/swipes/:jobId', async ({ params }) => {
-      if (!store.removeSwipe(params.jobId)) throw new HttpError(404, 'You have not swiped on this job');
-      return { removed: params.jobId };
-    }],
-    // Mark a job in your piles as applied: records it in /applications and returns the apply link.
-    ['POST', '/swipes/:jobId/apply', async ({ params, body }) => {
-      const swipe = store.listSwipes().find((x) => x.jobId === params.jobId);
-      if (!swipe) throw new HttpError(404, 'You have not swiped on this job');
-      if (swipe.appliedAt) throw new HttpError(409, 'Already applied to this job');
-      const card = swipe.card;
-      const application = store.addApplication({
-        jobId: swipe.jobId,
-        title: card.title,
-        company: card.company,
-        url: card.applyUrl,
-        status: 'applied',
-        starred: swipe.direction === 'super',
-        message: body.message || card.reply?.message || '',
-        notes: body.notes || '',
-      });
-      store.updateSwipe(swipe.jobId, { appliedAt: application.createdAt, applicationId: application.id });
-      return [201, { applyUrl: card.applyUrl, message: application.message, application }];
-    }],
-    ['POST', '/swipes/undo', async () => {
-      const last = store.popSwipe();
-      if (!last) throw new HttpError(404, 'Nothing to undo');
-      if (last.applicationId) store.deleteApplication(last.applicationId);
-      return { undone: { jobId: last.jobId, direction: last.direction, pile: PILE_OF[last.direction] } };
-    }],
-    ['GET', '/swipes/stats', async () => {
-      const all = store.listSwipes();
-      const today = new Date().toISOString().slice(0, 10);
-      const count = (d) => all.filter((x) => x.direction === d).length;
-      return {
-        total: all.length,
-        liked: count('right'),
-        superliked: count('super'),
-        passed: count('left'),
-        applied: all.filter((x) => x.appliedAt).length,
-        swipedToday: all.filter((x) => x.at.startsWith(today)).length,
-      };
-    }],
-
-    ['GET', '/searches', async () => store.listSearches().map(({ seenIds, ...rest }) => rest)],
-    ['POST', '/searches', async ({ body }) => {
-      if (!body.name) throw new HttpError(400, 'name is required');
-      const filters = jobs.parseFilters(body.filters || {});
-      const { seenIds, ...created } = store.addSearch({ name: body.name, filters: { ...filters, page: undefined, limit: undefined } });
-      return [201, created];
-    }],
-    ['GET', '/searches/:id/run', async ({ params, query }) => {
-      const saved = store.getSearch(params.id);
-      if (!saved) throw new HttpError(404, `Saved search ${params.id} not found`);
-      const result = await jobs.search({ ...saved.filters, page: query.get('page'), limit: query.get('limit') || 50 }, store.getResume());
-      const seen = new Set(saved.seenIds);
-      result.jobs = result.jobs.map((j) => ({ ...j, isNew: !seen.has(j.id) }));
-      result.newCount = result.jobs.filter((j) => j.isNew).length;
-      const seenIds = [...new Set([...saved.seenIds, ...result.jobs.map((j) => j.id)])].slice(-5000);
-      store.updateSearch(saved.id, { seenIds, lastRunAt: new Date().toISOString() });
-      if (query.get('onlyNew') === 'true') result.jobs = result.jobs.filter((j) => j.isNew);
-      return { search: { id: saved.id, name: saved.name, lastRunAt: saved.lastRunAt }, ...result };
-    }],
-    ['DELETE', '/searches/:id', async ({ params }) => {
-      if (!store.deleteSearch(params.id)) throw new HttpError(404, `Saved search ${params.id} not found`);
-      return { deleted: true };
-    }],
-
-    ['GET', '/applications', async ({ query }) => {
-      const status = query.get('status');
-      const apps = store.listApplications();
-      return status ? apps.filter((a) => a.status === status) : apps;
-    }],
-    ['POST', '/applications', async ({ body }) => {
-      if (!body.jobId) throw new HttpError(400, 'jobId is required');
-      if (body.status && !APP_STATUSES.includes(body.status)) {
-        throw new HttpError(400, `status must be one of: ${APP_STATUSES.join(', ')}`);
-      }
-      const job = await requireJob(body.jobId);
-      return [201, store.addApplication({
-        jobId: job.id,
-        title: job.title,
-        company: job.company,
-        url: job.url,
-        status: body.status || 'saved',
-        message: body.message || '',
-        notes: body.notes || '',
-      })];
-    }],
-    ['PATCH', '/applications/:id', async ({ params, body }) => {
-      if (body.status && !APP_STATUSES.includes(body.status)) {
-        throw new HttpError(400, `status must be one of: ${APP_STATUSES.join(', ')}`);
-      }
-      const changes = {};
-      for (const k of ['status', 'message', 'notes']) if (body[k] !== undefined) changes[k] = body[k];
-      const updated = store.updateApplication(params.id, changes);
-      if (!updated) throw new HttpError(404, `Application ${params.id} not found`);
-      return updated;
-    }],
-  ];
-
-  function match(method, pathname) {
-    for (const [m, pattern, handler] of routes) {
-      if (m !== method) continue;
-      const pp = pattern.split('/');
-      const ap = pathname.split('/');
-      if (pp.length !== ap.length) continue;
-      const params = {};
-      if (pp.every((seg, i) => (seg.startsWith(':') ? (params[seg.slice(1)] = decodeURIComponent(ap[i])) : seg === ap[i]))) {
-        return { handler, params };
+function loadRoutes(ctx, dirs) {
+  const routes = [];
+  for (const dir of dirs) {
+    for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('.js')).sort()) {
+      const defs = require(path.join(dir, name))(ctx);
+      for (const r of defs) {
+        if (!r.method || !r.path || typeof r.handler !== 'function') {
+          throw new Error(`${name}: every route needs method, path and handler`);
+        }
+        routes.push({ ...r, method: r.method.toUpperCase(), file: name });
       }
     }
-    return null;
   }
+  // Exact paths beat :param paths, so "/swipes/undo" wins over "/swipes/:jobId".
+  const params = (r) => r.path.split('/').filter((s) => s.startsWith(':')).length;
+  return routes.sort((a, b) => params(a) - params(b));
+}
 
-  return http.createServer(async (req, res) => {
+function createApp({ store, jobs, apiKey, config = loadConfig(), routeDirs = [ROUTES_DIR] }) {
+  const ctx = {
+    store,
+    jobs,
+    config,
+    toCard: createCardBuilder(config),
+    HttpError,
+    created,
+    file,
+    html,
+    requireResume() {
+      const resume = store.getResume();
+      if (!resume) throw new HttpError(409, 'Upload your resume first with PUT /resume');
+      return resume;
+    },
+    async requireJob(id) {
+      const job = await jobs.getJob(id);
+      if (!job) throw new HttpError(404, `Job ${id} not found`);
+      return job;
+    },
+  };
+  const routes = loadRoutes(ctx, routeDirs);
+
+  const server = http.createServer(async (req, res) => {
     try {
       if (req.method === 'OPTIONS') return send(res, 204);
       const url = new URL(req.url, 'http://localhost');
       const pathname = url.pathname.replace(/\/+$/, '') || '/';
 
-      if (req.method === 'GET' && pathname === '/') {
-        res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
-        return res.end(PAGE);
+      let route = null;
+      let params = null;
+      for (const r of routes) {
+        if (r.method !== req.method) continue;
+        params = matchPath(r.path, pathname);
+        if (params) {
+          route = r;
+          break;
+        }
       }
-
-      if (apiKey && pathname !== '/health' && !safeEqual(req.headers['x-api-key'] || '', apiKey)) {
+      if (!route) throw new HttpError(404, `No route for ${req.method} ${pathname}`);
+      if (apiKey && !route.public && !safeEqual(req.headers['x-api-key'] || '', apiKey)) {
         throw new HttpError(401, 'Missing or invalid x-api-key header');
       }
 
-      const found = match(req.method, pathname);
-      if (!found) throw new HttpError(404, `No route for ${req.method} ${pathname}`);
-
       const body = ['POST', 'PUT', 'PATCH'].includes(req.method) ? await readJson(req) : {};
-      const result = await found.handler({ params: found.params, query: url.searchParams, body });
-      if (Array.isArray(result) && typeof result[0] === 'number') return send(res, result[0], result[1]);
-      if (result && typeof result.csv === 'string') {
-        res.writeHead(200, {
-          'content-type': 'text/csv; charset=utf-8',
-          'content-disposition': `attachment; filename="${result.filename}"`,
-          'access-control-allow-origin': '*',
-        });
-        return res.end(result.csv);
-      }
-      send(res, 200, result);
+      sendResult(res, await route.handler({ params, query: url.searchParams, body, req }));
     } catch (err) {
       const status = err.status || 500;
       if (status >= 500) console.error(err);
       send(res, status, { error: status === 500 ? 'Internal server error' : err.message, ...(err.detail ? { detail: err.detail } : {}) });
     }
   });
+  server.routes = routes.map(({ method, path: p, file: f }) => ({ method, path: p, file: f }));
+  return server;
 }
 
-module.exports = { createApp, APP_STATUSES };
+module.exports = { createApp };

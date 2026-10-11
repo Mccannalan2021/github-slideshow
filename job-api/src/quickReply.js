@@ -4,10 +4,11 @@
 //   - "followup": a polite check-in after applying
 const { scoreMatch } = require('./match');
 
+// Default wording; config.json "replies.tones" replaces it when the server runs.
 const TONES = {
-  professional: { hi: 'Hello', bye: 'Best regards' },
-  friendly: { hi: 'Hi', bye: 'Thanks so much' },
-  brief: { hi: 'Hi', bye: 'Thanks' },
+  professional: { greeting: 'Hello', closing: 'Best regards' },
+  friendly: { greeting: 'Hi', closing: 'Thanks so much' },
+  brief: { greeting: 'Hi', closing: 'Thanks' },
 };
 
 function detectIntent(message) {
@@ -35,20 +36,21 @@ function joinList(items) {
 }
 
 function signature(resume, tone) {
-  const lines = [`${tone.bye},`, resume.name];
+  const lines = [`${tone.closing},`, resume.name];
   if (resume.phone) lines.push(resume.phone);
   if (resume.email) lines.push(resume.email);
   return lines.join('\n');
 }
 
-function buildReply({ resume, job, type = 'apply', employerMessage = '', tone = 'professional', availability = '' }) {
-  const t = TONES[tone] || TONES.professional;
+function buildReply({ resume, job, type = 'apply', employerMessage = '', tone, availability = '', tones = TONES, defaultTone = 'professional' }) {
+  const toneName = tones[tone] ? tone : defaultTone;
+  const t = tones[toneName];
   const contact = job.contactName ? ` ${firstName(job.contactName)}` : '';
-  const greeting = `${t.hi}${contact},`;
+  const greeting = `${t.greeting}${contact},`;
   const skills = joinList(topSkills(resume, job));
   const role = `${job.title} position${job.company ? ` at ${job.company}` : ''}`;
   const recent = (resume.experience || [])[0];
-  const brief = tone === 'brief';
+  const brief = toneName === 'brief';
 
   let body;
   let intent = null;
@@ -100,7 +102,7 @@ function buildReply({ resume, job, type = 'apply', employerMessage = '', tone = 
 
   const message = [greeting, '', body.filter(Boolean).join(' '), '', signature(resume, t)].join('\n');
   const subject = type === 'apply' ? `Application: ${job.title} - ${resume.name}` : `Re: ${job.title}`;
-  return { type, tone: TONES[tone] ? tone : 'professional', intent, subject, message };
+  return { type, tone: toneName, intent, subject, message };
 }
 
 module.exports = { buildReply, detectIntent };

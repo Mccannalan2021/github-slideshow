@@ -124,4 +124,16 @@ function upstreamError(message, detail) {
   return err;
 }
 
-module.exports = { createIndeedProvider, toJob, QUERIES };
+// Turned on when INDEED_CLIENT_ID is set in .env.
+function fromEnv(env) {
+  if (!env.INDEED_CLIENT_ID) return null;
+  return createIndeedProvider({
+    clientId: env.INDEED_CLIENT_ID,
+    clientSecret: env.INDEED_CLIENT_SECRET,
+    scope: env.INDEED_SCOPE,
+    tokenUrl: env.INDEED_TOKEN_URL || 'https://apis.indeed.com/oauth/v2/tokens',
+    graphqlUrl: env.INDEED_GRAPHQL_URL || 'https://apis.indeed.com/graphql',
+  });
+}
+
+module.exports = { fromEnv, createIndeedProvider, toJob, QUERIES };

@@ -3,11 +3,8 @@ const fs = require('node:fs');
 const { createApp } = require('./app');
 const { createStore } = require('./store');
 const { createAggregator } = require('./aggregator');
+const { loadConfig } = require('./config');
 const { createMockProvider } = require('./providers/mock');
-const { createIndeedProvider } = require('./providers/indeed');
-const { createAdzunaProvider } = require('./providers/adzuna');
-const { createJoobleProvider } = require('./providers/jooble');
-const { createJobBankProvider } = require('./providers/jobbank');
 const { createFileProvider } = require('./providers/file');
 
 // Load .env without extra dependencies (real env vars win).
@@ -21,25 +18,18 @@ if (fs.existsSync(envFile)) {
 
 const env = process.env;
 
-// Every source with credentials is turned on. Falls back to sample data when none are set.
+// Every file in src/providers/ that exports fromEnv(env) is a job source. It turns itself on when
+// its settings are in .env. To add a source, add a file there; see CUSTOMIZING.md.
 function buildProviders() {
   const providers = [];
-  if (env.ADZUNA_APP_ID) providers.push(createAdzunaProvider({ appId: env.ADZUNA_APP_ID, appKey: env.ADZUNA_APP_KEY }));
-  if (env.JOOBLE_API_KEY) providers.push(createJoobleProvider({ apiKey: env.JOOBLE_API_KEY }));
-  if (env.INDEED_CLIENT_ID) {
-    providers.push(createIndeedProvider({
-      clientId: env.INDEED_CLIENT_ID,
-      clientSecret: env.INDEED_CLIENT_SECRET,
-      scope: env.INDEED_SCOPE,
-      tokenUrl: env.INDEED_TOKEN_URL || 'https://apis.indeed.com/oauth/v2/tokens',
-      graphqlUrl: env.INDEED_GRAPHQL_URL || 'https://apis.indeed.com/graphql',
-    }));
+  const dir = path.join(__dirname, 'providers');
+  for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('.js')).sort()) {
+    const mod = require(path.join(dir, name));
+    if (typeof mod.fromEnv !== 'function') continue;
+    const provider = mod.fromEnv(env);
+    if (provider) providers.push(provider);
   }
-  if (env.JOBBANK_CSV) {
-    const jobbank = createJobBankProvider({ csvPath: path.resolve(env.JOBBANK_CSV) });
-    console.log(`Job Bank: loaded ${jobbank.size} Alberta postings`);
-    providers.push(jobbank);
-  }
+
   // Job snapshots: every .json file in sources/ plus any listed in JOBS_FILES.
   const sourcesDir = path.join(__dirname, '..', 'sources');
   const files = [
@@ -59,18 +49,19 @@ function buildProviders() {
   return providers;
 }
 
+const config = loadConfig({ env });
 const store = createStore(path.resolve(env.DATA_DIR || path.join(__dirname, '..', 'data')));
 const jobs = createAggregator({
   providers: buildProviders(),
   store,
-  cacheTtlMs: (Number(env.CACHE_TTL_SECONDS) || 600) * 1000,
-  perSourceLimit: Number(env.PER_SOURCE_LIMIT) || 50,
-  homeCity: env.HOME_CITY || '',
+  cacheTtlMs: config.search.cacheSeconds * 1000,
+  perSourceLimit: config.search.perSourceLimit,
+  homeCity: config.homeCity,
 });
 const port = Number(env.PORT) || 3000;
 
 if (!env.API_KEY) console.warn('API_KEY is not set: the API is open to anyone who can reach it.');
 
-createApp({ store, jobs, apiKey: env.API_KEY }).listen(port, () => {
+createApp({ store, jobs, config, apiKey: env.API_KEY }).listen(port, () => {
   console.log(`Alberta Jobs API on http://localhost:${port} (sources: ${jobs.sources.join(', ')}${jobs.homeCity ? `; home city: ${jobs.homeCity}` : ''})`);
 });

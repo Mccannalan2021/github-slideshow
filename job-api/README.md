@@ -39,6 +39,12 @@ You can also do it by hand: `cp .env.example .env`, edit it, then `npm test` and
 
 With no sources configured, it serves sample Alberta jobs so you can build your app right away.
 
+## Changing it
+
+Settings like your home city, swipe piles, card fields and reply wording are in `config.json`.
+New endpoints and job sources are single files that load automatically. See
+[CUSTOMIZING.md](CUSTOMIZING.md) for step-by-step recipes.
+
 ## Job sources
 
 Every source you configure in `.env` is turned on. If one source is down, the others still answer,
@@ -73,6 +79,7 @@ Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
 | Method | Path | What it does |
 | --- | --- | --- |
 | GET | `/health` | Status and active sources |
+| GET | `/settings` | Current piles, card fields, tones and statuses, so your app can draw its UI from them |
 | GET | `/alberta/cities` | Regions, cities, job types and sort options for your app's filters |
 | GET | `/jobs` | Search Alberta jobs (filters below) |
 | GET | `/jobs/:id` | One job |
@@ -239,20 +246,4 @@ Your resume, applications, saved searches and recently seen jobs are saved as JS
 
 ## Project layout
 
-```
-src/
-  server.js          reads .env, turns on configured sources, starts the server
-  app.js             HTTP routes
-  aggregator.js      searches all sources, Alberta filter, dedupe, filters, sorting, facets, cache
-  alberta.js         Alberta cities and economic regions
-  salary.js          salary text → annual CAD
-  match.js           resume ↔ job scoring
-  contacts.js        apply email / phone / method from posting text
-  page.html          the web page served at /
-  quickReply.js      message writer
-  resume.js          resume parsing
-  store.js           JSON file storage
-  providers/         adzuna, jooble, jobbank, indeed, mock (sample jobs)
-scripts/
-  setup.js           one-step setup (npm run setup)
-```
+See the diagram at the end of [CUSTOMIZING.md](CUSTOMIZING.md).

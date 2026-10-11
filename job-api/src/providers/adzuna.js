@@ -44,4 +44,9 @@ function locationOf(loc = {}) {
 
 const stripTags = (s) => String(s || '').replace(/<[^>]+>/g, '').trim();
 
-module.exports = { createAdzunaProvider };
+// Turned on when ADZUNA_APP_ID is set in .env.
+function fromEnv(env) {
+  return env.ADZUNA_APP_ID ? createAdzunaProvider({ appId: env.ADZUNA_APP_ID, appKey: env.ADZUNA_APP_KEY }) : null;
+}
+
+module.exports = { fromEnv, createAdzunaProvider };
