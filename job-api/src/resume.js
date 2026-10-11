@@ -1,0 +1,44 @@
+// Normalizes resume input. Accepts structured JSON, or { text } for a pasted plain-text resume.
+const KNOWN_SKILLS = [
+  'javascript', 'typescript', 'node', 'react', 'python', 'java', 'sql', 'aws', 'docker', 'kubernetes',
+  'excel', 'customer service', 'sales', 'forklift', 'warehouse', 'inventory', 'cash handling', 'pos',
+  'project management', 'communication', 'leadership', 'scheduling', 'data entry', 'microsoft office',
+  'quickbooks', 'marketing', 'social media', 'nursing', 'cpr', 'driving', 'cdl', 'retail', 'cooking',
+  'cleaning', 'construction', 'electrical', 'plumbing', 'welding', 'teamwork', 'spanish', 'bilingual',
+];
+
+function extractSkills(text) {
+  const lower = ` ${text.toLowerCase()} `;
+  return KNOWN_SKILLS.filter((s) => new RegExp(`[^a-z]${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^a-z]`).test(lower));
+}
+
+function normalizeResume(input) {
+  if (!input || typeof input !== 'object') throw new Error('Resume must be a JSON object');
+
+  const text = typeof input.text === 'string' ? input.text : '';
+  const firstLine = text.split('\n').map((l) => l.trim()).find(Boolean) || '';
+  const email = input.email || (text.match(/[\w.+-]+@[\w-]+\.[\w.-]+/) || [])[0] || '';
+  const phone = input.phone || (text.match(/\+?\(?\d[\d\s().-]{8,}\d/) || [])[0] || '';
+
+  const skills = Array.isArray(input.skills) && input.skills.length
+    ? input.skills.map(String)
+    : extractSkills(text);
+
+  const resume = {
+    name: input.name || firstLine,
+    email,
+    phone: phone.trim(),
+    headline: input.headline || '',
+    summary: input.summary || '',
+    location: input.location || '',
+    skills: [...new Set(skills.map((s) => s.trim()).filter(Boolean))],
+    experience: Array.isArray(input.experience) ? input.experience : [],
+    education: Array.isArray(input.education) ? input.education : [],
+    text,
+  };
+
+  if (!resume.name) throw new Error('Resume needs a "name" (or a "text" whose first line is your name)');
+  return resume;
+}
+
+module.exports = { normalizeResume, extractSkills };

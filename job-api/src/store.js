@@ -1,0 +1,49 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+
+// Small JSON-file store for the resume and the application tracker.
+function createStore(dataDir) {
+  fs.mkdirSync(dataDir, { recursive: true });
+  const file = (name) => path.join(dataDir, `${name}.json`);
+
+  function read(name, fallback) {
+    try {
+      return JSON.parse(fs.readFileSync(file(name), 'utf8'));
+    } catch {
+      return fallback;
+    }
+  }
+
+  function write(name, value) {
+    const tmp = `${file(name)}.tmp`;
+    fs.writeFileSync(tmp, JSON.stringify(value, null, 2));
+    fs.renameSync(tmp, file(name));
+    return value;
+  }
+
+  return {
+    getResume: () => read('resume', null),
+    saveResume: (resume) => write('resume', { ...resume, updatedAt: new Date().toISOString() }),
+
+    listApplications: () => read('applications', []),
+    getApplication: (id) => read('applications', []).find((a) => a.id === id) || null,
+    addApplication(app) {
+      const apps = read('applications', []);
+      const now = new Date().toISOString();
+      const created = { id: crypto.randomUUID(), status: 'saved', createdAt: now, updatedAt: now, ...app };
+      write('applications', [...apps, created]);
+      return created;
+    },
+    updateApplication(id, changes) {
+      const apps = read('applications', []);
+      const i = apps.findIndex((a) => a.id === id);
+      if (i === -1) return null;
+      apps[i] = { ...apps[i], ...changes, id, updatedAt: new Date().toISOString() };
+      write('applications', apps);
+      return apps[i];
+    },
+  };
+}
+
+module.exports = { createStore };
