@@ -188,6 +188,12 @@ test('jobs with no employer are not merged as duplicates', () => {
   assert.equal(dedupe([a, b]).length, 2);
 });
 
+test('jobs with no title are not merged as duplicates', () => {
+  const a = normalizeJob({ id: '1', title: '', company: 'Diner', location: 'Banff, AB' }, 'x');
+  const b = normalizeJob({ id: '2', title: '', company: 'Diner', location: 'Banff, AB' }, 'y');
+  assert.equal(dedupe([a, b]).length, 2);
+});
+
 test('saved searches keep false filter values', async () => {
   const { call, cleanup } = await start();
   const saved = await call('POST', '/searches', { name: 'On site', filters: { remote: false } });

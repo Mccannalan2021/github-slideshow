@@ -73,10 +73,11 @@ function normalizeJob(raw, source) {
 function dedupe(jobs) {
   const byKey = new Map();
   for (const job of jobs) {
-    // Without an employer and a place there's no safe way to tell two postings apart, so keep both.
+    // Without a title, an employer and a place there's no safe way to tell two postings apart, so keep both.
+    const title = norm(job.title);
     const company = norm(job.company);
     const place = norm(job.city || job.location);
-    const key = company && place ? `${norm(job.title)}|${company}|${place}` : `id|${job.id}`;
+    const key = title && company && place ? `${title}|${company}|${place}` : `id|${job.id}`;
     const existing = byKey.get(key);
     if (!existing) {
       byKey.set(key, job);
