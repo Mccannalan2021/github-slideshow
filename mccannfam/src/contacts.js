@@ -27,7 +27,11 @@ function applyInfo(raw) {
   const text = `${raw.description || ''} ${raw.howToApply || ''}`;
   const emails = [...new Set([...(raw.applyEmails || []), ...(raw.applyEmail ? [raw.applyEmail] : []), ...extractEmails(text)]
     .map((e) => e.toLowerCase()))].filter((e) => !IGNORE.test(e));
-  const phones = [...new Set([...(raw.applyPhone ? [raw.applyPhone] : []), ...extractPhones(raw.howToApply || '')])];
+  const phones = [...new Set([
+    ...(raw.applyPhone ? [raw.applyPhone] : []),
+    ...extractPhones(raw.howToApply || ''),
+    ...extractPhones(raw.description || ''),
+  ])];
   return {
     applyEmail: emails[0] || '',
     applyEmails: emails,

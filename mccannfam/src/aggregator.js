@@ -83,6 +83,10 @@ function dedupe(jobs) {
     const [keep, drop] = job.description.length > existing.description.length ? [job, existing] : [existing, job];
     keep.alsoListedOn = [...keep.alsoListedOn, ...drop.alsoListedOn, { id: drop.id, source: drop.source, url: drop.url }];
     if (!keep.salaryMin && drop.salaryMin) Object.assign(keep, { salary: drop.salary, salaryMin: drop.salaryMin, salaryMax: drop.salaryMax });
+    // Keep contact details whichever copy had them.
+    if (!keep.applyEmail && drop.applyEmail) Object.assign(keep, { applyEmail: drop.applyEmail, applyEmails: drop.applyEmails, applyMethod: 'email' });
+    if (!keep.applyPhone && drop.applyPhone) keep.applyPhone = drop.applyPhone;
+    if ((!keep.applyMethod || keep.applyMethod === 'website') && drop.applyMethod && drop.applyMethod !== 'website') keep.applyMethod = drop.applyMethod;
     byKey.set(key, keep);
   }
   return [...byKey.values()];
@@ -203,7 +207,14 @@ function createAggregator({
   if (homeCity && !home) throw new Error(`HOME_CITY "${homeCity}" is not a known Alberta city`);
   if (!providers.length) throw new Error('At least one job source must be configured');
   const cache = new Map();
-  const index = new Map((store?.getJobIndex?.() || []).map((j) => [j.id, j]));
+  // The index is only a cache of seen jobs: if its file is damaged, start fresh instead of failing.
+  let saved = [];
+  try {
+    saved = store?.getJobIndex?.() || [];
+  } catch (err) {
+    console.warn(`Ignoring the saved job index: ${err.message}`);
+  }
+  const index = new Map(saved.map((j) => [j.id, j]));
 
   // Only writes the index file when a job id is added, so repeat searches don't rewrite it.
   function remember(jobs) {
@@ -267,7 +278,7 @@ function createAggregator({
     return {
       total: jobs.length,
       page: f.page,
-      limit: f.limit,
+      limit: f.limit === Infinity ? 'all' : f.limit,
       pages: f.limit === Infinity ? 1 : Math.ceil(jobs.length / f.limit),
       filters: { ...f, near: near?.name || '', page: undefined, limit: undefined },
       removed: { outsideAlberta: all.length - alberta.length, duplicates: alberta.length - unique.length },
@@ -283,7 +294,8 @@ function createAggregator({
     const provider = providers.find((p) => p.name === source);
     if (!provider?.getJob || !rest.length) return null;
     const raw = await provider.getJob(rest.join(':'));
-    if (!raw) return null;
+    // Same Alberta-only rule as searches.
+    if (!raw || !isAlberta(raw.location)) return null;
     const job = normalizeJob(raw, source);
     remember([job]);
     return job;

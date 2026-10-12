@@ -110,7 +110,7 @@ function params() {
 }
 
 function jobCard(j) {
-  const posted = j.postedAt ? new Date(j.postedAt).toLocaleDateString('en-CA', { month: 'short', day: 'numeric' }) : '';
+  const posted = j.postedAt ? new Date(j.postedAt).toLocaleDateString('en-CA', { month: 'short', day: 'numeric', timeZone: 'UTC' }) : '';
   const chips = [
     j.proximity === 'city' ? '<span class="chip good">In town</span>' : j.proximity === 'region' ? '<span class="chip">Nearby</span>' : '',
     j.type ? `<span class="chip">${esc(j.type)}</span>` : '',

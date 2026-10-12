@@ -92,8 +92,10 @@ function matchPath(pattern, pathname) {
 
 function toCsv(list, columns) {
   const cell = (v) => {
-    const s = Array.isArray(v) ? v.join('; ') : v === null || v === undefined ? '' : String(v);
-    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+    let s = Array.isArray(v) ? v.join('; ') : v === null || v === undefined ? '' : String(v);
+    // Text from job postings must never run as a spreadsheet formula.
+    if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
+    return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
   };
   return [columns.join(','), ...list.map((j) => columns.map((c) => cell(j[c])).join(','))].join('\n');
 }

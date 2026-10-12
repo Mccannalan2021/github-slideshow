@@ -5,13 +5,15 @@ const { buildReply } = require('../quickReply');
 module.exports = ({ store, jobs, config, gmail, HttpError, created }) => {
   const today = () => new Date().toISOString().slice(0, 10);
   const sentToday = () => store.listEmails().filter((e) => e.at.startsWith(today())).length;
+  // Sends in progress count against the daily limit, so simultaneous requests can't exceed it.
+  let sending = 0;
 
   // A job from the live sources, or from your piles if it has since left them.
   async function findJob(id) {
     const job = await jobs.getJob(id);
     if (job) return job;
     const swipe = store.listSwipes().find((s) => s.jobId === id);
-    if (swipe) return { ...swipe.card, id, url: swipe.card.applyUrl };
+    if (swipe) return { ...swipe.card, url: swipe.card.applyUrl, ...swipe.job, id };
     throw new HttpError(404, `Job ${id} not found`);
   }
 
@@ -64,17 +66,23 @@ module.exports = ({ store, jobs, config, gmail, HttpError, created }) => {
         if (body.preview) return { preview: true, ...email };
 
         if (!gmail) throw new HttpError(503, 'Gmail is not connected. Run npm run gmail in mccannfam/, then restart the server.');
-        if (sentToday() >= config.email.dailyLimit) {
+        if (sentToday() + sending >= config.email.dailyLimit) {
           throw new HttpError(429, `Daily email limit reached (${config.email.dailyLimit}). Change "email.dailyLimit" in config.json.`);
         }
 
-        const sent = await gmail.send({
-          to,
-          subject,
-          text: message,
-          attachments: file ? [{ filename: file.filename, contentType: file.contentType, content: file.content }] : [],
-        });
-        store.addEmail({ jobId: job.id, to, subject, gmailId: sent.id, attachment: email.attachment });
+        sending++;
+        let sent;
+        try {
+          sent = await gmail.send({
+            to,
+            subject,
+            text: message,
+            attachments: file ? [{ filename: file.filename, contentType: file.contentType, content: file.content }] : [],
+          });
+          store.addEmail({ jobId: job.id, to, subject, gmailId: sent.id, attachment: email.attachment });
+        } finally {
+          sending--;
+        }
 
         // Record the application, and mark it applied in your piles if you swiped it.
         const application = store.addApplication({

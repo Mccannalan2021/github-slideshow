@@ -162,7 +162,9 @@ Things to know:
 
 ## Authentication
 
-Every request except `GET /health` must send the header `x-api-key: <API_KEY>`.
+Every request must send the header `x-api-key: <API_KEY>`, except these public ones, which hold no
+personal data: `GET /health`, `GET /` (the web page, which asks for the key itself) and
+`GET /openapi.json`.
 
 ## Endpoints
 

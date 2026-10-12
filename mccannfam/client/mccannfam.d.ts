@@ -72,7 +72,7 @@ export interface SourceStatus {
 export interface SearchResult {
   total: number;
   page: number;
-  limit: number;
+  limit: number | 'all';
   pages: number;
   filters: Record<string, unknown>;
   removed: { outsideAlberta: number; duplicates: number };
@@ -129,6 +129,7 @@ export interface Swipe {
   pile: string;
   at: string;
   card: Card;
+  job?: { title: string; company: string; location: string; url: string; applyEmail: string };
   appliedAt?: string;
   applicationId?: string;
 }

@@ -22,9 +22,10 @@ module.exports = ({ store, jobs, HttpError, created }) => [
       result.jobs = result.jobs.map((j) => ({ ...j, isNew: !seen.has(j.id) }));
       result.newCount = result.jobs.filter((j) => j.isNew).length;
       const seenIds = [...new Set([...saved.seenIds, ...result.jobs.map((j) => j.id)])].slice(-5000);
-      store.updateSearch(saved.id, { seenIds, lastRunAt: new Date().toISOString() });
+      const ranAt = new Date().toISOString();
+      store.updateSearch(saved.id, { seenIds, lastRunAt: ranAt });
       if (query.get('onlyNew') === 'true') result.jobs = result.jobs.filter((j) => j.isNew);
-      return { search: { id: saved.id, name: saved.name, lastRunAt: saved.lastRunAt }, ...result };
+      return { search: { id: saved.id, name: saved.name, lastRunAt: ranAt, previousRunAt: saved.lastRunAt }, ...result };
     },
   },
   {

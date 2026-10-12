@@ -91,9 +91,10 @@ async function main() {
       continue;
     }
     // Environment variables win, so --yes works in scripts and CI.
-    const fromEnv = source.keys.filter((k) => process.env[k]);
-    if (fromEnv.length) {
-      fromEnv.forEach((k) => setVar(lines, k, process.env[k]));
+    // Only when every required key is there, so a half-configured source isn't switched on.
+    const needed = source.keys.filter((k) => k !== 'INDEED_SCOPE');
+    if (needed.every((k) => process.env[k])) {
+      source.keys.filter((k) => process.env[k]).forEach((k) => setVar(lines, k, process.env[k]));
       ok(`${source.name}: taken from environment variables`);
       continue;
     }

@@ -7,11 +7,20 @@ function createStore(dataDir) {
   fs.mkdirSync(dataDir, { recursive: true });
   const file = (name) => path.join(dataDir, `${name}.json`);
 
+  // A missing file means "nothing saved yet". Anything else (a damaged file, no permission) is an
+  // error, so a later save can't silently overwrite data that only failed to load.
   function read(name, fallback) {
+    let text;
     try {
-      return JSON.parse(fs.readFileSync(file(name), 'utf8'));
+      text = fs.readFileSync(file(name), 'utf8');
+    } catch (err) {
+      if (err.code === 'ENOENT') return fallback;
+      throw err;
+    }
+    try {
+      return JSON.parse(text);
     } catch {
-      return fallback;
+      throw new Error(`${file(name)} is damaged (not valid JSON). Fix or remove it.`);
     }
   }
 

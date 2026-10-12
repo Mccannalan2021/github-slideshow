@@ -4,7 +4,7 @@ const { JOB_TYPES, SORTS } = require('./aggregator');
 
 const ref = (name) => ({ $ref: `#/components/schemas/${name}` });
 const json = (schema, description = 'OK') => ({ description, content: { 'application/json': { schema } } });
-const body = (schema) => ({ required: true, content: { 'application/json': { schema } } });
+const body = (schema, required = true) => ({ required, content: { 'application/json': { schema } } });
 const pathParam = (name, description) => ({ name, in: 'path', required: true, schema: { type: 'string' }, description });
 const q = (name, schema, description) => ({ name, in: 'query', schema, description });
 const obj = (properties, required = []) => ({ type: 'object', properties, ...(required.length ? { required } : {}) });
@@ -63,7 +63,7 @@ function buildOpenApi(config) {
       '/jobs/{id}/quick-reply': {
         post: op('Jobs', 'Write an application, reply or follow-up message', {
           parameters: [pathParam('id')],
-          requestBody: body(obj({ type: { enum: ['apply', 'reply', 'followup'] }, tone: { enum: Object.keys(config.replies.tones) }, employerMessage: str, availability: str })),
+          requestBody: body(obj({ type: { enum: ['apply', 'reply', 'followup'] }, tone: { enum: Object.keys(config.replies.tones) }, employerMessage: str, availability: str }), false),
           responses: { 200: json(obj({ subject: str, message: str, applyUrl: str, intent: str })) },
         }),
       },
@@ -125,7 +125,7 @@ function buildOpenApi(config) {
         }),
         Card: { type: 'object', description: `Fields set by deck.cardFields: ${config.deck.cardFields.join(', ')}`, properties: { id: str, title: str, applyUrl: str, reply: obj({ subject: str, message: str }) }, additionalProperties: true },
         Swipe: obj({ jobId: str, direction: { enum: directions }, pile: { enum: piles }, at: str, card: ref('Card') }),
-        SearchResult: obj({ total: num, page: num, limit: num, pages: num, sources: arr(obj({ name: str, ok: bool, error: str })), facets: obj({}), jobs: arr(ref('Job')) }),
+        SearchResult: obj({ total: num, page: num, limit: { oneOf: [num, { const: 'all' }] }, pages: num, sources: arr(obj({ name: str, ok: bool, error: str })), facets: obj({}), jobs: arr(ref('Job')) }),
         Settings: obj({ homeCity: str, swipes: arr(obj({ direction: str, pile: str })), cardFields: arr(str), deckSize: num, tones: arr(str), applicationStatuses: arr(str) }),
         Resume: obj({
           name: str, email: str, phone: str, headline: str, summary: str, location: str, skills: arr(str),

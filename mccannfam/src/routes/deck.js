@@ -45,7 +45,9 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
         if (store.listSwipes().some((x) => x.jobId === body.jobId)) throw new HttpError(409, 'Already swiped on this job');
         const job = await requireJob(body.jobId);
         // Keep a copy of the card so piles still show the job after it leaves the source.
-        return created(withPile(store.addSwipe({ jobId: job.id, direction: body.direction, card: toCard(job, store.getResume()) })));
+        // The fields applying needs are kept apart from the card, whose fields are configurable.
+        const keep = { title: job.title, company: job.company, location: job.location, url: job.url, applyEmail: job.applyEmail || '' };
+        return created(withPile(store.addSwipe({ jobId: job.id, direction: body.direction, job: keep, card: toCard(job, store.getResume()) })));
       },
     },
     {
@@ -100,18 +102,20 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
         const swipe = findSwipe(params.jobId);
         if (swipe.appliedAt) throw new HttpError(409, 'Already applied to this job');
         const { card } = swipe;
+        // Swipes saved before `job` was stored only have the card.
+        const job = swipe.job || { title: card.title, company: card.company, url: card.applyUrl };
         const application = store.addApplication({
           jobId: swipe.jobId,
-          title: card.title,
-          company: card.company,
-          url: card.applyUrl,
+          title: job.title,
+          company: job.company,
+          url: job.url,
           pile: PILE_OF[swipe.direction],
           status: 'applied',
           message: body.message || card.reply?.message || '',
           notes: body.notes || '',
         });
         store.updateSwipe(swipe.jobId, { appliedAt: application.createdAt, applicationId: application.id });
-        return created({ applyUrl: card.applyUrl, message: application.message, application });
+        return created({ applyUrl: job.url, message: application.message, application });
       },
     },
     {
@@ -131,7 +135,7 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
         let list = store.listSwipes().filter((x) => x.direction === dir);
         if (query.get('applied') === 'true') list = list.filter((x) => x.appliedAt);
         if (query.get('applied') === 'false') list = list.filter((x) => !x.appliedAt);
-        return list.reverse().map(({ card, ...rest }) => ({ ...card, ...rest, pile: params.pile }));
+        return list.reverse().map(({ card, job, ...rest }) => ({ ...card, ...rest, pile: params.pile }));
       },
     },
   ];
