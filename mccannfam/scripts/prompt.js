@@ -1,17 +1,12 @@
 // Question-and-answer helper for the setup scripts.
 // Answers typed or pasted before a question appears are kept, so pasting several lines works.
 const readline = require('node:readline');
-const fs = require('node:fs');
+const { loadEnvFile } = require('../src/env');
 const path = require('node:path');
 
 // Reads mccannfam/.env into process.env (real environment variables win).
 function loadEnv(root = path.join(__dirname, '..')) {
-  const file = path.join(root, '.env');
-  if (!fs.existsSync(file)) return;
-  for (const line of fs.readFileSync(file, 'utf8').split('\n')) {
-    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
-    if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
-  }
+  loadEnvFile(path.join(root, '.env'));
 }
 
 function createPrompter() {

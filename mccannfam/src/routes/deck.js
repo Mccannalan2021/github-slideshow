@@ -6,7 +6,7 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
   const directions = Object.keys(PILE_OF);
 
   function checkDirection(direction) {
-    if (!PILE_OF[direction]) throw new HttpError(400, `direction must be one of: ${directions.join(', ')}`);
+    if (typeof direction !== 'string' || !Object.hasOwn(PILE_OF, direction)) throw new HttpError(400, `direction must be one of: ${directions.join(', ')}`);
   }
   function findSwipe(jobId) {
     const swipe = store.listSwipes().find((x) => x.jobId === jobId);
@@ -133,7 +133,7 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
       method: 'GET',
       path: '/piles/:pile',
       handler: async ({ params, query }) => {
-        const dir = DIR_OF[params.pile];
+        const dir = Object.hasOwn(DIR_OF, params.pile) ? DIR_OF[params.pile] : null;
         if (!dir) throw new HttpError(404, `Pile must be one of: ${Object.keys(DIR_OF).join(', ')}`);
         let list = store.listSwipes().filter((x) => x.direction === dir);
         if (query.get('applied') === 'true') list = list.filter((x) => x.appliedAt);

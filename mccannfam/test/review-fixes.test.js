@@ -181,3 +181,53 @@ test('province codes after a comma count in any case', () => {
   assert.equal(isAlberta('Brooks, on'), false);
   assert.equal(isAlberta('Work on site in Red Deer'), true);
 });
+
+test('jobs with no employer are not merged as duplicates', () => {
+  const a = normalizeJob({ id: '1', title: 'Cashier', company: '', location: 'Calgary, AB' }, 'x');
+  const b = normalizeJob({ id: '2', title: 'Cashier', company: '', location: 'Calgary, AB' }, 'x');
+  assert.equal(dedupe([a, b]).length, 2);
+});
+
+test('saved searches keep false filter values', async () => {
+  const { call, cleanup } = await start();
+  const saved = await call('POST', '/searches', { name: 'On site', filters: { remote: false } });
+  assert.equal(saved.body.filters.remote, 'false');
+  const run = await call('GET', `/searches/${saved.body.id}/run`);
+  assert.ok(run.body.jobs.length > 0);
+  assert.ok(run.body.jobs.every((j) => j.remote === false));
+  cleanup();
+});
+
+test('unknown swipe directions such as "constructor" are rejected', async () => {
+  const { call, cleanup } = await start();
+  for (const direction of ['constructor', 'toString', '__proto__']) {
+    assert.equal((await call('POST', '/swipes', { jobId: 'mock:3', direction })).status, 400, direction);
+  }
+  assert.equal((await call('GET', '/piles/constructor')).status, 404);
+  cleanup();
+});
+
+test('replies only mention an attached resume when one is attached', () => {
+  const { buildReply } = require('../src/quickReply');
+  const job = { title: 'Welder', company: 'Steelco' };
+  const resume = { name: 'Sam', skills: [] };
+  assert.doesNotMatch(buildReply({ resume, job }).message, /attached/);
+  assert.match(buildReply({ resume, job, attached: true }).message, /My resume is attached/);
+});
+
+test('.env values with quotes, backslashes and spaces read back exactly', () => {
+  const { encodeEnvValue, decodeEnvValue, getEnvLine, setEnvLine } = require('../src/env');
+  for (const v of ['C:\\Users\\me\\jobs.csv', 'Jordan "JJ" Smith', "O'Brien", 'plain', 'a b # c']) {
+    assert.equal(decodeEnvValue(encodeEnvValue(v)), v);
+    const lines = ['# comment', 'X=old'];
+    setEnvLine(lines, 'X', v);
+    assert.equal(getEnvLine(lines, 'X'), v);
+    assert.equal(lines[0], '# comment');
+  }
+});
+
+test('salary uses the pay amount, not other numbers in the text', () => {
+  const { normalizeSalary } = require('../src/salary');
+  assert.deepEqual(normalizeSalary({ text: '$18 per hour, 40 hours per week' }), { salaryMin: 37440, salaryMax: 37440 });
+  assert.deepEqual(normalizeSalary({ text: '$30–$36 an hour' }), { salaryMin: 62400, salaryMax: 74880 });
+});

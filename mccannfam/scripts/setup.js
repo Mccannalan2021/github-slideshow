@@ -16,6 +16,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { createPrompter } = require('./prompt');
+const { getEnvLine, setEnvLine } = require('../src/env');
 const { spawnSync } = require('node:child_process');
 
 const root = path.join(__dirname, '..');
@@ -47,16 +48,8 @@ const fail = (msg) => {
 function readEnv() {
   return fs.readFileSync(envPath, 'utf8').split(/\r?\n/);
 }
-function getVar(lines, key) {
-  const line = lines.find((l) => l.startsWith(`${key}=`));
-  return line ? line.slice(key.length + 1).replace(/^["']|["']$/g, '').trim() : '';
-}
-function setVar(lines, key, value) {
-  const i = lines.findIndex((l) => l.startsWith(`${key}=`));
-  const line = `${key}=${/[\s#"']/.test(value) ? JSON.stringify(value) : value}`;
-  if (i === -1) lines.push(line);
-  else lines[i] = line;
-}
+const getVar = getEnvLine;
+const setVar = setEnvLine;
 
 async function main() {
   console.log('\nmccannfam setup\n');
@@ -85,7 +78,8 @@ async function main() {
   const rl = interactive ? createPrompter() : null;
   console.log(interactive ? '\nJob sources (press Enter to skip any you don\'t have):' : '\nJob sources:');
   for (const source of SOURCES) {
-    const existing = source.keys.every((k) => getVar(lines, k));
+    // Indeed's scope is optional, so it doesn't count towards "already configured".
+    const existing = source.keys.filter((k) => k !== 'INDEED_SCOPE').every((k) => getVar(lines, k));
     if (existing) {
       ok(`${source.name}: already configured`);
       continue;

@@ -50,17 +50,17 @@ module.exports = ({ store, jobs, config, gmail, HttpError, created }) => {
         const to = String(body.to || job.applyEmail || '').trim();
         if (!to) throw new HttpError(400, 'This job has no email address. Send "to" with the address to apply to.');
 
+        const attach = body.attachResume ?? config.email.attachResume;
+        const file = attach ? store.getResumeFile() : null;
         let { subject, message } = body;
         if (!subject || !message) {
           const resume = store.getResume();
           if (!resume) throw new HttpError(409, 'Save your resume first (npm run resume or PUT /resume), or send "subject" and "message"');
-          const reply = buildReply({ resume, job, type: 'apply', tone: body.tone, tones: config.replies.tones, defaultTone: config.replies.defaultTone });
+          const reply = buildReply({ resume, job, type: 'apply', tone: body.tone, attached: Boolean(file), tones: config.replies.tones, defaultTone: config.replies.defaultTone });
           subject = subject || reply.subject;
           message = message || reply.message;
         }
 
-        const attach = body.attachResume ?? config.email.attachResume;
-        const file = attach ? store.getResumeFile() : null;
         const email = { to, subject, message, attachment: file ? file.filename : null };
         if (attach && !file) email.warning = 'No resume file saved, so nothing is attached. Add one with npm run resume or PUT /resume/file.';
         if (body.preview) return { preview: true, ...email };

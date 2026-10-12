@@ -10,6 +10,7 @@ const http = require('node:http');
 const crypto = require('node:crypto');
 const { createPrompter, loadEnv } = require('./prompt');
 const { createGmail, EMAIL } = require('../src/gmail');
+const { setEnvLine } = require('../src/env');
 
 const root = path.join(__dirname, '..');
 const envPath = path.join(root, '.env');
@@ -18,12 +19,7 @@ const SCOPE = 'https://www.googleapis.com/auth/gmail.send';
 function saveEnv(values) {
   if (!fs.existsSync(envPath)) fs.copyFileSync(path.join(root, '.env.example'), envPath);
   const lines = fs.readFileSync(envPath, 'utf8').split(/\r?\n/);
-  for (const [key, value] of Object.entries(values)) {
-    const line = `${key}=${/[\s#"']/.test(value) ? JSON.stringify(value) : value}`;
-    const i = lines.findIndex((l) => l.startsWith(`${key}=`));
-    if (i === -1) lines.push(line);
-    else lines[i] = line;
-  }
+  for (const [key, value] of Object.entries(values)) setEnvLine(lines, key, value);
   fs.writeFileSync(envPath, lines.join('\n'), { mode: 0o600 });
   // mode only applies to new files; .env may have just been copied from .env.example.
   try {

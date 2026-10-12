@@ -30,7 +30,7 @@
 
   "csvColumns": [
     "title", "company", "city", "region", "location", "type", "salary", "salaryMin", "salaryMax",
-    "postedAt", "applyMethod", "url", "source", "id", "proximity"
+    "postedAt", "applyMethod", "url", "applyEmail", "applyPhone", "source", "id", "proximity"
   ],
 
   "email": {

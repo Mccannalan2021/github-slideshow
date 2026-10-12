@@ -42,7 +42,7 @@ function signature(resume, tone) {
   return lines.join('\n');
 }
 
-function buildReply({ resume, job, type = 'apply', employerMessage = '', tone, availability = '', tones = TONES, defaultTone = 'professional' }) {
+function buildReply({ resume, job, type = 'apply', employerMessage = '', tone, availability = '', attached = false, tones = TONES, defaultTone = 'professional' }) {
   const toneName = tones[tone] ? tone : defaultTone;
   const t = tones[toneName];
   const contact = job.contactName ? ` ${firstName(job.contactName)}` : '';
@@ -60,7 +60,7 @@ function buildReply({ resume, job, type = 'apply', employerMessage = '', tone, a
       `I'm excited to apply for the ${role}.`,
       recent && !brief ? `Most recently I worked as ${recent.title}${recent.company ? ` at ${recent.company}` : ''}.` : '',
       skills ? `I bring experience with ${skills}, which line up well with what you're looking for.` : '',
-      brief ? '' : 'My resume is attached, and I would welcome the chance to talk about how I can help your team.',
+      brief ? '' : `${attached ? 'My resume is attached, and I' : 'I'} would welcome the chance to talk about how I can help your team.`,
     ];
   } else if (type === 'followup') {
     body = [

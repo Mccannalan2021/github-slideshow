@@ -1,5 +1,4 @@
 const path = require('node:path');
-const fs = require('node:fs');
 const { createApp } = require('./app');
 const { createStore } = require('./store');
 const { createAggregator } = require('./aggregator');
@@ -7,15 +6,10 @@ const { loadConfig } = require('./config');
 const { buildProviders } = require('./sources');
 const { effectiveEnv } = require('./keys');
 const gmailModule = require('./gmail');
+const { loadEnvFile } = require('./env');
 
 // Load .env without extra dependencies (real env vars win).
-const envFile = path.join(__dirname, '..', '.env');
-if (fs.existsSync(envFile)) {
-  for (const line of fs.readFileSync(envFile, 'utf8').split('\n')) {
-    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
-    if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
-  }
-}
+loadEnvFile(path.join(__dirname, '..', '.env'));
 
 const env = process.env;
 

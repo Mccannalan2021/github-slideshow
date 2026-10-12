@@ -12,10 +12,21 @@ function detectPeriod(text, amount) {
   return amount && amount < 200 ? 'hour' : 'year';
 }
 
+// Reads the pay amount, plus a second one only when it's an explicit range ("18 - 21", "70k to 85k").
+// Other numbers ("40 hours per week") are ignored.
+const AMOUNT = String.raw`\$?\s*(\d+(?:\.\d+)?)\s*(k)?`;
+const RANGE = new RegExp(`${AMOUNT}(?:\\s*(?:-|–|—|to)\\s*${AMOUNT})?`, 'i');
 function parseAmounts(text) {
-  return [...String(text || '').replace(/,/g, '').matchAll(/(\d+(?:\.\d+)?)\s*(k)?/gi)]
-    .map((m) => Number(m[1]) * (m[2] ? 1000 : 1))
-    .filter((n) => n >= 5);
+  const clean = String(text || '').replace(/,/g, '');
+  // Skip small numbers before the pay (e.g. "Level 2: $18/hr") by trying each match in turn.
+  for (const m of clean.matchAll(new RegExp(RANGE.source, 'gi'))) {
+    const lo = Number(m[1]) * (m[2] ? 1000 : 1);
+    if (lo < 5) continue;
+    const amounts = [lo];
+    if (m[3]) amounts.push(Number(m[3]) * (m[4] ? 1000 : 1));
+    return amounts;
+  }
+  return [];
 }
 
 // Returns { salaryMin, salaryMax } in annual CAD, or nulls when nothing usable is present.

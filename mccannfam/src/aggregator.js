@@ -73,7 +73,10 @@ function normalizeJob(raw, source) {
 function dedupe(jobs) {
   const byKey = new Map();
   for (const job of jobs) {
-    const key = `${norm(job.title)}|${norm(job.company)}|${norm(job.city || job.location)}`;
+    // Without an employer and a place there's no safe way to tell two postings apart, so keep both.
+    const company = norm(job.company);
+    const place = norm(job.city || job.location);
+    const key = company && place ? `${norm(job.title)}|${company}|${place}` : `id|${job.id}`;
     const existing = byKey.get(key);
     if (!existing) {
       byKey.set(key, job);
@@ -92,16 +95,19 @@ function dedupe(jobs) {
   return [...byKey.values()];
 }
 
+// Turns a filter value into a string, keeping false (saved searches store real booleans).
+const text = (v) => (v === undefined || v === null ? '' : String(v));
+
 function parseFilters(q, { defaultLimit = 20, maxLimit = 100 } = {}) {
   const get = (k) => (typeof q.get === 'function' ? q.get(k) : q[k]) ?? undefined;
   const f = {
     q: (get('q') || '').trim(),
-    city: get('city') || '',
-    near: get('near') || '',
-    region: get('region') || '',
-    type: get('type') || '',
-    remote: get('remote') || '',
-    hasEmail: get('hasEmail') || '',
+    city: text(get('city')),
+    near: text(get('near')),
+    region: text(get('region')),
+    type: text(get('type')),
+    remote: text(get('remote')),
+    hasEmail: text(get('hasEmail')),
     minSalary: get('minSalary') ? Number(get('minSalary')) : null,
     postedWithin: get('postedWithin') ? Number(get('postedWithin')) : null,
     sources: get('sources') ? String(get('sources')).split(',').map((s) => s.trim()).filter(Boolean) : [],
