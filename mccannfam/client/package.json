@@ -1,0 +1,7 @@
+{
+  "name": "mccannfam-client",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "mccannfam.js",
+  "types": "mccannfam.d.ts"
+}

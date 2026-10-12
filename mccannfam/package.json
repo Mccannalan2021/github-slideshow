@@ -1,0 +1,18 @@
+{
+  "name": "mccannfam",
+  "version": "1.0.0",
+  "description": "mccannfam: Alberta jobs API that searches Adzuna, Jooble, Job Bank and Indeed at once, matches jobs to your resume and writes quick replies.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/server.js",
+    "setup": "node scripts/setup.js",
+    "import": "node scripts/import-all.js",
+    "resume": "node scripts/resume.js",
+    "gmail": "node scripts/gmail-auth.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
