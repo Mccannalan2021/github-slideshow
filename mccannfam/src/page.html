@@ -43,8 +43,13 @@
 </head>
 <body>
 <header>
-  <h1>mccannfam</h1>
-  <div class="sub" id="sourcesLine">Every source in one search</div>
+  <div class="bar" style="margin:0">
+    <div>
+      <h1>mccannfam</h1>
+      <div class="sub" id="sourcesLine">Every source in one search</div>
+    </div>
+    <button type="button" id="openSettings">Settings</button>
+  </div>
 </header>
 <main>
   <div id="keyBox" class="msg hidden">
@@ -52,6 +57,17 @@
       <input id="apiKey" type="password" autocomplete="off">
     </label>
     <div style="margin-top:8px"><button class="primary" id="saveKey">Save key</button></div>
+  </div>
+
+  <div id="settingsBox" class="msg hidden">
+    <strong>Job source keys</strong>
+    <div class="sub" id="settingsHelp">Add the keys you have to search live jobs from those sites. Everything is optional. Keys are saved on the server and never shown again.</div>
+    <div id="keyFields"></div>
+    <div class="actions" style="margin-top:8px">
+      <button type="button" class="primary" id="saveKeys">Save keys</button>
+      <button type="button" id="closeSettings">Close</button>
+    </div>
+    <div class="sub" id="keysStatus" style="margin-top:6px"></div>
   </div>
 
   <form id="search">
@@ -178,6 +194,79 @@ $('csv').onclick = async () => {
   } catch (err) { showError(err); }
 };
 
+// ---- Settings: enter your own job source keys ----
+let keySources = [];
+
+function renderKeys() {
+  $('keyFields').innerHTML = keySources.map((s) => `<fieldset style="border:1px solid var(--line);border-radius:8px;margin:8px 0;padding:8px 10px">
+    <legend>${esc(s.name)} ${s.configured ? '<span class="chip good">On</span>' : ''}</legend>
+    <div class="sub"><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">Get a key</a></div>
+    ${s.fields.map((f) => {
+      const value = f.secret ? '' : f.value || '';
+      const hint = f.secret && f.set ? `Saved ${f.preview} (leave blank to keep)` : '';
+      return `<label>${esc(f.label)}${f.required ? '' : ' (optional)'}${f.from === 'env' ? ' · set in .env' : ''}
+        <input data-key="${esc(f.key)}" data-orig="${esc(value)}" type="${f.secret ? 'password' : 'text'}" autocomplete="off" value="${esc(value)}" placeholder="${esc(hint)}">
+      </label>`;
+    }).join('')}
+    ${s.fields.some((f) => f.from === 'settings') ? `<div class="actions" style="margin-top:6px"><button type="button" data-remove="${esc(s.id)}">Remove saved keys</button></div>` : ''}
+  </fieldset>`).join('');
+}
+
+async function loadKeys() {
+  keySources = (await (await api('/settings/keys')).json()).sources;
+  renderKeys();
+}
+
+async function openSettings() {
+  $('keysStatus').textContent = '';
+  try { await loadKeys(); $('settingsBox').classList.remove('hidden'); } catch (err) { showError(err); }
+}
+
+function closeSettings() {
+  store.set('keysPrompted', '1');
+  $('settingsBox').classList.add('hidden');
+}
+
+async function saveKeys() {
+  const values = {};
+  for (const input of $('keyFields').querySelectorAll('input[data-key]')) {
+    if (input.value !== input.dataset.orig) values[input.dataset.key] = input.value.trim();
+  }
+  if (!Object.keys(values).length) { $('keysStatus').textContent = 'Nothing new to save.'; return; }
+  try {
+    keySources = (await (await api('/settings/keys', { method: 'PUT', body: JSON.stringify({ values }) })).json()).sources;
+    renderKeys();
+    $('keysStatus').textContent = 'Saved. Searching with your sources now.';
+    init();
+  } catch (err) { $('keysStatus').textContent = err.message; }
+}
+
+$('openSettings').onclick = openSettings;
+$('closeSettings').onclick = closeSettings;
+$('saveKeys').onclick = saveKeys;
+$('keyFields').addEventListener('click', async (e) => {
+  const id = e.target.dataset.remove;
+  if (!id || !confirm('Remove the keys you saved for this source?')) return;
+  try {
+    keySources = (await (await api(`/settings/keys/${encodeURIComponent(id)}`, { method: 'DELETE' })).json()).sources;
+    renderKeys();
+    $('keysStatus').textContent = 'Removed.';
+    init();
+  } catch (err) { $('keysStatus').textContent = err.message; }
+});
+
+// On first launch, with no source keys yet, open settings so you can enter them.
+async function promptForKeys() {
+  if (store.get('keysPrompted')) return;
+  try {
+    await loadKeys();
+    if (!keySources.some((s) => s.configured)) {
+      $('settingsBox').classList.remove('hidden');
+      store.set('keysPrompted', '1'); // ask once; the Settings button is always there
+    }
+  } catch { /* the key box handles a missing API key */ }
+}
+
 $('more').onclick = () => { page++; runSearch(true); };
 $('search').onsubmit = (e) => { e.preventDefault(); runSearch(); };
 $('saveKey').onclick = () => { store.set('apiKey', $('apiKey').value.trim()); $('keyBox').classList.add('hidden'); init(); };
@@ -194,6 +283,7 @@ async function init() {
     $('region').innerHTML = '<option value="">Any</option>' + meta.regions.map((r) => `<option>${esc(r.name)}</option>`).join('');
     $('type').innerHTML = '<option value="">Any</option>' + meta.jobTypes.map((t) => `<option>${esc(t)}</option>`).join('');
     runSearch();
+    promptForKeys();
   } catch (err) { showError(err); }
 }
 init();

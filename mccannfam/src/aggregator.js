@@ -201,12 +201,20 @@ function facets(jobs) {
 }
 
 function createAggregator({
-  providers, store, cacheTtlMs = 10 * 60_000, perSourceLimit = 50, maxIndex = 5000, homeCity = '', defaultLimit = 20, maxLimit = 100,
+  providers: initialProviders, store, cacheTtlMs = 10 * 60_000, perSourceLimit = 50, maxIndex = 5000, homeCity = '', defaultLimit = 20, maxLimit = 100,
 }) {
   const home = homeCity ? lookupCity(homeCity) : null;
   if (homeCity && !home) throw new Error(`HOME_CITY "${homeCity}" is not a known Alberta city`);
-  if (!providers.length) throw new Error('At least one job source must be configured');
+  if (!initialProviders.length) throw new Error('At least one job source must be configured');
+  let providers = initialProviders;
   const cache = new Map();
+
+  // Switches to a new set of sources (when keys are changed in settings) without a restart.
+  function setProviders(next) {
+    if (!next.length) throw new Error('At least one job source must be configured');
+    providers = next;
+    cache.clear();
+  }
   // The index is only a cache of seen jobs: if its file is damaged, start fresh instead of failing.
   let saved = [];
   try {
@@ -308,7 +316,16 @@ function createAggregator({
     ...(p.fetchedAt ? { fetchedAt: p.fetchedAt } : {}),
   }));
 
-  return { name: 'alberta', homeCity: home?.name || '', sources: providers.map((p) => p.name), sourceDetails, search, getJob, parseFilters: parse };
+  return {
+    name: 'alberta',
+    homeCity: home?.name || '',
+    get sources() { return providers.map((p) => p.name); },
+    sourceDetails,
+    setProviders,
+    search,
+    getJob,
+    parseFilters: parse,
+  };
 }
 
 module.exports = { createAggregator, parseFilters, normalizeJob, dedupe, JOB_TYPES, SORTS, BadRequest };

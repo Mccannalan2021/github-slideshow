@@ -4,7 +4,7 @@ Every `.js` file in this folder is loaded automatically. Each one exports a func
 the shared context and returns a list of routes:
 
 ```js
-module.exports = ({ store, jobs, config, gmail, toCard, requireJob, requireResume, HttpError, created }) => [
+module.exports = ({ store, jobs, config, gmail, env, toCard, requireJob, requireResume, HttpError, created }) => [
   {
     method: 'GET',
     path: '/hello/:name',          // :name shows up in params

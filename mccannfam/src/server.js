@@ -4,8 +4,8 @@ const { createApp } = require('./app');
 const { createStore } = require('./store');
 const { createAggregator } = require('./aggregator');
 const { loadConfig } = require('./config');
-const { createMockProvider } = require('./providers/mock');
-const { createFileProvider } = require('./providers/file');
+const { buildProviders } = require('./sources');
+const { effectiveEnv } = require('./keys');
 const gmailModule = require('./gmail');
 
 // Load .env without extra dependencies (real env vars win).
@@ -19,41 +19,12 @@ if (fs.existsSync(envFile)) {
 
 const env = process.env;
 
-// Every file in src/providers/ that exports fromEnv(env) is a job source. It turns itself on when
-// its settings are in .env. To add a source, add a file there; see CUSTOMIZING.md.
-function buildProviders() {
-  const providers = [];
-  const dir = path.join(__dirname, 'providers');
-  for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('.js')).sort()) {
-    const mod = require(path.join(dir, name));
-    if (typeof mod.fromEnv !== 'function') continue;
-    const provider = mod.fromEnv(env);
-    if (provider) providers.push(provider);
-  }
-
-  // Job snapshots: every .json file in sources/ plus any listed in JOBS_FILES.
-  const sourcesDir = path.join(__dirname, '..', 'sources');
-  const files = [
-    ...(fs.existsSync(sourcesDir) ? fs.readdirSync(sourcesDir).filter((f) => f.endsWith('.json')).map((f) => path.join(sourcesDir, f)) : []),
-    ...(env.JOBS_FILES ? env.JOBS_FILES.split(',').map((f) => path.resolve(f.trim())) : []),
-  ];
-  for (const file of files) {
-    const snapshot = createFileProvider({ file });
-    if (providers.some((p) => p.name === snapshot.name)) {
-      console.log(`Skipping ${path.basename(file)}: live ${snapshot.name} source is configured`);
-      continue;
-    }
-    console.log(`${snapshot.name}: loaded ${snapshot.size} jobs from ${path.basename(file)} (fetched ${snapshot.fetchedAt || 'unknown'})`);
-    providers.push(snapshot);
-  }
-  if (!providers.length || env.INCLUDE_SAMPLE_JOBS === 'true') providers.push(createMockProvider({ name: 'sample' }));
-  return providers;
-}
-
 const config = loadConfig({ env });
 const store = createStore(path.resolve(env.DATA_DIR || path.join(__dirname, '..', 'data')));
+// Keys entered in the app's settings win over .env.
+const launchEnv = effectiveEnv(env, store.getKeys());
 const jobs = createAggregator({
-  providers: buildProviders(),
+  providers: buildProviders(launchEnv),
   store,
   cacheTtlMs: config.search.cacheSeconds * 1000,
   perSourceLimit: config.search.perSourceLimit,
@@ -72,6 +43,6 @@ if (!env.API_KEY) console.warn('API_KEY is not set: the API is open to anyone wh
 const gmail = gmailModule.fromEnv(env);
 console.log(gmail ? `Gmail: sending as ${gmail.from}` : 'Gmail: not connected (run npm run gmail to send applications by email)');
 
-createApp({ store, jobs, config, gmail, apiKey: env.API_KEY }).listen(port, () => {
+createApp({ store, jobs, config, gmail, apiKey: env.API_KEY, env, sourceBuilder: buildProviders }).listen(port, () => {
   console.log(`mccannfam on http://localhost:${port} (sources: ${jobs.sources.join(', ')}${jobs.homeCity ? `; home city: ${jobs.homeCity}` : ''})`);
 });

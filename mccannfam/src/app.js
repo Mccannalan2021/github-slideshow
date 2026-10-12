@@ -27,12 +27,17 @@ function loadRoutes(ctx, dirs) {
   return routes.sort((a, b) => params(a) - params(b));
 }
 
-function createApp({ store, jobs, apiKey, gmail = null, config = loadConfig(), routeDirs = [ROUTES_DIR] }) {
+// sourceBuilder(env) turns a set of settings into job sources, so keys saved in the app's settings
+// take effect without a restart (server.js provides it).
+function createApp({ store, jobs, apiKey, gmail = null, config = loadConfig(), routeDirs = [ROUTES_DIR], env = process.env, sourceBuilder = null }) {
   const ctx = {
     store,
     jobs,
     config,
     gmail,
+    env,
+    sourceBuilder,
+    authEnabled: Boolean(apiKey),
     toCard: createCardBuilder(config),
     HttpError,
     created,

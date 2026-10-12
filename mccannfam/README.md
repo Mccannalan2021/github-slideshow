@@ -137,8 +137,16 @@ New endpoints and job sources are single files that load automatically. See
 
 ## Job sources
 
-Every source you configure in `.env` is turned on. If one source is down, the others still answer,
+Every source you configure is turned on. If one source is down, the others still answer,
 and the response's `sources` list shows which one failed.
+
+**Enter your keys in the app.** Open the page at `http://localhost:3000` and use **Settings**
+(it opens by itself the first time, while no source has keys). Type your Adzuna, Jooble, Job Bank
+or Indeed keys there and press Save. They take effect straight away, with no restart. Keys you save
+there are kept in `data/keys.json` (readable only by you, never committed) and win over the same
+names in `.env`. They are never shown again: the screen only says whether each one is set. Your own
+app can do the same with `PUT /settings/keys` (see below). If `API_KEY` is not set, keys can only be
+changed from the computer running the server.
 
 | Source | What it covers | How to get access |
 | --- | --- | --- |
@@ -173,6 +181,9 @@ personal data: `GET /health`, `GET /` (the web page, which asks for the key itse
 | GET | `/health` | Status and active sources |
 | GET | `/openapi.json` | OpenAPI 3.1 description of every endpoint (no key needed) |
 | GET | `/settings` | Current piles, card fields, tones and statuses, so your app can draw its UI from them |
+| GET | `/settings/keys` | Which job source keys are set (never the keys themselves) |
+| PUT | `/settings/keys` | Enter your own keys, applied at once: `{"values": {"ADZUNA_APP_ID": "...", "ADZUNA_APP_KEY": "..."}}` (`""` removes a key) |
+| DELETE | `/settings/keys/:source` | Remove the keys you saved for `adzuna`, `jooble`, `jobbank` or `indeed` |
 | GET | `/alberta/cities` | Regions, cities, job types and sort options for your app's filters |
 | GET | `/jobs` | Search Alberta jobs (filters below) |
 | GET | `/jobs/:id` | One job |
@@ -393,7 +404,7 @@ curl -X POST "localhost:3000/jobs/adzuna:4417893/quick-reply" -H "x-api-key: $AP
 
 ## Data
 
-Your resume, applications, saved searches and recently seen jobs are saved as JSON in `DATA_DIR`
+Your resume, applications, saved searches, saved keys and recently seen jobs are saved as JSON in `DATA_DIR`
 (default `./data`). Those files are git-ignored.
 
 ## Project layout

@@ -52,6 +52,14 @@ function buildOpenApi(config) {
     paths: {
       '/health': { get: { ...op('Status', 'Health check', { responses: { 200: json(obj({ ok: bool, sources: arr(str), homeCity: str })) } }), security: [] } },
       '/settings': { get: op('Status', 'Swipe directions, piles, card fields, tones and statuses for building your UI', { responses: { 200: json(ref('Settings')) } }) },
+      '/settings/keys': {
+        get: op('Status', 'Job source keys: which are set (the keys themselves are never returned)', { responses: { 200: json(ref('KeySettings')) } }),
+        put: op('Status', 'Enter your own job source keys; they take effect straight away. "" removes a key', {
+          requestBody: body(obj({ values: { type: 'object', additionalProperties: str, description: 'Setting name to value, e.g. { "ADZUNA_APP_ID": "..." }' } }, ['values'])),
+          responses: { 200: json(ref('KeySettings')), 403: json(ref('Error'), 'Set API_KEY before changing keys from another device') },
+        }),
+      },
+      '/settings/keys/{source}': { delete: op('Status', 'Remove the keys you saved for one source', { parameters: [pathParam('source', 'adzuna, jooble, jobbank or indeed')], responses: { 200: json(ref('KeySettings')) } }) },
       '/sources': { get: op('Status', 'Job sources and how many jobs each has', { responses: { 200: json(arr(obj({ name: str, kind: { enum: ['file', 'live'] }, jobs: num, fetchedAt: str }))) } }) },
       '/alberta/cities': { get: op('Status', 'Alberta regions and cities, job types and sort options', { responses: { 200: json(obj({ regions: arr(obj({ name: str, cities: arr(str) })), jobTypes: arr(str), sorts: arr(str) })) } }) },
 
@@ -126,6 +134,14 @@ function buildOpenApi(config) {
         Card: { type: 'object', description: `Fields set by deck.cardFields: ${config.deck.cardFields.join(', ')}`, properties: { id: str, title: str, applyUrl: str, reply: obj({ subject: str, message: str }) }, additionalProperties: true },
         Swipe: obj({ jobId: str, direction: { enum: directions }, pile: { enum: piles }, at: str, card: ref('Card') }),
         SearchResult: obj({ total: num, page: num, limit: { oneOf: [num, { const: 'all' }] }, pages: num, sources: arr(obj({ name: str, ok: bool, error: str })), facets: obj({}), jobs: arr(ref('Job')) }),
+        KeySettings: obj({
+          sources: arr(obj({
+            id: str, name: str, url: str, configured: bool,
+            fields: arr(obj({ key: str, label: str, secret: bool, required: bool, set: bool, from: { enum: ['settings', 'env', null] }, preview: str, value: str })),
+          })),
+          active: arr(obj({ name: str, kind: { enum: ['file', 'live'] } })),
+          canApplyNow: bool,
+        }),
         Settings: obj({ homeCity: str, swipes: arr(obj({ direction: str, pile: str })), cardFields: arr(str), deckSize: num, tones: arr(str), applicationStatuses: arr(str) }),
         Resume: obj({
           name: str, email: str, phone: str, headline: str, summary: str, location: str, skills: arr(str),

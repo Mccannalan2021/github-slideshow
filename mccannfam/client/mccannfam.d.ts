@@ -145,6 +145,25 @@ export interface Settings {
   applicationStatuses: string[];
 }
 
+export interface KeyField {
+  key: string;
+  label: string;
+  secret: boolean;
+  required: boolean;
+  set: boolean;
+  from: 'settings' | 'env' | null;
+  /** Secret fields: the last 4 characters, masked. */
+  preview?: string;
+  /** Non-secret fields: the saved value. */
+  value?: string;
+}
+
+export interface KeySettings {
+  sources: { id: 'adzuna' | 'jooble' | 'jobbank' | 'indeed'; name: string; url: string; configured: boolean; fields: KeyField[] }[];
+  active: { name: string; kind: 'file' | 'live'; jobs?: number; fetchedAt?: string }[];
+  canApplyNow: boolean;
+}
+
 export interface Resume {
   name: string;
   email: string;
@@ -199,6 +218,9 @@ export declare class MccannfamApiError extends Error {
 export interface MccannfamApi {
   health(): Promise<{ ok: boolean; sources: string[]; homeCity: string | null }>;
   settings(): Promise<Settings>;
+  keys(): Promise<KeySettings>;
+  saveKeys(values: Record<string, string>): Promise<KeySettings>;
+  removeKeys(source: 'adzuna' | 'jooble' | 'jobbank' | 'indeed'): Promise<KeySettings>;
   sources(): Promise<{ name: string; kind: 'file' | 'live'; jobs?: number; fetchedAt?: string }[]>;
   cities(): Promise<{ regions: { name: string; cities: string[] }[]; jobTypes: JobType[]; sorts: SortOrder[] }>;
 

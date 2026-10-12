@@ -71,6 +71,12 @@ export function createMccannfamApi({ baseUrl, apiKey, fetch: fetchImpl = globalT
     /** Swipe directions/piles, card fields, tones and statuses: draw your UI from these. */
     settings: () => call('GET', '/settings'),
     sources: () => call('GET', '/sources'),
+    /** Which job source keys are set (never the keys themselves). */
+    keys: () => call('GET', '/settings/keys'),
+    /** Enter your own keys, e.g. { ADZUNA_APP_ID: '...', ADZUNA_APP_KEY: '...' }. '' removes a key. Applies straight away. */
+    saveKeys: (values) => call('PUT', '/settings/keys', { values }),
+    /** Remove the keys you saved for one source: 'adzuna' | 'jooble' | 'jobbank' | 'indeed'. */
+    removeKeys: (source) => call('DELETE', `/settings/keys/${enc(source)}`),
     cities: () => call('GET', '/alberta/cities'),
 
     // --- Jobs ---

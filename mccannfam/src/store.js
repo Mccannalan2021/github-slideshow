@@ -24,14 +24,18 @@ function createStore(dataDir) {
     }
   }
 
-  function write(name, value) {
+  function write(name, value, mode = 0o666) {
     const tmp = `${file(name)}.tmp`;
-    fs.writeFileSync(tmp, JSON.stringify(value, null, 2));
+    fs.writeFileSync(tmp, JSON.stringify(value, null, 2), { mode });
     fs.renameSync(tmp, file(name));
     return value;
   }
 
   return {
+    // Job source keys entered in the app's settings. Kept readable only by you.
+    getKeys: () => read('keys', {}),
+    saveKeys: (keys) => write('keys', keys, 0o600),
+
     getResume: () => read('resume', null),
     saveResume: (resume) => write('resume', { ...resume, updatedAt: new Date().toISOString() }),
 
