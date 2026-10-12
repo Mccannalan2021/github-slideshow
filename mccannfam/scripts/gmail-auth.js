@@ -25,6 +25,12 @@ function saveEnv(values) {
     else lines[i] = line;
   }
   fs.writeFileSync(envPath, lines.join('\n'), { mode: 0o600 });
+  // mode only applies to new files; .env may have just been copied from .env.example.
+  try {
+    fs.chmodSync(envPath, 0o600);
+  } catch {
+    // Windows ignores file modes.
+  }
 }
 
 // Listens on http://127.0.0.1:<random port>/ for Google's redirect with the sign-in code.

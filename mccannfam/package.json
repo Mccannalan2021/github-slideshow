@@ -12,7 +12,7 @@
     "resume": "node scripts/resume.js",
     "gmail": "node scripts/gmail-auth.js",
     "dev": "node --watch src/server.js",
-    "test": "node --test --test-timeout=30000 test/*.test.js"
+    "test": "node --test test/*.test.js"
   },
   "license": "MIT"
 }

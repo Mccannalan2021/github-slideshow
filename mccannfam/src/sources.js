@@ -21,7 +21,7 @@ function buildProviders(env) {
   const sourcesDir = path.join(__dirname, '..', 'sources');
   const files = [
     ...(fs.existsSync(sourcesDir) ? fs.readdirSync(sourcesDir).filter((f) => f.endsWith('.json')).map((f) => path.join(sourcesDir, f)) : []),
-    ...(env.JOBS_FILES ? env.JOBS_FILES.split(',').map((f) => path.resolve(f.trim())) : []),
+    ...(env.JOBS_FILES ? env.JOBS_FILES.split(',').map((f) => f.trim()).filter(Boolean).map((f) => path.resolve(f)) : []),
   ];
   for (const file of files) {
     const snapshot = createFileProvider({ file });

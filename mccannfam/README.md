@@ -144,7 +144,9 @@ and the response's `sources` list shows which one failed.
 (it opens by itself the first time, while no source has keys). Type your Adzuna, Jooble, Job Bank
 or Indeed keys there and press Save. They take effect straight away, with no restart. Keys you save
 there are kept in `data/keys.json` (readable only by you, never committed) and win over the same
-names in `.env`. They are never shown again: the screen only says whether each one is set. Your own
+names in `.env`. Secret values (app keys, API keys, client secrets) are never shown again: the
+screen only says whether each one is set. Non-secret values such as `ADZUNA_APP_ID`,
+`INDEED_CLIENT_ID`, the Indeed scope and the Job Bank file path are shown so you can check them. Your own
 app can do the same with `PUT /settings/keys` (see below). If `API_KEY` is not set, keys can only be
 changed from the computer running the server.
 

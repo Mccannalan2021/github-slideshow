@@ -98,3 +98,14 @@ test('limit=all is reported as "all", and saved searches return the new run time
   assert.equal((await call('GET', '/searches')).body[0].lastRunAt, run.body.search.lastRunAt);
   cleanup();
 });
+
+test('two swipes on the same job at once give one swipe and one 409', async () => {
+  const { call, cleanup } = await start();
+  const results = await Promise.all([
+    call('POST', '/swipes', { jobId: 'mock:3', direction: 'right' }),
+    call('POST', '/swipes', { jobId: 'mock:3', direction: 'left' }),
+  ]);
+  assert.deepEqual(results.map((r) => r.status).sort(), [201, 409]);
+  assert.equal((await call('GET', '/swipes/stats')).body.total, 1);
+  cleanup();
+});

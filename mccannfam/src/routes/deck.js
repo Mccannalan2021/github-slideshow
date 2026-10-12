@@ -44,6 +44,8 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
         if (!body.jobId) throw new HttpError(400, 'jobId is required');
         if (store.listSwipes().some((x) => x.jobId === body.jobId)) throw new HttpError(409, 'Already swiped on this job');
         const job = await requireJob(body.jobId);
+        // Check again: another swipe on the same job may have landed while the job was loading.
+        if (store.listSwipes().some((x) => x.jobId === job.id)) throw new HttpError(409, 'Already swiped on this job');
         // Keep a copy of the card so piles still show the job after it leaves the source.
         // The fields applying needs are kept apart from the card, whose fields are configurable.
         const keep = { title: job.title, company: job.company, location: job.location, url: job.url, applyEmail: job.applyEmail || '' };
