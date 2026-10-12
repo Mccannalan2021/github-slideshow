@@ -78,6 +78,7 @@ function createIndeedProvider(config, fetchImpl = fetch) {
       method: 'POST',
       headers: { 'content-type': 'application/x-www-form-urlencoded', accept: 'application/json' },
       body,
+      signal: AbortSignal.timeout(10_000),
     });
     if (!res.ok) throw upstreamError(`Indeed auth failed (${res.status})`, await res.text());
     const data = await res.json();
@@ -91,6 +92,7 @@ function createIndeedProvider(config, fetchImpl = fetch) {
       method: 'POST',
       headers: { authorization: `Bearer ${await getToken()}`, 'content-type': 'application/json' },
       body: JSON.stringify({ query, variables }),
+      signal: AbortSignal.timeout(10_000),
     });
     const data = await res.json().catch(() => ({}));
     if (!res.ok || data.errors?.length) {

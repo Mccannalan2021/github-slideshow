@@ -24,8 +24,10 @@ function createStore(dataDir) {
     }
   }
 
-  function write(name, value, mode = 0o666) {
+  // Owner-only by default: these files hold your resume, applications and history.
+  function write(name, value, mode = 0o600) {
     const tmp = `${file(name)}.tmp`;
+    fs.rmSync(tmp, { force: true }); // mode only applies to a newly created file
     fs.writeFileSync(tmp, JSON.stringify(value, null, 2), { mode });
     fs.renameSync(tmp, file(name));
     return value;
@@ -90,7 +92,7 @@ function createStore(dataDir) {
     saveResumeFile({ filename, contentType, content }) {
       const ext = path.extname(filename).toLowerCase() || '.pdf';
       for (const f of fs.readdirSync(dataDir)) if (f.startsWith('resume-file.') && f !== 'resume-file.json') fs.unlinkSync(path.join(dataDir, f));
-      fs.writeFileSync(path.join(dataDir, `resume-file${ext}`), content);
+      fs.writeFileSync(path.join(dataDir, `resume-file${ext}`), content, { mode: 0o600 });
       return write('resume-file', { filename, contentType, size: content.length, path: `resume-file${ext}`, updatedAt: new Date().toISOString() });
     },
     getResumeFile() {

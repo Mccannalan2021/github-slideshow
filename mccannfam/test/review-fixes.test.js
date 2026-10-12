@@ -132,3 +132,13 @@ test('card fields must be a list that includes the job id', () => {
   assert.throws(() => loadConfig({ overrides: { deck: { cardFields: ['title', 'salary'] } } }), /must include "id"/);
   assert.throws(() => loadConfig({ overrides: { deck: { cardFields: 'id,title' } } }), /must be a list/);
 });
+
+test('saved personal files are readable only by their owner', { skip: process.platform === 'win32' }, async () => {
+  const { call, dir, cleanup } = await start();
+  await call('PUT', '/resume', { name: 'Jordan Smith' });
+  await call('PUT', '/resume/file', { filename: 'r.pdf', contentBase64: Buffer.from('%PDF').toString('base64') });
+  for (const f of ['resume.json', 'resume-file.pdf', 'resume-file.json']) {
+    assert.equal(fs.statSync(path.join(dir, f)).mode & 0o777, 0o600, f);
+  }
+  cleanup();
+});

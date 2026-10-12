@@ -66,7 +66,9 @@ One-time setup in Google Cloud (about 5 minutes, free):
      Desktop app. Copy the Client ID and Client secret.
 `);
   const clientId = await ask.question('Client ID', process.env.GMAIL_CLIENT_ID);
-  const clientSecret = await ask.question('Client secret', process.env.GMAIL_CLIENT_SECRET);
+  // The saved secret is never printed: Enter keeps it.
+  const savedSecret = process.env.GMAIL_CLIENT_SECRET;
+  const clientSecret = (await ask.question(savedSecret ? 'Client secret [saved; press Enter to keep it]' : 'Client secret')) || savedSecret;
   if (!clientId || !clientSecret) throw new Error('Client ID and secret are required.');
 
   const state = crypto.randomBytes(16).toString('hex');
