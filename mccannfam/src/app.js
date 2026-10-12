@@ -79,6 +79,7 @@ function createApp({ store, jobs, apiKey, gmail = null, config = loadConfig(), r
       }
 
       const body = ['POST', 'PUT', 'PATCH'].includes(req.method) ? await readJson(req, route.maxBody) : {};
+      if (body === null || typeof body !== 'object' || Array.isArray(body)) throw new HttpError(400, 'Body must be a JSON object');
       sendResult(res, await route.handler({ params, query: url.searchParams, body, req }));
     } catch (err) {
       const status = err.status || 500;

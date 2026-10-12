@@ -20,8 +20,8 @@ async function start({ gmail = null, config = loadConfig() } = {}) {
   await new Promise((r) => server.listen(0, r));
   server.unref();
   const base = `http://localhost:${server.address().port}`;
-  const call = async (method, url, body) => {
-    const res = await fetch(base + url, { method, headers: { 'content-type': 'application/json' }, body: body && JSON.stringify(body) });
+  const call = async (method, url, body, raw) => {
+    const res = await fetch(base + url, { method, headers: { 'content-type': 'application/json' }, body: raw ?? (body && JSON.stringify(body)) });
     return { status: res.status, body: await res.json() };
   };
   return { call, dir, store, jobs, cleanup: () => { server.close(); fs.rmSync(dir, { recursive: true, force: true }); } };
@@ -141,4 +141,43 @@ test('saved personal files are readable only by their owner', { skip: process.pl
     assert.equal(fs.statSync(path.join(dir, f)).mode & 0o777, 0o600, f);
   }
   cleanup();
+});
+
+test('fifth review: undo keeps applications, bodies must be objects, inputs normalised', async () => {
+  const { call, cleanup } = await start();
+  // Undo after applying keeps the application record.
+  await call('POST', '/swipes', { jobId: 'mock:3', direction: 'right' });
+  await call('POST', '/swipes/mock:3/apply', {});
+  await call('POST', '/swipes/undo');
+  assert.equal((await call('GET', '/applications')).body.length, 1);
+
+  // Non-object bodies are a 400, not a 500.
+  for (const raw of ['null', '[]', '5', '"x"']) {
+    const r = await call('POST', '/swipes', undefined, raw);
+    assert.equal(r.status, 400, `body ${raw}`);
+    assert.equal(r.body.error, 'Body must be a JSON object');
+  }
+
+  // Scalar resume fields are strings, so matching can't crash.
+  const saved = await call('PUT', '/resume', { name: 'A', headline: 7, summary: { x: 1 } });
+  assert.equal(saved.body.headline, '7');
+  assert.equal(saved.body.summary, '');
+  assert.equal((await call('GET', '/jobs')).status, 200);
+
+  // Empty status is rejected.
+  const app = (await call('GET', '/applications')).body[0];
+  assert.equal((await call('PATCH', `/applications/${app.id}`, { status: '' })).status, 400);
+
+  // match=false skips matching in the deck but still reports the saved resume.
+  const deck = await call('GET', '/deck?match=false&limit=1');
+  assert.equal(deck.body.hasResume, true);
+  assert.equal(deck.body.cards[0].match, null);
+  assert.equal(deck.body.cards[0].reply, null);
+  cleanup();
+});
+
+test('province codes after a comma count in any case', () => {
+  const { isAlberta } = require('../src/alberta');
+  assert.equal(isAlberta('Brooks, on'), false);
+  assert.equal(isAlberta('Work on site in Red Deer'), true);
 });

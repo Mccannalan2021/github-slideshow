@@ -31,24 +31,24 @@ function normalizeResume(input) {
 
   const text = typeof input.text === 'string' ? input.text : '';
   const firstLine = text.split('\n').map((l) => l.trim()).find(Boolean) || '';
-  const email = input.email || (text.match(/[\w.+-]+@[\w-]+\.[\w.-]+/) || [])[0] || '';
-  const phone = input.phone || (text.match(/\+?\(?\d[\d\s().-]{8,}\d/) || [])[0] || '';
+  const email = clean(input.email) || (text.match(/[\w.+-]+@[\w-]+\.[\w.-]+/) || [])[0] || '';
+  const phone = clean(input.phone) || (text.match(/\+?\(?\d[\d\s().-]{8,}\d/) || [])[0] || '';
 
   const skills = strings(input.skills).length ? strings(input.skills) : extractSkills(text);
 
   const resume = {
-    name: input.name || firstLine,
+    name: clean(input.name) || firstLine,
     email,
     phone: phone.trim(),
-    headline: input.headline || '',
-    summary: input.summary || '',
-    location: input.location || '',
+    headline: clean(input.headline),
+    summary: clean(input.summary),
+    location: clean(input.location),
     skills: [...new Set(skills.map((s) => s.trim()).filter(Boolean))],
     experience: entries(input.experience, 'title', ['title', 'company', 'city', 'start', 'end', 'duties']),
     education: entries(input.education, 'credential', ['credential', 'school', 'year']),
     certifications: strings(input.certifications),
-    availability: input.availability || '',
-    references: input.references || '',
+    availability: clean(input.availability),
+    references: clean(input.references),
     links: strings(input.links),
     text,
   };

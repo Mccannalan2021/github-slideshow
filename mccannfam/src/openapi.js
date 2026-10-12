@@ -97,7 +97,7 @@ function buildOpenApi(config) {
         put: op('Resume', 'Upload a PDF/DOC/DOCX resume as base64', { requestBody: body(obj({ filename: str, contentBase64: str }, ['filename', 'contentBase64'])), responses: { 200: json(ref('ResumeFile')) } }),
       },
 
-      '/email/status': { get: op('Email', 'Gmail connection and today\'s count', { responses: { 200: json(obj({ connected: bool, from: str, sentToday: num, dailyLimit: num, resumeFile: str })) } }) },
+      '/email/status': { get: op('Email', 'Gmail connection and today\'s count', { responses: { 200: json(obj({ connected: bool, from: { type: ['string', 'null'] }, sentToday: num, dailyLimit: num, resumeFile: { type: ['string', 'null'] } })) } }) },
       '/email/sent': { get: op('Email', 'Emails sent', { responses: { 200: json(arr(obj({ jobId: str, to: str, subject: str, gmailId: str, at: str }))) } }) },
       '/jobs/{id}/email': {
         post: op('Email', 'Email an application from your Gmail with your resume attached', {

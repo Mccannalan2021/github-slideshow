@@ -24,13 +24,14 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
         const size = Math.min(Math.max(Number(query.get('limit')) || config.deck.size, 1), config.deck.maxSize);
         query.set('limit', 'all');
         query.delete('page');
-        const resume = store.getResume();
+        const saved = store.getResume();
+        const resume = query.get('match') === 'false' ? null : saved;
         const result = await jobs.search(query, resume);
         const swiped = new Set(store.listSwipes().map((x) => x.jobId));
         const unseen = result.jobs.filter((j) => !swiped.has(j.id));
         return {
           remaining: unseen.length,
-          hasResume: Boolean(resume),
+          hasResume: Boolean(saved),
           sources: result.sources,
           cards: unseen.slice(0, size).map((j) => toCard(j, resume)),
         };
@@ -58,7 +59,7 @@ module.exports = ({ store, jobs, config, toCard, requireJob, HttpError, created 
       handler: async () => {
         const last = store.popSwipe();
         if (!last) throw new HttpError(404, 'Nothing to undo');
-        if (last.applicationId) store.deleteApplication(last.applicationId);
+        // An application already made (or emailed) can't be undone, so its record stays in /applications.
         return { undone: { jobId: last.jobId, direction: last.direction, pile: PILE_OF[last.direction] } };
       },
     },

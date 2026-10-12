@@ -5,7 +5,7 @@
 // then prints how many jobs there are for Red Deer and Alberta, and how many are from the past week.
 //
 // Usage:
-//   npm run import                 daily update: add jobs from the last day to the existing files
+//   npm run import                 daily update: add jobs posted today or yesterday to the existing files
 //   npm run import -- --full       rebuild the files from scratch with everything in raw/
 // Jobs older than 30 days are dropped (change with --keep-days=N).
 const fs = require('node:fs');
@@ -28,7 +28,7 @@ const IMPORTERS = [
 ];
 
 async function main() {
-  console.log(full ? 'Full import: rebuilding job files from raw/\n' : `Daily import: adding jobs from the last ${flags['since-days'] || 1} day(s)\n`);
+  console.log(full ? 'Full import: rebuilding job files from raw/\n' : `Daily import: adding jobs posted in the last ${flags['since-days'] || 1} calendar day(s) (postings only carry a date)\n`);
   for (const imp of IMPORTERS) {
     const rawDir = path.join(root, imp.raw);
     const hasFiles = fs.existsSync(rawDir) && fs.readdirSync(rawDir).some((f) => /\.(md|json)$/.test(f));

@@ -12,7 +12,13 @@ const REGIONS = {
 
 const CITIES = Object.entries(REGIONS).flatMap(([region, cities]) => cities.map((name) => ({ name, region })));
 
-const OTHER_PROVINCES = /\b(british columbia|saskatchewan|manitoba|ontario|quebec|québec|nova scotia|new brunswick|newfoundland|prince edward island|yukon|nunavut|northwest territories|BC|SK|MB|ON|QC|NS|NB|NL|PE|PEI|YT|NU|NT)\b/;
+const PROVINCE_NAMES = /\b(british columbia|saskatchewan|manitoba|ontario|quebec|québec|nova scotia|new brunswick|newfoundland|prince edward island|yukon|nunavut|northwest territories)\b/i;
+const CODES = 'BC|SK|MB|ON|QC|NS|NB|NL|PE|PEI|YT|NU|NT';
+// Codes count in any case after a comma ("Brooks, on"), but elsewhere only in capitals, so words
+// like "on" in "work on site" don't read as Ontario.
+const CODE_AFTER_COMMA = new RegExp(`,\\s*(${CODES})\\b`, 'i');
+const CODE_CAPITALS = new RegExp(`\\b(${CODES})\\b`);
+const isOtherProvince = (text) => PROVINCE_NAMES.test(text) || CODE_AFTER_COMMA.test(text) || CODE_CAPITALS.test(text);
 
 const norm = (s) => String(s || '').toLowerCase().replace(/[.]/g, '').replace(/\s+/g, ' ').trim();
 
@@ -29,7 +35,7 @@ function findCity(location) {
 function isAlberta(location) {
   const text = String(location || '');
   if (/\balberta\b/i.test(text) || /(^|[\s,(])AB(\b|$)/.test(text)) return true;
-  if (OTHER_PROVINCES.test(text) || OTHER_PROVINCES.test(text.toLowerCase())) return false;
+  if (isOtherProvince(text)) return false;
   return Boolean(findCity(text));
 }
 

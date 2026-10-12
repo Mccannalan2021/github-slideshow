@@ -2,7 +2,7 @@
 module.exports = ({ store, config, requireJob, HttpError, created }) => {
   const statuses = config.applicationStatuses;
   const checkStatus = (status) => {
-    if (status && !statuses.includes(status)) throw new HttpError(400, `status must be one of: ${statuses.join(', ')}`);
+    if (status !== undefined && !statuses.includes(status)) throw new HttpError(400, `status must be one of: ${statuses.join(', ')}`);
   };
 
   return [

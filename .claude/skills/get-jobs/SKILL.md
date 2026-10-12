@@ -1,11 +1,12 @@
 ---
 name: get-jobs
-description: Pull new job listings from the last 24 hours (Red Deer first, then the rest of Alberta) from every job site Claude can reach, add them to mccannfam's job files in mccannfam/, and commit. Use when the user says "get jobs", "pull jobs", "refresh jobs", "update the jobs", or asks for new listings for Red Deer or Alberta.
+description: Pull the newest job listings, about the last day (Red Deer first, then the rest of Alberta) from every job site Claude can reach, add them to mccannfam's job files in mccannfam/, and commit. Use when the user says "get jobs", "pull jobs", "refresh jobs", "update the jobs", or asks for new listings for Red Deer or Alberta.
 ---
 
 # Get jobs
 
-Adds the last 24 hours of postings to the job files the API serves (`mccannfam/sources/*.json`).
+Adds the newest postings (ZipRecruiter's last 24 hours; Indeed postings dated today or yesterday,
+since Indeed only gives a date) to the job files the API serves (`mccannfam/sources/*.json`).
 Jobs already saved stay; jobs older than 30 days drop off. Everything it needs is in the repo:
 
 - `mccannfam/pull-plan.json`: every search to run, per site. Edit it to add towns, keywords or slices.

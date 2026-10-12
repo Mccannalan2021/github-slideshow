@@ -5,7 +5,7 @@
     "daily": { "max_posted_minutes_ago": 1440, "import": "npm run import" },
     "week": { "max_posted_minutes_ago": 10080, "import": "npm run import -- --full" },
     "default": "daily",
-    "notes": "Every normal run is 'daily': only the last 24 hours, added to the jobs already saved. Use 'week' only when the user asks for the past week or sources/ is empty."
+    "notes": "Every normal run is 'daily': ZipRecruiter's last 24 hours and Indeed postings dated today or yesterday (Indeed only gives a date), added to the jobs already saved. Use 'week' only when the user asks for the past week or sources/ is empty."
   },
 
   "ziprecruiter": {
