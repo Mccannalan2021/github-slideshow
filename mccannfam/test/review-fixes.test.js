@@ -109,3 +109,26 @@ test('two swipes on the same job at once give one swipe and one 409', async () =
   assert.equal((await call('GET', '/swipes/stats')).body.total, 1);
   cleanup();
 });
+
+test('malformed resume entries are dropped instead of breaking job search', async () => {
+  const { call, cleanup } = await start();
+  const saved = await call('PUT', '/resume', {
+    name: 'Jordan Smith',
+    skills: ['sales', null, 7],
+    experience: [null, 'oops', { company: 'No title' }, { title: 'Cashier', company: 'Store', duties: ['tills', null] }],
+    education: [{ school: 'No credential' }, { credential: 'High School Diploma' }],
+    certifications: ['First Aid', {}],
+  });
+  assert.equal(saved.status, 200);
+  assert.deepEqual(saved.body.skills, ['sales', '7']);
+  assert.deepEqual(saved.body.experience, [{ title: 'Cashier', company: 'Store', duties: ['tills'] }]);
+  assert.deepEqual(saved.body.education, [{ credential: 'High School Diploma' }]);
+  assert.deepEqual(saved.body.certifications, ['First Aid']);
+  assert.equal((await call('GET', '/jobs')).status, 200);
+  cleanup();
+});
+
+test('card fields must be a list that includes the job id', () => {
+  assert.throws(() => loadConfig({ overrides: { deck: { cardFields: ['title', 'salary'] } } }), /must include "id"/);
+  assert.throws(() => loadConfig({ overrides: { deck: { cardFields: 'id,title' } } }), /must be a list/);
+});

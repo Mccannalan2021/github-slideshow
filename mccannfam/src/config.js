@@ -28,8 +28,11 @@ function validate(c) {
   for (const [dir, pile] of Object.entries(c.piles)) {
     if (!/^[a-z][a-z0-9-]*$/.test(dir) || !/^[a-z][a-z0-9-]*$/.test(pile)) fail(`pile "${dir}": "${pile}" must be lowercase letters, numbers or dashes`);
   }
-  const bad = (c.deck.cardFields || []).filter((f) => !CARD_FIELDS.includes(f));
+  if (!Array.isArray(c.deck.cardFields)) fail('"deck.cardFields" must be a list of field names');
+  const bad = c.deck.cardFields.filter((f) => !CARD_FIELDS.includes(f));
   if (bad.length) fail(`unknown deck.cardFields: ${bad.join(', ')}. Allowed: ${CARD_FIELDS.join(', ')}`);
+  // Apps need the id to swipe a card, so it can't be left out.
+  if (!c.deck.cardFields.includes('id')) fail('"deck.cardFields" must include "id"');
   if (!Array.isArray(c.applicationStatuses) || !c.applicationStatuses.includes('applied')) fail('"applicationStatuses" must be a list that includes "applied"');
   if (!c.replies.tones[c.replies.defaultTone]) fail(`replies.defaultTone "${c.replies.defaultTone}" is not one of replies.tones`);
   for (const [name, t] of Object.entries(c.replies.tones)) {

@@ -12,6 +12,20 @@ function extractSkills(text) {
   return KNOWN_SKILLS.filter((s) => new RegExp(`[^a-z]${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^a-z]`).test(lower));
 }
 
+// Keeps only well-formed list entries, so one bad item can't break matching later.
+const clean = (v) => (typeof v === 'string' || typeof v === 'number' ? String(v).trim() : '');
+const strings = (list) => (Array.isArray(list) ? list.map(clean).filter(Boolean) : []);
+function entries(list, required, fields) {
+  if (!Array.isArray(list)) return [];
+  return list
+    .filter((e) => e && typeof e === 'object' && !Array.isArray(e) && clean(e[required]))
+    .map((e) => {
+      const out = {};
+      for (const f of fields) if (e[f] !== undefined) out[f] = f === 'duties' ? strings(e[f]) : clean(e[f]);
+      return out;
+    });
+}
+
 function normalizeResume(input) {
   if (!input || typeof input !== 'object') throw new Error('Resume must be a JSON object');
 
@@ -20,9 +34,7 @@ function normalizeResume(input) {
   const email = input.email || (text.match(/[\w.+-]+@[\w-]+\.[\w.-]+/) || [])[0] || '';
   const phone = input.phone || (text.match(/\+?\(?\d[\d\s().-]{8,}\d/) || [])[0] || '';
 
-  const skills = Array.isArray(input.skills) && input.skills.length
-    ? input.skills.map(String)
-    : extractSkills(text);
+  const skills = strings(input.skills).length ? strings(input.skills) : extractSkills(text);
 
   const resume = {
     name: input.name || firstLine,
@@ -32,12 +44,12 @@ function normalizeResume(input) {
     summary: input.summary || '',
     location: input.location || '',
     skills: [...new Set(skills.map((s) => s.trim()).filter(Boolean))],
-    experience: Array.isArray(input.experience) ? input.experience : [],
-    education: Array.isArray(input.education) ? input.education : [],
-    certifications: Array.isArray(input.certifications) ? input.certifications.map(String) : [],
+    experience: entries(input.experience, 'title', ['title', 'company', 'city', 'start', 'end', 'duties']),
+    education: entries(input.education, 'credential', ['credential', 'school', 'year']),
+    certifications: strings(input.certifications),
     availability: input.availability || '',
     references: input.references || '',
-    links: Array.isArray(input.links) ? input.links.map(String) : [],
+    links: strings(input.links),
     text,
   };
 

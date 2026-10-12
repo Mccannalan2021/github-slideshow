@@ -42,7 +42,7 @@ Removing a line removes that swipe.
 
 ### Show the full description on cards
 
-Add `"description"` to `deck.cardFields`. Allowed fields:
+Add `"description"` to `deck.cardFields` (always keep `"id"`: your app needs it to swipe). Allowed fields:
 `id, title, company, location, city, region, proximity, type, category, salary, salaryMin,
 salaryMax, remote, postedAt, summary, description, source, applyUrl, applyMethod, applyEmail,
 applyPhone, match, reply, alsoListedOn`.
