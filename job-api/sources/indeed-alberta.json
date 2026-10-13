@@ -1,8 +1,34 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-11T15:48:45.355Z",
- "count": 255,
+ "fetchedAt": "2026-10-13T13:04:33.850Z",
+ "count": 260,
  "jobs": [
+  {
+   "id": "aa6gkzmt9n8k",
+   "title": "Cook",
+   "company": "Domrick Dollar Store and Bakeshop Ltd",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-12",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6gkzmt9n8k",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aa2hv9wbhldc",
+   "title": "Health Care Aide – Home Care (Dementia & Aphasia Experience Required) | Red Deer",
+   "company": "FOREVER HOME SENIOR CARE LTD.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-12",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2hv9wbhldc",
+   "keywords": [
+    "health care aide"
+   ]
+  },
   {
    "id": "aadhdjvp4vj4",
    "title": "Residential Painter",
@@ -38,6 +64,45 @@
    "url": "https://to.indeed.com/aa6pk66bgnn2",
    "keywords": [
     "oil and gas"
+   ]
+  },
+  {
+   "id": "aagj8tjcw9ky",
+   "title": "Retail Store Supervisor",
+   "company": "MNB Prestige Immigration Services Ltd",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-11",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aagj8tjcw9ky",
+   "keywords": [
+    "cashier"
+   ]
+  },
+  {
+   "id": "aalcgn47mrkv",
+   "title": "Experienced Travelling Sales Representative – $55K–$95K+ Earning Potential",
+   "company": "Aerial Photography Inc.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-11",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalcgn47mrkv",
+   "keywords": [
+    "sales"
+   ]
+  },
+  {
+   "id": "aacxvszr9xtz",
+   "title": "Shop Hand",
+   "company": "GARY MOE MAZDA",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-11",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aacxvszr9xtz",
+   "keywords": [
+    "warehouse"
    ]
   },
   {
@@ -126,6 +191,84 @@
    "salary": "",
    "url": "https://to.indeed.com/aaqntjz77mhb",
    "keywords": []
+  },
+  {
+   "id": "aa224vrqhdmf",
+   "title": "Automotive Service Technician Apprentice — 2nd or 3rd Year",
+   "company": "Vantage Jobs",
+   "location": "Alberta",
+   "postedAt": "2026-10-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa224vrqhdmf",
+   "keywords": [
+    "apprentice"
+   ]
+  },
+  {
+   "id": "aaytwyscw4kn",
+   "title": "cook",
+   "company": "Lagopizza and pasta",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaytwyscw4kn",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aaqrkdxbnv8r",
+   "title": "Sales Representative",
+   "company": "Manly Movers",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqrkdxbnv8r",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aavppryxqqyr",
+   "title": "Electrician",
+   "company": "TRACE ELECTRIC",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavppryxqqyr",
+   "keywords": [
+    "electrician"
+   ]
+  },
+  {
+   "id": "aagg6drc6xnm",
+   "title": "Automotive Service Technician Apprentice — 2nd or 3rd Year",
+   "company": "Vantage Jobs",
+   "location": "Alberta",
+   "postedAt": "2026-10-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aagg6drc6xnm",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aaqfsj9r8by4",
+   "title": "Sales Representative",
+   "company": "Manly Movers",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqfsj9r8by4",
+   "keywords": [
+    "sales"
+   ]
   },
   {
    "id": "aa8xl7lljtb6",
@@ -3186,84 +3329,6 @@
    "url": "https://to.indeed.com/aa64fnxbkd4j",
    "keywords": [
     "welder"
-   ]
-  },
-  {
-   "id": "aaw29fhncrz4",
-   "title": "Material Handler",
-   "company": "Stuart Olson",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-12",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaw29fhncrz4",
-   "keywords": [
-    "warehouse"
-   ]
-  },
-  {
-   "id": "aag8hfsmdjcj",
-   "title": "School Bus Driver",
-   "company": "Gobind Sarvar School Calgary",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-11",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aag8hfsmdjcj",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aayhss6kfsmw",
-   "title": "Line Cook/Prep Cook",
-   "company": "Royal Canadian Legion McMurray Br 165",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-11",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aayhss6kfsmw",
-   "keywords": [
-    "cook"
-   ]
-  },
-  {
-   "id": "aadtwvwnhc2n",
-   "title": "Federal Owner Operators and Contractors - Last Mile frac sand Hauling",
-   "company": "Traxtion Transport Ltd.",
-   "location": "Alberta",
-   "postedAt": "2026-09-11",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aadtwvwnhc2n",
-   "keywords": [
-    "oil and gas"
-   ]
-  },
-  {
-   "id": "aapzxyvnfr4m",
-   "title": "Retail Leadership Opportunities, Ft McMurray",
-   "company": "Home Depot Canada",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-11",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aapzxyvnfr4m",
-   "keywords": [
-    "retail"
-   ]
-  },
-  {
-   "id": "aax8rb4h42rj",
-   "title": "Driver Development Manager - Alberta",
-   "company": "Keolis",
-   "location": "Alberta",
-   "postedAt": "2026-09-11",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aax8rb4h42rj",
-   "keywords": [
-    "driver"
    ]
   }
  ]

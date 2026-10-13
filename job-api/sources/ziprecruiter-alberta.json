@@ -1,8 +1,127 @@
 {
  "source": "ziprecruiter",
- "fetchedAt": "2026-10-12T13:06:22.392Z",
- "count": 110,
+ "fetchedAt": "2026-10-13T13:04:33.970Z",
+ "count": 120,
  "jobs": [
+  {
+   "id": "OKQ6u3_MhySOweqy_TGINw",
+   "title": "Teachers",
+   "company": "FCA Red Deer KinderSprout Academy",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "remote": false,
+   "salaryMin": 54000,
+   "salaryMax": 60000,
+   "salaryPeriod": "year",
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPS1E2dTNfTWh5U093ZXF5X1RHSU53EiQwMWExMzU1MC04OGUxLTdiMDQtYThlZi0yZTMzODU3MWMxMDcaUEFBR1cwV1NkbGdSZ2pGdTVzWHd4cXVtRFlXWWxKQXNQQjIwNjhCbXVOWHNBVG90aWxteEtiaUtNc2dRSk1UTC1nOXRKUlRNV3UyMUFFOFBqIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "yduLOI1pE_zH4L5qg24RUw",
+   "title": "Specialist II, Processing Operations",
+   "company": "ATB",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5ZHVMT0kxcEVfekg0TDVxZzI0UlV3EiQwMWExMzU1MC04OGUxLTdiMDUtOWQ5Yi0zMWYyMmM2ODVmZDYaUEFBR08xUUlXZHZzVWtWTXgzeng0M0g5WXhWYWJzUENPaXhFUlliaUpKbGpVS25uLXVQUUY0Qms0bnNYQ1A5RjBFRWFkYjNhZi1nMEJWcGV6IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "Yexm0kO5ivZmVPcRP3WlCw",
+   "title": "Client Service Representative - Sylvan Lake Branch",
+   "company": "ATB",
+   "location": "Sylvan Lake, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZZXhtMGtPNWl2Wm1WUGNSUDNXbEN3EiQwMWExMzU1NC1lMWYyLTdlMGMtYTAwOS02Nzc4OGUyZGIyZDgaUEFBRkloSXBNNThmY0dESjk4NktTc05NUnF5XzRyQVJDekZaLVZpdFRhWWJmZFhOMjBuZUFPYTNibGZZLTV4dlR5WUhHTS1ka3F5Ny0wQWU0IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "Gyx-1_npALevd_neGDQk6A",
+   "title": "Practice Management Strategist",
+   "company": "ATB",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZHeXgtMV9ucEFMZXZkX25lR0RRazZBEiQwMWExMzU1NS1lMTA3LTdlZTktODExNi0wZWMxNGVlOTBkYzIaUEFBSEJraGZqVk5FenJlT3lyMjk5QkdyVWxsTUZOdkc2eEdCRjJtcGhHX1ZFTTJwYWotVDdpajV6RTYyV1JFMHZXV1B2d3VLMkliMzh0S19HIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "s6WUBX-gSeNFnx5UgfisXQ",
+   "title": "Teachers",
+   "company": "FCA Red Deer KinderSprout Academy",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "remote": false,
+   "salaryMin": 54000,
+   "salaryMax": 60000,
+   "salaryPeriod": "year",
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZzNldVQlgtZ1NlTkZueDVVZ2Zpc1hREiQwMWExMzU1NS1lMGJlLTcwMWYtOTY2MS1kMWQ3MTk0Njc1N2YaW0FBRkVmM1dXcEFYeXNqTVZfQXVfNkgySEVVTVM2RVBpU1hwQmdwZ1RFU3V5RXRzNVZSLTdiX2M2N0lwWEZjb2dXWEc5LVJmM0FxWnNCUjNkc2U4ckpOUXA1SVUgya0FEAEYya0F&tsid=100000502"
+  },
+  {
+   "id": "jkbG_c5vAGIOiZKBi9uVjQ",
+   "title": "Specialist II, Processing Operations",
+   "company": "ATB",
+   "location": "Innisfail, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZqa2JHX2M1dkFHSU9pWktCaTl1VmpREiQwMWExMzU1Ni1iMGM0LTcyNTEtOTY3ZS02ZjQzNGIxZDg3NGQaUEFBRWdrWDFFakFuYUI3T1FvMGFOY2FfaDREbUduVy1FUEF1MTVIWm9OdzZoNlRiemlFOVR5eUlSTVFfVmFtNXg2eFFyek1aNnNOQzNGY2xXIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "WoZrgOp39Fem7OQyzihWbA",
+   "title": "Specialist II, Processing Operations",
+   "company": "ATB",
+   "location": "Lacombe, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZXb1pyZ09wMzlGZW03T1F5emloV2JBEiQwMWExMzU1Ni1iMTIzLTdhMTQtOTI5ZC03YjdlNzgxZjdiZDYaUEFBRTRjcS01X005ZUc3dTBBNFhEbFNwSWFiTkh3QTlwUmRBWVhUT0Raek52RFlva3kwZmpqYUNWTi15UWo4djdSOFFFbEtSZ0hJREdzc3pEIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "5O6UmKKrEXsMeuX5UQtEcg",
+   "title": "Specialist II, Processing Operations",
+   "company": "ATB",
+   "location": "Sylvan Lake, Alberta",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY1TzZVbUtLckVYc01ldVg1VVF0RWNnEiQwMWExMzU1Ni1iMGUwLTc2NjgtYWQzYy02ZTY0ODI2ZTg2OGMaUEFBSExBaXJhbVMwWFlhbHRJQWxocUFiN2s4OTlpSnp5VjhmMWRhWEJnT25RYmQ2azVUMDMxZFBKVnF6Skt3NFhSdjFoQUJMZEczcHBVVlQ1IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "WgSkIqb0jEUCyszZ21tSgg",
+   "title": "Chauffeur-Livreur Indépendant",
+   "company": "Skip The Dishes",
+   "location": "Lacombe, Alberta",
+   "postedAt": "2026-10-12",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXZ1NrSXFiMGpFVUN5c3paMjF0U2dnEiQwMWExMzU1MC04OGUxLTdiMDgtOTUxZi03NGI5YzA1YTAwN2IaW0FBRk5CZ1ljYy10VVpKc1FYdnNHQklMSHdibWNVWHFDQ1RsakV0NE1nUGZGcWJQb08ya1RSLVJCNDI4b2xia1RSMzZGWlVhVl9tSkt4MmZDRS0wY3cxMjI3QUUgya0FEAEYya0F&tsid=100000502"
+  },
+  {
+   "id": "4qIw9sNiKwwpZ3r7fXDTzg",
+   "title": "Senior IT project manager - Remote - HS 26-13763",
+   "company": "Compu-Vision Consulting Inc.",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-12",
+   "type": "Full-time",
+   "remote": true,
+   "salaryMin": 180000,
+   "salaryMax": 190000,
+   "salaryPeriod": "year",
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY0cUl3OXNOaUt3d3BaM3I3ZlhEVHpnEiQwMWExMzU1MC04OGUxLTdiMDctYTZjMy02ZWYzYWI1ZDVmMjMaUEFBRkdDdHUxTTBiRXBXTHFHUlhtemF3ZUo0Q3VuTHBrNENyVmNBQVJ6RUMtY0JkME5DSjhGOGhWbU5RUmVWYXNLU0FuLXRjSmlJSHV2dk12IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
   {
    "id": "p94_0V-fu8osTlpG1Tmj1w",
    "title": "Journeyperson Automotive Service Technician",
@@ -36,7 +155,7 @@
    "type": "Part-time, Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZQVHFEUHNKU3FMR0tWMWs2UFNFbFpBEiQwMWExMzAyYy0xMGJhLTcyNWQtOTQ0My1iYjMwMDVhNzYzMzgaW0FBR1RKUWxFRllWeXh0dmhhQl95ZHJWODlVNUU3SGlGMFRiSklsRGUzdFNid05zeWdKWmJ1eVpZRGRhTGloWTBzSGtEMHJzQS1WRTdUdENJZThpZWRZTWRaTXMgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZQVHFEUHNKU3FMR0tWMWs2UFNFbFpBEiQwMWExMzU1MC04OGUxLTdiMDEtOGU2Ny0yNzk3YTYyNjE3YzIaW0FBRklkODdlWjMwRTFIaExRM19qcGtnNWlSMXFqZU1NNlctU1hVLXRYd25wal9SRm44U1J3SndVMTIybmlGU2ZTSGtPejV3NXZRVXV3cmw0NnNBYWE2RUVaeGcgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "ltqJk4-SaUchvXwa-fPlAw",
@@ -50,7 +169,7 @@
    "salaryMax": 110000,
    "salaryPeriod": "year",
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZsdHFKazQtU2FVY2h2WHdhLWZQbEF3EiQwMWExMzAzMi0yMTlmLTc0MDQtYjc3OC01ZjNiMGQ3YzAxZjEaUEFBRzJ3Y05odG1CUkFmeVpSRFR6YUpGQk92QmpJNWszWVJOZWREYzQxT3ZxLTM5UTRkSWhQeFlpN2pYbW5zUXVaak9OWWNodE16UktpdnBfIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZsdHFKazQtU2FVY2h2WHdhLWZQbEF3EiQwMWExMzU1NC0zNjc0LTczY2MtODY1ZS1kMjI5OTIzNzhiMTQaUEFBRktWdkhwaEcwY1B0azlJaGE1YXdCSlN0RFotc3E5a19VWVI4U1d0SUJfdldGcTAyZHIzbzNWVGVMTUs4VUFlT2l6aFRjMzVfcUZSUEV4IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "g3i4NuiVVMnsiNo7l_iM2g",
