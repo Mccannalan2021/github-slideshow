@@ -1,8 +1,125 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-15T13:09:40.608Z",
- "count": 385,
+ "fetchedAt": "2026-10-16T13:09:52.590Z",
+ "count": 486,
  "jobs": [
+  {
+   "id": "aax6kfnryncw",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aax6kfnryncw",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aag6fxhlzl66",
+   "title": "Registered Nurse",
+   "company": "Primary Care Alberta",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-16",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aag6fxhlzl66",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aakwz98v8wx8",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aakwz98v8wx8",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa7mqhjn6zgl",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7mqhjn6zgl",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aacb2n2vwqfg",
+   "title": "Registered Nurse",
+   "company": "Primary Care Alberta",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-16",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aacb2n2vwqfg",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aatkt9hfwqwn",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aatkt9hfwqwn",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa8hgcsnfrch",
+   "title": "Registered Nurse",
+   "company": "Primary Care Alberta",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-16",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8hgcsnfrch",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa9dlxxznmdf",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9dlxxznmdf",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa4fbry9ncbw",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4fbry9ncbw",
+   "keywords": [
+    "nurse"
+   ]
+  },
   {
    "id": "aawhppzp2s9t",
    "title": "Licensed Practical Nurse - Neonatal Intensive Care Unit",
@@ -53,6 +170,371 @@
    "url": "https://to.indeed.com/aa2zmkbfz9yp",
    "keywords": [
     "registered nurse"
+   ]
+  },
+  {
+   "id": "aaqwbw2fsjnm",
+   "title": "Renovation Carpenter",
+   "company": "Cooks Contracting & Build Co",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqwbw2fsjnm",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aawkkszpdcdr",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawkkszpdcdr",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aallryhd6m2v",
+   "title": "Operating Director (RN or LPN)",
+   "company": "New Day Homecare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aallryhd6m2v",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aabrcvt9zcj4",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabrcvt9zcj4",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aanwms86nxzg",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanwms86nxzg",
+   "keywords": []
+  },
+  {
+   "id": "aabj27z4lsc6",
+   "title": "Registered Nurse (RN-CS00-014) - Bethany Collegeside",
+   "company": "Bethany Care Society",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabj27z4lsc6",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaqkf99yksrw",
+   "title": "Key Holder",
+   "company": "Fairweather Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqkf99yksrw",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aahbyc76wx2c",
+   "title": "Yard Operative",
+   "company": "Michener Allen Auctioneering Ltd",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahbyc76wx2c",
+   "keywords": []
+  },
+  {
+   "id": "aa8422xmlqz6",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8422xmlqz6",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aamnzvsn6ctv",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aamnzvsn6ctv",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aasq8nh7vjlq",
+   "title": "Care Coordinator",
+   "company": "Seasons Retirement Communities",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-15",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aasq8nh7vjlq",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa6vg6lsprwt",
+   "title": "Psychiatric Aide",
+   "company": "Recovery Alberta",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-15",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6vg6lsprwt",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aah7xlg68f8y",
+   "title": "Operating Director (RN or LPN)",
+   "company": "New Day Homecare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aah7xlg68f8y",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aah2bs2gngrt",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aah2bs2gngrt",
+   "keywords": []
+  },
+  {
+   "id": "aa44gfcnfl7v",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa44gfcnfl7v",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aavfwym9x7cx",
+   "title": "Operating Director (RN or LPN)",
+   "company": "New Day Homecare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aavfwym9x7cx",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aamj6zjxn7nk",
+   "title": "Psychiatric Aide",
+   "company": "Recovery Alberta",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-15",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aamj6zjxn7nk",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aavftrhjmv6w",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-15",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aavftrhjmv6w",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aazd62b7s2yg",
+   "title": "Registered Nurse",
+   "company": "Recovery Alberta",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-15",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aazd62b7s2yg",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aacpnt992ldw",
+   "title": "Apprentice Pipefitter",
+   "company": "Vise Energy Services Ltd",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacpnt992ldw",
+   "keywords": []
+  },
+  {
+   "id": "aaphylml6prc",
+   "title": "Business Development Representative (Part-Time)",
+   "company": "ServiceMaster Restore",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaphylml6prc",
+   "keywords": [
+    "remote"
+   ]
+  },
+  {
+   "id": "aanfjsvrm2qy",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanfjsvrm2qy",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aanpdnclfq7h",
+   "title": "Operating Director (RN or LPN)",
+   "company": "New Day Homecare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanpdnclfq7h",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aanygyfvkcdw",
+   "title": "Automotive Sales Consultant",
+   "company": "AdVendors for Olympic Auto Group",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanygyfvkcdw",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aavm4v4cvpmk",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aavm4v4cvpmk",
+   "keywords": []
+  },
+  {
+   "id": "aahlk44s89rr",
+   "title": "Agriculture Equipment Technician",
+   "company": "Rocky Mountain Equipment",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aahlk44s89rr",
+   "keywords": []
+  },
+  {
+   "id": "aandkc6dbqtk",
+   "title": "Back of House - Line Cook",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aandkc6dbqtk",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aas9qndn6zkt",
+   "title": "Operating Director (RN or LPN)",
+   "company": "New Day Homecare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aas9qndn6zkt",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aascyqh2z92s",
+   "title": "Sales Associate",
+   "company": "Retail Distributors",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aascyqh2z92s",
+   "keywords": [
+    "retail"
    ]
   },
   {
@@ -435,6 +917,316 @@
    "type": "Full-time",
    "salary": "",
    "url": "https://to.indeed.com/aab84z2z79fk",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa4nk6vl8vcs",
+   "title": "Senior Manager",
+   "company": "Mah O'Neill Chartered Professional Accountants",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4nk6vl8vcs",
+   "keywords": []
+  },
+  {
+   "id": "aadvsvqnrsw8",
+   "title": "Vehicle Accessories Salesperson",
+   "company": "LAND AUTOMOTIVE CENTER",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadvsvqnrsw8",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aaljzzfgkg86",
+   "title": "Grocery Store Manager",
+   "company": "Mindfield",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaljzzfgkg86",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa7k6v8d78k6",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-14",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7k6v8d78k6",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aarzns9dnzvb",
+   "title": "Community Wellness Administrative Assistant",
+   "company": "Fort McMurray 468 Business Centre LP",
+   "location": "Gregoire Lake 176, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aarzns9dnzvb",
+   "keywords": []
+  },
+  {
+   "id": "aa2hdnspnqvw",
+   "title": "Mechanical General Foreman",
+   "company": "Fort McKay Alcor",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2hdnspnqvw",
+   "keywords": []
+  },
+  {
+   "id": "aadn6hbpq9cp",
+   "title": "Yard Supervisor",
+   "company": "Alberta Lumber Supply Corp",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadn6hbpq9cp",
+   "keywords": []
+  },
+  {
+   "id": "aabn2qc7wgx9",
+   "title": "Grocery Store Manager",
+   "company": "Mindfield",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabn2qc7wgx9",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa2rsjtymn4t",
+   "title": "Senior Manager",
+   "company": "Mah O'Neill Chartered Professional Accountants",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2rsjtymn4t",
+   "keywords": []
+  },
+  {
+   "id": "aay9gj68ffs9",
+   "title": "Restaurant Management | Assistant General Manager | General Manager",
+   "company": "The Canadian Brewhouse",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aay9gj68ffs9",
+   "keywords": []
+  },
+  {
+   "id": "aa4nwdd9kx2c",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4nwdd9kx2c",
+   "keywords": []
+  },
+  {
+   "id": "aaq9jr7qcytm",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-14",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq9jr7qcytm",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aawnqtrtc7gp",
+   "title": "Automotive Sales Consultant",
+   "company": "AdVendors for Olympic Auto Group",
+   "location": "Carstairs, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawnqtrtc7gp",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa24xn2lkb6t",
+   "title": "Yard Supervisor",
+   "company": "Alberta Lumber Supply Corp",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa24xn2lkb6t",
+   "keywords": []
+  },
+  {
+   "id": "aahxk9g8lt6t",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-14",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aahxk9g8lt6t",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa8sfc4pqyfg",
+   "title": "Grocery Store Manager",
+   "company": "Mindfield",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8sfc4pqyfg",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aanqksfqhv92",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanqksfqhv92",
+   "keywords": []
+  },
+  {
+   "id": "aavwglrszqhc",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavwglrszqhc",
+   "keywords": []
+  },
+  {
+   "id": "aa8rj8zfsrsx",
+   "title": "Yard Supervisor",
+   "company": "Alberta Lumber Supply Corp",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8rj8zfsrsx",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aak77dymgg9d",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aak77dymgg9d",
+   "keywords": []
+  },
+  {
+   "id": "aaz2vzrzflct",
+   "title": "Heavy Equipment Operator",
+   "company": "Vise Energy Services Ltd",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-14",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaz2vzrzflct",
+   "keywords": []
+  },
+  {
+   "id": "aawz6wdg8qd8",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aawz6wdg8qd8",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aat7rkzytvxg",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aat7rkzytvxg",
+   "keywords": []
+  },
+  {
+   "id": "aahmszj6hsxd",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-14",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aahmszj6hsxd",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaftxbcpkb2r",
+   "title": "Yard Supervisor",
+   "company": "Alberta Lumber Supply Corp",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaftxbcpkb2r",
+   "keywords": []
+  },
+  {
+   "id": "aa6fkbz8m4ly",
+   "title": "Grocery Store Manager",
+   "company": "Mindfield",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6fkbz8m4ly",
    "keywords": [
     "retail"
    ]
@@ -1525,6 +2317,531 @@
    "type": "Permanent",
    "salary": "",
    "url": "https://to.indeed.com/aa8nw8mpp49h",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aaq9wxg6xz8y",
+   "title": "Experienced Water Transfer Technicians",
+   "company": "WHITEWATER MANAGEMENT - Catalyst Production Systems Ltd.",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq9wxg6xz8y",
+   "keywords": []
+  },
+  {
+   "id": "aas2wlmvjrgk",
+   "title": "Parts Sales Manager",
+   "company": "Rocky Mountain Equipment",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aas2wlmvjrgk",
+   "keywords": []
+  },
+  {
+   "id": "aaqzz2hzy9dd",
+   "title": "Head Chef",
+   "company": "Blowers and Grafton",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqzz2hzy9dd",
+   "keywords": []
+  },
+  {
+   "id": "aadt8pbwrdjc",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "CML",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadt8pbwrdjc",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aazf4hj7ynb8",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aazf4hj7ynb8",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aapd2lhtb8zv",
+   "title": "Pet Store Associate",
+   "company": "Pro Builders Supply Ltd",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapd2lhtb8zv",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aabkdq28dwmj",
+   "title": "Shift Manager",
+   "company": "JDW Hospitality",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aabkdq28dwmj",
+   "keywords": []
+  },
+  {
+   "id": "aa2pyg8hxlzn",
+   "title": "Lead Cook",
+   "company": "Sea Change Brewing Co",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2pyg8hxlzn",
+   "keywords": []
+  },
+  {
+   "id": "aaq8zgsm7ppk",
+   "title": "Custodian (Health Centre)",
+   "company": "Fort McMurray 468 Business Centre LP",
+   "location": "Gregoire Lake 176, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq8zgsm7ppk",
+   "keywords": []
+  },
+  {
+   "id": "aaczsndbnhpt",
+   "title": "Welders Helper/Labourer",
+   "company": "React Fabrication Ltd",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaczsndbnhpt",
+   "keywords": []
+  },
+  {
+   "id": "aar4gzbszf8y",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "CML",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aar4gzbszf8y",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa2rzztgzw4j",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2rzztgzw4j",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa7r7vddzy64",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7r7vddzy64",
+   "keywords": []
+  },
+  {
+   "id": "aavqprdd2cmh",
+   "title": "Shift Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aavqprdd2cmh",
+   "keywords": []
+  },
+  {
+   "id": "aavlvz2qlwh2",
+   "title": "Residential House Cleaner | Lathered Team Member",
+   "company": "Lathered Cleaning Company Inc.",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aavlvz2qlwh2",
+   "keywords": []
+  },
+  {
+   "id": "aah27xnljyty",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "CML",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aah27xnljyty",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa46xz2yl8xx",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aa46xz2yl8xx",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aas4ndgktxqs",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aas4ndgktxqs",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aakjbhyn98hd",
+   "title": "Shift Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aakjbhyn98hd",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aalcrhhzsynz",
+   "title": "Pet Store Associate",
+   "company": "Pro Builders Supply Ltd",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalcrhhzsynz",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aardy9dql2g7",
+   "title": "Pet Store Associate",
+   "company": "Pro Builders",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aardy9dql2g7",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aap69www4bv6",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "CML",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aap69www4bv6",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aalhm4lcf9bb",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aalhm4lcf9bb",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aakhydpl496j",
+   "title": "Kitchen Staff",
+   "company": "Triple O's Restaurants",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakhydpl496j",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aa8zfxhjs2rg",
+   "title": "Journeyman/Apprentice Welder",
+   "company": "Smartvac Hydrovac",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8zfxhjs2rg",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aa6qvtsjk2xy",
+   "title": "Permitting Specialist",
+   "company": "Roadata Services Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6qvtsjk2xy",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aalclj7h7pzp",
+   "title": "Account Sales Manager",
+   "company": "Red Bull",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aalclj7h7pzp",
+   "keywords": []
+  },
+  {
+   "id": "aab8czjmkrrz",
+   "title": "Apprentice Plumber/Gasfitter",
+   "company": "World Class Contracting",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aab8czjmkrrz",
+   "keywords": []
+  },
+  {
+   "id": "aamjkngz98yr",
+   "title": "Journeymen or Apprentice WELDERS - Every 2nd Friday Off",
+   "company": "GenTex Oilfield Manufacturing Inc.",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aamjkngz98yr",
+   "keywords": []
+  },
+  {
+   "id": "aa2xt8mmfnfm",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2xt8mmfnfm",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aa8bm7kzj8wc",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "CML",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8bm7kzj8wc",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa2h9jdnd886",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2h9jdnd886",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aakpthsbt28w",
+   "title": "Parts Sales Manager",
+   "company": "Rocky Mountain Equipment",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aakpthsbt28w",
+   "keywords": []
+  },
+  {
+   "id": "aa9b9krmsqvl",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9b9krmsqvl",
+   "keywords": []
+  },
+  {
+   "id": "aasd9hfyybd9",
+   "title": "Residential House Cleaner | Lathered Team Member",
+   "company": "Lathered Cleaning Company Inc.",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasd9hfyybd9",
+   "keywords": []
+  },
+  {
+   "id": "aaggh8zk6fg7",
+   "title": "Shift Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aaggh8zk6fg7",
+   "keywords": []
+  },
+  {
+   "id": "aatw6z9pb46r",
+   "title": "Department Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aatw6z9pb46r",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aaynpg9wwmwx",
+   "title": "Shift Manager",
+   "company": "McDonald's",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-13",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aaynpg9wwmwx",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aawn8h8z7h7t",
+   "title": "Pet Store Associate",
+   "company": "Pro Builders Supply Ltd",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawn8h8z7h7t",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aag6bkzwdv9v",
+   "title": "Pet Store Associate",
+   "company": "Pro Builders",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-13",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aag6bkzwdv9v",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aaj6splp6dfg",
+   "title": "Journeymen or Apprentice WELDERS - Every 2nd Friday Off",
+   "company": "GenTex Oilfield Manufacturing Inc.",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaj6splp6dfg",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aasd2pz8j289",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "CML",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-13",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasd2pz8j289",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aal648rwsmjv",
+   "title": "Wireless Sales Associate - 1102 Sylvan Lake",
+   "company": "OSL Retail Services Inc",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-13",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aal648rwsmjv",
    "keywords": [
     "retail"
    ]
@@ -4762,84 +6079,6 @@
    "url": "https://to.indeed.com/aa4p6fd8hgyj",
    "keywords": [
     "oil and gas"
-   ]
-  },
-  {
-   "id": "aa72nyqy769w",
-   "title": "Third Key (Team Leader) - BIM Market Mall",
-   "company": "Nespresso",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-15",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa72nyqy769w",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aa8ghxz4x7jf",
-   "title": "General Labourer - Shallows",
-   "company": "North Star Contracting",
-   "location": "Rocky View Municipal District, AB",
-   "postedAt": "2026-09-15",
-   "type": "Temporary",
-   "salary": "",
-   "url": "https://to.indeed.com/aa8ghxz4x7jf",
-   "keywords": [
-    "labourer"
-   ]
-  },
-  {
-   "id": "aapg789mdndx",
-   "title": "Third Key (Team Leader) - BIM Market Mall",
-   "company": "Nespresso",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-15",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aapg789mdndx",
-   "keywords": [
-    "retail"
-   ]
-  },
-  {
-   "id": "aatzwggq844g",
-   "title": "Materials Shipper/ Receiver (must have oil & gas experience)",
-   "company": "GMC Contractors Ltd.",
-   "location": "Fort Saskatchewan, AB",
-   "postedAt": "2026-09-15",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aatzwggq844g",
-   "keywords": [
-    "warehouse"
-   ]
-  },
-  {
-   "id": "aa4jxmp89kbc",
-   "title": "Warehouse Supervisor - Night Shift",
-   "company": "Transource Freightways Ltd",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-15",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa4jxmp89kbc",
-   "keywords": [
-    "warehouse"
-   ]
-  },
-  {
-   "id": "aas69vxfqxfl",
-   "title": "Industrial Driver - Town Position",
-   "company": "Golden Arrow",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-15",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aas69vxfqxfl",
-   "keywords": [
-    "driver"
    ]
   }
  ]
