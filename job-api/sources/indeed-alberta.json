@@ -1,8 +1,21 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-16T13:09:52.590Z",
- "count": 486,
+ "fetchedAt": "2026-10-17T13:08:02.486Z",
+ "count": 543,
  "jobs": [
+  {
+   "id": "aa9sqyzkw4jm",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-17",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9sqyzkw4jm",
+   "keywords": [
+    "nurse"
+   ]
+  },
   {
    "id": "aax6kfnryncw",
    "title": "Mental Health Nurse",
@@ -118,6 +131,408 @@
    "url": "https://to.indeed.com/aa4fbry9ncbw",
    "keywords": [
     "nurse"
+   ]
+  },
+  {
+   "id": "aayf2pvvthv6",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aayf2pvvthv6",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aav4bwgcxny6",
+   "title": "Administrative Assistant",
+   "company": "L.A. Carpet & Tile Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aav4bwgcxny6",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aafs8xtn6k6v",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafs8xtn6k6v",
+   "keywords": []
+  },
+  {
+   "id": "aa2prslhxjbk",
+   "title": "Wireless Sales Associate- 1084 Olds",
+   "company": "OSL Retail Services Inc",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2prslhxjbk",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aadmcm978dsq",
+   "title": "Wireless Sales Associate- 1084 Olds",
+   "company": "OSL Retail Services Inc",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aadmcm978dsq",
+   "keywords": []
+  },
+  {
+   "id": "aabwwsxgbkr4",
+   "title": "Employment and Training Coordinator",
+   "company": "Fort McMurray 468 Business Centre LP",
+   "location": "Gregoire Lake 176, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabwwsxgbkr4",
+   "keywords": []
+  },
+  {
+   "id": "aa2gdmgnkppf",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2gdmgnkppf",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aak4c2b7byy2",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aak4c2b7byy2",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aacmwwfncx49",
+   "title": "Administrative Assistant",
+   "company": "L.A. Carpet & Tile Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacmwwfncx49",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aaz7mhp68f48",
+   "title": "Wireless Sales Associate- 1084 Olds",
+   "company": "OSL Retail Services Inc",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaz7mhp68f48",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aacpr6j76zrz",
+   "title": "Wireless Sales Associate- 1084 Olds",
+   "company": "OSL Retail Services Inc",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacpr6j76zrz",
+   "keywords": []
+  },
+  {
+   "id": "aar8rfhbxw9r",
+   "title": "Administrative Assistant",
+   "company": "L.A. Carpet & Tile Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aar8rfhbxw9r",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aatrrncp74pb",
+   "title": "Administrative Assistant",
+   "company": "L.A. Carpet & Tile Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aatrrncp74pb",
+   "keywords": [
+    "administrative assistant"
+   ]
+  },
+  {
+   "id": "aa464cxbsvbc",
+   "title": "Administrative Assistant",
+   "company": "Golden West Broadcasting",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa464cxbsvbc",
+   "keywords": [
+    "administrative assistant"
+   ]
+  },
+  {
+   "id": "aawnphnjjvhw",
+   "title": "Cook with kitchen management skills for our 2027 golf season",
+   "company": "Fawn Meadows Golf and Country Club",
+   "location": "Delburne, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawnphnjjvhw",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aawvm2dvkybh",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawvm2dvkybh",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aavmv888xnv7",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aavmv888xnv7",
+   "keywords": []
+  },
+  {
+   "id": "aavvlj8c2kc6",
+   "title": "Mechanical Assembler",
+   "company": "Rebel Metal Fabricators Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavvlj8c2kc6",
+   "keywords": []
+  },
+  {
+   "id": "aarvxpdkfbqj",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarvxpdkfbqj",
+   "keywords": []
+  },
+  {
+   "id": "aa8lkspx82hb",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8lkspx82hb",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aadkhs46tngk",
+   "title": "RN Postpartum Night Nurse",
+   "company": "Modern Home Cleaning Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadkhs46tngk",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aal9znmnbvh6",
+   "title": "Mental Health Nurse",
+   "company": "CASA Mental Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aal9znmnbvh6",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aapxkpm6qfsw",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapxkpm6qfsw",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa8cdg46wrhq",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8cdg46wrhq",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aadqxrfqcn7g",
+   "title": "Sales Associate PT",
+   "company": "Fastenal",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadqxrfqcn7g",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aavmyfcss429",
+   "title": "Administrative Assistant",
+   "company": "L.A. Carpet & Tile Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavmyfcss429",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aakhwj7yhnmp",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakhwj7yhnmp",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aa82zxl8wwq6",
+   "title": "Licensed Welder",
+   "company": "PARTS FOR TRUCKS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa82zxl8wwq6",
+   "keywords": [
+    "welder"
+   ]
+  },
+  {
+   "id": "aa4x6npvzf9n",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4x6npvzf9n",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa6nlfp9dkdr",
+   "title": "Wireless Sales Associate- 1084 Olds",
+   "company": "OSL Retail Services Inc",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6nlfp9dkdr",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aayzny2ntlbs",
+   "title": "Administrative Assistant",
+   "company": "L.A. Carpet & Tile Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aayzny2ntlbs",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aaqzkfhmtmx6",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqzkfhmtmx6",
+   "keywords": [
+    "customer service"
    ]
   },
   {
@@ -536,6 +951,289 @@
    "keywords": [
     "retail"
    ]
+  },
+  {
+   "id": "aarhdkvc6xyv",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarhdkvc6xyv",
+   "keywords": []
+  },
+  {
+   "id": "aa68h2bn4pqd",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa68h2bn4pqd",
+   "keywords": []
+  },
+  {
+   "id": "aag64wjtrknh",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aag64wjtrknh",
+   "keywords": []
+  },
+  {
+   "id": "aatpqm8bcf8b",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatpqm8bcf8b",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aal4ywzpln4m",
+   "title": "Renovation Carpenter",
+   "company": "Cooks Contracting & Build Co",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aal4ywzpln4m",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aa8fcj2jxlds",
+   "title": "Sales Associate",
+   "company": "Retail Distributors",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8fcj2jxlds",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aadgtj4vtx6z",
+   "title": "Administrative Assistant",
+   "company": "Farmer Petes Ag LTD",
+   "location": "Ponoka County, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadgtj4vtx6z",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa6744nsmfkp",
+   "title": "Administrative Support V",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6744nsmfkp",
+   "keywords": [
+    "administrative assistant"
+   ]
+  },
+  {
+   "id": "aalgsrrmzwpn",
+   "title": "Cleaner (Part-time)",
+   "company": "Jenn's Pantry",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalgsrrmzwpn",
+   "keywords": [
+    "cleaner"
+   ]
+  },
+  {
+   "id": "aasqvl8qzryl",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasqvl8qzryl",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aasvv4t9g94q",
+   "title": "Renovation Carpenter",
+   "company": "Cooks Contracting & Build Co",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasvv4t9g94q",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aappb24nf2cd",
+   "title": "Sales Associate",
+   "company": "Retail Distributors",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aappb24nf2cd",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aapt2y4rgghb",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapt2y4rgghb",
+   "keywords": []
+  },
+  {
+   "id": "aajk6lmndzsq",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajk6lmndzsq",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aahxwny9ztfw",
+   "title": "Apprentice Pipefitter",
+   "company": "Vise Energy Services Ltd",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aahxwny9ztfw",
+   "keywords": []
+  },
+  {
+   "id": "aa842slrmbyp",
+   "title": "Renovation Carpenter",
+   "company": "Cooks Contracting & Build Co",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa842slrmbyp",
+   "keywords": []
+  },
+  {
+   "id": "aacqqkqlrfzw",
+   "title": "Operating Director (RN or LPN)",
+   "company": "New Day Homecare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aacqqkqlrfzw",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aarl7s29f2b8",
+   "title": "Business Development Representative (Part-Time)",
+   "company": "ServiceMaster Restore",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarl7s29f2b8",
+   "keywords": [
+    "remote"
+   ]
+  },
+  {
+   "id": "aak4ml9fhrhy",
+   "title": "Warehouse Associate",
+   "company": "Red Deer Bottling",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aak4ml9fhrhy",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aanbdvczn6yj",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanbdvczn6yj",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aapy6vthq6fb",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapy6vthq6fb",
+   "keywords": []
+  },
+  {
+   "id": "aab8dwwy2ctw",
+   "title": "Sales Associate",
+   "company": "Retail Distributors",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aab8dwwy2ctw",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa8mx2zq4nxj",
+   "title": "Site Foreman/woman",
+   "company": "Complete Custom Metals",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8mx2zq4nxj",
+   "keywords": []
   },
   {
    "id": "aaklgzm7ztxy",
@@ -1229,6 +1927,163 @@
    "url": "https://to.indeed.com/aa6fkbz8m4ly",
    "keywords": [
     "retail"
+   ]
+  },
+  {
+   "id": "aah7dswq8y84",
+   "title": "Food and Beverage Manager - Social & Listening Room (Relocate to Banff)",
+   "company": "The Rimrock Resort Hotel",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aah7dswq8y84",
+   "keywords": []
+  },
+  {
+   "id": "aa6r9lcrlwx9",
+   "title": "Community Wellness Administrative Assistant",
+   "company": "Fort McMurray 468 Business Centre LP",
+   "location": "Gregoire Lake 176, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6r9lcrlwx9",
+   "keywords": []
+  },
+  {
+   "id": "aa96zzb6zc9h",
+   "title": "Restaurant Management | Assistant General Manager | General Manager",
+   "company": "The Canadian Brewhouse",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa96zzb6zc9h",
+   "keywords": []
+  },
+  {
+   "id": "aawrk4npgkcg",
+   "title": "Industrial Sandblaster/Painter",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Redcliff, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawrk4npgkcg",
+   "keywords": []
+  },
+  {
+   "id": "aadzb866glpd",
+   "title": "Automotive Sales Consultant",
+   "company": "AdVendors for Olympic Auto Group",
+   "location": "Carstairs, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadzb866glpd",
+   "keywords": []
+  },
+  {
+   "id": "aad46p8wtbcn",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad46p8wtbcn",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aapdgtr4pfkx",
+   "title": "Journeymen and Apprentice Welders",
+   "company": "Bilton Welding and Manufacturing",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapdgtr4pfkx",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aa9f2khjk2vg",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9f2khjk2vg",
+   "keywords": []
+  },
+  {
+   "id": "aagdth6p9flz",
+   "title": "Heavy Equipment Technician",
+   "company": "Collicutt Energy Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aagdth6p9flz",
+   "keywords": [
+    "mechanic"
+   ]
+  },
+  {
+   "id": "aarknc7tx4gt",
+   "title": "Team Member",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-14",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aarknc7tx4gt",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aad6b4nkglq8",
+   "title": "Shipper and Receiver",
+   "company": "King's Energy Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad6b4nkglq8",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aabkjccqslwt",
+   "title": "B Pressure Welders",
+   "company": "Bilton Welding and Manufacturing",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabkjccqslwt",
+   "keywords": [
+    "welder"
+   ]
+  },
+  {
+   "id": "aahx2nwf7pct",
+   "title": "Journeymen and Apprentice Welders",
+   "company": "Bilton Welding and Manufacturing",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-14",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahx2nwf7pct",
+   "keywords": [
+    "welder"
    ]
   },
   {
@@ -5927,158 +6782,6 @@
    "url": "https://to.indeed.com/aahhp9qr2jrn",
    "keywords": [
     "warehouse"
-   ]
-  },
-  {
-   "id": "aackk4n7zrcs",
-   "title": "Solar Sales Rep",
-   "company": "Nova Renewables Inc.",
-   "location": "Alberta",
-   "postedAt": "2026-09-16",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aackk4n7zrcs",
-   "keywords": [
-    "remote"
-   ]
-  },
-  {
-   "id": "aa2fzwqg6qfx",
-   "title": "Carpenter (Commercial Construction)",
-   "company": "Scott Builders Inc",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-16",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa2fzwqg6qfx",
-   "keywords": [
-    "construction"
-   ]
-  },
-  {
-   "id": "aaxcb9cqxpd4",
-   "title": "Sales Manager",
-   "company": "Source Office Furniture",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-16",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aaxcb9cqxpd4",
-   "keywords": [
-    "retail"
-   ]
-  },
-  {
-   "id": "aafjk9bmtnjg",
-   "title": "Industrial Apprentice Electrician",
-   "company": "Strike Group",
-   "location": "Alberta",
-   "postedAt": "2026-09-16",
-   "type": "Apprenticeship",
-   "salary": "",
-   "url": "https://to.indeed.com/aafjk9bmtnjg",
-   "keywords": [
-    "electrician"
-   ]
-  },
-  {
-   "id": "aassfcmygjg9",
-   "title": "Hide Labourer",
-   "company": "West Coast Reduction Ltd.",
-   "location": "Alberta",
-   "postedAt": "2026-09-16",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aassfcmygjg9",
-   "keywords": [
-    "labourer"
-   ]
-  },
-  {
-   "id": "aaqrk87rt8pj",
-   "title": "Millwright JM",
-   "company": "Primoris Services Corporation",
-   "location": "Wood Buffalo, AB",
-   "postedAt": "2026-09-16",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaqrk87rt8pj",
-   "keywords": [
-    "millwright"
-   ]
-  },
-  {
-   "id": "aanbkss747l6",
-   "title": "Derrick Hand",
-   "company": "Apex Well Servicing Inc",
-   "location": "Alberta",
-   "postedAt": "2026-09-16",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aanbkss747l6",
-   "keywords": [
-    "oil and gas"
-   ]
-  },
-  {
-   "id": "aatn78xdlr86",
-   "title": "Furniture Driver/Mover",
-   "company": "Alberta Strong Movers",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-16",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aatn78xdlr86",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aa9s6btszywx",
-   "title": "Brewery Taproom Supervisor",
-   "company": "Trouble Monk Brewer",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-16",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa9s6btszywx",
-   "keywords": []
-  },
-  {
-   "id": "aay2pb4qsjqt",
-   "title": "Team Lead - Inside Sales",
-   "company": "Red Deer Fasteners & Tools",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-16",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aay2pb4qsjqt",
-   "keywords": []
-  },
-  {
-   "id": "aazyg996tkcw",
-   "title": "Infusion Clinic Nurse - Red Deer, AB / Infirmier(ère) de perfusion - Red Deer, Alb.",
-   "company": "BioScript Solutions",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-16",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aazyg996tkcw",
-   "keywords": [
-    "nurse"
-   ]
-  },
-  {
-   "id": "aa4p6fd8hgyj",
-   "title": "Regional Operations & Administration Coordinator",
-   "company": "CP Water Hauling",
-   "location": "Sylvan Lake, AB",
-   "postedAt": "2026-09-16",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa4p6fd8hgyj",
-   "keywords": [
-    "oil and gas"
    ]
   }
  ]
