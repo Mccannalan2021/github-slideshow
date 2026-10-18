@@ -1,7 +1,7 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-17T13:08:02.486Z",
- "count": 543,
+ "fetchedAt": "2026-10-18T13:06:23.722Z",
+ "count": 579,
  "jobs": [
   {
    "id": "aa9sqyzkw4jm",
@@ -12,6 +12,84 @@
    "type": "Temporary",
    "salary": "",
    "url": "https://to.indeed.com/aa9sqyzkw4jm",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aapgrh742jpf",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-17",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapgrh742jpf",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa78v2ztc6nf",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-17",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa78v2ztc6nf",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa779tr2snyw",
+   "title": "Licensed Practical Nurse - Pediatrics",
+   "company": "Alberta Health Services",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-17",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa779tr2snyw",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaktg4cg4v9w",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-17",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaktg4cg4v9w",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aackg8sjgzm9",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-17",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aackg8sjgzm9",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa8m8lvnx9lf",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-17",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8m8lvnx9lf",
    "keywords": [
     "nurse"
    ]
@@ -534,6 +612,256 @@
    "keywords": [
     "customer service"
    ]
+  },
+  {
+   "id": "aatjq4wv9yg9",
+   "title": "Event Field & Warehouse Technician",
+   "company": "The Rental Brothers",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aatjq4wv9yg9",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aanbyzvhtjtg",
+   "title": "RAI Coordinator",
+   "company": "The Good Samaritan Society",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanbyzvhtjtg",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aarxc96k8fz2",
+   "title": "Employment and Training Coordinator",
+   "company": "Fort McMurray 468 Business Centre LP",
+   "location": "Gregoire Lake 176, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarxc96k8fz2",
+   "keywords": []
+  },
+  {
+   "id": "aatdcnj9c4px",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatdcnj9c4px",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aat7xjcqfwwb",
+   "title": "General Labourer - Temporary - Days",
+   "company": "M30 Retail Services Inc.",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aat7xjcqfwwb",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aajn9ghhxljt",
+   "title": "Mixer Driver",
+   "company": "BURNCO Rock Products Ltd",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajn9ghhxljt",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aaxczbfpx2gh",
+   "title": "Subway Store Supervisor (Raymond)",
+   "company": "Prairie Capital Group Ltd.",
+   "location": "Raymond, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxczbfpx2gh",
+   "keywords": []
+  },
+  {
+   "id": "aawmyzj9kdq6",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawmyzj9kdq6",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aapzsxpf28p4",
+   "title": "Field Driver Trainer - Oilfield / Off-Road",
+   "company": "Bizi Transport",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapzsxpf28p4",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aakvwzpxz4d8",
+   "title": "Registered Nurse",
+   "company": "The Good Samaritan Society",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-16",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aakvwzpxz4d8",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aalds2t2f7xz",
+   "title": "Licensed Practical Nurse (LPN)",
+   "company": "The Good Samaritan Society",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-16",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aalds2t2f7xz",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aazpvs7kddk8",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazpvs7kddk8",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aaxd4kkt7dcv",
+   "title": "Field Driver Trainer - Oilfield / Off-Road",
+   "company": "Bizi Transport",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxd4kkt7dcv",
+   "keywords": [
+    "class 1 driver"
+   ]
+  },
+  {
+   "id": "aa8mywfk88gz",
+   "title": "Part-Time Hotshot Truck Driver",
+   "company": "BAM Hauling Inc",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8mywfk88gz",
+   "keywords": [
+    "delivery driver"
+   ]
+  },
+  {
+   "id": "aashz7nhddrh",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aashz7nhddrh",
+   "keywords": [
+    "heavy duty mechanic"
+   ]
+  },
+  {
+   "id": "aa9cttv7kkkg",
+   "title": "Mechanical Assembler",
+   "company": "Rebel Metal Fabricators Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9cttv7kkkg",
+   "keywords": []
+  },
+  {
+   "id": "aac7279bz9r8",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aac7279bz9r8",
+   "keywords": []
+  },
+  {
+   "id": "aagvhyr82dkp",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aagvhyr82dkp",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aaxlh7ny9zdw",
+   "title": "Aircraft Maintenance Engineer - M",
+   "company": "Tucana Aviation Services Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxlh7ny9zdw",
+   "keywords": [
+    "remote"
+   ]
+  },
+  {
+   "id": "aacdqmhzjrxp",
+   "title": "Wireless Sales Associate- 1084 Olds",
+   "company": "OSL Retail Services Inc",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacdqmhzjrxp",
+   "keywords": []
   },
   {
    "id": "aawhppzp2s9t",
@@ -1233,6 +1561,263 @@
    "type": "Full-time",
    "salary": "",
    "url": "https://to.indeed.com/aa8mx2zq4nxj",
+   "keywords": []
+  },
+  {
+   "id": "aacvrcvxjdyd",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aacvrcvxjdyd",
+   "keywords": []
+  },
+  {
+   "id": "aamp78bkqtxs",
+   "title": "Lube Technician",
+   "company": "MOBIL 1 LUBE EXPRESS",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aamp78bkqtxs",
+   "keywords": []
+  },
+  {
+   "id": "aafxxn67mj8y",
+   "title": "Lot Attendant",
+   "company": "4G Motorsports",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aafxxn67mj8y",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aa7crs6fmj82",
+   "title": "Industrial Firefighter (Driver/Lead)",
+   "company": "Superior Fire Control Ltd.",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7crs6fmj82",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aadwfdkhwhbm",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadwfdkhwhbm",
+   "keywords": []
+  },
+  {
+   "id": "aaqrf9yq49bq",
+   "title": "Long Haul Truck Driver - Flatbed/Reefer",
+   "company": "Snowy Owl Transport / Evans Trucking",
+   "location": "Coaldale, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqrf9yq49bq",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aax4zh24zzyq",
+   "title": "Electrical Apprentice",
+   "company": "Allied Projects Ltd.",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aax4zh24zzyq",
+   "keywords": []
+  },
+  {
+   "id": "aaj7f86wfvdn",
+   "title": "Seasonal Warehouse Associate",
+   "company": "Jake's Supply House",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-15",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaj7f86wfvdn",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aagrnzmpvts6",
+   "title": "Courier Driver",
+   "company": "O.N.E. Transport Group",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aagrnzmpvts6",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aaftgn6sklm6",
+   "title": "Courier Driver",
+   "company": "O.N.E. Transport Group",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaftgn6sklm6",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aarklfz46yft",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarklfz46yft",
+   "keywords": []
+  },
+  {
+   "id": "aa7g88fjx898",
+   "title": "Administrative Assistant",
+   "company": "Farmer Petes Ag LTD",
+   "location": "Ponoka County, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7g88fjx898",
+   "keywords": []
+  },
+  {
+   "id": "aahcw98hkxtd",
+   "title": "Renovation Carpenter",
+   "company": "Cooks Contracting & Build Co",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahcw98hkxtd",
+   "keywords": [
+    "carpenter"
+   ]
+  },
+  {
+   "id": "aad64phmvrbd",
+   "title": "Pizza Delivery Driver",
+   "company": "Family Pizza",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad64phmvrbd",
+   "keywords": [
+    "delivery driver"
+   ]
+  },
+  {
+   "id": "aa9scymkqvzb",
+   "title": "Warehouse Associate",
+   "company": "Red Deer Bottling",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9scymkqvzb",
+   "keywords": [
+    "forklift operator"
+   ]
+  },
+  {
+   "id": "aaybrhvhnlm9",
+   "title": "Warehouse Associate",
+   "company": "Red Deer Bottling",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaybrhvhnlm9",
+   "keywords": [
+    "general labour"
+   ]
+  },
+  {
+   "id": "aaw9jpr9ntb2",
+   "title": "Heavy Duty Mechanic",
+   "company": "Environmental 360 Solutions",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaw9jpr9ntb2",
+   "keywords": [
+    "heavy duty mechanic"
+   ]
+  },
+  {
+   "id": "aakz9qm2bkmt",
+   "title": "Apprentice Pipefitter",
+   "company": "Vise Energy Services Ltd",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aakz9qm2bkmt",
+   "keywords": []
+  },
+  {
+   "id": "aarm98vglpxb",
+   "title": "Pump Rebuild Technician / Millwright — Shop",
+   "company": "Sterling Industries Inc",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarm98vglpxb",
+   "keywords": [
+    "millwright"
+   ]
+  },
+  {
+   "id": "aak8myr8blzr",
+   "title": "Piper the Plumber — Customer Service Representative (Full-Time) | Red Deer, AB",
+   "company": "Piper the Plumber (Red Deer)",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aak8myr8blzr",
+   "keywords": [
+    "plumber"
+   ]
+  },
+  {
+   "id": "aaq844lljq8c",
+   "title": "Shipping Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-15",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq844lljq8c",
    "keywords": []
   },
   {
@@ -6639,149 +7224,6 @@
    "url": "https://to.indeed.com/aacm24nwgfmq",
    "keywords": [
     "oil and gas"
-   ]
-  },
-  {
-   "id": "aaw8prcty9r9",
-   "title": "Restaurant Manager",
-   "company": "Red Lobster",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-17",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaw8prcty9r9",
-   "keywords": [
-    "retail"
-   ]
-  },
-  {
-   "id": "aatz4xk4g29n",
-   "title": "Project Manager – Warehouse Storage Installation",
-   "company": "Metco Installation Services",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-17",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aatz4xk4g29n",
-   "keywords": [
-    "warehouse"
-   ]
-  },
-  {
-   "id": "aa87x2lzv6lb",
-   "title": "Delivery Driver and Shop / Yard Maintenance",
-   "company": "Dematco Manufacturing Inc",
-   "location": "Acheson, AB",
-   "postedAt": "2026-09-17",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa87x2lzv6lb",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aa2xrpqh9x9s",
-   "title": "Delivery Associate",
-   "company": "Anderson Last Mile Inc.",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-17",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa2xrpqh9x9s",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aavvyz2slhr8",
-   "title": "Cook I - Term",
-   "company": "Regional Recreation Corporation of Wood Buffalo",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-17",
-   "type": "Temporary",
-   "salary": "",
-   "url": "https://to.indeed.com/aavvyz2slhr8",
-   "keywords": [
-    "cook"
-   ]
-  },
-  {
-   "id": "aaz4ztcvbd46",
-   "title": "Derrick Hand",
-   "company": "Predator Drilling",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-17",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaz4ztcvbd46",
-   "keywords": [
-    "construction"
-   ]
-  },
-  {
-   "id": "aartf8q6w9l9",
-   "title": "Motorhand",
-   "company": "Predator Drilling",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-17",
-   "type": "Temporary",
-   "salary": "",
-   "url": "https://to.indeed.com/aartf8q6w9l9",
-   "keywords": [
-    "construction"
-   ]
-  },
-  {
-   "id": "aadjnd8zc9cg",
-   "title": "WAREHOUSE MATERIAL HANDLER",
-   "company": "Consolidated Gypsum Supply",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-17",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aadjnd8zc9cg",
-   "keywords": [
-    "labourer"
-   ]
-  },
-  {
-   "id": "aaw47g2phprh",
-   "title": "Derrick Hand",
-   "company": "Predator Drilling",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-17",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaw47g2phprh",
-   "keywords": [
-    "oil and gas"
-   ]
-  },
-  {
-   "id": "aafctvrpzfbj",
-   "title": "Motorhand",
-   "company": "Predator Drilling",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-17",
-   "type": "Temporary",
-   "salary": "",
-   "url": "https://to.indeed.com/aafctvrpzfbj",
-   "keywords": [
-    "oil and gas"
-   ]
-  },
-  {
-   "id": "aahhp9qr2jrn",
-   "title": "WAREHOUSE MATERIAL HANDLER",
-   "company": "Consolidated Gypsum Supply",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-17",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aahhp9qr2jrn",
-   "keywords": [
-    "warehouse"
    ]
   }
  ]
