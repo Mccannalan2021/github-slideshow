@@ -1,8 +1,126 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-18T13:06:23.722Z",
- "count": 579,
+ "fetchedAt": "2026-10-19T13:07:30.108Z",
+ "count": 603,
  "jobs": [
+  {
+   "id": "aak4pn9yd6ys",
+   "title": "Cashier",
+   "company": "Lil E Coffee Cafe",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aak4pn9yd6ys",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aag9pdktmrxn",
+   "title": "Cashier",
+   "company": "Lil E Coffee Cafe",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aag9pdktmrxn",
+   "keywords": []
+  },
+  {
+   "id": "aagjjy86phx7",
+   "title": "Cashier",
+   "company": "Lil E Coffee Cafe",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aagjjy86phx7",
+   "keywords": []
+  },
+  {
+   "id": "aadgmnrsnpmq",
+   "title": "Delivery Driver",
+   "company": "RB Distillery",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadgmnrsnpmq",
+   "keywords": []
+  },
+  {
+   "id": "aa4d4w8flg8z",
+   "title": "Cashier",
+   "company": "Lil E Coffee Cafe",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4d4w8flg8z",
+   "keywords": []
+  },
+  {
+   "id": "aa4rcqxvcjjw",
+   "title": "Line cook",
+   "company": "Grande Prairie Curling Centre",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-18",
+   "type": "Seasonal",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4rcqxvcjjw",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aavxpl2gdbtr",
+   "title": "Coil Tubing Supervisors and operators",
+   "company": "Maple Creek Endless Tubing",
+   "location": "Dunmore, AB",
+   "postedAt": "2026-10-18",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavxpl2gdbtr",
+   "keywords": []
+  },
+  {
+   "id": "aaw9cxmr662p",
+   "title": "Snow Removal labour",
+   "company": "Gitt'er Done Landscaping inc",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-18",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaw9cxmr662p",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aapspkrcrwfm",
+   "title": "Snow Removal Labourer",
+   "company": "Premium Landscaping & Lawncare",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-18",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aapspkrcrwfm",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aatszwt2cr74",
+   "title": "Experience Bobcat Snow Removal Operator",
+   "company": "Precision Bobcat Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-18",
+   "type": "Seasonal",
+   "salary": "",
+   "url": "https://to.indeed.com/aatszwt2cr74",
+   "keywords": []
+  },
   {
    "id": "aa9sqyzkw4jm",
    "title": "Registered Nurse",
@@ -92,6 +210,43 @@
    "url": "https://to.indeed.com/aa8m8lvnx9lf",
    "keywords": [
     "nurse"
+   ]
+  },
+  {
+   "id": "aa7rs7n8qk6f",
+   "title": "Night Shift Supervisor 1 year Experience Required",
+   "company": "Rosie's Burgers",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-17",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7rs7n8qk6f",
+   "keywords": []
+  },
+  {
+   "id": "aaxqrs22l67z",
+   "title": "Pizza Maker/Cashier",
+   "company": "Canadian Pizza Unlimited",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-17",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxqrs22l67z",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aafhjk74tptk",
+   "title": "Grocery Manager",
+   "company": "Cobblestone FreshCo",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-17",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafhjk74tptk",
+   "keywords": [
+    "retail"
    ]
   },
   {
@@ -861,6 +1016,247 @@
    "type": "Permanent",
    "salary": "",
    "url": "https://to.indeed.com/aacdqmhzjrxp",
+   "keywords": []
+  },
+  {
+   "id": "aatnmwbhlf97",
+   "title": "Permanent full time Line Cook",
+   "company": "Austrian Canadian club",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatnmwbhlf97",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aay7c7ngjcrg",
+   "title": "Event Field & Warehouse Technician",
+   "company": "The Rental Brothers",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aay7c7ngjcrg",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aatjcxcsnm9y",
+   "title": "General Labourer - Temporary - Days",
+   "company": "M30 Retail Services Inc.",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatjcxcsnm9y",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aakjpbqdb6g6",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakjpbqdb6g6",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aafnl42gbh6l",
+   "title": "General Labourer - Temporary - Days",
+   "company": "M30 Retail Services Inc.",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafnl42gbh6l",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aacpb8zq7zn2",
+   "title": "Parts Technician - 7 days on - 7 days off",
+   "company": "Diamond Truck Centres",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacpb8zq7zn2",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aajnbfpdkdfb",
+   "title": "Sahara Operator",
+   "company": "Source Energy Services Ltd.",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aajnbfpdkdfb",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aaj42b6dsmr6",
+   "title": "Subway Store Supervisor (Multiple Locations)",
+   "company": "Smithco Enterprises Ltd.",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaj42b6dsmr6",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aazfylbxlth9",
+   "title": "Kearl - Warehouse Technician",
+   "company": "BlueWater Group",
+   "location": "Alberta",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazfylbxlth9",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aa2b6mdlmz2d",
+   "title": "Subway Store Supervisor (Raymond)",
+   "company": "Prairie Capital Group Ltd.",
+   "location": "Raymond, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2b6mdlmz2d",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa4gvkgvzbcq",
+   "title": "Subway Store Manager (Raymond)",
+   "company": "Prairie Capital Group Ltd.",
+   "location": "Raymond, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4gvkgvzbcq",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aak9f7vx6brn",
+   "title": "Line Cook/Prep Cook",
+   "company": "Redcliff Legion",
+   "location": "Redcliff, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aak9f7vx6brn",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aazngvpyy2g9",
+   "title": "Sales Manager",
+   "company": "Gary Moe Medicine Hat Chrysler Dodge Jeep Ram",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazngvpyy2g9",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aasvvr6nlmcc",
+   "title": "Furniture Driver/Mover",
+   "company": "Alberta Strong Movers",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasvvr6nlmcc",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aans2zpzzdb6",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aans2zpzzdb6",
+   "keywords": []
+  },
+  {
+   "id": "aamb7cn84ydx",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aamb7cn84ydx",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aagl2xpnn2f2",
+   "title": "Aircraft Maintenance Engineer - M",
+   "company": "Tucana Aviation Services Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aagl2xpnn2f2",
+   "keywords": [
+    "remote"
+   ]
+  },
+  {
+   "id": "aanmtrndc2yr",
+   "title": "Dual Slots Attendant/Cashier",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanmtrndc2yr",
+   "keywords": []
+  },
+  {
+   "id": "aag4cj6fqx7x",
+   "title": "Furniture Driver/Mover",
+   "company": "Alberta Strong Movers",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-16",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aag4cj6fqx7x",
    "keywords": []
   },
   {
@@ -7120,110 +7516,6 @@
    "url": "https://to.indeed.com/aabgysb7qnhy",
    "keywords": [
     "warehouse"
-   ]
-  },
-  {
-   "id": "aatztf2dxrt2",
-   "title": "La Terrazza Manager Banff Park Lodge",
-   "company": "Banff Park Lodge",
-   "location": "Banff, AB",
-   "postedAt": "2026-09-18",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aatztf2dxrt2",
-   "keywords": [
-    "full time"
-   ]
-  },
-  {
-   "id": "aapzthpx4pwk",
-   "title": "Field Sales & Marketing Representative - $5000 Signing Bonus",
-   "company": "Xplore Inc.",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-18",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aapzthpx4pwk",
-   "keywords": [
-    "work from home"
-   ]
-  },
-  {
-   "id": "aa7k69gnlghc",
-   "title": "Field Sales & Marketing Representative - $5000 Signing Bonus",
-   "company": "Xplore Inc.",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-18",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa7k69gnlghc",
-   "keywords": [
-    "work from home"
-   ]
-  },
-  {
-   "id": "aaph7xhwp767",
-   "title": "Field Sales & Marketing Representative - $5000 Signing Bonus",
-   "company": "Xplore Inc.",
-   "location": "Medicine Hat, AB",
-   "postedAt": "2026-09-18",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaph7xhwp767",
-   "keywords": [
-    "work from home"
-   ]
-  },
-  {
-   "id": "aabp6qdcj9pp",
-   "title": "Warehouse Supervisor-Brooks, AB",
-   "company": "JBS Foods",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-18",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aabp6qdcj9pp",
-   "keywords": [
-    "warehouse"
-   ]
-  },
-  {
-   "id": "aan8w7cpfd8v",
-   "title": "Telus Sales Representative",
-   "company": "Altec Business Solutions",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-18",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aan8w7cpfd8v",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aat2xbkj6xs2",
-   "title": "Delivery Driver",
-   "company": "Warehouse Services Inc.",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-09-18",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aat2xbkj6xs2",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aacm24nwgfmq",
-   "title": "Experienced LRD HDD Hands",
-   "company": "Direct Horizontal Drilling",
-   "location": "Alberta",
-   "postedAt": "2026-09-18",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aacm24nwgfmq",
-   "keywords": [
-    "oil and gas"
    ]
   }
  ]

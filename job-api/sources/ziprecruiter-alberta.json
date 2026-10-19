@@ -1,8 +1,69 @@
 {
  "source": "ziprecruiter",
- "fetchedAt": "2026-10-18T13:06:23.852Z",
- "count": 224,
+ "fetchedAt": "2026-10-19T13:07:30.244Z",
+ "count": 229,
  "jobs": [
+  {
+   "id": "JJKiZQizqPaReXtG_aY07Q",
+   "title": "Retail Store Associate Part Time Winners/Homesense South Pointe Commone",
+   "company": "Tjx",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-19",
+   "type": "Part-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZKSktpWlFpenFQYVJlWHRHX2FZMDdREiQwMWExNTQzNi01ZWRlLTc3OTktOTFkZC0yOTQ5YTA1MjNkOTEaUEFBRmpKYXB1UHhMWV8zUVBaaVU5cE9zQmhpR0FLeXlLVWVjT3hHZm0yQnpXdFpFVGM1bmdQZ3ZvOEF3T3NCZXBxWEpkZ09SRlhUQVRMdVI5IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "2oJydOx37iDMSJBxFu0cyA",
+   "title": "Indigenous Bulk Driver (Class 1)",
+   "company": "Grizzlytrek Group",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-18",
+   "type": "Full-time",
+   "remote": false,
+   "salaryMin": 75000,
+   "salaryMax": 110000,
+   "salaryPeriod": "year",
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYyb0p5ZE94MzdpRE1TSkJ4RnUwY3lBEiQwMWExNTQzNy00ZGZlLTc3MTAtOTIyZS01Y2ExZWFiNDI2ZWIaUEFBSFZ6RnFVTHVjVDhON2g0SldfLXhZd1NuWHdsV1dSR1VfNTI5Vm5WMzNiYm96dUJNZEdMSkcydzBuZ0FQUFg2MkVtMW9QNHlTUWZPTDRLIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "Y4_rCn87MS-WGbmsN_dpFw",
+   "title": "Account Manager, Business Flex (Hybrid)",
+   "company": "National Bank",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-18",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZZNF9yQ244N01TLVdHYm1zTl9kcEZ3EiQwMWExNTQzZS1hOGRkLTcyMzctYTI4MC0wYWMyMjk1NjU2MmMaWEFBSC0tS2wtYXJkcEZRamZ1X1R4bE14SE5BN1FuRmlfUVBRWEQ5ZV9ENVlIYlR3UUpmSnh3YXhwclBZdjRGZ1F6QUVqb19jN3B0OXFhaFBHWjFqZkxuVkEgya0FEAEYya0F&tsid=100000502"
+  },
+  {
+   "id": "C3HXTL0k_jj51w4SJ4HAFQ",
+   "title": "Caretaker (Competition #S2526-0398)",
+   "company": "Wolfcreek",
+   "location": "Blackfalds, Alberta",
+   "postedAt": "2026-10-18",
+   "type": "Full-time",
+   "remote": false,
+   "salaryMin": 43120,
+   "salaryMax": 49620,
+   "salaryPeriod": "year",
+   "benefits": "Medical, Retirement",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZDM0hYVEwwa19qajUxdzRTSjRIQUZREiQwMWExNTQzYi1mZmIyLTcxZDMtODYzMC0wNTA5N2RmZTc4MzUaWEFBSGJkckZQVHdLZm54c1hESG50LXRLTXBoMFF2RGZSOG14bGxyc0NCMnlyOUpNbW5jRXQ3ZUFkeXRjZzRJVF9UUldyMll1blU2azBVakJMNjVKc2RpbDAgya0FEAEYya0F&tsid=100000502"
+  },
+  {
+   "id": "B_UenJQ0jCurIFQODtKdwA",
+   "title": "Compassionate Health Care Aide -- Senior Living",
+   "company": "Covenant Care",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-10-18",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZCX1VlbkpRMGpDdXJJRlFPRHRLZHdBEiQwMWExNTQzYS0wMGFmLTc4ZWMtYmE0Yy0yN2JmMmUzZjA4YWMaWEFBRUVGX0tmeHppSDZmdHZCNTRVWjA5eVN6RkVETGFmNHZtTjZlUnNuQXM5N3lqMllpTEFvVVJ4WlloY3JKR0diSmZPcnFCQ1B3YlJweF93SzcwY3hxc08gya0FEAEYya0F&tsid=100000502"
+  },
   {
    "id": "tzgS7-qH6Ife7K1qcFB_Ig",
    "title": "Hiring HCAs and RNs - 12hours shifts",
@@ -15,7 +76,7 @@
    "salaryMax": 39000,
    "salaryPeriod": "year",
    "benefits": "Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ0emdTNy1xSDZJZmU3SzFxY0ZCX0lnEiQwMWExNGYwZS1lZWE3LTdhMmItYTVhMC00OTkzYzNjN2Q5ZDEaUEFBRjRQOFJndEotX3I4VnltdXdYR001SHRhTjZqbWN2aW1hS2xJSmNWWXp5WGNSWWxLbkkwNFV3N29XZjBrcW5FaUVTY2UxOWh2QmNnWjk2IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ0emdTNy1xSDZJZmU3SzFxY0ZCX0lnEiQwMWExNTQzNi01ZWRlLTc3YTctYTUzOS0zOGVmODc0YzY4YTkaUEFBRy1xbm5yQUdvMGxiWk1RLTJXZjZ6REVYR1lDU0JwNzUwUUtsR3RIZko5VUpIZW92ZXEtbjJIWWtUY1dVLXZxT05rWi1lbTdxM19IRFhYIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "LxEAJdiVPb-kmS0c6jSLOw",
@@ -29,7 +90,7 @@
    "salaryMax": 114000,
    "salaryPeriod": "year",
    "benefits": "Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZMeEVBSmRpVlBiLWttUzBjNmpTTE93EiQwMWExNGYwZS1lZWE3LTdhMjQtYWUwMS1mYzk0YmFhNThhOTkaW0FBR1c5Q2pQNGQxbW9VT0NzS3FGN1F3OGNFd280NWNlVVo1d2xsYUlHUzlaaHBablpzY1pITFlkN3hMRkJLU2VWUWwtRWFiaFRfZVZiT3Y2Nk13bnNvdWV3NUEgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZMeEVBSmRpVlBiLWttUzBjNmpTTE93EiQwMWExNTQzNi01ZWRlLTc3OWYtODg5Ny1iYjhiNzY1ZGE0MzUaW0FBRVVMdkg2ektOT0RDUlpPMy1XUVBKNnE0cmlyM1UtaWxQelhVdGRsQWFmejRaVFR2X3YzZzlxbzhUZkJTMnFtS0IxS2pGdGxPOG5oRjdSaFR3UlY5anRsaWcgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "y5REmCiDJ0kHRxVkaHAOuQ",
@@ -40,7 +101,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5NVJFbUNpREowa0hSeFZrYUhBT3VREiQwMWExNGYwZi1kMWJlLTcyM2YtYjljZC01ZDEzOTk0NjA0YWIaUEFBSDQ5clN3RWJQZVRHWW90R0NjMUprbmptYmJSNG5lVEJIdzNCWEllZGdpVFVqdXVINV8xd1RmOEh0QmlWekt4T3A4VXZqSmJDWkhZckJBIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5NVJFbUNpREowa0hSeFZrYUhBT3VREiQwMWExNTQzNy00ZGZlLTc2ZjktYTEyOC03NGExMTg0NWY5Y2EaUEFBR3JUUldxdzYwck95azMzM2pOV1FXazY5ZWoxTUQtR1daQWNsR3hLb09FMEY5ZlpPeHA0T3daVWFTeTBQT2dkbGkxMHNzT3VaZWF3c28tIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "KhctwGOrO2VrtW26XtQAlg",
@@ -51,7 +112,7 @@
    "type": "Full-time",
    "remote": true,
    "benefits": "Medical, Vision, Dental",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZLaGN0d0dPck8yVnJ0VzI2WHRRQWxnEiQwMWExNGYxNS1jNzMxLTdjOTktOTVmMi1lNTI4ZjczZDI5YWMaWEFBRUxpS0ljdFFVdGdzTV9ZLURxSTBiR3lPRVZhLVhYZlVsRW5hNjgyQjRFdlA0VVY1bHJjRzREMFVFOGw4V1cwTkN1eE5ieV9hZ2xuNTBFUUlMX29Oc1ggya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZLaGN0d0dPck8yVnJ0VzI2WHRRQWxnEiQwMWExNTQzYy1jMjhkLTdlMjktYjcwNi0yNDQ4Y2MzZTg3OGMaWEFBRm9VUWhPRURmQmRkOVRHNmFUWU8teEZOY25IX1A4UUlWUVdPenpKOGYxQ0tEQVBLZkxFYUh5QnlMQVZ0aE1rQ0hsZkpIYnN2Ylg4b01OTmhrTmZ3aUkgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "RIibI-oBP6R-0t7i5BFbfA",
@@ -62,7 +123,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZSSWliSS1vQlA2Ui0wdDdpNUJGYmZBEiQwMWExNGYxNi1mM2E3LTc1YjMtYWJhMC0wODIwNzI5NDQyMjMaUEFBRUV0Zld6a1JsczBCazNLVktSTjk2Vy1tamN2S2dGMHpQMDNKaGdORVhKZ1U3ZjdHS21BbzFyUXNOak1YZEwxb0F5ZzQ5bjloajh4R3RKIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZSSWliSS1vQlA2Ui0wdDdpNUJGYmZBEiQwMWExNTQzZC1jMzQ0LTdlNzItYmQ2Zi05NTM1NmU1MmY1NDkaUEFBRmNudHlMNm11N3NSbUpTVFdtQzhBMzBMMmdHcFh6UXgybk1Na081MkhoNnFUNkMzcFpzcFdva1h5Q2ZhUWxUUmJhT3Jja2Nkdk9qM1BOIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "CtSgODKayoo_8QeSB6VW_A",
@@ -73,7 +134,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZDdFNnT0RLYXlvb184UWVTQjZWV19BEiQwMWExNGYxNi1mMzliLTc5YjgtYjQzOC02YWY0Y2NmNGIxNDgaUEFBSGV0V3FtTEg3bnVFUE1ORENvZ1RJbDFhb2RCWnB5eXljQ2dxcWVWY1pDRXV4QXpXeHFVQ2x0eXhCcl92SGE1eGFjVFBibGt6UkVmV01SIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZDdFNnT0RLYXlvb184UWVTQjZWV19BEiQwMWExNTQzZC1jMzJkLTdjMjctOGNjOS05NzQ1MWQzNmExMzgaUEFBR24xWnItMGYxdkFRbjZESFlWbllReThNVVNXenlTTndicjZ2b0c5ancxanVqdTZtdUpHdjF1eUY4Y0dnTVRsLWtscE5wMlVDa2pPWjhaIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "QYAJXtPaSN0VZ_IeHL04Ug",
@@ -84,7 +145,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRWUFKWHRQYVNOMFZaX0llSEwwNFVnEiQwMWExNGYxNS1jNzVhLTdjODUtYmQ1ZC1lZWM5NDIyMmVlNDUaUEFBR3RmTXRScjFpcVYzd0cwX1FSbHpwb0JxVVMweUNFNFVndV9yRjhRRUdqNVlUb21zUDdUWGl4Q3lfQWpKaDJCR1ExVXowdkp5TWszOWwzIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRWUFKWHRQYVNOMFZaX0llSEwwNFVnEiQwMWExNTQzYy1jMmVmLTc0NTctYWQ2Mi1hODYwZjViMGFmMzMaUEFBSFdISkpFanlOWEJ4bjIybnJRVElhdkNrMTdGSmpjSDJnWS0yRmxVWnBESWdkQlZ5Z2RqYkFMQ0RyNU1MOWRwUVg0WnJXaFZNTWwtQW1KIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "hyR82jwDoPiaVMRFM1kMkw",
@@ -95,7 +156,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZoeVI4Mmp3RG9QaWFWTVJGTTFrTWt3EiQwMWExNGYxNi1mM2Q5LTczMGEtODczMC1iYzFhNTUwN2ExODcaUEFBR05IYlAzNlczeGhTclNUaGwtNWJnZzhHRDF4TjdQdEpsOVpCUnFSVzRxMmZaWUdNNS1DRndTOFIzSXhQcTRFd0ZDRG1od1BQdnpRRkVBIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZoeVI4Mmp3RG9QaWFWTVJGTTFrTWt3EiQwMWExNTQzZC1jM2IyLTc2YzYtYWVmZS05OTU1OTNlZTYwMzYaUEFBRTVNUmM5UmdkblhoVkZCOVZfSlZRRERtcnlMLWF0MXU5N2h1R1pHSHBsakl3SURFdElnSkVIbnNYcHdCV1ItOVNtc1FNWGpFU0UzUzAtIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "ZCsDELKNfQGLoiAOqgVsrQ",
@@ -106,7 +167,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaQ3NERUxLTmZRR0xvaUFPcWdWc3JREiQwMWExNGYwZi1kMWJlLTcyNjQtYWQ0Ny0yNmE0YWM4MDZhZTUaUEFBRVlBMndacG9ZS280MmhRNDk2UzNNcnh0a0JVMTJvaVlyN0o5c01LcUhPNVE0c1BIQTFhRFprTzJjWkk2NXhnZFVSNDdvSXdWSm9UcmpCIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaQ3NERUxLTmZRR0xvaUFPcWdWc3JREiQwMWExNTQzNy00ZTQ0LTdlODAtYjM5ZC1lODFlZDFkYjA3NDEaUEFBRkRkV09CNnNIWVl0dV94c0Vha0tUdENxcG5sQURmaTR1cXB0TW5XUUt6SVBIeW1EN3dVQ0pqMU1WMXRWeWV1YklwUGJ3MVNhdy1GUlI4IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "wzwW-N0SA53xsqan--is6g",
@@ -117,7 +178,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3endXLU4wU0E1M3hzcWFuLS1pczZnEiQwMWExNGYxNS1jNzUyLTczY2QtYWZmZS1hNTI3MmM3NDQxOWIaUEFBRXcxYS1BUDluWGpscHBOLXM5bThvVVYtT3I3NkZrVGp6ZHZ6Nk5zQzdKcXBSV1J6amJvY2JHX3d6N2t1SVZQMUd5OHh6U1lFUXpOYi1FIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3endXLU4wU0E1M3hzcWFuLS1pczZnEiQwMWExNTQzYy1jMmViLTcyNzYtYTI2MS02ZDJhZjljMTQ5ZWMaUEFBSGxJa1AzbVZFOEs2QzQ0OHNydExuRU02RmZHdUpEWHkxVWxuRXgxZG5BYmt5VU5pY2Z4MUhmVFJucjVNdHc1S2ZPdGprNWRodFhUVHNfIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "QF6mv2A_J38Z8235gXCTYQ",
@@ -128,7 +189,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRRjZtdjJBX0ozOFo4MjM1Z1hDVFlREiQwMWExNGYxOS1iZThkLTc4YjMtODVmZi1lN2ZjZjI1ZmE1YjIaUEFBRkRrNGpuVl9yQXZ6aFdPQV9uQ2VybTZEemlxNHUzQ29ILTdNR2R6cjI4bWtJSU5rTHNKbWFIdmw0TVFfZHYxVlJDQ1kzUVhGX2FtNTVJIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRRjZtdjJBX0ozOFo4MjM1Z1hDVFlREiQwMWExNTQzZi1mMWM0LTc4OTMtOWNhNi04ZmUzMmU2NjMwNjMaUEFBSElNaWxNZjAtV2I5blh0STJTcGhyNDVkT1FNVUNBRW9vcHFGVWFibTNLa0FWUUdzTDlJeGZBVUktQU1RWkh2SjV4aWJFQmxyRHg3TzZrIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "8Ho7Yy1Mc1AHzeu2xU7FJA",
@@ -139,7 +200,7 @@
    "type": "Full-time",
    "remote": true,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChY4SG83WXkxTWMxQUh6ZXUyeFU3RkpBEiQwMWExNGYxOS1iZThhLTdjM2UtYjI5Ny1jODRkMjg5YzE5MmIaWEFBRjQxeXdxNllRdUxjNThfcHBSMnAxRWNxQ2JJaExFQ0o2c0FWNDJuSFViMDlfNUhDMmx1WUkxejVweE1USXA0WFEwZkNKR285RlQ2N1pYN0ZtemFyMnAgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChY4SG83WXkxTWMxQUh6ZXUyeFU3RkpBEiQwMWExNTQzZi1mMWI0LTdlNmYtOTVlMC1hNGQzNjI3Mjc5MTMaWEFBR3ZZaFE0NlB0N1k2RGZnWktqTy1WRU43VjRMTXQxT0J4Ql9tcDgxN1U3VWd1am85V1JiV1ZacEYxb29NVWZuMWFtTzJoQXFYczNLMTdFdnZIWGxtd3ogya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "iM1KLDvTYp2qR7-juqkB3g",
@@ -150,7 +211,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpTTFLTER2VFlwMnFSNy1qdXFrQjNnEiQwMWExNGYxOS1iZWI2LTdkOGQtYjZhNi03ODY4YjFmMGZmMjYaUEFBRTFaOEdvTU9iVzc5TzhpMmRWdmRGZXJ3bnZNeUc1LXVFWkVvOXFaeE1kUEdCU0drNDIteE5VcnJPTFdwMDlvOXRTbWdWNFZHQkh5LW5iIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpTTFLTER2VFlwMnFSNy1qdXFrQjNnEiQwMWExNTQ0MC1lZjRlLTc1MDItYjZiYS0yMjE5OTAxMTBhMTMaUEFBSHp4aVl6QUN5XzFLS19tWThtU2Z3RFBaSjFXR3d6bnJZUkkzOHY5REN2R0FncFdtVkpPV2VnU1NBaUNSa0Q3RnpLVWFwWFdkOTVlcVNVIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "WTxrq8jU6gZ_MVFacRh6_A",
@@ -161,7 +222,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZXVHhycThqVTZnWl9NVkZhY1JoNl9BEiQwMWExNGYxYi01ODM5LTc1OTctODQ1YS1iNDJiYjBhOGE1MWYaUEFBR3Rva0RlSUVDcGRQNFFuOV8zS0ZJZDI5M1pzVjItX21lZ2V5MnVkYVZ2Q2JfMGhXcUlXS21ZeU0xNzZLZ0RoOEdfY29ZanQxTFFJa1ktIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZXVHhycThqVTZnWl9NVkZhY1JoNl9BEiQwMWExNTQ0Mi0zMWYyLTcxMGMtOGU5OS1lOTUxMmZiYTUyMGQaUEFBSERyVGtUOFd3QUh4UEFjSnkyWUt5WTVyTjZjUWIxY0dmLVVtdWFkNkhKakVnMTBaOGx2WGU4d3cxRV9qNG5Lb1RodHZSV3laU2JrVkRtIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "y2PQsOW7js3dRRTAXQGYTg",
@@ -172,7 +233,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5MlBRc09XN2pzM2RSUlRBWFFHWVRnEiQwMWExNGYxOS0wMjg0LTc1N2QtODA4YS0zNzk5OWI4ZTk3NmYaUEFBSFFyTzhOX3pWWUVGTnREVWlVaUFkY3RXZE9mRlhmU0tBVkhiOG42bG9xQzN2dFpaOVg0S005aW1XODVKdmpvQXAzZFBNT0tGYUpYTGh1IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5MlBRc09XN2pzM2RSUlRBWFFHWVRnEiQwMWExNTQzZi1mMTY5LTc2NDUtODRlNy1jNGIzZGI3YWU1YWIaUEFBRjV4VmRJOUVaOUF0MWhQWXZsNzd0MDNTUFg1Z3VWWHVTZkdFSmJLNlhnOTRxc0tUenpxYmJvdVNDX1Rlb0FENkppeXVYdzBseHJUZkRHIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "XG9Y1mNl_3Rx1Mpdq-YEaA",
@@ -183,7 +244,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYRzlZMW1ObF8zUngxTXBkcS1ZRWFBEiQwMWExNGYxNS1jNzJmLTcxNjAtYWQxNy01NzMzYjRhODc4MzUaUEFBRzZtS0hYMlJZMzZrWHRqYWFzLUIwaDhnMFdBa1ltZmlieVFNQWhqOW1xSktiaHMxbEg1cWEzUHYzRHZMUjBoVGpiZURWc01mQVRTS3RYIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYRzlZMW1ObF8zUngxTXBkcS1ZRWFBEiQwMWExNTQzYy1jMmM2LTdiYTItYmIxYS03MjhlNGU2ZDgzNzgaUEFBRVhDclN6dWc2eVBESXpzRHUtTzgxaWlnczRsUHVCRzBPU2x4R05iV2dWa1ZzSEZRbTBVY3Brc0h5Ylh6N1U5Wk1LVE4wNFM0Q05VRE9aIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "_u2-U4y42Cx53AqmNduqsQ",
@@ -194,7 +255,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZfdTItVTR5NDJDeDUzQXFtTmR1cXNREiQwMWExNGYxYi01ODQ2LTc5OTktYjIxYi1iZTM3ODk1ZjUyMGQaUEFBRmlEWVQ3dVBtMEhFREFyQnFwdEZLTlhHY1EzZ2NBdW11QVFweFl4elFlWE9oeE5lY0EtU2FyTGNwUXdwRkc2TkxhQU00dTU4TFhBaUxjIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZfdTItVTR5NDJDeDUzQXFtTmR1cXNREiQwMWExNTQ0MC1lZjUxLTc1OTEtOWNhZi02MDBjYjBhNWEwNDcaUEFBRzlRMTVQazhSbzFGQV8zOFdMN0g0Vmd2Vjk5RnhjSHhYTVRZZlhLNzJSQ3FXQUs3aV9reHpnQkJnT3FWWWgyVklnYVBiSDgtTlEzZGwwIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "5KJqOv58ZvFhl5nG4vz-tg",
@@ -252,7 +313,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "Medical, Dental, Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3T1pjYS1YTmhCTE1fSjVZamFTZTFBEiQwMWExNGYwZS1lZWE3LTdhMTktOGVjNS1mZjYxODZjMWUxYTIaUEFBRzBzb09iTjdpZXZoLTBJUzE0UENzQWprbXZubUpFSngwWHVHcS1oemQ2T0xwSDBzU3dUNFZmUlpUTWN6cTg4azVxS2RzUFY2X2hxbEVBIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3T1pjYS1YTmhCTE1fSjVZamFTZTFBEiQwMWExNTQzNi01ZWRlLTc3ODMtOWJjYS0wYWIxNTAxYTRmMWEaUEFBR29SU2FXODFib04yUmY5aVlMNktvRkFTVjZCLW5UendGQ2s5RjgwMmZubHNjdFplWmIzazF1akFzQVA5ODU2SHRnaU9wRjExYjYyU3BYIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "i42B_GC0ntTr_cQSoZ44Ng",
@@ -274,7 +335,7 @@
    "type": "Part-time",
    "remote": false,
    "benefits": "Medical, Paid time off, Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYtR1pQZzh5SlgyZjBFRGF5Z1pORHdREiQwMWExNGYwZS1lZWE3LTdhMWMtOTQxNS0zZDUxYzBkN2Y3YzUaUEFBSG91aXdDY1BDOGdrbVRvYTRHaktBcUpaRTVpQWZxMTRqZnhlMmY0SHdnb213OGdyX1RxR2JYcTlaWWZ0eEt6SWxMc1RUU2pGZ0hoNDM3IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYtR1pQZzh5SlgyZjBFRGF5Z1pORHdREiQwMWExNTQzNi01ZWRlLTc3OTYtYTNkZC01ZGUzYThlMGQ3MTYaUEFBRVJSeUhFTVJCY29ZbHJHS0J4QktMRk4tLTdwcnZKeWlkZEdSUk9PR1BxUHMtNDNLeUFxNFM1cGlBanRKd0FWLThKUGtFMmFvbDZ1R2JJIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "oMuBrOJRfbVHwJwzzr5WOg",
@@ -287,7 +348,7 @@
    "salaryMin": 120000,
    "salaryPeriod": "year",
    "benefits": "Medical, Vision, Dental, Paid time off, Life insurance",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZvTXVCck9KUmZiVkh3Snd6enI1V09nEiQwMWExNGYwZi1kMTk0LTc2OWQtYmM1Ni03YjcwY2M0M2VmMWEaUEFBSFdkblhabGtzcWNYekNXUllFd3pGUG13VGVrNWQtaXZodWthakRoS0o1VkhGM0RTaFd4R1ZwMWlfVEd0MFYtUTF4Snk0SFR1ZS1rekdUIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZvTXVCck9KUmZiVkh3Snd6enI1V09nEiQwMWExNTQ0MC1lZjRlLTc1MTQtOWViZi1kZTQxZGM1ZDEwY2IaUEFBRzRlU3ZWZWdpdTM1dzJVZ1IzMGRZVVYwa1lKeXVzUjc2RWJSbnJXanI5RThaTWc3ajA5X1kzX3JmRlVKNWNteWM2SkVsd2VzMFFwNlI4IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "ftVFWFhytxzFUhdN_8k_6A",
@@ -300,7 +361,7 @@
    "salaryMin": 36000,
    "salaryPeriod": "year",
    "benefits": "Medical, Vision, Dental, Life insurance",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZmdFZGV0ZoeXR4ekZVaGROXzhrXzZBEiQwMWExNGYxYi01ODM5LTc1OWItYjZiYi1lMTcwZTA5ODUxMTgaWEFBRm0zclhXNGhfcm43ck5sRkt2SlBwaFNKZDdZX1JSaXMtdEZKZnZiWFJuWXBoT1Y2MXNYRXRYbW1BSDk5SlU1NlA5dFBqMXBENTRPVU1Rc3ZRemM4MzAgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZmdFZGV0ZoeXR4ekZVaGROXzhrXzZBEiQwMWExNTQzNy00ZTQ0LTdlN2UtYWMxZi0xMTZhOGM3YTIwNzkaWEFBRzZab0RWNlhVTDJkV19xbzRPVTRUWEVydGhscURiLUtlVkt5Q0gtSkFTYl9TdEd6THhlMHNESVJNYkFzRHZfaUFfX2prZVliME5QWDF6MDFldHdoRlggya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "dIaxA5ONzxfbi7R840MKSQ",
@@ -325,7 +386,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "Medical, Vision, Dental",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZDMkIxTXdHMkQxYlhpc3dJbXFiTE9nEiQwMWExNGYwZi1kMTk0LTc2OWItYTEzYi1kMTcwYjc2NzlhZjcaUEFBRXdacE1CNXhVXzZXVVhMNFl3LTBHeFZzc0RJVkRud2ZDclFkeGJiUUlJSDB2Zi1QaEZLbFFUbnZpa1laeW5ySlRWc1AybXFSWHpjV0wxIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZDMkIxTXdHMkQxYlhpc3dJbXFiTE9nEiQwMWExNTQzNy00ZGZlLTc3MGUtYWZkNS1iNjgwYTFmMjI1NmQaUEFBSGVOQ004eXhzTHBiZ05Lcno0MkVKbEZUdExydlNzTWVhN3hnVFN5cmpzcXlzOE1GbjNqOGNaNzBHYnhQR3NKY0JaekYyS2FfeVg1NnNSIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "9mW1-wU-hnwwmEkEcXKMUA",
@@ -336,7 +397,7 @@
    "type": "Part-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5bVcxLXdVLWhud3dtRWtFY1hLTVVBEiQwMWExNGYwZS1lZWEzLTc4ZTUtYjU4My0wMjBlMTcwNjA3YWMaUEFBRXBCaGFlcG00YmpLRHdfNFZvYk1uVlBGaFRKZ1EyN3NqTk1vZ21BRTM2d1B0QURmOXZOZkllcHlxNWhNZENmakdGa2xBRnVZOUUxRkhrIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5bVcxLXdVLWhud3dtRWtFY1hLTVVBEiQwMWExNTQzNi01Y2QzLTdjMWItOWY4My1mODBiZDA1MTdmMTgaUEFBRU5QV2lDZGtSNDFaT2RFSWk2N2ZIbVVUSXRPVHFBOGo1anlDS3JrRGk2dkd3ZUgyVEtlaEliTHpVN3RDT2g3ek04VWFHRkF0RWRxczl2IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "gnquBYNLJJBJ2awNnBsvow",
@@ -347,7 +408,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "Medical, Dental, Paid time off, Life insurance, Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZnbnF1QllOTEpKQkoyYXdObkJzdm93EiQwMWExNGYxOC0wNjE3LTdjMTEtYmRhMi0xNDhjYmY2Zjk0Y2MaUEFBRzBxeXBHVjZDeEphcVlGdS1tSFVNYlJBTlVKeHhaQVVPcWpPMkk2STdpZGFxV0JHNUVKNkJzRENLZktGODNIUV95NnFHUE1MQUlRQnhCIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZnbnF1QllOTEpKQkoyYXdObkJzdm93EiQwMWExNTQzNy00ZGZlLTc3MDktYjRlMi1iZjlkNzgzYmVjNzQaUEFBR1FNbkNyRGtCWWZLSUxyOEpTVTFsLXpxUmo5aExzbUlqS1g5aFVPMmN1X1NlSGktOTUtR1gyS1ZPVHBJRU01T3ZPT1h6UjVTd1FDMkZwIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "MHkswFWZLcXH6Ife6pBjTQ",
@@ -358,7 +419,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZNSGtzd0ZXWkxjWEg2SWZlNnBCalRREiQwMWExNGYxNS1jNzUyLTczZDEtYWI5Mi1jMTc0YWJiM2NmNzgaUEFBR29QbDF1Vk5Fb0dqZDU4YzA4SUJUQnpCQS1vMEM3MHVtd3ZKMnNHb1BRZmNyb1J3bE1iTURPNFJySXZnNkhrVnlWNlExYkZkRWxhT3BHIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZNSGtzd0ZXWkxjWEg2SWZlNnBCalRREiQwMWExNTQzYy1jMmViLTcyN2MtOTcwYS0zMjQwYWY4Y2QwNWMaUEFBR1lwVFJjbFprZDhTUUhRMEx1Q2UxSFNjV1dVbXRkMy1hdnVWVHF4STVVQlhsSUY2UkhxYXVOa2Y1WTlTa3haVzB4NW92YzRlQm1UYU84IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "Yxc4cIJfmouZEZXNasDxcw",
@@ -372,7 +433,7 @@
    "salaryMax": 115540,
    "salaryPeriod": "year",
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZeGM0Y0lKZm1vdVpFWlhOYXNEeGN3EiQwMWExNGYxNC1kM2M4LTc5YTYtYjNkOC04N2Q1NGMyNjJlOWIaUEFBR1lmWWdpX1JDcWJUQzY0cFdoVlVRa0xhNlM1dUJxdzZmcXc3bVk2UzRIRVlwLWh4OXRfdUlZZjc2TXBYamc0eEU2Qm1GVHEwYjM5YnlhIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZeGM0Y0lKZm1vdVpFWlhOYXNEeGN3EiQwMWExNTQzNy00ZGZlLTc3MGMtYWVhYy03NzgwOTMxMWJiMWQaUEFBSHdWUXUtSXdTdVNRbHZlbXpkVXdFQVp2cnRHM0owd3dqOEFQamkzTEhHSkpPc0RHX3lCTE1RdEw2SHdBXzhhYmRtc2NMVnRCQ2NqYkZmIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "ECd2sdGV0mxvJM9y67AlaA",
