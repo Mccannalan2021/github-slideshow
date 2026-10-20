@@ -1,8 +1,34 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-19T13:07:30.108Z",
- "count": 603,
+ "fetchedAt": "2026-10-20T13:10:33.807Z",
+ "count": 645,
  "jobs": [
+  {
+   "id": "aav9pkvzknqs",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-20",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aav9pkvzknqs",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaylmfj7n964",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-20",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaylmfj7n964",
+   "keywords": [
+    "registered nurse"
+   ]
+  },
   {
    "id": "aak4pn9yd6ys",
    "title": "Cashier",
@@ -59,6 +85,354 @@
    "salary": "",
    "url": "https://to.indeed.com/aa4d4w8flg8z",
    "keywords": []
+  },
+  {
+   "id": "aa66dqmclpdz",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa66dqmclpdz",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aahpztsbnl84",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahpztsbnl84",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aav7xxngmvcm",
+   "title": "Distribution Manager",
+   "company": "Russell Hendrix Foodservice Equipment",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aav7xxngmvcm",
+   "keywords": []
+  },
+  {
+   "id": "aal6qswzylgh",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aal6qswzylgh",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aafjmk7jw6ry",
+   "title": "Delivery Driver",
+   "company": "RB Distillery",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafjmk7jw6ry",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aa79x2yp6lhz",
+   "title": "Delivery Driver",
+   "company": "RB Distillery",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa79x2yp6lhz",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aafr2nnxfynx",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafr2nnxfynx",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aap4jm4shxc6",
+   "title": "Painters Helper",
+   "company": "Tarkine North Inc",
+   "location": "Suffield, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aap4jm4shxc6",
+   "keywords": []
+  },
+  {
+   "id": "aahn64zgvdxl",
+   "title": "INTERMEDIATE PAINTER - APPRENTICE",
+   "company": "Tarkine North Inc",
+   "location": "Suffield, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahn64zgvdxl",
+   "keywords": []
+  },
+  {
+   "id": "aan7lzq7trrv",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aan7lzq7trrv",
+   "keywords": []
+  },
+  {
+   "id": "aan9qk289cmt",
+   "title": "Cashier",
+   "company": "Lil E Coffee Cafe",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aan9qk289cmt",
+   "keywords": [
+    "cashier"
+   ]
+  },
+  {
+   "id": "aac9t8g6zzx7",
+   "title": "Cook",
+   "company": "The Mustard SEED Society",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aac9t8g6zzx7",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aaqvxwd4gw9z",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqvxwd4gw9z",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aamr26xszwwd",
+   "title": "Delivery Driver",
+   "company": "RB Distillery",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aamr26xszwwd",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aax2q2s8t2m6",
+   "title": "Early Childhood Educator",
+   "company": "Willowbrae Academy",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aax2q2s8t2m6",
+   "keywords": [
+    "early childhood educator"
+   ]
+  },
+  {
+   "id": "aadcyd99qzpw",
+   "title": "Assistant Director",
+   "company": "Alphabet Daycare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aadcyd99qzpw",
+   "keywords": [
+    "early childhood educator"
+   ]
+  },
+  {
+   "id": "aagdgk7wvw8h",
+   "title": "Industrial Maintenance/Journeyman Electrician",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aagdgk7wvw8h",
+   "keywords": [
+    "electrician"
+   ]
+  },
+  {
+   "id": "aarpnj6tfkbj",
+   "title": "Assistant Director",
+   "company": "Alphabet Daycare",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aarpnj6tfkbj",
+   "keywords": []
+  },
+  {
+   "id": "aazb66slclbv",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazb66slclbv",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aazbbqvf6wpj",
+   "title": "Mechanic",
+   "company": "CIA AUTO",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazbbqvf6wpj",
+   "keywords": []
+  },
+  {
+   "id": "aay8k44fp64q",
+   "title": "Nurse, Day LPN",
+   "company": "Parkland Community Living and Supports Society",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "",
+   "salary": "",
+   "url": "https://to.indeed.com/aay8k44fp64q",
+   "keywords": [
+    "licensed practical nurse"
+   ]
+  },
+  {
+   "id": "aapymqhmcqjs",
+   "title": "Food & Beverage Server",
+   "company": "Canadian Rocky Mountain Resorts",
+   "location": "Alberta",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapymqhmcqjs",
+   "keywords": [
+    "server"
+   ]
+  },
+  {
+   "id": "aa6cngkywhtt",
+   "title": "Delivery Driver",
+   "company": "RB Distillery",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6cngkywhtt",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aapmbqgkssb2",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapmbqgkssb2",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aarvbctfyhxn",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarvbctfyhxn",
+   "keywords": []
+  },
+  {
+   "id": "aah6rtkjy6m9",
+   "title": "Field Sales Representative",
+   "company": "MOUNTAIN VIEW PRECAST",
+   "location": "Alberta",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aah6rtkjy6m9",
+   "keywords": []
+  },
+  {
+   "id": "aasf9jkb6mfw",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasf9jkb6mfw",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aa26g9sgqlkt",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-19",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa26g9sgqlkt",
+   "keywords": [
+    "driver"
+   ]
   },
   {
    "id": "aa4rcqxvcjjw",
@@ -120,6 +494,104 @@
    "salary": "",
    "url": "https://to.indeed.com/aatszwt2cr74",
    "keywords": []
+  },
+  {
+   "id": "aav47dz2jw78",
+   "title": "Coil Tubing Supervisors and operators",
+   "company": "Maple Creek Endless Tubing",
+   "location": "Dunmore, AB",
+   "postedAt": "2026-10-18",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aav47dz2jw78",
+   "keywords": []
+  },
+  {
+   "id": "aahlzgmhz7j9",
+   "title": "Full Time and Part Time Crew Position",
+   "company": "Wendy's Ponoka",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-18",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahlzgmhz7j9",
+   "keywords": []
+  },
+  {
+   "id": "aapc9rhc6chz",
+   "title": "Experienced Barista | Scratch Bakery & Café",
+   "company": "Rise Bakehouse",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-18",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aapc9rhc6chz",
+   "keywords": [
+    "barista"
+   ]
+  },
+  {
+   "id": "aaxd8ldtbzhw",
+   "title": "Experienced Kitchen Cook | Scratch Bakery & Café",
+   "company": "Rise Bakehouse",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-18",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxd8ldtbzhw",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aasvd7gxnm24",
+   "title": "Delivery Driver – Independent Contractor",
+   "company": "Pizza Hut",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-18",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasvd7gxnm24",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aaccv6ppl7fs",
+   "title": "Experience Bobcat Snow Removal Operator",
+   "company": "Precision Bobcat Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-18",
+   "type": "Seasonal",
+   "salary": "",
+   "url": "https://to.indeed.com/aaccv6ppl7fs",
+   "keywords": []
+  },
+  {
+   "id": "aam2n2vlpy4g",
+   "title": "Temporary Fencing Installer",
+   "company": "Portable Fencing(Red Deer) Inc",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-18",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aam2n2vlpy4g",
+   "keywords": [
+    "maintenance"
+   ]
+  },
+  {
+   "id": "aatgl9svqtfq",
+   "title": "3rd year Apprentice and Journeyman Welders",
+   "company": "Ellis Fabrications Inc.",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-18",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aatgl9svqtfq",
+   "keywords": [
+    "welder"
+   ]
   },
   {
    "id": "aa9sqyzkw4jm",
@@ -245,6 +717,56 @@
    "type": "Full-time",
    "salary": "",
    "url": "https://to.indeed.com/aafhjk74tptk",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aabkdrkyyssz",
+   "title": "Kitchen Supervisor- Backyard Calgary",
+   "company": "WAAD Restaurants Corp",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-17",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabkdrkyyssz",
+   "keywords": []
+  },
+  {
+   "id": "aajrnvh2ldf8",
+   "title": "Professional Commercial Cleaner",
+   "company": "Diamond Shine Janitorial",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-17",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajrnvh2ldf8",
+   "keywords": [
+    "cleaner"
+   ]
+  },
+  {
+   "id": "aakbzqwc9qkl",
+   "title": "Sales Associate (full-time)",
+   "company": "Leon's Furniture",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-17",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakbzqwc9qkl",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aayymcc49d84",
+   "title": "Sales Associate (full-time)",
+   "company": "Leon's Furniture",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-17",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aayymcc49d84",
    "keywords": [
     "retail"
    ]
