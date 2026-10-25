@@ -1,7 +1,7 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-24T13:10:15.352Z",
- "count": 996,
+ "fetchedAt": "2026-10-25T13:08:30.152Z",
+ "count": 1054,
  "jobs": [
   {
    "id": "aav87wpx2cb6",
@@ -66,6 +66,273 @@
    "url": "https://to.indeed.com/aabtmzxvnvqd",
    "keywords": [
     "registered nurse"
+   ]
+  },
+  {
+   "id": "aa4gj9zkyz7q",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4gj9zkyz7q",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aajhn9whrdn9",
+   "title": "Licensed Practical Nurse",
+   "company": "Recovery Alberta",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aajhn9whrdn9",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa6qsxsndn2g",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6qsxsndn2g",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa7x6mh9myl2",
+   "title": "Licensed Practical Nurse - Pediatrics",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7x6mh9myl2",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aahmtvmprpdr",
+   "title": "A&W Supervisor",
+   "company": "Om Enterprise",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahmtvmprpdr",
+   "keywords": []
+  },
+  {
+   "id": "aahzzdbwxfjr",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aahzzdbwxfjr",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa9mzqrrzwtj",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9mzqrrzwtj",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa2z8brywfmb",
+   "title": "Licensed Practical Nurse",
+   "company": "Recovery Alberta",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2z8brywfmb",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aat898v8dzmy",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aat898v8dzmy",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aalmj97xcrl6",
+   "title": "Licensed Practical Nurse - Pediatrics",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalmj97xcrl6",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaf29q2hrm7z",
+   "title": "Cook/Kitchen Hand",
+   "company": "Dairy Queen",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-24",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaf29q2hrm7z",
+   "keywords": []
+  },
+  {
+   "id": "aaxjc76dbysc",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxjc76dbysc",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa8pxx2bbk46",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Wetaskiwin, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8pxx2bbk46",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aayrzvyjxnhv",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Wetaskiwin, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aayrzvyjxnhv",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aavwgr2kvptq",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Wetaskiwin, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aavwgr2kvptq",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa4sc629wmkh",
+   "title": "Part Time Sales Associate",
+   "company": "Pet Valu Blackfalds",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4sc629wmkh",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa9hn94n2jhd",
+   "title": "Client Support Representative",
+   "company": "The Co-operators - Pierce Insurance Financial Group Inc.",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9hn94n2jhd",
+   "keywords": []
+  },
+  {
+   "id": "aaflnwdxgf68",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Rimbey, AB",
+   "postedAt": "2026-10-24",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aaflnwdxgf68",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aap9vpvcxxwz",
+   "title": "Licensed Practical Nurse",
+   "company": "Recovery Alberta",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aap9vpvcxxwz",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aak7mff24zbd",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aak7mff24zbd",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aat6jxwqwws6",
+   "title": "Licensed Practical Nurse - Pediatrics",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aat6jxwqwws6",
+   "keywords": [
+    "nurse"
    ]
   },
   {
@@ -479,6 +746,273 @@
    "salary": "",
    "url": "https://to.indeed.com/aa49cdnzqpjl",
    "keywords": []
+  },
+  {
+   "id": "aajkxglphldj",
+   "title": "NEW WAGE $22/hr - Production Labourer",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajkxglphldj",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aasz6xm6mhzf",
+   "title": "JUNIOR PRODUCTION MANAGER / SHOP FOREMAN",
+   "company": "Grimebusters Ltd.",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aasz6xm6mhzf",
+   "keywords": []
+  },
+  {
+   "id": "aal8ptqjrhpn",
+   "title": "Front Desk Manager",
+   "company": "Four Points by Sheraton Grande",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aal8ptqjrhpn",
+   "keywords": []
+  },
+  {
+   "id": "aa6h66g6mhdy",
+   "title": "Line Cook/Prep Cook",
+   "company": "Sprouts Catering Company LTD",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6h66g6mhdy",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aaktw2xhq7qr",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaktw2xhq7qr",
+   "keywords": []
+  },
+  {
+   "id": "aa9y7d87tfsx",
+   "title": "NEW WAGE $22/hr - Production Labourer",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9y7d87tfsx",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aabb8mmypprz",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aabb8mmypprz",
+   "keywords": []
+  },
+  {
+   "id": "aawxbxdbczwh",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawxbxdbczwh",
+   "keywords": []
+  },
+  {
+   "id": "aaxxn9zcr7vg",
+   "title": "NEW WAGE $22/hr - Production Labourer",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxxn9zcr7vg",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aaqmd2w8ysd9",
+   "title": "Service & Site Foreman",
+   "company": "Sumus Balt Projects Ltd.",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqmd2w8ysd9",
+   "keywords": []
+  },
+  {
+   "id": "aa86fvzhd9yg",
+   "title": "Assessor / Buyer",
+   "company": "Sky Metals Ltd",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa86fvzhd9yg",
+   "keywords": []
+  },
+  {
+   "id": "aabfc42rjm9n",
+   "title": "Area Director of Operations",
+   "company": "Obsidian Group Inc.",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aabfc42rjm9n",
+   "keywords": []
+  },
+  {
+   "id": "aas26ntcb9k4",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aas26ntcb9k4",
+   "keywords": []
+  },
+  {
+   "id": "aavj79r2wcm9",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavj79r2wcm9",
+   "keywords": []
+  },
+  {
+   "id": "aaqkrpqr9j9x",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqkrpqr9j9x",
+   "keywords": []
+  },
+  {
+   "id": "aas4krwphngp",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aas4krwphngp",
+   "keywords": []
+  },
+  {
+   "id": "aa4jgdqyhpxw",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4jgdqyhpxw",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aavyvny9mhy4",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aavyvny9mhy4",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aaxkdkbqr29g",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxkdkbqr29g",
+   "keywords": []
+  },
+  {
+   "id": "aajdh48byv7f",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajdh48byv7f",
+   "keywords": []
+  },
+  {
+   "id": "aa47vrpfvjxn",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa47vrpfvjxn",
+   "keywords": []
+  },
+  {
+   "id": "aasddrjnyvb8",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aasddrjnyvb8",
+   "keywords": []
+  },
+  {
+   "id": "aam27c999nl6",
+   "title": "NEW WAGE $22/hr - Production Labourer",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aam27c999nl6",
+   "keywords": [
+    "labourer"
+   ]
   },
   {
    "id": "aamkvjx8c4gq",
@@ -1104,6 +1638,248 @@
    "keywords": [
     "driver"
    ]
+  },
+  {
+   "id": "aa7yjvhgxwx7",
+   "title": "Kitchen Staff/Cook",
+   "company": "GANGNAM & COCO RED DEER",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7yjvhgxwx7",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aacs286pm8w8",
+   "title": "Full-time Cook",
+   "company": "Community TIES Daycare",
+   "location": "Penhold, AB",
+   "postedAt": "2026-10-22",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacs286pm8w8",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aacg8fzc9rv4",
+   "title": "Full-time Cook",
+   "company": "Community TIES Daycare",
+   "location": "Penhold, AB",
+   "postedAt": "2026-10-22",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacg8fzc9rv4",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aadktbrd4vtv",
+   "title": "Kitchen Staff/Cook",
+   "company": "GANGNAM & COCO RED DEER",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadktbrd4vtv",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aahj4zzdmy6g",
+   "title": "Kitchen Staff/Cook",
+   "company": "GANGNAM & COCO RED DEER",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahj4zzdmy6g",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aal9l74fzbht",
+   "title": "Journeyman/ Apprentice powersports mechanic/ Small Engine/ Motorcycle",
+   "company": "Lethbridge Honda Centre LTD",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aal9l74fzbht",
+   "keywords": []
+  },
+  {
+   "id": "aab7tffpbwbc",
+   "title": "Restaurant Assistant Manager",
+   "company": "Boardwalk Enterprises Ltd",
+   "location": "Coaldale, AB",
+   "postedAt": "2026-10-22",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aab7tffpbwbc",
+   "keywords": []
+  },
+  {
+   "id": "aa2spwhbp8vk",
+   "title": "Shop Labourer - Farm Equipment Manufacturing (Bowden, AB)",
+   "company": "Ursa Ag",
+   "location": "Bowden, AB",
+   "postedAt": "2026-10-22",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2spwhbp8vk",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aazdpbsyzg4r",
+   "title": "Skilled Laborer",
+   "company": "Wellworks Energy Services Inc.",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazdpbsyzg4r",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aat8hdcbrqp2",
+   "title": "Nurse Practitioner",
+   "company": "Peaks to Prairies Primary Care Network",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-22",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aat8hdcbrqp2",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aadyy77ppjr2",
+   "title": "Assistant Team Leader",
+   "company": "Dollarama",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-22",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadyy77ppjr2",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aagy7mj8xrbz",
+   "title": "Executive Assistant to the CAO",
+   "company": "Town of Ponoka",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-22",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aagy7mj8xrbz",
+   "keywords": []
+  },
+  {
+   "id": "aamz7bphyytn",
+   "title": "Snow Removal Subcontractor",
+   "company": "Property Werks",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-22",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aamz7bphyytn",
+   "keywords": []
+  },
+  {
+   "id": "aa6k8ndp66nh",
+   "title": "Snow Removal Subcontractor",
+   "company": "Property Werks",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-22",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6k8ndp66nh",
+   "keywords": []
+  },
+  {
+   "id": "aa9d9fw6mlpw",
+   "title": "Snow Removal Subcontractor",
+   "company": "Property Werks",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-22",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9d9fw6mlpw",
+   "keywords": []
+  },
+  {
+   "id": "aa7nyztsdd2v",
+   "title": "Snow Removal Subcontractor",
+   "company": "Property Werks",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-22",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7nyztsdd2v",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aawrstjrsrmy",
+   "title": "Shop Foreman",
+   "company": "Empire Oilfield Solutions Inc.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawrstjrsrmy",
+   "keywords": []
+  },
+  {
+   "id": "aabcxhtmt9h2",
+   "title": "Collision Estimator/Appraiser",
+   "company": "StrongSolutions HR Consulting",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabcxhtmt9h2",
+   "keywords": []
+  },
+  {
+   "id": "aajfrxvntfs4",
+   "title": "Kitchen Staff/Cook",
+   "company": "GANGNAM & COCO RED DEER",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajfrxvntfs4",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aayb7fscrytn",
+   "title": "Journeyman Welder",
+   "company": "Smartvac Hydrovac",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-22",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aayb7fscrytn",
+   "keywords": []
   },
   {
    "id": "aa2x7sq4q7yk",
@@ -12235,82 +13011,6 @@
    "url": "https://to.indeed.com/aa4nczt8bbhy",
    "keywords": [
     "nurse"
-   ]
-  },
-  {
-   "id": "aafpfy7f7kvh",
-   "title": "Sales Professional",
-   "company": "Nor-Lan Chrysler Dodge Jeep Ram",
-   "location": "Grande Prairie, AB",
-   "postedAt": "2026-09-24",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aafpfy7f7kvh",
-   "keywords": []
-  },
-  {
-   "id": "aakyyq47qnzz",
-   "title": "Top Sales Closer with Bonuses + Uncapped Commissions",
-   "company": "LinkNow Media",
-   "location": "Alberta",
-   "postedAt": "2026-09-24",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aakyyq47qnzz",
-   "keywords": [
-    "work from home"
-   ]
-  },
-  {
-   "id": "aa6g2f7jr6td",
-   "title": "Fleet Service Sales Representative",
-   "company": "Great West Kenworth",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-24",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa6g2f7jr6td",
-   "keywords": [
-    "oil and gas"
-   ]
-  },
-  {
-   "id": "aalnzbxt2dyr",
-   "title": "Labourer",
-   "company": "Abrasive Blast & Paint Inc.",
-   "location": "Nisku, AB",
-   "postedAt": "2026-09-24",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aalnzbxt2dyr",
-   "keywords": [
-    "labourer"
-   ]
-  },
-  {
-   "id": "aasxslkrvcx7",
-   "title": "Cook/Kitchen Hand",
-   "company": "4G Tempo",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-24",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aasxslkrvcx7",
-   "keywords": [
-    "cook"
-   ]
-  },
-  {
-   "id": "aaphlk2qd9q2",
-   "title": "Production Worker",
-   "company": "Len Thompson Fishing",
-   "location": "Lacombe, AB",
-   "postedAt": "2026-09-24",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaphlk2qd9q2",
-   "keywords": [
-    "labourer"
    ]
   }
  ]
