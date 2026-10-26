@@ -1,8 +1,45 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-25T13:08:30.152Z",
- "count": 1054,
+ "fetchedAt": "2026-10-26T13:13:34.345Z",
+ "count": 1083,
  "jobs": [
+  {
+   "id": "aazvyq6zxc89",
+   "title": "Experienced Sales Professional – Travel Alberta | $55K–$95K+",
+   "company": "Aerial Photography Inc.",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazvyq6zxc89",
+   "keywords": []
+  },
+  {
+   "id": "aapnx7zxbrrn",
+   "title": "Canadian RNs: $2,232-$2,340 USD weekly salary + must be TN Visa-eligible for travel nursing!",
+   "company": "US HealthStaffing",
+   "location": "Alberta",
+   "postedAt": "2026-10-25",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aapnx7zxbrrn",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaqlkx8jgfwd",
+   "title": "Canadian RNs: $2,232-$2,340 USD weekly salary + must be TN Visa-eligible for travel nursing!",
+   "company": "US HealthStaffing",
+   "location": "Alberta",
+   "postedAt": "2026-10-25",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqlkx8jgfwd",
+   "keywords": [
+    "nurse"
+   ]
+  },
   {
    "id": "aav87wpx2cb6",
    "title": "Licensed Practical Nurse - Pediatrics",
@@ -333,6 +370,69 @@
    "url": "https://to.indeed.com/aat6jxwqwws6",
    "keywords": [
     "nurse"
+   ]
+  },
+  {
+   "id": "aawfzxldscwg",
+   "title": "Nurse Coordinator (LPN)",
+   "company": "Aceso Medical",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawfzxldscwg",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aar78ddxgdgp",
+   "title": "Nurse Practitioner",
+   "company": "Coulee Medical Clinic",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aar78ddxgdgp",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aadqnly4jxjz",
+   "title": "Client Support Representative",
+   "company": "The Co-operators - Pierce Insurance Financial Group Inc.",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadqnly4jxjz",
+   "keywords": []
+  },
+  {
+   "id": "aacyx2kmtrgk",
+   "title": "Production Associate",
+   "company": "Wolf Creek Cabinets",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-24",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacyx2kmtrgk",
+   "keywords": [
+    "carpenter"
+   ]
+  },
+  {
+   "id": "aayk2dfqrwfb",
+   "title": "Health Care Aide - Signing Bonus!!!",
+   "company": "McKenzie Health Care Recruitment",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-24",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aayk2dfqrwfb",
+   "keywords": [
+    "health care aide"
    ]
   },
   {
@@ -1012,6 +1112,339 @@
    "url": "https://to.indeed.com/aam27c999nl6",
    "keywords": [
     "labourer"
+   ]
+  },
+  {
+   "id": "aaj6jng4r4tg",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaj6jng4r4tg",
+   "keywords": []
+  },
+  {
+   "id": "aaq2dcwbdmlm",
+   "title": "Autobody Apprentice",
+   "company": "Lift Auto Group",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq2dcwbdmlm",
+   "keywords": []
+  },
+  {
+   "id": "aaxq2wttyqzb",
+   "title": "Heavy-Duty Tow Truck Operator (Class 1 or 3)",
+   "company": "Ready Set Tow",
+   "location": "Nisku, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxq2wttyqzb",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aa7lyzdl6nr7",
+   "title": "RN Nights",
+   "company": "Sherwood Care",
+   "location": "Sherwood Park, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7lyzdl6nr7",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa4xnhkjp4sl",
+   "title": "Recovery Room Nurses",
+   "company": "Alberta Surgical Centre",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4xnhkjp4sl",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aawkpf6ms7lw",
+   "title": "Seasonal Propane Driver - Fort McMurray",
+   "company": "Superior Propane",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-23",
+   "type": "Seasonal",
+   "salary": "",
+   "url": "https://to.indeed.com/aawkpf6ms7lw",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aannpf6sr2hx",
+   "title": "Overnight Shelf Stocker - Temporary",
+   "company": "M30 Retail Services Inc.",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aannpf6sr2hx",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aan9rg2bhtpv",
+   "title": "Warehouse Associate",
+   "company": "PARTS FOR TRUCKS",
+   "location": "Clairmont, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aan9rg2bhtpv",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aahs9t4gllhm",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aahs9t4gllhm",
+   "keywords": []
+  },
+  {
+   "id": "aakfcj8gywtm",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakfcj8gywtm",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aa4qlfsz4njr",
+   "title": "Class One Driver",
+   "company": "Gennex Transportation Inc.",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4qlfsz4njr",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aa2z9vn9t8z9",
+   "title": "Assessor / Buyer",
+   "company": "Sky Metals Ltd",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2z9vn9t8z9",
+   "keywords": []
+  },
+  {
+   "id": "aawhs9fshdyq",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawhs9fshdyq",
+   "keywords": []
+  },
+  {
+   "id": "aamcc9j7w9f2",
+   "title": "Automotive Service Manager",
+   "company": "Confidential",
+   "location": "Alberta",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aamcc9j7w9f2",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aaqdx4l4kvrp",
+   "title": "Autobody Apprentice",
+   "company": "Lift Auto Group",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqdx4l4kvrp",
+   "keywords": []
+  },
+  {
+   "id": "aapl7khfgqzc",
+   "title": "Lube Oil Collection Driver",
+   "company": "Pat's Off-Road Transport Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapl7khfgqzc",
+   "keywords": [
+    "class 1 driver"
+   ]
+  },
+  {
+   "id": "aajl4f7wrz2l",
+   "title": "Driver/Warehouse Team Member",
+   "company": "Garaga",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aajl4f7wrz2l",
+   "keywords": [
+    "delivery driver"
+   ]
+  },
+  {
+   "id": "aamgvf8mhfqk",
+   "title": "Propane Delivery Driver",
+   "company": "VIMY HR Consulting",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aamgvf8mhfqk",
+   "keywords": [
+    "delivery driver"
+   ]
+  },
+  {
+   "id": "aa8tdn7njt79",
+   "title": "Driver/Warehouse Team Member",
+   "company": "Garaga",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8tdn7njt79",
+   "keywords": [
+    "forklift operator"
+   ]
+  },
+  {
+   "id": "aanzwq4wcvqp",
+   "title": "NEW WAGE $22/hr - Production Labourer",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanzwq4wcvqp",
+   "keywords": [
+    "general labour"
+   ]
+  },
+  {
+   "id": "aajcy4ddrxvk",
+   "title": "Health Care Aide",
+   "company": "Canadian Alliance for Self-Determination",
+   "location": "Eckville, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajcy4ddrxvk",
+   "keywords": [
+    "health care aide"
+   ]
+  },
+  {
+   "id": "aa8syxf2hrsd",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8syxf2hrsd",
+   "keywords": []
+  },
+  {
+   "id": "aakrcs7qqn46",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aakrcs7qqn46",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aacyplksmmvp",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aacyplksmmvp",
+   "keywords": []
+  },
+  {
+   "id": "aadbmcd9qq6n",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadbmcd9qq6n",
+   "keywords": []
+  },
+  {
+   "id": "aa9lkrzsd2l2",
+   "title": "Brewery Taproom Supervisor",
+   "company": "Trouble Monk Brewer",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-23",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9lkrzsd2l2",
+   "keywords": [
+    "manager"
+   ]
+  },
+  {
+   "id": "aappnddgdtxb",
+   "title": "Snow Removal Professionals Needed",
+   "company": "Nature's View Landscapes",
+   "location": "Blackfalds, AB",
+   "postedAt": "2026-10-23",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aappnddgdtxb",
+   "keywords": [
+    "part time"
    ]
   },
   {
@@ -12933,84 +13366,6 @@
    "url": "https://to.indeed.com/aa6dklz6xfnx",
    "keywords": [
     "cook"
-   ]
-  },
-  {
-   "id": "aaznrftqjfwq",
-   "title": "Office Administrator",
-   "company": "Crossroad Energy Solutions Inc.",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-25",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aaznrftqjfwq",
-   "keywords": [
-    "administrative assistant"
-   ]
-  },
-  {
-   "id": "aaqjj6qhrxcj",
-   "title": "Sales Representative",
-   "company": "Wheaton Honda West (Springbank Location)",
-   "location": "Calgary, AB",
-   "postedAt": "2026-09-25",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aaqjj6qhrxcj",
-   "keywords": [
-    "retail"
-   ]
-  },
-  {
-   "id": "aandkwtv4bm8",
-   "title": "Shuttle Driver/Bellperson (relocate to Field, BC)",
-   "company": "Canadian Rocky Mountain Resorts",
-   "location": "Alberta",
-   "postedAt": "2026-09-25",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aandkwtv4bm8",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aa949p9rdccj",
-   "title": "Automotive Service Technician",
-   "company": "Fort McKay Alcor",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-25",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa949p9rdccj",
-   "keywords": [
-    "mechanic"
-   ]
-  },
-  {
-   "id": "aah299wxn789",
-   "title": "Sales Consultant - Legacy Dodge Fort McMurray",
-   "company": "Legacy Auto Group",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-25",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aah299wxn789",
-   "keywords": [
-    "retail"
-   ]
-  },
-  {
-   "id": "aa4nczt8bbhy",
-   "title": "Travel Nurse - Community Health RN",
-   "company": "Bayshore HealthCare",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-09-25",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa4nczt8bbhy",
-   "keywords": [
-    "nurse"
    ]
   }
  ]
