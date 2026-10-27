@@ -1,8 +1,684 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-10-26T13:13:34.345Z",
- "count": 1083,
+ "fetchedAt": "2026-10-27T13:08:48.918Z",
+ "count": 1156,
  "jobs": [
+  {
+   "id": "aapnq6y6pq8q",
+   "title": "Retail Associate (Full Time)",
+   "company": "Best Buy",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-27",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapnq6y6pq8q",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa7gl4bdkvdd",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-27",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7gl4bdkvdd",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aahxvck8cbw7",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-27",
+   "type": "Casual",
+   "salary": "",
+   "url": "https://to.indeed.com/aahxvck8cbw7",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa62hypqprvv",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-27",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa62hypqprvv",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaldvxhnr6dq",
+   "title": "Registered Nurse",
+   "company": "Alberta Health Services",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-27",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaldvxhnr6dq",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aanfpy2jgtsk",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanfpy2jgtsk",
+   "keywords": []
+  },
+  {
+   "id": "aa68phrlgjby",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa68phrlgjby",
+   "keywords": []
+  },
+  {
+   "id": "aa2hb2kh922d",
+   "title": "Sous Chef",
+   "company": "CILANTRO AND CHIVE",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2hb2kh922d",
+   "keywords": []
+  },
+  {
+   "id": "aadq7qz6jxvh",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadq7qz6jxvh",
+   "keywords": []
+  },
+  {
+   "id": "aa4mwjlyxlfp",
+   "title": "Sale Associate Vape Store",
+   "company": "VAPE SHAK",
+   "location": "Okotoks, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4mwjlyxlfp",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aanbmv27k6qq",
+   "title": "Snow Removal/LABOURER",
+   "company": "Grass Gators Inc",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-26",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aanbmv27k6qq",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aad97lp6zkqk",
+   "title": "Assistant Kitchen Manager",
+   "company": "The Cheesecake Cafe",
+   "location": "Spruce Grove, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad97lp6zkqk",
+   "keywords": []
+  },
+  {
+   "id": "aad7fd72mjw9",
+   "title": "Construction Manager",
+   "company": "Yanda",
+   "location": "Anzac, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad7fd72mjw9",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aalhkmfrrddh",
+   "title": "Kitchen helper & Front counter attendant",
+   "company": "Tumblweed General Store",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aalhkmfrrddh",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aacdlzvhdw6s",
+   "title": "Kitchen helper & Front counter attendant",
+   "company": "Tumblweed General Store",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacdlzvhdw6s",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa7cgkpqvpm6",
+   "title": "Brick Associate, Sales",
+   "company": "The Brick",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7cgkpqvpm6",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa28hcbymrp4",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa28hcbymrp4",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aa2jk8j6rgsf",
+   "title": "Washbay Labourer",
+   "company": "Birch Mountain Enterprises",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-26",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2jk8j6rgsf",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aangh89xyjng",
+   "title": "Line Cook Full Time and Part Time – Captain’s Boil (Grande Prairie)",
+   "company": "The Captain's Boil Grande Prairie",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aangh89xyjng",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aat4wffc9vd2",
+   "title": "Kitchen and Bath Designer and Sales Associate",
+   "company": "Donovan Mills Cabinetry",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aat4wffc9vd2",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aak4rylhy4sk",
+   "title": "Sales Associate",
+   "company": "Jim Hansen Gateway Ford Lincoln",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aak4rylhy4sk",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aawlbgdmm4m6",
+   "title": "Kitchen and Bath Designer and Sales Associate",
+   "company": "Donovan Mills Cabinetry",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawlbgdmm4m6",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aaq68kw8qwd2",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq68kw8qwd2",
+   "keywords": []
+  },
+  {
+   "id": "aanbcvnyxj2h",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanbcvnyxj2h",
+   "keywords": []
+  },
+  {
+   "id": "aaypy9j242gl",
+   "title": "Highway Maintenance Worker/Operator",
+   "company": "Volker Stevin",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaypy9j242gl",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aar2pjkcjnzc",
+   "title": "Line Cook",
+   "company": "Lethbridge Curling Club",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aar2pjkcjnzc",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aad6yh8r97gx",
+   "title": "Shop Assistant",
+   "company": "Dutchie Dirt Moving",
+   "location": "Turin, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad6yh8r97gx",
+   "keywords": []
+  },
+  {
+   "id": "aang44pcjzc7",
+   "title": "Highway Maintenance Worker/Operator",
+   "company": "Volker Stevin",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aang44pcjzc7",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aabbl82n2cf7",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabbl82n2cf7",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aaczjds26bfn",
+   "title": "Inventory Supervisor",
+   "company": "WIS International",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaczjds26bfn",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aattnj4lxbyh",
+   "title": "Food Counter Attendant",
+   "company": "Boston Pizza- Tomanik Enterprises",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aattnj4lxbyh",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aax2nypkmspm",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aax2nypkmspm",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aad79y4zj8q8",
+   "title": "Retail Co-Manager",
+   "company": "YM Inc",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad79y4zj8q8",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aarcbdpb2lzr",
+   "title": "Deli Manager",
+   "company": "Freson Bros.",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarcbdpb2lzr",
+   "keywords": []
+  },
+  {
+   "id": "aatmswbkkdr2",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatmswbkkdr2",
+   "keywords": []
+  },
+  {
+   "id": "aa4kkcbkfk6f",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4kkcbkfk6f",
+   "keywords": []
+  },
+  {
+   "id": "aanwyj7tr94v",
+   "title": "Material Handler",
+   "company": "Tornado Infrastructure Equipment Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanwyj7tr94v",
+   "keywords": []
+  },
+  {
+   "id": "aalxll42xxky",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aalxll42xxky",
+   "keywords": []
+  },
+  {
+   "id": "aawmwmqtzf98",
+   "title": "Yard and Shop Labourer",
+   "company": "VIMY HR Consulting",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawmwmqtzf98",
+   "keywords": []
+  },
+  {
+   "id": "aadlgc2slg6v",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadlgc2slg6v",
+   "keywords": []
+  },
+  {
+   "id": "aask8p6qdg67",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aask8p6qdg67",
+   "keywords": []
+  },
+  {
+   "id": "aavtxh9mrbnx",
+   "title": "Material Handler",
+   "company": "Tornado Infrastructure Equipment Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavtxh9mrbnx",
+   "keywords": []
+  },
+  {
+   "id": "aafzzqxdfrvn",
+   "title": "Sand Plant Operator",
+   "company": "TR Transport Inc",
+   "location": "Bentley, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aafzzqxdfrvn",
+   "keywords": []
+  },
+  {
+   "id": "aa8gfc7cgbjn",
+   "title": "Material Handler",
+   "company": "Tornado Infrastructure Equipment Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8gfc7cgbjn",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aa8fnvn7q2kw",
+   "title": "Yard and Shop Labourer",
+   "company": "VIMY HR Consulting",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8fnvn7q2kw",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aapgwt9sv9v6",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aapgwt9sv9v6",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aaldk6zg6f4m",
+   "title": "Shipper & Receiver - TGC Truck & Automotive Division (Red Deer, AB)",
+   "company": "The Gear Centre Group of Companies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaldk6zg6f4m",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aa4mn9ptstb6",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4mn9ptstb6",
+   "keywords": []
+  },
+  {
+   "id": "aa7pxwc7kdpl",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7pxwc7kdpl",
+   "keywords": []
+  },
+  {
+   "id": "aayzwj92kgb4",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aayzwj92kgb4",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aa2pfgkj4vbk",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2pfgkj4vbk",
+   "keywords": []
+  },
+  {
+   "id": "aakhpdnxg7dl",
+   "title": "Commercial Local Delivery Driver",
+   "company": "Nossack Fine Meats",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aakhpdnxg7dl",
+   "keywords": []
+  },
+  {
+   "id": "aawws7vjxz6j",
+   "title": "Deli Manager",
+   "company": "Freson Bros.",
+   "location": "Sundre, AB",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawws7vjxz6j",
+   "keywords": []
+  },
+  {
+   "id": "aapkvqflnqkt",
+   "title": "Hide Labourer",
+   "company": "West Coast Reduction Ltd.",
+   "location": "Alberta",
+   "postedAt": "2026-10-26",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapkvqflnqkt",
+   "keywords": []
+  },
+  {
+   "id": "aa8vbsqjtjkh",
+   "title": "Seasonal Package Handler Non-Driver",
+   "company": "FedEx",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-26",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8vbsqjtjkh",
+   "keywords": []
+  },
+  {
+   "id": "aac9zjbh42s4",
+   "title": "Sand Plant Operator",
+   "company": "TR Transport Inc",
+   "location": "Bentley, AB",
+   "postedAt": "2026-10-26",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aac9zjbh42s4",
+   "keywords": []
+  },
   {
    "id": "aazvyq6zxc89",
    "title": "Experienced Sales Professional – Travel Alberta | $55K–$95K+",
@@ -39,6 +715,130 @@
    "keywords": [
     "nurse"
    ]
+  },
+  {
+   "id": "aac9wslbgzw9",
+   "title": "Equipment Operator & Field Operations Specialist",
+   "company": "CAF Property Services",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aac9wslbgzw9",
+   "keywords": []
+  },
+  {
+   "id": "aa64fmknyhzk",
+   "title": "Landscape Maintenance Worker",
+   "company": "Black Mountain Landscape Ltd.",
+   "location": "Calgary, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa64fmknyhzk",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aaxqjdzg48t4",
+   "title": "Directional Drilling Labourer",
+   "company": "Stonehammer Horizontal Directional Drilling Inc.",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxqjdzg48t4",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aakr7cfqcjmg",
+   "title": "Kitchen Helper",
+   "company": "Collision Repairs & Auto Paint Shop in Fort McMurray",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakr7cfqcjmg",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aarm6kgfgmj9",
+   "title": "Retail Store Supervisor",
+   "company": "1735787 alberta ltd o/a circle k",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-25",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aarm6kgfgmj9",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa2t49jwkgcp",
+   "title": "Equipment Operator & Field Operations Specialist",
+   "company": "CAF Property Services",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2t49jwkgcp",
+   "keywords": []
+  },
+  {
+   "id": "aaczxt4jt666",
+   "title": "Line Cook/Prep Cook",
+   "company": "Silver Buckle Sports Bar",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-25",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaczxt4jt666",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aac2blpm7n4h",
+   "title": "Canadian RNs: $2,232-$2,340 USD weekly salary + must be TN Visa-eligible for travel nursing!",
+   "company": "US HealthStaffing",
+   "location": "Alberta",
+   "postedAt": "2026-10-25",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aac2blpm7n4h",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aavckwfqmlsq",
+   "title": "Financial Planner",
+   "company": "Core Wealth Solutions",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-25",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aavckwfqmlsq",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aa8k7l9fx8q6",
+   "title": "Bookkeeper",
+   "company": "NIEMEYER'S WELDING & MACHINING LTD.",
+   "location": "Olds, AB",
+   "postedAt": "2026-10-25",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8k7l9fx8q6",
+   "keywords": []
   },
   {
    "id": "aav87wpx2cb6",
@@ -433,6 +1233,108 @@
    "url": "https://to.indeed.com/aayk2dfqrwfb",
    "keywords": [
     "health care aide"
+   ]
+  },
+  {
+   "id": "aakd8qyh8bfj",
+   "title": "Kitchen Supervisor/Line Cook",
+   "company": "Blowers and Grafton Sherwood Park",
+   "location": "Sherwood Park, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakd8qyh8bfj",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aad488c6glj6",
+   "title": "Junior Sales Manager/Junior Finance Manager",
+   "company": "Windermere Chrysler Dodge Jeep Ram",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aad488c6glj6",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aazvzyy4cd66",
+   "title": "Line Cook/Prep Cook",
+   "company": "Royal Canadian Legion McMurray Br 165",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-10-24",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazvzyy4cd66",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aad88nr47nxt",
+   "title": "Cook/Kitchen Hand",
+   "company": "Dairy Queen",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-24",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aad88nr47nxt",
+   "keywords": [
+    "cook"
+   ]
+  },
+  {
+   "id": "aab4xkdvlx94",
+   "title": "Cook/Kitchen Hand",
+   "company": "Dairy Queen",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-10-24",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aab4xkdvlx94",
+   "keywords": []
+  },
+  {
+   "id": "aa4n4692wjbx",
+   "title": "Online AI Rater - Flexible Hours (Remote)",
+   "company": "Outlier AI",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4n4692wjbx",
+   "keywords": [
+    "remote"
+   ]
+  },
+  {
+   "id": "aayshmq4qknv",
+   "title": "AI Feedback Specialist - English (Remote)",
+   "company": "Outlier AI",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aayshmq4qknv",
+   "keywords": [
+    "remote"
+   ]
+  },
+  {
+   "id": "aa47f2lnzbgm",
+   "title": "Remote AI Rater - English Speaker",
+   "company": "Outlier AI",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-24",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa47f2lnzbgm",
+   "keywords": [
+    "remote"
    ]
   },
   {
@@ -13353,19 +14255,6 @@
    "url": "https://to.indeed.com/aawh9tpkxstw",
    "keywords": [
     "labourer"
-   ]
-  },
-  {
-   "id": "aa6dklz6xfnx",
-   "title": "Kitchen Hand/Cook",
-   "company": "Cosmos Pizza (Thickwood)",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-09-26",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa6dklz6xfnx",
-   "keywords": [
-    "cook"
    ]
   }
  ]
