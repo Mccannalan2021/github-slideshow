@@ -1,8 +1,19 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-11-01T13:08:16.684Z",
- "count": 1582,
+ "fetchedAt": "2026-11-02T13:12:44.101Z",
+ "count": 1616,
  "jobs": [
+  {
+   "id": "aad4dyjw7qhr",
+   "title": "Night Shift Supervisor 1 year Experience Required",
+   "company": "Rosie's Burgers",
+   "location": "Calgary, AB",
+   "postedAt": "2026-11-02",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aad4dyjw7qhr",
+   "keywords": []
+  },
   {
    "id": "aa8dvsxbkwwb",
    "title": "Licensed Practical Nurse (LPN) | Acute",
@@ -160,6 +171,219 @@
    ]
   },
   {
+   "id": "aak4t2qpq6nl",
+   "title": "Snow Removal and General Labourer",
+   "company": "Outback Lawn Maintenance",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aak4t2qpq6nl",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aasdkf8npq8y",
+   "title": "Retired Nurse/LPN /Clinical & Procedural Assistant",
+   "company": "Horizon Vein and Cosmetic Centre",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aasdkf8npq8y",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aay2zpxc62x9",
+   "title": "Apprentice Pipefitter",
+   "company": "TLM Enterprises",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aay2zpxc62x9",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aatn9ztrxd4v",
+   "title": "Snow Removal and General Labourer",
+   "company": "Outback Lawn Maintenance",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatn9ztrxd4v",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aamk6dk9lpnk",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aamk6dk9lpnk",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aazn2yrvwgw7",
+   "title": "Registered Nurse (RN) | Emergency",
+   "company": "Interior Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazn2yrvwgw7",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aalwxfb4vq4b",
+   "title": "Registered Nurse (RN) | Emergency",
+   "company": "Interior Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalwxfb4vq4b",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaklwc4ny9p7",
+   "title": "Registered Nurse (RN) | Intensive Care Unit (ICU)",
+   "company": "Interior Health",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaklwc4ny9p7",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aah4z49vqcmt",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aah4z49vqcmt",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aaq4txtgtfh4",
+   "title": "Apprentice Pipefitter",
+   "company": "TLM Enterprises",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaq4txtgtfh4",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aanl2cdq9hf6",
+   "title": "Apprentice Pipefitter",
+   "company": "TLM Enterprises",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanl2cdq9hf6",
+   "keywords": []
+  },
+  {
+   "id": "aa7ctjw9lwzy",
+   "title": "Snow Removal and General Labourer",
+   "company": "Outback Lawn Maintenance",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7ctjw9lwzy",
+   "keywords": []
+  },
+  {
+   "id": "aatwrpdkrxyt",
+   "title": "Professional Driver / Mover",
+   "company": "Two Small Men with Big Hearts Moving",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-11-01",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aatwrpdkrxyt",
+   "keywords": []
+  },
+  {
+   "id": "aa6sbdd2bbmf",
+   "title": "Apprentice Pipefitter",
+   "company": "TLM Enterprises",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-01",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6sbdd2bbmf",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aa24vjcng6cq",
+   "title": "Snow Removal and General Labourer",
+   "company": "Outback Lawn Maintenance",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa24vjcng6cq",
+   "keywords": []
+  },
+  {
+   "id": "aa8snxmf4cmk",
+   "title": "Snow Removal and General Labourer",
+   "company": "Outback Lawn Maintenance",
+   "location": "Sylvan Lake, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8snxmf4cmk",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aa82wkv7qmfw",
+   "title": "Licensed Practical Nurse",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-11-01",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa82wkv7qmfw",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
    "id": "aazvfgbhqjyv",
    "title": "Shift Supervisor",
    "company": "Firehouse Subs",
@@ -266,6 +490,133 @@
    "type": "Permanent",
    "salary": "",
    "url": "https://to.indeed.com/aazymc6pr2ms",
+   "keywords": []
+  },
+  {
+   "id": "aa7zz2m7nl7b",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7zz2m7nl7b",
+   "keywords": []
+  },
+  {
+   "id": "aajd6wfkxpzd",
+   "title": "Retail Shift Leader",
+   "company": "Canna Cabana",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajd6wfkxpzd",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aam9bxxcf6pj",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Beaumont, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aam9bxxcf6pj",
+   "keywords": []
+  },
+  {
+   "id": "aatgt6pvmknw",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aatgt6pvmknw",
+   "keywords": []
+  },
+  {
+   "id": "aahym78brvfj",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aahym78brvfj",
+   "keywords": []
+  },
+  {
+   "id": "aarfpzch9msm",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aarfpzch9msm",
+   "keywords": []
+  },
+  {
+   "id": "aa6968rk779f",
+   "title": "Retail Shift Leader",
+   "company": "Canna Cabana",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6968rk779f",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aal9h8x6m8kt",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aal9h8x6m8kt",
+   "keywords": []
+  },
+  {
+   "id": "aa7j88sm7zlh",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7j88sm7zlh",
+   "keywords": []
+  },
+  {
+   "id": "aa2wytffmddt",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2wytffmddt",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aaqpzk8rzyvm",
+   "title": "Shift Supervisor",
+   "company": "Firehouse Subs",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-10-31",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqpzk8rzyvm",
    "keywords": []
   },
   {
@@ -1151,6 +1502,371 @@
    "salary": "",
    "url": "https://to.indeed.com/aantnb8llkm4",
    "keywords": []
+  },
+  {
+   "id": "aamt2cvs44kz",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aamt2cvs44kz",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aawh7q98xskd",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aawh7q98xskd",
+   "keywords": []
+  },
+  {
+   "id": "aapnsqfwlqvw",
+   "title": "Tim Hortons Team Member",
+   "company": "Tim Hortons",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aapnsqfwlqvw",
+   "keywords": []
+  },
+  {
+   "id": "aadjk7w46xx4",
+   "title": "Restaurant Manager",
+   "company": "Tim Hortons",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aadjk7w46xx4",
+   "keywords": []
+  },
+  {
+   "id": "aatbksc9hygk",
+   "title": "Labourer",
+   "company": "AGS Mechanical Contractors Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatbksc9hygk",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aay7mt8lz69m",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aay7mt8lz69m",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aajnv6pj7g8s",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aajnv6pj7g8s",
+   "keywords": []
+  },
+  {
+   "id": "aakhqqzxv4mf",
+   "title": "Tire Technician/Warehouse Associate",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakhqqzxv4mf",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aa94kpgk4nfq",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa94kpgk4nfq",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aavstqmkkzy8",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aavstqmkkzy8",
+   "keywords": [
+    "driver"
+   ]
+  },
+  {
+   "id": "aaxfrskcg6xn",
+   "title": "Tim Hortons Team Member",
+   "company": "Tim Hortons",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxfrskcg6xn",
+   "keywords": []
+  },
+  {
+   "id": "aadyyzkjn8fx",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aadyyzkjn8fx",
+   "keywords": []
+  },
+  {
+   "id": "aa8drhg486px",
+   "title": "Tire Technician/Warehouse Associate",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8drhg486px",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aalhsbnvt2cr",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aalhsbnvt2cr",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aa7jx82zfx6x",
+   "title": "Health & Safety Coordinator",
+   "company": "Confidential",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-30",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7jx82zfx6x",
+   "keywords": []
+  },
+  {
+   "id": "aayrt9mxz76m",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aayrt9mxz76m",
+   "keywords": []
+  },
+  {
+   "id": "aaxf2rgzznhj",
+   "title": "Tim Hortons Team Member",
+   "company": "Tim Hortons",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxf2rgzznhj",
+   "keywords": []
+  },
+  {
+   "id": "aaldky9btq7t",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaldky9btq7t",
+   "keywords": []
+  },
+  {
+   "id": "aa4zt9j69mwr",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa4zt9j69mwr",
+   "keywords": []
+  },
+  {
+   "id": "aap4bwp8kx2y",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aap4bwp8kx2y",
+   "keywords": []
+  },
+  {
+   "id": "aarcdhk7dq7j",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aarcdhk7dq7j",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aagfrv744h2k",
+   "title": "Health & Safety Coordinator",
+   "company": "Confidential",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-30",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aagfrv744h2k",
+   "keywords": []
+  },
+  {
+   "id": "aabwydyygl7z",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aabwydyygl7z",
+   "keywords": []
+  },
+  {
+   "id": "aa6llmd2dpfw",
+   "title": "Unit Clerk",
+   "company": "Alberta Health Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6llmd2dpfw",
+   "keywords": []
+  },
+  {
+   "id": "aatllkvz94bp",
+   "title": "Health & Safety Coordinator",
+   "company": "Confidential",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-10-30",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatllkvz94bp",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aaz67kxsxvjx",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaz67kxsxvjx",
+   "keywords": [
+    "part time"
+   ]
+  },
+  {
+   "id": "aajp7l6p2vmt",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aajp7l6p2vmt",
+   "keywords": []
+  },
+  {
+   "id": "aaqs6sgxkry6",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqs6sgxkry6",
+   "keywords": []
+  },
+  {
+   "id": "aafss7hrfwzj",
+   "title": "Production Supervisor",
+   "company": "Tank Traders",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aafss7hrfwzj",
+   "keywords": []
+  },
+  {
+   "id": "aa6722rv4m2r",
+   "title": "Seasonal Delivery Helper - Red Deer",
+   "company": "UPS",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6722rv4m2r",
+   "keywords": []
+  },
+  {
+   "id": "aaw4d6x96z6m",
+   "title": "Health Care Aide",
+   "company": "Alberta Health Services",
+   "location": "Innisfail, AB",
+   "postedAt": "2026-10-30",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aaw4d6x96z6m",
+   "keywords": [
+    "nurse"
+   ]
   },
   {
    "id": "aab8h9m6wrhb",
@@ -19060,332 +19776,6 @@
    "keywords": [
     "summer"
    ]
-  },
-  {
-   "id": "aahpbp78nqmq",
-   "title": "Class 5 Driving Instructor - RED DEER / SYLVAN LAKE / LACOMBE/BLACKFALDS",
-   "company": "Street Wise Driving School",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aahpbp78nqmq",
-   "keywords": [
-    "education"
-   ]
-  },
-  {
-   "id": "aa6xdcyr8slx",
-   "title": "Industrial Pipe Coater",
-   "company": "Bunch Projects Ltd.",
-   "location": "Rocky Mountain House, AB",
-   "postedAt": "2026-10-02",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa6xdcyr8slx",
-   "keywords": [
-    "full time"
-   ]
-  },
-  {
-   "id": "aag8tgkxshjg",
-   "title": "Arborist I - ISA Certified - Parks and Urban Forestry",
-   "company": "City of Edmonton",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aag8tgkxshjg",
-   "keywords": [
-    "government"
-   ]
-  },
-  {
-   "id": "aagggyttfdrr",
-   "title": "January 2027 Supply Chain Co-op - Student (CUL)",
-   "company": "ATCO",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aagggyttfdrr",
-   "keywords": [
-    "student"
-   ]
-  },
-  {
-   "id": "aak9p6trm4ln",
-   "title": "General Manager",
-   "company": "Chipotle Canada",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aak9p6trm4ln",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aasnsqbl9lpj",
-   "title": "Assistant General Manager",
-   "company": "Chipotle Canada",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aasnsqbl9lpj",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aaghb9nmpmrc",
-   "title": "Restaurant Shift Manager",
-   "company": "Chipotle Canada",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaghb9nmpmrc",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aa8pvh4pps2b",
-   "title": "Special Needs School Bus Driver",
-   "company": "4Seasons Transportation",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa8pvh4pps2b",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aa7cx4t4wnd2",
-   "title": "General Manager",
-   "company": "Chipotle Canada",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa7cx4t4wnd2",
-   "keywords": []
-  },
-  {
-   "id": "aa8wqct2mn2j",
-   "title": "Assistant General Manager",
-   "company": "Chipotle Canada",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa8wqct2mn2j",
-   "keywords": []
-  },
-  {
-   "id": "aays2hvf9msf",
-   "title": "Home Care Nurse – Private Family (Contract)",
-   "company": "Family Managed Care",
-   "location": "Calgary, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aays2hvf9msf",
-   "keywords": [
-    "nurse"
-   ]
-  },
-  {
-   "id": "aalb26kknmqt",
-   "title": "Assistant Site Supervisor - Residential Construction - Edmonton",
-   "company": "M1 Construction Ltd.",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aalb26kknmqt",
-   "keywords": [
-    "construction"
-   ]
-  },
-  {
-   "id": "aanvm2zfdvgb",
-   "title": "General Manager",
-   "company": "Chipotle Canada",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aanvm2zfdvgb",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aaqp84mkczxk",
-   "title": "Assistant General Manager",
-   "company": "Chipotle Canada",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aaqp84mkczxk",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aajxyd9rbfsd",
-   "title": "Restaurant Shift Manager",
-   "company": "Chipotle Canada",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aajxyd9rbfsd",
-   "keywords": [
-    "customer service"
-   ]
-  },
-  {
-   "id": "aaz4wt8jyd64",
-   "title": "Part Time Delivery Driver",
-   "company": "United Sport & Cycle",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aaz4wt8jyd64",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aab26pllzbw8",
-   "title": "General Manager",
-   "company": "Chipotle Canada",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aab26pllzbw8",
-   "keywords": []
-  },
-  {
-   "id": "aa8j8fzzvzmb",
-   "title": "Division Manager - General Sports",
-   "company": "United Sport & Cycle",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa8j8fzzvzmb",
-   "keywords": []
-  },
-  {
-   "id": "aabs7ymmxx9s",
-   "title": "Sales & Warehouse Coordinator",
-   "company": "Portland Tractor Inc.",
-   "location": "Edmonton, AB",
-   "postedAt": "2026-10-02",
-   "type": "",
-   "salary": "",
-   "url": "https://to.indeed.com/aabs7ymmxx9s",
-   "keywords": [
-    "warehouse"
-   ]
-  },
-  {
-   "id": "aacz4gc7bcn9",
-   "title": "Cook/Kitchen Hand",
-   "company": "Hong Kong Eatery",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-10-02",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aacz4gc7bcn9",
-   "keywords": [
-    "cook"
-   ]
-  },
-  {
-   "id": "aahmyl89tnx2",
-   "title": "Journeyman HEAVY DUTY TECH/ MILLWRIGHT - (Experience Required)/",
-   "company": "New Ground Power Systems",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-10-02",
-   "type": "Full-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aahmyl89tnx2",
-   "keywords": [
-    "millwright"
-   ]
-  },
-  {
-   "id": "aaglpnhx2sk9",
-   "title": "CAN Driver",
-   "company": "FedEx",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-02",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aaglpnhx2sk9",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aa8htd2bmry6",
-   "title": "CAN Driver",
-   "company": "FedEx",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-02",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa8htd2bmry6",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aaykn6fty2mb",
-   "title": "Class 5 Driving Instructor - RED DEER / SYLVAN LAKE / LACOMBE/BLACKFALDS",
-   "company": "Street Wise Driving School",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-02",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aaykn6fty2mb",
-   "keywords": [
-    "driver"
-   ]
-  },
-  {
-   "id": "aa72jvhrw8kw",
-   "title": "CAN Driver",
-   "company": "FedEx",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-02",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aa72jvhrw8kw",
-   "keywords": []
-  },
-  {
-   "id": "aarhnfxysy4k",
-   "title": "CAN Driver",
-   "company": "FedEx",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-02",
-   "type": "Part-time",
-   "salary": "",
-   "url": "https://to.indeed.com/aarhnfxysy4k",
-   "keywords": []
   }
  ]
 }
