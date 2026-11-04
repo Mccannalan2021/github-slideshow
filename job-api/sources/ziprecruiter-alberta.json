@@ -1,8 +1,30 @@
 {
  "source": "ziprecruiter",
- "fetchedAt": "2026-11-03T13:09:47.666Z",
- "count": 468,
+ "fetchedAt": "2026-11-04T13:08:34.977Z",
+ "count": 482,
  "jobs": [
+  {
+   "id": "MY-L-lyo2iM9zq9nKtQMRA",
+   "title": "Delivery Driver",
+   "company": "Fort Garry Industries LTD.",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-04",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "Medical, Vision, Dental, Retirement",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZNWS1MLWx5bzJpTTl6cTluS3RRTVJBEiQwMWExYTY5Yy0xZGJkLTczZDUtOTE0ZS02M2ZiMTE4YmUzODMaUEFBR0k4UkE3OE9KcDhEZEcwbmkxNkFleVpXRHd2Mzl3d0Z5NWxKWmwwaWRRRUtTSXp2Y19BRVp3RWJNemlNX1V5dF9fMUkxQ0FvMFA2UnFTIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "p8uzUEXDg_nzRHK8TEEwSA",
+   "title": "Operational Excellence Co-op Student",
+   "company": "Orion Steel Group LLC",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-04",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "Medical, Dental, Paid time off, Life insurance, Retirement",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZwOHV6VUVYRGdfbnpSSEs4VEVFd1NBEiQwMWExYTY5ZC0xYTg2LTc3NjgtYjU4OC1hMTk1YjczYzgzMzUaUEFBRWJRczZCSmxGNUFlWHFEQ3MyRGRXWHBNNHFBMjBvVmVVcVBkMGJJQ2ZVRFhWM2QzTEVheFRZOGF3Wi1FaW4tNms5ZkEtaTlpYVpuQkF4IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
   {
    "id": "Z9oeCIc6N7tVWVfdS_loTw",
    "title": "Apprentice Automotive Mechanic - 2nd or 3rd Year",
@@ -12,7 +34,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZaOW9lQ0ljNk43dFZXVmZkU19sb1R3EiQwMWExYTE3Ni0wNTFlLTczYTYtODY5NC1hYTlhYTVlNjcxZDcaW0FBR1RTQktQeTVGemVoOVBPYk9xUlpxTVhpeWV3WXI0X3prSXl6Zmh5M2FvTGdwNHJGT21ZTnMxSzZ4RlE0czlVZUNkZXdYd1EtSTBpOGxMV1FXSlQ3eXNfTTggya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZaOW9lQ0ljNk43dFZXVmZkU19sb1R3EiQwMWExYTY5ZC0xYTUyLTc2NjEtOGYyNS1jZjU2OWZmNTI0YTIaW0FBRkZSYVlESzhBNjhoblFLUlNEN1FqTjIxcXltandFRXVSWmdCenJnU2pHX2lUU1VCdno1Nk53QWpoVDZybDg1NUJhLTdGOGxDamR6eGVzTHlnQkdma0JJWjAgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "oLgT0gyknNQRDODr2lCrLw",
@@ -25,7 +47,7 @@
    "salaryMin": 50000,
    "salaryPeriod": "year",
    "benefits": "Medical, Dental, Paid time off",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZvTGdUMGd5a25OUVJET0RyMmxDckx3EiQwMWExYTE3Ni0wNTFlLTczYTItODE2YS0yYWI3MjFjZTVhZDIaUEFBRm4yN3ZjTGJXdV90cFBnV1dQTkdWTEJuRF8yQTg3NlNFZHhXQkRUckhDYzNZSW50c1hKUENLWGRNRXpPZzB0MGV4WWxPcEg5V2J4QXg2IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZvTGdUMGd5a25OUVJET0RyMmxDckx3EiQwMWExYTY5ZC0xYTUyLTc2NWItYWRhMi04ZmU0YjQxZDUzMTgaUEFBRVBZYkprU0ZCU09SY0FOZGhWMzEyVUdpT0U2VkxqMi16Um8tSnNEN1JqeWluVVJRclQyNkNGYktjUlJIdGVxZ2hhRG9DNkNMLTNMcXBSIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "FlHkszrrRH17qcHl2OEauQ",
@@ -36,7 +58,109 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZGbEhrc3pyclJIMTdxY0hsMk9FYXVREiQwMWExYTE3Ni0wNGY0LTdhYmMtOTA5NS1kNDU4ZjdjMmZlZTgaUEFBRzVQSmJuQml1U0FhSG1xdjhGbWFSN21SVFduX25fMmlXUFVfVXp3eXRKYWJSUHpGVTVyVkEtUno4TXhSRnF2aHhvQUFXOW1LWHpHZVczIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZGbEhrc3pyclJIMTdxY0hsMk9FYXVREiQwMWExYTY5ZC0xYTg2LTc3NmUtODlhOC0yZGI1NGY1MWU3YTMaUEFBRUpOUWduUnMtd2VOaUJrYlZhQ3hwdHVTb1o2cy0yLWNzQkxrYmgtMUtyNXRqWXlfSHNKb1NRMHhaZ1E2UjNKRFAxZnNrWTBlUUhyclJsIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "tfEK-OcT1Pa1xXKta3yc2w",
+   "title": "Remote Sales Agent",
+   "company": "HMG Careers",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": true,
+   "salaryMin": 67000,
+   "salaryMax": 70000,
+   "salaryPeriod": "year",
+   "benefits": "Medical, Dental",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ0ZkVLLU9jVDFQYTF4WEt0YTN5YzJ3EiQwMWExYTY5Yy0xZGJkLTczZGMtYWI1Yy04NjU1NmRiNmQyYjkaW0FBRjFJNTR1MlZEMUV1d1RINm9zSDBUanlsOGdjajR5R2dpZXlNUWtyV3EtVkdiajFRTl9iYnpEbXNRdzRuZjVZX1RQc2FhUDVuZWpUTUdkZ21WOExlVkNGUTQgya0FEAEYya0F&tsid=100000502"
+  },
+  {
+   "id": "bYRSX-mts-_ItkN_uk72Ag",
+   "title": "Financial Analyst - TERM",
+   "company": "City of Red Deer",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZiWVJTWC1tdHMtX0l0a05fdWs3MkFnEiQwMWExYTY5ZC0xYTUyLTc2NTYtOWZiMy04ODQxMTMzM2EzMGEaUEFBSEFDbVhNNWdQbERfNFB1WEJlSWFWLWlxTlJPQVpUNU9ETm5reUlNMVlrRG04VEFhWHhUTXFZSS1kaEk5bU1QeU1zczJCT1ZWNEVzNXZmIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "IX5nDo4huzNYMa8qDAOnNw",
+   "title": "Financial Advisor Wealth Advice Centre",
+   "company": "ATB",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZJWDVuRG80aHV6TllNYThxREFPbk53EiQwMWExYTY5Zi02OTUzLTc1ZmQtYTI3OS1jNDE1MjlkZTIxZGUaUEFBRURlWHpkRmJHcnJ4RHB0bmxPLUR3anROT0dBeWstM2R6NXQ5NzN0NUZvR3QybnlnTENfb2ItdEF2NWRaOHpyRUFXeFZtN1VSTzNXOXRmIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "b-g5tCnrSMaawb42lrQrMA",
+   "title": "Produce Clerk (Full-Time) - Timberlands - Central Alberta Co-op",
+   "company": "Co op",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "Medical",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZiLWc1dENuclNNYWF3YjQybHJRck1BEiQwMWExYTZhNC00NDE5LTc0YTctOGNjMy0zMDg0NDFmYmI0M2IaUEFBRVIzY3ZnWUZGQUEwVGd2NmY0MDJaVVVSdmR5dkRUZXpwTG41RjdSa3A4ZHVheTZ6b2lJa3JITW1aQmxLU1dtVTNRbzM3UHpZSWJHLTkwIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "1QRSZNl7nf7vEFxJbtrMsg",
+   "title": "Instructor Child and Youth - Red Deer",
+   "company": "YMCA of Northern Alberta",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYxUVJTWk5sN25mN3ZFRnhKYnRyTXNnEiQwMWExYTZhNy1jYzI3LTc0YzQtODVhYi0yN2FkMWFhMmYyYWMaUEFBR1NPbDV2ZGM1WkRPVW1BR3NOMEN2WXJOYlhUMmtMazhaRjZ0TmhVUFdRbEpIMU9Tc0pYOU9hUG56ZXZEWFJSVjg0ZXBfX1hJclpvYVl6IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "X76LSdqHUSBeKPDhc6mPYw",
+   "title": "Legislative Advisor - TERM",
+   "company": "City of Red Deer",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYNzZMU2RxSFVTQmVLUERoYzZtUFl3EiQwMWExYTZhNy1jYzJiLTc5NmMtOTA1Ni04ZTU0ZDhjNGI3NWMaUEFBSEJtRE80T1RKS1FoUldjZnh3NkJ6VlZIelVKelU5YjNLZDNyLTMxOUpJNkRNeFJ3N3poSjVLR1pmNHFVTkJDVVpySUpjajRuQXFfWWV4IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "ofcbdFBf4RUKB_rMKp1pkQ",
+   "title": "Financial Advisor Wealth Advice Centre",
+   "company": "ATB",
+   "location": "Innisfail, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZvZmNiZEZCZjRSVUtCX3JNS3AxcGtREiQwMWExYTZhOS0wN2ViLTc2MGMtOTU2NS0yOWI0NjdlMmRkMjAaUEFBRmQwNnFvY2VXbFQweno0RzBnblJFeVd2VGctdXZfYzZtVTRMaWRTTEdRRDNQOWxieFFjX1ZmOVdjZDdZcDhwSFkxYmJJY2hUNjR5dm1rIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "E08YeSzgC9qKDvm7riN7GQ",
+   "title": "Financial Advisor Wealth Advice Centre",
+   "company": "ATB",
+   "location": "Lacombe, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZFMDhZZVN6Z0M5cUtEdm03cmlON0dREiQwMWExYTZhNy1jYzNkLTcwMTAtODk3Ni0wM2Q2OWFkYWQ2MzYaUEFBR0F6dE81MWNyMGRIUW5JQVBjem54QnBVbzJKa2U1SXVwREVQazV4Y2RIZTFGV1dETXJHb0dlTkU5UWpqZkpEZmlWYmd6SWttR0RmbHJEIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "GPZCXz8dCWENPHpYEMMr0w",
+   "title": "Financial Advisor Wealth Advice Centre",
+   "company": "ATB",
+   "location": "Sylvan Lake, Alberta",
+   "postedAt": "2026-11-03",
+   "type": "Full-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZHUFpDWHo4ZENXRU5QSHBZRU1NcjB3EiQwMWExYTZhOS0wN2UwLTdlZWYtOGVlMS1iNjEzYTdjNDNjNzAaUEFBRVBvS1lNdnFHX2diSEZyQ1Rmai1PN2EzT1hSWG1teUhUMEZaNWR0cFRlZlkxbTFpV0FiVjNucWx6aTR0WkI2TGVDWnZrYlptV3Ffekp3IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "AGneHY9Wn7T8fQik6y9FgQ",
@@ -50,7 +174,7 @@
    "salaryMax": 104000,
    "salaryPeriod": "year",
    "benefits": "Medical, Vision, Dental, Paid time off, Life insurance",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZBR25lSFk5V243VDhmUWlrNnk5RmdREiQwMWExYTE3Ni0wNTFlLTczYTQtYjZjZC05YzY1NDM3OTE4MzMaW0FBRlY5SjUtbmJvM3Y5WUo3Q3h6VmpFNmR1b3RuNEJUQUZjSi1IMjQwSkVwUU5FdHU5QmZ1V2QyNlBGZmdJekFYRlFBSkVTQVQwRDlLM2Y2cGcxck1ZaGIzZEkgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZBR25lSFk5V243VDhmUWlrNnk5RmdREiQwMWExYTY5Yy0xZGJkLTczZTMtYTA2Yi01ZWMyNjA1ODViZDUaW0FBSEVSdzNRUmVjWDhlQjNtSVozYlNzcklQVW9mTE5aSlN6MlBfcGstc21OT203RVBlWkR0cGlkYkV6S3ZwWlBXc0U5eEtBSTZsSXppTVlrZzh2Z1pzSEVSVmcgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "F0n0onNghSIYzLIVtgHnZQ",
@@ -64,7 +188,7 @@
    "salaryMax": 37680,
    "salaryPeriod": "year",
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZGMG4wb25OZ2hTSVl6TElWdGdIblpREiQwMWExYTE3Ni0wNGY0LTdhYjctOTQwZC0xODI4ZGE4NGYwNTEaUEFBR2xYUGhkd3JUcEFFVjhLWXk1Yy1zSWlLUXFyTjFpOExPTTlCU2U3emZDZ1UwRW1qVkQ3clVEdnZoSFdDSmhvZEJvMG5zelZmWHhCcWp1IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZGMG4wb25OZ2hTSVl6TElWdGdIblpREiQwMWExYTY5ZC0xYTUyLTc2NWUtYTJmZi03OTg1MmM2NGVmYjIaUEFBSGl4c2RBaDhDSV9hSWo3czFtNElQTVV0X0stSHJ4dTZvdEJHZUhYZnFuR285ZzcxZjh5aEhmTVNLb1BJSV96ckkxOUVTcGJlM3FjOVozIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "xzO4qUhjQtYCjaKoJsVzlA",
@@ -75,7 +199,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "Medical",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ4ek80cVVoalF0WUNqYUtvSnNWemxBEiQwMWExYTE3Ni0wNGY0LTdhYzktODViMS0wYzJlNTE3YTk1ZjMaUEFBSHNpRm1wS1V2RWN1M013cHhaaGlzN0FtdW41eDVJcS0wYmZjT0RoMEFudkxfVEdBNHdaVWIxcHpGbXVBMGpJd1B4dWF1QlpLMVVkYzJwIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ4ek80cVVoalF0WUNqYUtvSnNWemxBEiQwMWExYTZhNy1jYzJiLTc5N2ItYTZiNS1mZGZhYTg1NjJmZjcaUEFBRXpfZlAtMmEtcy1QaFNna3dXMFA4TGc1c1FRTDVEVng5VF9kd1pNU1A3UXdpcXpoWTFrTERVdGFNVC1wWUNXU3QwQkFia2NnWDdkUFY5IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "goLPLAQdkiSgH6zdOepEeQ",
@@ -89,7 +213,7 @@
    "salaryMax": 120000,
    "salaryPeriod": "year",
    "benefits": "Medical, Dental, Life insurance",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZnb0xQTEFRZGtpU2dINnpkT2VwRWVREiQwMWExYTE3OC1iOTMzLTcxMjEtYWJhYS01MTY2MTJmM2Y5NGQaUEFBRzJXc25VT1loaEVxUmRxamxiYzgtRzRmQVJITGpqSFlMaEM3SlRUOWZPNFVScmN6M1Z5MktyVUJfZm1JMDBCNHVyaF8xTHQzZFVYazBUIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZnb0xQTEFRZGtpU2dINnpkT2VwRWVREiQwMWExYTY5ZC0xYTUyLTc2NWEtYTkzMC02NGM1MTBjNzk1ODkaUEFBSHVaVW15and1S0x5Yl9tYTJhV0tDblNFVFRTU2dET2VVT2dyZ1BLb2NVNXlhTy1tbmtTYXR2cXNpbTVQbk1oNlJOTVNzeFVyWTJudmZFIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "rrp_q7u4uTZ2MCQMEj7aJw",
@@ -100,7 +224,7 @@
    "type": "Part-time",
    "remote": false,
    "benefits": "Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZycnBfcTd1NHVUWjJNQ1FNRWo3YUp3EiQwMWExYTE3OC1iOTMzLTcxMjctYTg1MC1mYWQ2YTRmYzU3Y2EaUEFBRU9KWDIwZHBzUGQwaWo3MWpnRmp5MlREM1F4UEVCeC1TM0dOb2pnd1FPRGRmMkZISXdnSFVTT2V3ekFsT3ltekYtTnNtbmxGeEdCV19KIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZycnBfcTd1NHVUWjJNQ1FNRWo3YUp3EiQwMWExYTY5Yy0xZGZhLTc4MGMtYWJhZS1lNjhjMjAwMDM0MWQaUEFBRVQ3aldrZ29ETXBDaXpzZ2VqUnV5SXJBZlhjd3dPRkNvMVV3MUNJd2JMbzhxbk9PX0pqZ1RlcXR0X3RWY3loVndvZXhYbU5vZ1VDbjJxIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "Os4f1L1HR7fCPnLGPdIcnQ",
@@ -111,7 +235,7 @@
    "type": "Part-time",
    "remote": false,
    "benefits": "Retirement",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPczRmMUwxSFI3ZkNQbkxHUGRJY25REiQwMWExYTE3OC1iOTMzLTcxMjktODQzNS1jMDhmMmU0MGM0ODIaUEFBSGczLWxiS1NSek5lY1otSkttbERMMm9Na2Y0S2FJcm5rRHFxamNuS3lnYVdtcUFYNEJ1VVBtaFpmcnd1Q0ZyOGh0NFRSVURIc3JfVVBMIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPczRmMUwxSFI3ZkNQbkxHUGRJY25REiQwMWExYTY5Zi02OTUzLTc2MDgtYWFiZi0xZjk4YjBlOTRjNDcaUEFBRUw5UTBBZ3ZEX0o0dVFyTXJQSkVKZDk4cWhxUDJ1WkRHSmtfLVJEbXR1THdNRUJwN2tJdWdWY0h1dWctRlJaQ05jUEducl9mZFExVkItIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
   },
   {
    "id": "6uTF-tSxjsuRoT1V3-V3rg",
@@ -122,7 +246,7 @@
    "type": "Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChY2dVRGLXRTeGpzdVJvVDFWMy1WM3JnEiQwMWExYTE3ZC1kYjBhLTc2NGYtOGI1YS1iNjljZTQ0MGExNDcaWEFBRnZyak9WLWY0VlE1V3RJMVBPcXhrckZRUk9LRHRWeTFUQUtNRE5CUmFhWDJxRUY5M0RoNmx6SURfR1BHR19HbGtRZkQ0T3NSWmxjRDZiVHgwOWdyTHAgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChY2dVRGLXRTeGpzdVJvVDFWMy1WM3JnEiQwMWExYTZhNi0zYWI5LTdlZDAtOGZjMy02ZTdjNTM2MmNjMjUaWEFBR0VkeUxNQXhnYXNlb2lNd2xXQ1dYR0YtbDNNNXlxT3pUWEJ0cGNzWWY5NWhTNEo4RzFuOU5RS2pZN1pQLVYwZWRnRWNmTkhVVTFXLVdzeDFCUnpCeWMgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "W19KUKohOX9dLej9SzTwbg",
@@ -136,7 +260,43 @@
    "salaryMax": 104000,
    "salaryPeriod": "year",
    "benefits": "Medical, Vision, Dental, Paid time off, Life insurance",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZXMTlLVUtvaE9YOWRMZWo5U3pUd2JnEiQwMWExYTE3Yy1jZDgzLTdjMGEtOGE4Mi0wNzNlZjNkNzNkZjIaUEFBRXpya0cxWkNCM1dCZVRGMXRJeW45a3hlUTJtTnZBMklrNFJ6MGtfSWppek9Yek1VblJ3NGt5Y3hHUmFFeV9zY2ZQRUIwRU1DdlM2U21EIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZXMTlLVUtvaE9YOWRMZWo5U3pUd2JnEiQwMWExYTZhNi0zYmMzLTcwZDgtYmYwZi0yMzlhMjA1OWUwMzEaUEFBR0pZWkhHNnF3S2E1dmkxYVVldjI1b2w2VFdzV3lib09iSjZxeTFaYTlkY2lTWVdTZ0VqRE0tcFdOUDFUbk5wZVpRaVZkNVBJb1lYSjVfIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "ZQtHwLhzisZGCN5EKC56og",
+   "title": "Agro Delivery Driver C3 (Temporary) - Innisfail - Central Alberta Co-op",
+   "company": "Co op",
+   "location": "Red Deer County, Alberta",
+   "postedAt": "2026-11-02",
+   "type": "Part-time",
+   "remote": false,
+   "benefits": "",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaUXRId0xoemlzWkdDTjVFS0M1Nm9nEiQwMWExYTY5Yy0xZGJkLTczZGItYTk4MS1mZTk0YjQyODJkOTgaUEFBR0l2aU5CUmZiSTYwelRhODB6dlFXUUVMWXRvSzZ4VDlYeHFndnY2SUkxWUlXYWlEU1dKQ3lKSFdJZ1Y3SEtaWEk3SjZYdlQxU3daVXU2IMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "DW55uVTEVyJbwhzYi6PZUA",
+   "title": "Personal Insurance Advisor",
+   "company": "HUB",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-02",
+   "type": "Part-time",
+   "remote": false,
+   "benefits": "Medical, Paid time off, Life insurance, Retirement",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZEVzU1dVZURVZ5SmJ3aHpZaTZQWlVBEiQwMWExYTY5Yy0xZGZhLTc4MGItOTE0OC1iNTc2YThjNzJjMTQaUEFBRjdYVlB2QVkzQ0plaE1PWDcxcEp3WE5ZdUJZX1dqX2gwS3ZkOXhLU2E0OHVlcTlLeHpNck9FTFl1MGlhVktvcU1hcGF1dFQ2dEFqanQwIMmtBRABGMmtBQ%3D%3D&tsid=100000502"
+  },
+  {
+   "id": "Jrh-Xo8roYSIs1Dmw8Ohpw",
+   "title": "Red Seal Truck Mechanic",
+   "company": "Rockstar Mechanics",
+   "location": "Red Deer, Alberta",
+   "postedAt": "2026-11-02",
+   "type": "Full-time",
+   "remote": false,
+   "salaryMin": 90000,
+   "salaryMax": 104000,
+   "salaryPeriod": "year",
+   "benefits": "Medical, Vision, Dental, Paid time off, Life insurance",
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZKcmgtWG84cm9ZU0lzMURtdzhPaHB3EiQwMWExYTZhNC1mMjBiLTc0ZmYtOGQ4ZC1jNDkyOWFmZWJjZTQaW0FBSGZ0RWtEazdWNm5ydHo4Z1lUTzlYbExTakFsNWxMckppX1EzdjFuMVk1ZG11VWRqa3BlWWRvMl95NzBQYWRhS0JpTHdOR3pwVV9WQTBNNjdtaC1lNmNWam8gya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "RHz_mLVAbCUuoKNqfFkGVg",
@@ -147,7 +307,7 @@
    "type": "Part-time, Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZSSHpfbUxWQWJDVXVvS05xZkZrR1ZnEiQwMWExYTE3Ni0wNTFlLTczOWQtODAxMy0xMmFkMGEzYTBmMDgaW0FBSGNwdzRCT0xSbF9JV2lsQWRpNW5VSEotd08yOEtJMjlZNlZpLV9leloyRkdLRHVpZnNkT1FHbHhCdzZvWFNuaGtnd2kycUpaaDJyaEoyc0tqN21neC1LeUEgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZSSHpfbUxWQWJDVXVvS05xZkZrR1ZnEiQwMWExYTY5Yy0xZGJkLTczZDktYWJiNC1lYjlkOTk4ODlhYjQaW0FBRVRpUmRSTHVRN2lhU1pMQXhLRm1ZUWI3UWszaFJUOUl2TFBWTi14ZnVsbDZKZGk5aFhVbkY2MDB6UEdNVDZJYXlKN3lXNU53YlJsQ3pzYnZMWWV3N0E5Vkkgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "lcjcondbid_eKk7LZ12JSw",
@@ -158,7 +318,7 @@
    "type": "Part-time, Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZsY2pjb25kYmlkX2VLazdMWjEySlN3EiQwMWExYTE3Yi1lNmYzLTdkZjAtOTUwZC04ZTY1MjdhZjBjZWUaW0FBR0tBbmZuWWk5OXk4ekZMLW8waGlob3hMMWJ3X3BNWU9zdlNZaVBXWE9kelphNUxtcGJMbEltc3JhamxaVzdCQWpWMVRCZE9VWWJaeW5wNnNYTWkyTnFsOTggya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZsY2pjb25kYmlkX2VLazdMWjEySlN3EiQwMWExYTZhMy01N2VjLTcxNWEtOWUzOS02YTQwMTliNDM3MTgaW0FBRmlqMVVpZ0lnVE9NUVFYVzNrelZrNGlJNkFaZGxSZGtvQ1V6VEhySlU5TVEwclFqLWJLeU1LUGFDcFVXSjlfdTJjbzJ5S2xvSFMwUl9xZ2xVZnFheUFoQ2Mgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "WzSc_dw_R04zHztyDlW8dw",
@@ -169,7 +329,7 @@
    "type": "Part-time, Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXelNjX2R3X1IwNHpIenR5RGxXOGR3EiQwMWExYTE3Zi0yMTVhLTdiYTktYTlmOC01NjQ4NzIxMjM0Y2YaW0FBR0lfeFFQME1mZjgxYWJYelVwR0FXVTZQQVAyNjYtWGc4SXhrTnFwQW5BQkE2SFRkWjZkUy14NkNwa0NiZFQ0cWRCcmt1RFBOaUMyYUlhdzNnSHg1bEZMQ0kgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXelNjX2R3X1IwNHpIenR5RGxXOGR3EiQwMWExYTZhOS0wN2ViLTc2MGItYTBmYy04NGMyNzcyMDQxN2MaW0FBSE1QbnVSSDlBZmlSb01CRnhra1ZpdEFyc0drNFlQUnpHaHlKdkdkMFI5c1pHeEdIRzRaVEpXZFo2enlPY05obEVTc25sT1FzMjFGMG5Bbm1LQVlMRlp5ck0gya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "P4SpHc2YoOxX3J_aGXunmw",
@@ -180,7 +340,7 @@
    "type": "Part-time, Full-time",
    "remote": false,
    "benefits": "",
-   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZQNFNwSGMyWW9PeFgzSl9hR1h1bm13EiQwMWExYTE3Zi0yMWZiLTcxZDMtOTAyNC0xYzBmNzdlMThlZmEaW0FBR3lJOWNZeEFrV3RWejhQVnA0RFFSa1h5VHZ5S2ZGQ09LMXJidVZDTnBkb1h4TVlCVXluVVRXU0dfWjNLNjkzSTNvYml4TFM4OG4xNEk1X21Mb1lhNEFGeUUgya0FEAEYya0F&tsid=100000502"
+   "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZQNFNwSGMyWW9PeFgzSl9hR1h1bm13EiQwMWExYTZhNy1jYzM0LTdhNDAtYTVkOC05ZDU1OTBhMzk4MjcaW0FBSFJKcnFoRE9kdUpRYm9ON3M3a0x4RWwxZzJaZHFlSi1RdnhzTnBHMnh6UzhlQ2lFXzlqTnJJeDU2UmNDZVZxdEE2bDRrb1lyQ3NaZDJvcXpTNF80UG9zSWsgya0FEAEYya0F&tsid=100000502"
   },
   {
    "id": "XxU3WWKHZwIeunliCwTj6g",
