@@ -1,8 +1,45 @@
 {
  "source": "indeed",
- "fetchedAt": "2026-11-11T13:07:33.647Z",
- "count": 2266,
+ "fetchedAt": "2026-11-12T13:08:31.889Z",
+ "count": 2349,
  "jobs": [
+  {
+   "id": "aar9bmdpbj9x",
+   "title": "Sales Manager",
+   "company": "Northerm Windows and Doors",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-11-12",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aar9bmdpbj9x",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa6dx7wcxmkn",
+   "title": "Sales Manager",
+   "company": "Northerm Windows and Doors",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-11-12",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa6dx7wcxmkn",
+   "keywords": []
+  },
+  {
+   "id": "aaz7sj6gstwh",
+   "title": "Representative - Customer Service",
+   "company": "Wesco",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-12",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaz7sj6gstwh",
+   "keywords": [
+    "customer service"
+   ]
+  },
   {
    "id": "aaqd9l8rwstd",
    "title": "Licensed Practical Nurse",
@@ -27,6 +64,58 @@
    "url": "https://to.indeed.com/aaqld9csbsyl",
    "keywords": [
     "nurse"
+   ]
+  },
+  {
+   "id": "aanqclm4jy4l",
+   "title": "Containment Tech",
+   "company": "Fraction Energy Services",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-11",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanqclm4jy4l",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aahbyypjbq4r",
+   "title": "Registered Nurse - Unit 12",
+   "company": "Alberta Health Services",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-11",
+   "type": "Temporary",
+   "salary": "",
+   "url": "https://to.indeed.com/aahbyypjbq4r",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aan9hwfk6bfd",
+   "title": "Branch Manager (Courier Supervisor NOC 72025)",
+   "company": "O.N.E. Transport Group",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-11",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aan9hwfk6bfd",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aajls7x9bdbv",
+   "title": "SAP Operations Clerk Part Time Day",
+   "company": "Real Canadian Superstore",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-11",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aajls7x9bdbv",
+   "keywords": [
+    "retail"
    ]
   },
   {
@@ -724,6 +813,554 @@
    "type": "Permanent",
    "salary": "",
    "url": "https://to.indeed.com/aafplk8np6ts",
+   "keywords": []
+  },
+  {
+   "id": "aaqj78zpgtqv",
+   "title": "Operations Coordinator & Administrator (Live-in)",
+   "company": "SIMS Hotel Lacombe Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqj78zpgtqv",
+   "keywords": []
+  },
+  {
+   "id": "aap8qy9d7sz8",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aap8qy9d7sz8",
+   "keywords": []
+  },
+  {
+   "id": "aa74jptyhwxv",
+   "title": "Culinary Supervisor - Moxies Red Deer",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa74jptyhwxv",
+   "keywords": []
+  },
+  {
+   "id": "aaj9ncs472yx",
+   "title": "Experienced Foundation Labourer",
+   "company": "Marshall Construction Company Inc.",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaj9ncs472yx",
+   "keywords": []
+  },
+  {
+   "id": "aahmvgk9v824",
+   "title": "Mobile Community Health Nurse",
+   "company": "Sandy Beach Ki Mamow Atoskanow Foundation",
+   "location": "Alberta",
+   "postedAt": "2026-11-10",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahmvgk9v824",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aag7jbtvjndn",
+   "title": "Retail Presentation Associate",
+   "company": "Canadian Tire Corporation, Ltd.",
+   "location": "Cochrane, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aag7jbtvjndn",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aadlxjttk7yj",
+   "title": "Promotion Associate",
+   "company": "Canadian Tire Corporation, Ltd.",
+   "location": "Cochrane, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aadlxjttk7yj",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aanh8mbbhnvs",
+   "title": "Rentals Supervisor – Leduc Rentals",
+   "company": "Fraserway RV",
+   "location": "Leduc County, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanh8mbbhnvs",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aa9bdxgdg4cx",
+   "title": "Site Manager",
+   "company": "WQS Group of Companies",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa9bdxgdg4cx",
+   "keywords": []
+  },
+  {
+   "id": "aawcsgnvjszs",
+   "title": "Mobile Community Health Nurse",
+   "company": "Sandy Beach Ki Mamow Atoskanow Foundation",
+   "location": "Alberta",
+   "postedAt": "2026-11-10",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawcsgnvjszs",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aapyfqdbtccn",
+   "title": "Merchandising Rep $27 CAD (SAXX Underwear)",
+   "company": "ThirdChannel",
+   "location": "Fort McMurray, AB",
+   "postedAt": "2026-11-10",
+   "type": "Contract",
+   "salary": "",
+   "url": "https://to.indeed.com/aapyfqdbtccn",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aax7b4sm8z8w",
+   "title": "Manager, Logistics and Distribution",
+   "company": "CMH Heli-Skiing & Summer Adventures",
+   "location": "Alberta",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aax7b4sm8z8w",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aa86hx7pdhdk",
+   "title": "Field Contract Operator",
+   "company": "Advantage Energy",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa86hx7pdhdk",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aansf9rhkjzd",
+   "title": "Service Advisor / Customer Relations",
+   "company": "Streamline HD",
+   "location": "Clairmont, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aansf9rhkjzd",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aakr9dfn84gf",
+   "title": "Retail Store Manager",
+   "company": "One Plant",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aakr9dfn84gf",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aadbn8svf2jb",
+   "title": "Health and Safety Coordinator",
+   "company": "First Alert Locating Ltd.",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aadbn8svf2jb",
+   "keywords": []
+  },
+  {
+   "id": "aacv86jkb7b9",
+   "title": "Mobile Community Health Nurse",
+   "company": "Sandy Beach Ki Mamow Atoskanow Foundation",
+   "location": "Alberta",
+   "postedAt": "2026-11-10",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aacv86jkb7b9",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aab9s8pkr7cl",
+   "title": "Retail Store Manager",
+   "company": "One Plant",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aab9s8pkr7cl",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aak9xqbkcxsy",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aak9xqbkcxsy",
+   "keywords": []
+  },
+  {
+   "id": "aag8kvv2d89c",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aag8kvv2d89c",
+   "keywords": []
+  },
+  {
+   "id": "aa2vw8swscgj",
+   "title": "Operations Coordinator & Administrator (Live-in)",
+   "company": "SIMS Hotel Lacombe Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2vw8swscgj",
+   "keywords": []
+  },
+  {
+   "id": "aalmxx67xn4q",
+   "title": "Assistant Restaurant Manager",
+   "company": "Prime Catering/ Italian Table",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aalmxx67xn4q",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aafnb4ysst42",
+   "title": "Seed Technician",
+   "company": "Kelly",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafnb4ysst42",
+   "keywords": []
+  },
+  {
+   "id": "aabpkgkvjf4w",
+   "title": "Assistant Restaurant Manager",
+   "company": "Prime Catering/ Italian Table",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aabpkgkvjf4w",
+   "keywords": []
+  },
+  {
+   "id": "aayqspmgg7sk",
+   "title": "Warehouse Shipper & Receiver Helper",
+   "company": "Hypervac Technologies",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aayqspmgg7sk",
+   "keywords": [
+    "labourer"
+   ]
+  },
+  {
+   "id": "aahj4dp8tqsz",
+   "title": "Part-Time Sales Associates - Charm Diamond Centres (Medicine Hat Mall)",
+   "company": "Charm Diamond Centres",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-11-10",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aahj4dp8tqsz",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aawcmvlmhrg7",
+   "title": "Store Manager",
+   "company": "Boston Pizza- Tomanik Enterprises",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aawcmvlmhrg7",
+   "keywords": []
+  },
+  {
+   "id": "aacw4l682cjp",
+   "title": "Store Manager",
+   "company": "Boston Pizza- Tomanik Enterprises",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aacw4l682cjp",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aalx4f6nzkv9",
+   "title": "Part-Time Sales Associates - Charm Diamond Centres (Medicine Hat Mall)",
+   "company": "Charm Diamond Centres",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-11-10",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalx4f6nzkv9",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa2nv8rpl9f9",
+   "title": "Sales Associate",
+   "company": "Ashley Canada - The Dufresne Group",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2nv8rpl9f9",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aafrmrfvm7n2",
+   "title": "Manager, Logistics and Distribution",
+   "company": "CMH Heli-Skiing & Summer Adventures",
+   "location": "Alberta",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafrmrfvm7n2",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aa8m2pdh6bpf",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8m2pdh6bpf",
+   "keywords": []
+  },
+  {
+   "id": "aaw7svdzqqn6",
+   "title": "Operations Coordinator & Administrator (Live-in)",
+   "company": "SIMS Hotel Lacombe Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaw7svdzqqn6",
+   "keywords": []
+  },
+  {
+   "id": "aafpwgnhjtwc",
+   "title": "Operations Coordinator & Administrator (Live-in)",
+   "company": "SIMS Hotel Lacombe Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafpwgnhjtwc",
+   "keywords": []
+  },
+  {
+   "id": "aaym48vlbdt2",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaym48vlbdt2",
+   "keywords": []
+  },
+  {
+   "id": "aajcp6hrw8dy",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aajcp6hrw8dy",
+   "keywords": []
+  },
+  {
+   "id": "aanwksqm9zvq",
+   "title": "Experienced Foundation Labourer",
+   "company": "Marshall Construction Company Inc.",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanwksqm9zvq",
+   "keywords": []
+  },
+  {
+   "id": "aay2kclxqrhl",
+   "title": "Culinary Supervisor - Moxies Red Deer",
+   "company": "Moxies",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aay2kclxqrhl",
+   "keywords": []
+  },
+  {
+   "id": "aahlf8wkkwqr",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aahlf8wkkwqr",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aav4nbnndl2m",
+   "title": "Operations Coordinator & Administrator (Live-in)",
+   "company": "SIMS Hotel Lacombe Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aav4nbnndl2m",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aaxmmdjqxklb",
+   "title": "Experienced Foundation Labourer",
+   "company": "Marshall Construction Company Inc.",
+   "location": "Red Deer County, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxmmdjqxklb",
+   "keywords": []
+  },
+  {
+   "id": "aal8jtfwsyw7",
+   "title": "Table Games Dealer",
+   "company": "ACE Casinos Airport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aal8jtfwsyw7",
+   "keywords": []
+  },
+  {
+   "id": "aags7t2r7qpz",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aags7t2r7qpz",
+   "keywords": []
+  },
+  {
+   "id": "aafv2pjb2ysf",
+   "title": "Operations Coordinator & Administrator (Live-in)",
+   "company": "SIMS Hotel Lacombe Inc.",
+   "location": "Lacombe, AB",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aafv2pjb2ysf",
+   "keywords": []
+  },
+  {
+   "id": "aab84flh8bkx",
+   "title": "Manager, Logistics and Distribution",
+   "company": "CMH Heli-Skiing & Summer Adventures",
+   "location": "Alberta",
+   "postedAt": "2026-11-10",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aab84flh8bkx",
+   "keywords": []
+  },
+  {
+   "id": "aavkx2hss78v",
+   "title": "Shop Hand",
+   "company": "Bizi Transport",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-10",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavkx2hss78v",
    "keywords": []
   },
   {
@@ -1998,6 +2635,406 @@
    "type": "Full-time",
    "salary": "",
    "url": "https://to.indeed.com/aacjnxjxt6ch",
+   "keywords": []
+  },
+  {
+   "id": "aatx4xjb7gs4",
+   "title": "Assistant Manager",
+   "company": "Tim Hortons",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatx4xjb7gs4",
+   "keywords": []
+  },
+  {
+   "id": "aatt94gtffkr",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aatt94gtffkr",
+   "keywords": []
+  },
+  {
+   "id": "aabtl6gwdk4d",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aabtl6gwdk4d",
+   "keywords": []
+  },
+  {
+   "id": "aaqbwt6nc8b8",
+   "title": "VP of Operations",
+   "company": "West Country Energy Services",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaqbwt6nc8b8",
+   "keywords": []
+  },
+  {
+   "id": "aabdmtyfgbkb",
+   "title": "Fabrication Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aabdmtyfgbkb",
+   "keywords": []
+  },
+  {
+   "id": "aapr2h92db8w",
+   "title": "Assistant Manager",
+   "company": "Hollywood Bowl Group",
+   "location": "Calgary, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aapr2h92db8w",
+   "keywords": []
+  },
+  {
+   "id": "aaxzxz2pkq2t",
+   "title": "Assistant Manager",
+   "company": "Hollywood Bowl Group",
+   "location": "Calgary, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxzxz2pkq2t",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aawy8lxtrqp6",
+   "title": "Manager, Category (Fresh Seafood)",
+   "company": "Centennial Food Solutions",
+   "location": "Calgary, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aawy8lxtrqp6",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aax8789gzwvv",
+   "title": "General Manager",
+   "company": "World Gym Airdrie",
+   "location": "Airdrie, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aax8789gzwvv",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aa8dh7jsmqsv",
+   "title": "Entry-Level Outside Sales Representative – Hydraulic Tools & Equipment",
+   "company": "Axis Torque Ltd.",
+   "location": "Spruce Grove, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8dh7jsmqsv",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aaybr4bbxclx",
+   "title": "Restaurant Assistant General Manager",
+   "company": "Sorrentino's Restaurant Group",
+   "location": "St. Albert, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaybr4bbxclx",
+   "keywords": []
+  },
+  {
+   "id": "aa2vsm986dch",
+   "title": "Nurse Practitioner- Outpatient Oncology Clinics",
+   "company": "Alberta Health Services",
+   "location": "Edmonton, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa2vsm986dch",
+   "keywords": [
+    "nurse"
+   ]
+  },
+  {
+   "id": "aag8fqg4q4yh",
+   "title": "Part-Time Liquor Store Sales Associate – Immediate Hiring",
+   "company": "Beer Bros & Spirits",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-09",
+   "type": "Part-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aag8fqg4q4yh",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aaz2zp6n4rdw",
+   "title": "Shift Leader - McDonald's Clairmont",
+   "company": "McDonald's",
+   "location": "Clairmont, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaz2zp6n4rdw",
+   "keywords": [
+    "retail"
+   ]
+  },
+  {
+   "id": "aaxrdnjhjdwq",
+   "title": "Warehouse and Field Associate",
+   "company": "O.N.E. Transport Group",
+   "location": "Grande Prairie, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxrdnjhjdwq",
+   "keywords": [
+    "warehouse"
+   ]
+  },
+  {
+   "id": "aayqw7mpvtl8",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aayqw7mpvtl8",
+   "keywords": []
+  },
+  {
+   "id": "aa8x4km687mc",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8x4km687mc",
+   "keywords": []
+  },
+  {
+   "id": "aa7ks8yn8k2h",
+   "title": "Assistant Manager",
+   "company": "Tim Hortons",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa7ks8yn8k2h",
+   "keywords": []
+  },
+  {
+   "id": "aa8hz62mxh4x",
+   "title": "Seasonal Materials Field Technician",
+   "company": "ParklandGEO",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8hz62mxh4x",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aaybyztg8vbw",
+   "title": "Customer Service Representative",
+   "company": "Mr Rooter Plumbing",
+   "location": "Lethbridge, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aaybyztg8vbw",
+   "keywords": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "aazyqljbmly8",
+   "title": "Gemstone Lighting Installer / Permanent Exterior Lighting Installer",
+   "company": "Elhart's Electric",
+   "location": "Medicine Hat, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aazyqljbmly8",
+   "keywords": [
+    "construction"
+   ]
+  },
+  {
+   "id": "aanslm2znkzk",
+   "title": "Fabrication Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aanslm2znkzk",
+   "keywords": []
+  },
+  {
+   "id": "aazc78nnpcsk",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aazc78nnpcsk",
+   "keywords": []
+  },
+  {
+   "id": "aa8448w4djcq",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa8448w4djcq",
+   "keywords": []
+  },
+  {
+   "id": "aanylbhnkfwr",
+   "title": "Assistant Manager",
+   "company": "Tim Hortons",
+   "location": "Ponoka, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aanylbhnkfwr",
+   "keywords": []
+  },
+  {
+   "id": "aa22rzq8wjlx",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aa22rzq8wjlx",
+   "keywords": [
+    "entry level"
+   ]
+  },
+  {
+   "id": "aal8zpcjfrdl",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aal8zpcjfrdl",
+   "keywords": []
+  },
+  {
+   "id": "aawlgbd7p48p",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aawlgbd7p48p",
+   "keywords": []
+  },
+  {
+   "id": "aabggy88jmlg",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aabggy88jmlg",
+   "keywords": [
+    "jobs fulltime"
+   ]
+  },
+  {
+   "id": "aaxmmgxvly2w",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aaxmmgxvly2w",
+   "keywords": []
+  },
+  {
+   "id": "aarx8r4nxkms",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aarx8r4nxkms",
+   "keywords": []
+  },
+  {
+   "id": "aavr9dxpnp9m",
+   "title": "Apprentice Carpenter",
+   "company": "KaiViTi Construction Ltd.",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aavr9dxpnp9m",
+   "keywords": []
+  },
+  {
+   "id": "aas9zny4gkkg",
+   "title": "Fabrication Technician",
+   "company": "ProAll International Manufacturing Inc. – A Terex Brand",
+   "location": "Olds, AB",
+   "postedAt": "2026-11-09",
+   "type": "Permanent",
+   "salary": "",
+   "url": "https://to.indeed.com/aas9zny4gkkg",
+   "keywords": []
+  },
+  {
+   "id": "aalqccrjqljh",
+   "title": "Assistant Site Manager",
+   "company": "U•STORE•IT Canada",
+   "location": "Red Deer, AB",
+   "postedAt": "2026-11-09",
+   "type": "Full-time",
+   "salary": "",
+   "url": "https://to.indeed.com/aalqccrjqljh",
    "keywords": []
   },
   {
@@ -27560,56 +28597,6 @@
    "keywords": [
     "retail"
    ]
-  },
-  {
-   "id": "aa6gkzmt9n8k",
-   "title": "Cook",
-   "company": "Domrick Dollar Store and Bakeshop Ltd",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-12",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa6gkzmt9n8k",
-   "keywords": [
-    "cook"
-   ]
-  },
-  {
-   "id": "aa2hv9wbhldc",
-   "title": "Health Care Aide – Home Care (Dementia & Aphasia Experience Required) | Red Deer",
-   "company": "FOREVER HOME SENIOR CARE LTD.",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-12",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aa2hv9wbhldc",
-   "keywords": [
-    "health care aide"
-   ]
-  },
-  {
-   "id": "aavzmw8jwx9q",
-   "title": "Health Care Aide – Home Care (Dementia & Aphasia Experience Required) | Red Deer",
-   "company": "FOREVER HOME SENIOR CARE LTD.",
-   "location": "Red Deer, AB",
-   "postedAt": "2026-10-12",
-   "type": "Permanent",
-   "salary": "",
-   "url": "https://to.indeed.com/aavzmw8jwx9q",
-   "keywords": [
-    "health care aide"
-   ]
-  },
-  {
-   "id": "aabq6gk9zfgz",
-   "title": "Wildlife Control Technician",
-   "company": "Predator Bird Services Inc",
-   "location": "Fort McMurray, AB",
-   "postedAt": "2026-10-12",
-   "type": "Temporary",
-   "salary": "",
-   "url": "https://to.indeed.com/aabq6gk9zfgz",
-   "keywords": []
   }
  ]
 }
